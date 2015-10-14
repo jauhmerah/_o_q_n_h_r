@@ -24,12 +24,18 @@
 
 	    function search($page = 'main' , $process = '-1')
 	    {
+	        $data = null;
 	    	switch ($process) {
 	    		case '1':
 	    			# code...
 	    			break;    		
 	    	}
 	    	$this->_display($page,$data);
+	    }
+	    
+	    function saje2($page = "main")
+	    {
+	        $this->load->view($this->parent_page.'/'.$page);
 	    }
 	}
 	        
