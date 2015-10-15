@@ -33,7 +33,16 @@
 	    	$this->_display($page,$data);
 	    }
 	    
+<<<<<<< HEAD
 	    function shop($page = "souqshop.php")
+=======
+	    function login($page = "login.php")
+	    {
+	        $this->load->view($this->parent_page.'/'.$page);
+	    }
+
+	     function registeration($page = "signup.php")
+>>>>>>> origin/miza
 	    {
 	        $this->load->view($this->parent_page.'/'.$page);
 	    }
