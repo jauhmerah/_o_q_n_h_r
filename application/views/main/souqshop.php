@@ -159,7 +159,7 @@
 			<div class="row">
 				<div class="col-sm-3">
 					<div class="left-sidebar">
-						<h2>Category</h2>
+					<br>	<h2>Category</h2> </br>
 						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
 							<div class="panel panel-default">
 								<div class="panel-heading">
@@ -323,7 +323,7 @@
 				
 				<div class="col-sm-9 padding-right" ;">
 					<div class="features_items"><!--features_items-->
-						<h2 class="title text-center">Features Items</h2>
+					<br>	<h2 class="title text-center">Features Items</h2></br>
 						<div class="col-sm-4">
 							<div class="product-image-wrapper">
 								<div class="single-products">
@@ -436,7 +436,7 @@
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<h2>RM1999.99</h2>
+											<h2>RM2999.99</h2>
 											<p>Easy Polo Black Edition</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
@@ -533,14 +533,14 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/home/product4.jpg" alt="" />
-										<h2>$56</h2>
-										<p>Easy Polo Black Edition</p>
+										<img src="<?php echo base_url();?>assets/anot/images/souq/perfumemen.jpg" alt="" />
+										<h2>RM250</h2>
+										<p>Renaissance Woody Fragrance</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<h2>$56</h2>
+											<h2>RM250</h2>
 											<p>Easy Polo Black Edition</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
@@ -559,14 +559,14 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/home/product3.jpg" alt="" />
-										<h2>$56</h2>
-										<p>Easy Polo Black Edition</p>
+										<img src="<?php echo base_url();?>assets/anot/images/souq/shoes.jpg" alt="" />
+										<h2>RM199.99</h2>
+										<p>British Style Autumn Running Shoes</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<h2>$56</h2>
+											<h2>RM199.99</h2>
 											<p>Easy Polo Black Edition</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
@@ -586,14 +586,14 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/home/product2.jpg" alt="" />
-										<h2>$56</h2>
-										<p>Easy Polo Black Edition</p>
+										<img src="<?php echo base_url();?>assets/anot/images/souq/dress.jpg" alt="" />
+										<h2>RM60</h2>
+										<p>Floral CC Dress</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<h2>$56</h2>
+											<h2>RM60</h2>
 											<p>Easy Polo Black Edition</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
@@ -612,14 +612,14 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/home/product1.jpg" alt="" />
-										<h2>$56</h2>
-										<p>Easy Polo Black Edition</p>
+										<img src="<?php echo base_url();?>assets/anot/images/souq/stroller.jpg" alt="" />
+										<h2>RM129</h2>
+										<p>Baby Stroller</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<h2>$56</h2>
+											<h2>RM129</h2>
 											<p>Easy Polo Black Edition</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
@@ -806,11 +806,11 @@
 	
 
   
-    <script src="js/jquery.js"></script>
-	<script src="js/price-range.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/main.js"></script>
+    <script src="<?php echo base_url();?>assets/anot/js/jquery.js"></script>
+	<script src="<?php echo base_url();?>assets/anot/js/price-range.js"></script>
+    <script src="<?php echo base_url();?>assets/anot/js/jquery.scrollUp.min.js"></script>
+	<script src="<?php echo base_url();?>assets/anot/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url();?>assets/anot/js/jquery.prettyPhoto.js"></script>
+    <script src="<?php echo base_url();?>assets/anot/js/main.js"></script>
 </body>
 </html>
