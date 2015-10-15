@@ -76,10 +76,11 @@ a#scrollUp i{
 }
 
 .contactinfo ul li a{
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
   color: #696763;
   font-weight:600;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Gisha', sans-serif;
 }
 
 
@@ -138,11 +139,12 @@ a#scrollUp i{
 }
 
 .header-middle .container .row {
-  border-bottom: 2px solid #FFA300;
-  margin-left: 0;
+  /*border-bottom: 2px solid #FFA300;*/
   margin-right: 0;
   padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: -15.5px;
+  width:270px;
+  height:40px;
 }
 
 .header-middle .container .row .col-sm-4{
@@ -222,8 +224,10 @@ a#scrollUp i{
 
 
 .header-bottom {
-  padding-bottom: 30px;
-  padding-top: 30px;
+  /*padding-bottom: 30px;
+  padding-top: 10px;*/
+  margin-top:-15.5px;
+ 
 }
 
 .navbar-collapse.collapse{
@@ -665,7 +669,7 @@ ul.sub-menu {
   font-family: 'Gisha';
   font-size: 18px;
   font-weight: 600;
-  margin: 0 auto 30px;
+  /*margin: 0 auto 30px;*/
   text-align: center;
   /*text-transform: uppercase;*/
   position: relative;
@@ -757,9 +761,10 @@ h2.title:before{
 
 .panel-body ul li a {
   color: #696763;
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-  text-transform: uppercase;
+  font-family: 'Gisha', sans-serif;
+  font-size: 14px;
+  /*text-transform: uppercase;*/
+  
 }
 
 .brands-name {
@@ -841,7 +846,7 @@ h2.title {
   font-family: 'Gisha';
   font-size: 18px;
   font-weight: 600;
-  margin: 0 15px;
+  /*margin: 0 15px;*/
  /* text-transform: uppercase;*/
   margin-bottom: 30px;
   position: relative;
