@@ -429,9 +429,9 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="<?php echo base_url();?>assets/anot/images/souq/laptop.jpg" alt="" />
-										<h2>RM1999.99</h2>
-										<p>Samsung NP350V5C-S08IN</p>
+										<img src="<?php echo base_url();?>assets/anot/images/souq/applemac.jpg" alt="" />
+										<h2>RM2999.99</h2>
+										<p>Apple MacBook Pro 13-inch</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
@@ -481,14 +481,14 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/home/product6.jpg" alt="" />
-										<h2>$56</h2>
-										<p>Easy Polo Black Edition</p>
+										<img src="<?php echo base_url();?>assets/anot/images/souq/shirt.jpg" alt="" />
+										<h2>RM199</h2>
+										<p>Popular Hip Hop Sweatshirt</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<h2>$56</h2>
+											<h2>RM199</h2>
 											<p>Easy Polo Black Edition</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
@@ -507,14 +507,14 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/home/product5.jpg" alt="" />
-										<h2>$56</h2>
-										<p>Easy Polo Black Edition</p>
+										<img src="<?php echo base_url();?>assets/anot/images/souq/telekung.jpg" alt="" />
+										<h2>RM75</h2>
+										<p>Telekung Sulam Eksklusif</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<h2>$56</h2>
+											<h2>RM75</h2>
 											<p>Easy Polo Black Edition</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
