@@ -671,7 +671,7 @@ ul.sub-menu {
   font-weight: 600;
   /*margin: 0 auto 30px;*/
   text-align: center;
-  /*text-transform: uppercase;*/
+  text-transform: uppercase;
   position: relative;
   z-index:3;
 }
@@ -847,7 +847,7 @@ h2.title {
   font-size: 18px;
   font-weight: 600;
   /*margin: 0 15px;*/
-  text-transform: uppercase;
+  text-transform: uppercase;.left
   margin-bottom: 30px;
   position: relative;
 }
@@ -898,7 +898,7 @@ h2.title {
 }
 
 .product-overlay {
-  background:#333333;
+  /*background:#333333;*/
   top: 0;
   display: none;
   height: 0;
@@ -906,7 +906,7 @@ h2.title {
   transition: height 500ms ease 0s;
   width: 100%;
   display: block;
-  opacity:0.4;
+ /* opacity:0.4;*/
 }
 
 .single-products:hover .product-overlay {

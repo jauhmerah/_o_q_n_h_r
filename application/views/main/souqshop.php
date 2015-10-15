@@ -323,7 +323,7 @@
 				
 				<div class="col-sm-9 padding-right" ;">
 					<div class="features_items"><!--features_items-->
-					<br>	<h2 class="title text-center">Features Items</h2></br>
+					<br>	<h2 class="title text-center">All Items</h2></br>
 						<div class="col-sm-4">
 							<div class="product-image-wrapper">
 								<div class="single-products">
@@ -336,7 +336,7 @@
 									<div class="product-overlay">
 										<div class="overlay-content" style="background:#ffa300">
 											<h2>RM237</h2>
-											<p>Easy Polo Black Edition</p>
+											<p>Gevalia Free Coffee Maker</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
@@ -355,13 +355,13 @@
 									<div class="productinfo text-center">
 										<img src="<?php echo base_url();?>assets/anot/images/souq/tab.jpg" alt="" />
 										<h2>RM999.99</h2>
-										<p>Samsung Galaxy Tab S 10.5</p>
+										<p>Samsung Galaxy Tab S 10.5-inch</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
-										<div class="overlay-content">
+										<div class="overlay-content"style="background:#ffa300">
 											<h2>RM999.99</h2>
-											<p>Easy Polo Black Edition</p>
+											<p>Samsung Galaxy Tab S 10.5-inch</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
@@ -380,13 +380,13 @@
 									<div class="productinfo text-center">
 										<img src="<?php echo base_url();?>assets/anot/images/souq/modenas.jpg" alt="" />
 										<h2>RM2500</h2>
-										<p>Modenas Modenas Elegan 200</p>
+										<p> Modenas Elegan 200</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
-										<div class="overlay-content">
+										<div class="overlay-content"style="background:#ffa300">
 											<h2>RM2500</h2>
-											<p>Easy Polo Black Edition</p>
+											<p>Modenas Elegan 200</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
@@ -409,9 +409,9 @@
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
-										<div class="overlay-content">
+										<div class="overlay-content"style="background:#ffa300">
 											<h2>RM69</h2>
-											<p>Easy Polo Black Edition</p>
+											<p>WILDCRAFT Kailash Travel Bag</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
@@ -435,9 +435,9 @@
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
-										<div class="overlay-content">
+										<div class="overlay-content"style="background:#ffa300">
 											<h2>RM2999.99</h2>
-											<p>Easy Polo Black Edition</p>
+											<p>Apple MacBook Pro 13-inch</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
@@ -461,9 +461,9 @@
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
-										<div class="overlay-content">
+										<div class="overlay-content"style="background:#ffa300">
 											<h2>RM2555</h2>
-											<p>Easy Polo Black Edition</p>
+											<p>Hitachi Washing Machine</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
@@ -487,9 +487,9 @@
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
-										<div class="overlay-content">
+										<div class="overlay-content"style="background:#ffa300">
 											<h2>RM199</h2>
-											<p>Easy Polo Black Edition</p>
+											<p>Popular Hip Hop Sweatshirt</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
@@ -513,9 +513,9 @@
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
-										<div class="overlay-content">
+										<div class="overlay-content"style="background:#ffa300">
 											<h2>RM75</h2>
-											<p>Easy Polo Black Edition</p>
+											<p>Telekung Sulam Eksklusif</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
@@ -539,9 +539,9 @@
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
-										<div class="overlay-content">
+										<div class="overlay-content"style="background:#ffa300">
 											<h2>RM250</h2>
-											<p>Easy Polo Black Edition</p>
+											<p>Renaissance Woody Fragrance</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
@@ -565,9 +565,9 @@
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
-										<div class="overlay-content">
+										<div class="overlay-content"style="background:#ffa300">
 											<h2>RM199.99</h2>
-											<p>Easy Polo Black Edition</p>
+											<p>British Style Autumn Running Shoes</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
@@ -592,9 +592,9 @@
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
-										<div class="overlay-content">
+										<div class="overlay-content"style="background:#ffa300">
 											<h2>RM60</h2>
-											<p>Easy Polo Black Edition</p>
+											<p>Floral CC Dress</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
@@ -618,9 +618,9 @@
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 									</div>
 									<div class="product-overlay">
-										<div class="overlay-content">
+										<div class="overlay-content"style="background:#ffa300">
 											<h2>RM129</h2>
-											<p>Easy Polo Black Edition</p>
+											<p>Baby Stroller</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
