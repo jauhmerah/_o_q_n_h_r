@@ -33,7 +33,7 @@
 	    	$this->_display($page,$data);
 	    }
 	    
-	    function saje2($page = "main")
+	    function shop($page = "souqshop.php")
 	    {
 	        $this->load->view($this->parent_page.'/'.$page);
 	    }

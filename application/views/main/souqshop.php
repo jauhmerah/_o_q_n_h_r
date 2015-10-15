@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Shop | E-Shopper</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/price-range.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
-	<link href="css/responsive.css" rel="stylesheet">
+    <title>Souq Anshar</title>
+    <!--link rel="stylesheet" href="<?php echo base_url();?>assets/css/normalize.css">-->
+    
+
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/anot/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/anot/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/anot/css/prettyPhoto.css" >
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/anot/css/price-range.css" >
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/anot/css/animate.css" >
+	<link rel="stylesheet" href="<?php echo base_url();?>assets/anot/css/main.css" >
+	<link rel="stylesheet" href="<?php echo base_url();?>assets/anot/css/responsive.css" >
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -52,7 +55,7 @@
 			</div>
 		</div><!--/header_top-->
 		
-		<div class="header-middle" style= "background:#000000;" ><img src= "images/home/logo1.png" width= "230px" height="70px">
+		<div class="header-middle" style= "background:#000000; height:100px; " ><img style= "margin-left:100px; margin-top:10px; "src= "<?php echo base_url();?>assets/anot/images/home/logo1.png" width= "230px" height="70px">
 		<!--header-middle-->
 			<div class="container">
 			
@@ -325,7 +328,7 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/shop/product12.jpg" alt="" />
+										<img src="<?php echo base_url();?>assets/anot/images/shop/product12.jpg" alt="" />
 										<h2>$56</h2>
 										<p>Easy Polo Black Edition</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
