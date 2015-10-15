@@ -298,7 +298,7 @@
                 </div>
                 <div class="registration">
                     Don't have an account yet?
-                    <a class="" href="registration.html">
+                    <a class="" href="registration.php">
                         Create an account
                     </a>
                 </div>

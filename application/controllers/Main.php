@@ -33,7 +33,12 @@
 	    	$this->_display($page,$data);
 	    }
 	    
-	    function saje2($page = "main")
+	    function login($page = "login.php")
+	    {
+	        $this->load->view($this->parent_page.'/'.$page);
+	    }
+
+	     function registeration($page = "registration.php")
 	    {
 	        $this->load->view($this->parent_page.'/'.$page);
 	    }
