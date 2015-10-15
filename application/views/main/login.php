@@ -1,4 +1,18 @@
+ <script src="<?php echo base_url();?>assets/miza/js/jquery.min.js"></script>
+<script src="<?php echo base_url();?>assets/miza/js/jquery.backstretch.min.js"></script>
+<script>
+    $.backstretch([
+      "<?php echo base_url();?>assets/miza/img/img/safari2.jpg",
+      "<?php echo base_url();?>assets/miza/img/img/bg2.jpg",
+      "<?php echo base_url();?>assets/miza/img/img/bg3.jpg"  //NOTE: The last element has NO comma
+      ], {
+        fade: 750,    //Speed of Fade
+        duration: 4000  //Time of image display
+    });
+</script>
 <!DOCTYPE html>
+
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -18,7 +32,7 @@
     
     
     <!--external css-->
-    <link  rel="stylesheet" href="<?php echo base_url();?>assets/miza/font-awesome/css/font-awesome.css">
+    <link  rel="stylesheet" href="<?php echo base_url();?>assets/miza/assets/font-awesome/css/font-awesome.css">
     <link  rel="stylesheet" href="<?php echo base_url();?>assets/miza/css/flexslider.css">
     <link  rel="stylesheet" href="<?php echo base_url();?>assets/miza/bxslider/jquery.bxslider.css">
     <link  rel="stylesheet" href="<?php echo base_url();?>assets/miza/css/animate.css">
@@ -31,6 +45,7 @@
     <link  rel="stylesheet" href="<?php echo base_url();?>assets/miza/css/style.css">
     <link  rel="stylesheet" href="<?php echo base_url();?>assets/miza/css/style-responsive.css">
       
+     
    
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
@@ -272,7 +287,7 @@
     <div class="login-bg">
         <div class="container">
             <div class="form-wrapper">
-            <form class="form-signin wow fadeInUp" action="login.html">
+            <form class="form-signin wow fadeInUp" action="login.php">
             <h2 class="form-signin-heading">login to souq anshar</h2>
             <div class="login-wrap">
                 <input type="text" class="form-control" placeholder="User ID" autofocus>
