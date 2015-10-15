@@ -1,15 +1,3 @@
- <script src="<?php echo base_url();?>assets/miza/js/jquery.min.js"></script>
-<script src="<?php echo base_url();?>assets/miza/js/jquery.backstretch.min.js"></script>
-<script>
-    $.backstretch([
-      "<?php echo base_url();?>assets/miza/img/img/safari2.jpg",
-      "<?php echo base_url();?>assets/miza/img/img/bg2.jpg",
-      "<?php echo base_url();?>assets/miza/img/img/bg3.jpg"  //NOTE: The last element has NO comma
-      ], {
-        fade: 750,    //Speed of Fade
-        duration: 4000  //Time of image display
-    });
-</script>
 <!DOCTYPE html>
 
 

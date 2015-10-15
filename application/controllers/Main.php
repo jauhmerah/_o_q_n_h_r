@@ -38,7 +38,7 @@
 	        $this->load->view($this->parent_page.'/'.$page);
 	    }
 
-	     function registeration($page = "registration.php")
+	     function registeration($page = "signup.php")
 	    {
 	        $this->load->view($this->parent_page.'/'.$page);
 	    }
