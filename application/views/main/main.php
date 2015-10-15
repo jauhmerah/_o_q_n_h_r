@@ -108,7 +108,7 @@
                    <p><h4 style="font-style:gisha;text-align:center; font-size:29px; font-weight:600px;">Your First Dinar and Dirham Marketplace</h4> </p> </div></div>
 				   
 				   
-                  <div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-6.jpg" alt="GTA V"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:40px; font-weight:800px; text-align:center; " class = "col-md-8 col-md-offset-2" > djfjhfjfhhfrh
+                  <div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-6.jpg" alt="GTA V"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:40px; font-weight:800; text-align:center; " class = "col-md-8 col-md-offset-2" > Shop Anytime and Anywhere with Souq Anshar!
                    <!--p><h3 style="font-style:gisha;text-align:center;">Your First Dinarhgfghfghg Marketplace</h3></p>--> </div></div>
                  
                 </div>
@@ -177,7 +177,7 @@
                         <div class="single-work wow fadeInUp"  data-wow-delay="1s">
                             <img src="<?php echo base_url();?>assets/img/icon3.png" alt="">
                             <h3>Pay using DinarPal</h3>
-                            <p>Using the outcomes from the job, we will put together a plan for the most effective marketing strategy to get the best results.</p>
+                            <p>Use DinarPal as your payment gateway bla bla bla bla bla bla bla bla bla bla blablablabla bla bla bla bla bla bla bla bla.</p>
                         </div>
                     </div>
                 </div>
