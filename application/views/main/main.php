@@ -104,11 +104,11 @@
                    <p><h3 style="font-style:gisha;text-align:center;">(Abdul Rahman bin Auf)</h3></p> </div></div>
 				   
 				   
-                  <div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-8.jpg" alt="The Last of us"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:40px; font-weight:800; text-align:center; " class = "col-md-8 col-md-offset-2" >Buy & Sell with Souq Anshar!
+                  <div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-10.jpg" alt="The Last of us"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:40px; font-weight:800; text-align:center; " class = "col-md-8 col-md-offset-2" >Buy & Sell with Souq Anshar!
                    <p><h4 style="font-style:gisha;text-align:center; font-size:29px; font-weight:600px;">Your First Dinar and Dirham Marketplace</h4> </p> </div></div>
 				   
 				   
-                  <div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-6.jpg" alt="GTA V"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:40px; font-weight:800; text-align:center; " class = "col-md-8 col-md-offset-2" > Shop Anytime and Anywhere with Souq Anshar!
+                  <div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-9.jpg" alt="GTA V"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:40px; font-weight:800; text-align:center; " class = "col-md-8 col-md-offset-2" > Shop Anytime and Anywhere with Souq Anshar!
                    <!--p><h3 style="font-style:gisha;text-align:center;">Your First Dinarhgfghfghg Marketplace</h3></p>--> </div></div>
                  
                 </div>

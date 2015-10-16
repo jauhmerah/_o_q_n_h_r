@@ -36,7 +36,7 @@
 						<div class="contactinfo">
 							<ul class="nav nav-pills">
 								<li><a href=""><i class="fa fa-phone"></i> +012-2228069</a></li>
-								<li><a href=""><i class="fa fa-envelope"></i> adminsouqanshar.com</a></li>
+								<li><a href=""><i class="fa fa-envelope"></i> admin@souqanshar.com</a></li>
 							</ul>
 						</div>
 					</div>
