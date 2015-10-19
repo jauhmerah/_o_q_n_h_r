@@ -6,7 +6,7 @@
 <head>
 
   <!-- Basic -->
-  <title>Margo | Home</title>
+  <title>Souq Anshar | Profile</title>
 
   <!-- Define Charset -->
   <meta charset="utf-8">
@@ -19,55 +19,55 @@
   <meta name="author" content="iThemesLab">
 
   <!-- Bootstrap CSS  -->
-  <link rel="stylesheet" href="asset/css/bootstrap.min.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/hanis/asset/css/bootstrap.min.css" type="text/css" media="screen">
 
   <!-- Font Awesome CSS -->
-  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/hanis/css/font-awesome.min.css" type="text/css" media="screen">
 
   <!-- Slicknav -->
-  <link rel="stylesheet" type="text/css" href="css/slicknav.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/hanis/css/slicknav.css" media="screen">
 
   <!-- Margo CSS Styles  -->
-  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/hanis/css/style.css" media="screen">
 
   <!-- Responsive CSS Styles  -->
-  <link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/hanis/css/responsive.css" media="screen">
 
   <!-- Css3 Transitions Styles  -->
-  <link rel="stylesheet" type="text/css" href="css/animate.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/hanis/css/animate.css" media="screen">
 
   <!-- Color CSS Styles  -->
-  <link rel="stylesheet" type="text/css" href="css/colors/red.css" title="red" media="screen" />
-  <link rel="stylesheet" type="text/css" href="css/colors/jade.css" title="jade" media="screen" />
-  <link rel="stylesheet" type="text/css" href="css/colors/blue.css" title="blue" media="screen" />
-  <link rel="stylesheet" type="text/css" href="css/colors/beige.css" title="beige" media="screen" />
-  <link rel="stylesheet" type="text/css" href="css/colors/cyan.css" title="cyan" media="screen" />
-  <link rel="stylesheet" type="text/css" href="css/colors/green.css" title="green" media="screen" />
-  <link rel="stylesheet" type="text/css" href="css/colors/orange.css" title="orange" media="screen" />
-  <link rel="stylesheet" type="text/css" href="css/colors/peach.css" title="peach" media="screen" />
-  <link rel="stylesheet" type="text/css" href="css/colors/pink.css" title="pink" media="screen" />
-  <link rel="stylesheet" type="text/css" href="css/colors/purple.css" title="purple" media="screen" />
-  <link rel="stylesheet" type="text/css" href="css/colors/sky-blue.css" title="sky-blue" media="screen" />
-  <link rel="stylesheet" type="text/css" href="css/colors/yellow.css" title="yellow" media="screen" />
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/hanis/css/colors/red.css" title="red" media="screen" />
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/hanis/css/colors/jade.css" title="jade" media="screen" />
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/hanis/css/colors/blue.css" title="blue" media="screen" />
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/hanis/css/colors/beige.css" title="beige" media="screen" />
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/hanis/css/colors/cyan.css" title="cyan" media="screen" />
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/hanis/css/colors/green.css" title="green" media="screen" />
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/hanis/css/colors/orange.css" title="orange" media="screen" />
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/hanis/css/colors/peach.css" title="peach" media="screen" />
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/hanis/css/colors/pink.css" title="pink" media="screen" />
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/hanis/css/colors/purple.css" title="purple" media="screen" />
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/hanis/css/colors/sky-blue.css" title="sky-blue" media="screen" />
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/hanis/css/colors/yellow.css" title="yellow" media="screen" />
 
 
   <!-- Margo JS  -->
-  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-  <script type="text/javascript" src="js/jquery.migrate.js"></script>
-  <script type="text/javascript" src="js/modernizrr.js"></script>
-  <script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/jquery.fitvids.js"></script>
-  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
-  <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
-  <script type="text/javascript" src="js/jquery.appear.js"></script>
-  <script type="text/javascript" src="js/count-to.js"></script>
-  <script type="text/javascript" src="js/jquery.textillate.js"></script>
-  <script type="text/javascript" src="js/jquery.lettering.js"></script>
-  <script type="text/javascript" src="js/jquery.easypiechart.min.js"></script>
-  <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
-  <script type="text/javascript" src="js/jquery.parallax.js"></script>
-  <script type="text/javascript" src="js/jquery.slicknav.js"></script>
+  <script type="text/javascript" src="<?php echo base_url();?>assets/hanis/js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="<?php echo base_url();?>assets/hanis/js/jquery.migrate.js"></script>
+  <script type="text/javascript" src="<?php echo base_url();?>assets/hanis/js/modernizrr.js"></script>
+  <script type="text/javascript" src="<?php echo base_url();?>assets/hanis/asset/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="<?php echo base_url();?>assets/hanis/js/jquery.fitvids.js"></script>
+  <script type="text/javascript" src="<?php echo base_url();?>assets/hanis/js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="<?php echo base_url();?>assets/hanis/js/nivo-lightbox.min.js"></script>
+  <script type="text/javascript" src="<?php echo base_url();?>assets/hanis/js/jquery.isotope.min.js"></script>
+  <script type="text/javascript" src="<?php echo base_url();?>assets/hanis/js/jquery.appear.js"></script>
+  <script type="text/javascript" src="<?php echo base_url();?>assets/hanis/js/count-to.js"></script>
+  <script type="text/javascript" src="<?php echo base_url();?>assets/hanis/js/jquery.textillate.js"></script>
+  <script type="text/javascript" src="<?php echo base_url();?>assets/hanis/js/jquery.lettering.js"></script>
+  <script type="text/javascript" src="<?php echo base_url();?>assets/hanis/js/jquery.easypiechart.min.js"></script>
+  <script type="text/javascript" src="<?php echo base_url();?>assets/hanis/js/jquery.nicescroll.min.js"></script>
+  <script type="text/javascript" src="<?php echo base_url();?>assets/hanis/js/jquery.parallax.js"></script>
+  <script type="text/javascript" src="<?php echo base_url();?>assets/hanis/js/jquery.slicknav.js"></script>
 
   <!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -132,7 +132,7 @@
               <i class="fa fa-bars"></i>
             </button>
             <!-- End Toggle Nav Link For Mobiles -->
-            <a class="navbar-brand" href="index.html"><img style="margin-top:-7px;"alt="" src="images/anis4.png"></a>
+            <a class="navbar-brand" href="index.html"><img style="margin-top:-7px;"alt="" src="<?php echo base_url();?>assets/hanis/images/anis4.png"></a>
           </div>
           <div class="navbar-collapse collapse">
             <!-- Stat Search -->
@@ -300,7 +300,7 @@
     <!-- End HomePage Slider -->
 <div id="timelineContainer"">
 	<div id="timelineBackground">
-		<img src="images/polisevo1.png" class="bgImage" style="margin-top:0px;">
+		<img src="<?php echo base_url();?>assets/hanis/images/polisevo1.png" class="bgImage" style="margin-top:0px;">
 	</div>
 
 <!-- timeline background -->
@@ -315,7 +315,7 @@
 <!-- timeline profile picture -->
     <div id="timelineContainer">
 	<div id="timelineProfilePic">
-	<img src="images/arash.jpg" class="bgImage" style="margin-top:0px;">
+	<img src="<?php echo base_url();?>assets/hanis/images/arash.jpg" class="bgImage" style="margin-top:0px;">
 	<form id="bgimageform" method="post" enctype="multipart/form-data" action="image_upload_ajax_bg.php">
 	<div class="uploadFile timelineUploadBG"></div>
 	</form>
@@ -345,7 +345,7 @@
                 <div class="portfolio-thumb">
                   <a class="lightbox" data-lightbox-type="ajax" href="https://vimeo.com/78468485">
                     <div class="thumb-overlay"><i class="fa fa-play"></i></div>
-                    <img alt="" src="images/SouqAnshar/applemac.jpg" />
+                    <img alt="" src="<?php echo base_url();?>assets/hanis/images/SouqAnshar/applemac.jpg" />
                   </a>
                 </div>
                 <div class="portfolio-details">
@@ -363,7 +363,7 @@
                 <div class="portfolio-thumb">
                   <a class="lightbox" title="This is an image title" href="images/portfolio-big-01.jpg">
                     <div class="thumb-overlay"><i class="fa fa-arrows-alt"></i></div>
-                    <img alt="" src="images/SouqAnshar/modenas.jpg" />
+                    <img alt="" src="<?php echo base_url();?>assets/hanis/images/SouqAnshar/modenas.jpg" />
                   </a>
                 </div>
                 <div class="portfolio-details">
@@ -381,7 +381,7 @@
                 <div class="portfolio-thumb">
                   <a href="#">
                     <div class="thumb-overlay"><i class="fa fa-arrows-alt"></i></div>
-                    <img alt="" src="images/SouqAnshar/kit.jpg" />
+                    <img alt="" src="<?php echo base_url();?>assets/hanis/images/SouqAnshar/kit.jpg" />
                   </a>
                 </div>
                 <div class="portfolio-details">
@@ -398,7 +398,7 @@
                 <div class="portfolio-thumb">
                   <a href="#">
                     <div class="thumb-overlay"><i class="fa fa-arrows-alt"></i></div>
-                    <img alt="" src="images/SouqAnshar/stroller.jpg" />
+                    <img alt="" src="<?php echo base_url();?>assets/hanis/images/SouqAnshar/stroller.jpg" />
                   </a>
                 </div>
                 <div class="portfolio-details">
@@ -416,7 +416,7 @@
                 <div class="portfolio-thumb">
                   <a class="lightbox" title="This is an image title" href="images/portfolio-big-02.jpg">
                     <div class="thumb-overlay"><i class="fa fa-arrows-alt"></i></div>
-                    <img alt="" src="images/SouqAnshar/tab1.jpg" />
+                    <img alt="" src="<?php echo base_url();?>assets/hanis/images/SouqAnshar/tab1.jpg" />
                   </a>
                 </div>
                 <div class="portfolio-details">
@@ -442,42 +442,42 @@
 
                 <!-- Client 1 -->
                 <div class="client-item item">
-                  <a href="#"><img src="images/anot.png" alt="" /></a>
+                  <a href="#"><img src="<?php echo base_url();?>assets/hanis/images/anot.png" alt="" /></a>
                 </div>
 
                 <!-- Client 2 -->
                 <div class="client-item item">
-                  <a href="#"><img src="images/hatta.png" alt="" /></a>
+                  <a href="#"><img src="<?php echo base_url();?>assets/hanis/images/hatta.png" alt="" /></a>
                 </div>
 
                 <!-- Client 3 -->
                 <div class="client-item item">
-                  <a href="#"><img src="images/sol.jpg" alt="" /></a>
+                  <a href="#"><img src="<?php echo base_url();?>assets/hanis/images/sol.jpg" alt="" /></a>
                 </div>
 
                 <!-- Client 4 -->
                 <div class="client-item item">
-                  <a href="#"><img src="images/amar.jpg" alt="" /></a>
+                  <a href="#"><img src="<?php echo base_url();?>assets/hanis/images/amar.jpg" alt="" /></a>
                 </div>
 
                 <!-- Client 5 -->
                 <div class="client-item item">
-                  <a href="#"><img src="images/amir.jpg" alt="" /></a>
+                  <a href="#"><img src="<?php echo base_url();?>assets/hanis/images/amir.jpg" alt="" /></a>
                 </div>
 
                 <!-- Client 6 -->
                 <div class="client-item item">
-                  <a href="#"><img src="images/c6.png" alt="" /></a>
+                  <a href="#"><img src="<?php echo base_url();?>assets/hanis/images/c6.png" alt="" /></a>
                 </div>
 
                 <!-- Client 7 -->
                 <div class="client-item item">
-                  <a href="#"><img src="images/c7.png" alt="" /></a>
+                  <a href="#"><img src="<?php echo base_url();?>assets/hanis/images/c7.png" alt="" /></a>
                 </div>
 
                 <!-- Client 8 -->
                 <div class="client-item item">
-                  <a href="#"><img src="images/c8.png" alt="" /></a>
+                  <a href="#"><img src="<?php echo base_url();?>assets/hanis/images/c8.png" alt="" /></a>
                 </div>
 
               </div>
@@ -494,7 +494,7 @@
           <div class="col-md-4">
             <div class="footer-widget contact-widget" style="margin-left:40px">
 			
-              <h4><img src="images/anis2.png" class="img-responsive" alt="Footer Logo" /></h4>
+              <h4><img src="<?php echo base_url();?>assets/hanis/images/anis2.png" class="img-responsive" alt="Footer Logo" /></h4>
               <p>"YOUR DINAR MARKETPLACE"</p>
               <ul>
                 <li><span>Phone Number:</span> +01 234 567 890</li>
@@ -510,7 +510,7 @@
           <div class="col-md-4">
             <div class="footer-widget contact-widget">
 			<p>In Collaboration With</p>
-              <h4><img src="images/dinarpal.png" class="img-responsive" alt="Footer Logo" /></h4>
+              <h4><img src="<?php echo base_url();?>assets/hanis/images/dinarpal.png" class="img-responsive" alt="Footer Logo" /></h4>
               <p>"WE GIVE GOLD VALUE TO YOUR MONEY"</p>
             </div>
           </div>
@@ -680,7 +680,7 @@
     </ul>
   </div>
 
-  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="<?php echo base_url();?>assets/hanis/js/script.js"></script>
 
 </body>
 
