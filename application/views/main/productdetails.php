@@ -6,27 +6,28 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Souq Anshar| Product Details</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/price-range.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
-	<link href="css/responsive.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/anot/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/anot/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/anot/css/prettyPhoto.css" >
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/anot/css/price-range.css" >
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/anot/css/animate.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>assets/anot/css/main.css" >
+	<link rel="stylesheet" href="<?php echo base_url();?>assets/anot/css/responsive.css">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->       
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="<?php echo base_url();?>assets/anot/images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo base_url();?>assets/anot/images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo base_url();?>assets/anot/images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo base_url();?>assets/anot/images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="<?php echo base_url();?>assets/anot/images/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
 
 <body>
-	<header id="header"><!--header-->
-		<div class="header_top"><!--header_top-->
+	<header id="header" ><!--header-->
+		<div class="header_top"style="background:#ffffff;"><!--header_top-->
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6">
@@ -52,7 +53,7 @@
 			</div>
 		</div><!--/header_top-->
 		
-		<div class="header-middle" style="background:#000000;height:100px;"><img style="margin-left:100px;margin-top:10px;"src="images/home/logo1.png"width="230px"height="70px">
+		<div class="header-middle" style="background:#000000;height:100px;"><img style="margin-left:100px;margin-top:10px;"src="<?php echo base_url();?>assets/anot/images/home/logo1.png"width="230px"height="70px">
 		<!--header-middle-->
 			<div class="container">
 				<!--div class="row">
@@ -315,7 +316,7 @@
 					<div class="product-details"><!--product-details-->
 						<div class="col-sm-5">
 							<div class="view-product">
-								<img src="images/product-details/cm1.jpg" alt="" />
+								<img src="<?php echo base_url();?>assets/anot/images/product-details/cm1.jpg" alt="" />
 								<h3>ZOOM</h3>
 							</div>
 							<div id="similar-product" class="carousel slide" data-ride="carousel">
@@ -323,17 +324,17 @@
 								  <!-- Wrapper for slides -->
 								    <div class="carousel-inner">
 										<div class="item active">
-										  <a href=""><img src="images/product-details/cm22.jpg" alt=""></a>
+										  <a href=""><img src="<?php echo base_url();?>assets/anot/images/product-details/cm22.jpg" alt=""></a>
 										  <!--a href=""><img src="images/product-details/similar2.jpg" alt=""></a>
 										  <a href=""><img src="images/product-details/similar3.jpg" alt=""></a>-->
 										</div>
 										<div class="item">
-										  <a href=""><img src="images/product-details/cm33.jpg" alt=""></a>
+										  <a href=""><img src="<?php echo base_url();?>assets/anot/images/product-details/cm33.jpg" alt=""></a>
 										  <!--a href=""><img src="images/product-details/similar2.jpg" alt=""></a>
 										  <a href=""><img src="images/product-details/similar3.jpg" alt=""></a>-->
 										</div>
 										<div class="item">
-										  <a href=""><img src="images/product-details/cm44.jpg" alt=""></a>
+										  <a href=""><img src="<?php echo base_url();?>assets/anot/images/product-details/cm44.jpg" alt=""></a>
 										  <!--a href=""><img src="images/product-details/similar2.jpg" alt=""></a>
 										  <a href=""><img src="images/product-details/similar3.jpg" alt=""></a>-->
 										</div>
@@ -352,7 +353,7 @@
 						</div>
 						<div class="col-sm-7">
 							<div class="product-information"><!--/product-information-->
-								<img src="images/product-details/new.jpg" class="newarrival" alt="" />
+								<img src="<?php echo base_url();?>assets/anot/images/product-details/new.jpg" class="newarrival" alt="" />
 								<h2>Krups KT600 Coffee Maker</h2>
 								<p>Product ID: 1089772</p>
 								<!--img src="images/product-details/rating.png" alt="" />-->
@@ -368,7 +369,7 @@
 								<p><b>Availability:</b> In Stock</p>
 								<p><b>Condition:</b> New</p>
 								<p><b>Brand:</b> Krups</p>
-								<a href=""><img src="images/product-details/share.png" class="share img-responsive"  alt="" /></a>
+								<a href=""><img src="<?php echo base_url();?>assets/anot/images/product-details/share.png" class="share img-responsive"  alt="" /></a>
 							</div><!--/product-information-->
 						</div>
 					</div><!--/product-details-->
@@ -819,11 +820,11 @@
 	
 
   
-    <script src="js/jquery.js"></script>
-	<script src="js/price-range.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/main.js"></script>
+    <script src="<?php echo base_url();?>assets/anot/js/jquery.js"></script>
+	<script src="<?php echo base_url();?>assets/anot/js/price-range.js"></script>
+    <script src="<?php echo base_url();?>assets/anot/js/jquery.scrollUp.min.js"></script>
+	<script src="<?php echo base_url();?>assets/anot/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url();?>assets/anot/js/jquery.prettyPhoto.js"></script>
+    <script src="<?php echo base_url();?>assets/anot/js/main.js"></script>
 </body>
 </html>
