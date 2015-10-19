@@ -91,7 +91,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						 </button>
-                      <a class="navbar-brand" style= "margin-top:-5px;" href="#"><img src="images/home/logo1.png" alt="" width="230px" height="75px" ></a>
+                      <a class="navbar-brand" style= "margin-top:-5px;" href="#"><img src="<?php echo base_url();?>assets/miza-cart/images/home/logo1.png" alt="" width="230px" height="75px" ></a>
 					</div>
 			
                 <!--ul class="main-nav nav navbar-nav navbar-right">
@@ -180,7 +180,7 @@
 			<!--div class="step-one">
 				<h2 class="heading">Step1</h2>
 			</div>-->
-			<div class="checkout-options" style="background-color:#ffa300; padding: 20px;padding-top:5px;" >
+			<div class="checkout-options" style="background-color:#000000; padding: 20px;padding-top:5px;" >
 				<h3>Account & Billing Details</h3>
 				<!--p>Checkout options</p>-->
 				<!--ul class="nav">
@@ -200,11 +200,11 @@
 				<p>Please use Register And Checkout to easily get access to your order history, or use Checkout as Guest</p>
 			</div>--><!--/register-req-->
 
-			<div class="shopper-informations">
+			<div class="shopper-informations" >
 				<div class="row">
 					<div class="col-sm-3">
 						<div class="shopper-info">
-							<p>Billing Information</p>
+							<br><p>Billing Information</p></br>
 							<form>
 								<!--input type="text" placeholder="Display Name">-->
 								<!--input type="text" placeholder="User Name">-->
@@ -216,28 +216,18 @@
 							    <input type="text" placeholder="Address 2">
 							</form>
 							<!--a class="btn btn-primary" href="">Get Quotes</a>-->
-							<a class="btn btn-primary" href="">Continue</a>
+							<!--a class="btn btn-primary" href="">Continue</a>-->
 						</div>
 					</div>
-					<div class="col-sm-5 clearfix">
+					<div class="col-sm-5 clearfix" >
 						<div class="bill-to">
-							<p>Bill To</p>
-							<div class="form-one">
+							<!--p>Bill To</p>-->
+							<br><div class="form-two" style="margin-top:41px;">
 								<form>
-									<input type="text" placeholder="Company Name">
-									<input type="text" placeholder="Email*">
-									<input type="text" placeholder="Title">
-									<input type="text" placeholder="First Name *">
-									<input type="text" placeholder="Middle Name">
-									<input type="text" placeholder="Last Name *">
-									<input type="text" placeholder="Address 1 *">
-									<input type="text" placeholder="Address 2">
-								</form>
-							</div>
-							<div class="form-two">
-								<form>
-									<input type="text" placeholder="City">
+									<!--input type="text" placeholder="Company Name">-->
+									<br><input type="text" placeholder="City"></br>
 									<input type="text" placeholder="Zip / Postal Code *">
+								<form>
 									<select>
 										<option>-- Country --</option>
 										<option>United States</option>
@@ -260,17 +250,37 @@
 										<option>Canada</option>
 										<option>Dubai</option>
 									</select>
-									<input type="password" placeholder="Confirm password">
-									<input type="text" placeholder="Phone *">
-									<input type="text" placeholder="Mobile Phone">
-									<input type="text" placeholder="Fax">
+									<!--input type="password" placeholder="Confirm password">
+									<input type="text" placeholder="Phone *">-->
+									<!--input type="text" placeholder="Mobile Phone">
+									<input type="text" placeholder="Fax">-->
 								</form>
-							</div>
+									<!--input type="text" placeholder="Email*">
+									<input type="text" placeholder="Title">-->
+								</form>
+							</div></br>
 						</div>
 					</div>
+				<div class="row">
+					<div class="col-sm-3" >
+						<div class="shopper-info">
+							<br><p>Contact Information</p></br>
+							<form>
+								<!--input type="text" placeholder="Display Name">-->
+								<!--input type="text" placeholder="User Name">-->
+								<!--input type="password" placeholder="Password">-->
+								<!--input type="password" placeholder="Confirm password">-->
+								<input type="text" placeholder="Telephone*">
+								<input type="text" placeholder="Email">
+							</form>
+							<!--a class="btn btn-primary" href="">Get Quotes</a>-->
+							<a class="btn btn-primary" href="">Continue</a>
+						</div>
+					</div>
+				</div>
 					<!--div class="col-sm-4">
 						<div class="order-message">
-							<p>Shipping Order</p>
+							<p>Contact Information</p>
 							<textarea name="message"  placeholder="Notes about your order, Special Notes for Delivery" rows="16"></textarea>
 							<label><input type="checkbox"> Shipping to bill address</label>
 						</div>	
@@ -280,11 +290,27 @@
 			
 			
 			
-			<div class="review-payment">
+			<!--div class="review-payment"  style="background-color:#000000; margin-top:50px;  padding-top:5px">
 				<h2>Review & Payment</h2>
-			</div>
+			</div>-->
 
-			<div class="table-responsive cart_info">
+			<div class="checkout-options" style="background-color:#000000; padding: 20px;padding-top:5px;margin-top:70px;" >
+				<h3>Review & Payment</h3>
+				<!--p>Checkout options</p>-->
+				<!--ul class="nav">
+					<li>
+						<label><input type="checkbox"> Register Account</label>
+					</li>
+					<li>
+						<label><input type="checkbox"> Guest Checkout</label>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-times"></i>Cancel</a>
+					</li>
+				</ul>-->
+			</div><!--/checkout-options-->
+
+			<div class="table-responsive cart_info" style="margin-top:20px;">
 				<table class="table table-condensed">
 					<thead>
 						<tr class="cart_menu">
@@ -400,6 +426,7 @@
 				</table>
 			</div>
 			<div class="payment-options">
+
 					<span>
 						<label><input type="checkbox"> Dinarpal</label>
 					</span>
