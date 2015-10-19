@@ -317,7 +317,7 @@
 						<div class="col-sm-5">
 							<div class="view-product">
 								<img src="<?php echo base_url();?>assets/anot/images/product-details/cm1.jpg" alt="" />
-								<h3>ZOOM</h3>
+								<!--h3>ZOOM</h3>-->
 							</div>
 							<div id="similar-product" class="carousel slide" data-ride="carousel">
 								
