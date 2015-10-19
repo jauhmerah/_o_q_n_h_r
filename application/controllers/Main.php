@@ -22,7 +22,7 @@
 	    	//$this->load->view('footer');
 	    }
 
-	    function search($page = 'main' , $process = '-1')
+	    function page($page = 'main' , $process = '-1')
 	    {
 	        $data = null;
 	    	switch ($process) {
