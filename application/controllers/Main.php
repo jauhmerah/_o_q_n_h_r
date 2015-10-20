@@ -33,12 +33,6 @@
 	    	$this->_display($page,$data);
 	    }
 	    
-
-	    function page($page = "login.php")
-	    {
-	        $this->load->view($this->parent_page.'/'.$page);
-	    }
-
 	     function registeration($page = "signup.php")
 	    {
 	        $this->load->view($this->parent_page.'/'.$page);
