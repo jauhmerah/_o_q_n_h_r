@@ -230,25 +230,28 @@
 								<form>
 									<select>
 										<option>-- Country --</option>
-										<option>United States</option>
-										<option>Bangladesh</option>
+										<!--option>United States</option>-->
+										<!--option>Bangladesh</option>
 										<option>UK</option>
 										<option>India</option>
 										<option>Pakistan</option>
 										<option>Ucrane</option>
-										<option>Canada</option>
-										<option>Dubai</option>
+										<option>Canada</option>-->
+										<option>Malaysia</option>
 									</select>
 									<select>
 										<option>-- State / Province / Region --</option>
-										<option>United States</option>
-										<option>Bangladesh</option>
-										<option>UK</option>
-										<option>India</option>
-										<option>Pakistan</option>
-										<option>Ucrane</option>
-										<option>Canada</option>
-										<option>Dubai</option>
+										<option>Johor</option>
+										<option>Malacca</option>
+										<option>Kelantan</option>
+										<option>Negeri Sembilan</option>
+										<option>Perak</option>
+										<option>Perlis</option>
+										<option>Kedah</option>
+										<option>Terengganu</option>
+										<option>Pahang</option>
+										<option>Penang</option>
+										<option>Selangor</option>
 									</select>
 									<!--input type="password" placeholder="Confirm password">
 									<input type="text" placeholder="Phone *">-->
@@ -325,14 +328,14 @@
 					<tbody>
 						<tr>
 							<td class="cart_product">
-								<a href=""><img src="images/cart/one.png" alt=""></a>
+								<a href=""><img src="<?php echo base_url();?>assets/miza-cart/images/cart/Men4.jpg" alt=""></a>
 							</td>
 							<td class="cart_description">
-								<h4><a href="">Colorblock Scuba</a></h4>
-								<p>Web ID: 1089772</p>
+								<h4><a href="">Plain T-shirt</a></h4>
+								<!--p>Web ID: 1089772</p>-->
 							</td>
 							<td class="cart_price">
-								<p>$59</p>
+								<p>RM59</p>
 							</td>
 							<td class="cart_quantity">
 								<div class="cart_quantity_button">
@@ -342,7 +345,7 @@
 								</div>
 							</td>
 							<td class="cart_total">
-								<p class="cart_total_price">$59</p>
+								<p class="cart_total_price">RM59</p>
 							</td>
 							<td class="cart_delete">
 								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
@@ -351,14 +354,14 @@
 
 						<tr>
 							<td class="cart_product">
-								<a href=""><img src="images/cart/two.png" alt=""></a>
+								<a href=""><img src="<?php echo base_url()?>assets/miza-cart/images/cart/Men5.jpg" alt=""></a>
 							</td>
 							<td class="cart_description">
-								<h4><a href="">Colorblock Scuba</a></h4>
-								<p>Web ID: 1089772</p>
+								<h4><a href="">Plain T-shirt</a></h4>
+								<!--p>Web ID: 1089772</p>-->
 							</td>
 							<td class="cart_price">
-								<p>$59</p>
+								<p>RM59</p>
 							</td>
 							<td class="cart_quantity">
 								<div class="cart_quantity_button">
@@ -368,7 +371,7 @@
 								</div>
 							</td>
 							<td class="cart_total">
-								<p class="cart_total_price">$59</p>
+								<p class="cart_total_price">RM59</p>
 							</td>
 							<td class="cart_delete">
 								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
@@ -376,14 +379,14 @@
 						</tr>
 						<tr>
 							<td class="cart_product">
-								<a href=""><img src="images/cart/three.png" alt=""></a>
+								<a href=""><img src="<?php echo base_url()?>assets/miza-cart/images/cart/Men2.jpg" alt=""></a>
 							</td>
 							<td class="cart_description">
-								<h4><a href="">Colorblock Scuba</a></h4>
-								<p>Web ID: 1089772</p>
+								<h4><a href="">Plain T-shirt</a></h4>
+								<!--p>Web ID: 1089772</p>-->
 							</td>
 							<td class="cart_price">
-								<p>$59</p>
+								<p>RM59</p>
 							</td>
 							<td class="cart_quantity">
 								<div class="cart_quantity_button">
@@ -393,7 +396,7 @@
 								</div>
 							</td>
 							<td class="cart_total">
-								<p class="cart_total_price">$59</p>
+								<p class="cart_total_price">RM59</p>
 							</td>
 							<td class="cart_delete">
 								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
@@ -405,11 +408,11 @@
 								<table class="table table-condensed total-result">
 									<tr>
 										<td>Cart Sub Total</td>
-										<td>$59</td>
+										<td>RM59</td>
 									</tr>
 									<tr>
 										<td>Exo Tax</td>
-										<td>$2</td>
+										<td>RM2</td>
 									</tr>
 									<tr class="shipping-cost">
 										<td>Shipping Cost</td>
@@ -417,7 +420,7 @@
 									</tr>
 									<tr>
 										<td>Total</td>
-										<td><span>$61</span></td>
+										<td><span>RM61</span></td>
 									</tr>
 								</table>
 							</td>
@@ -425,15 +428,16 @@
 					</tbody>
 				</table>
 			</div>
-			<div class="payment-options">
-
-					<span>
+			<div class="payment-options" >
+				<h4>Payment Type</p>
+				<a class="btn btn-primary" href="">Dinarpal</a>
+					<!--span>
 						<label><input type="checkbox"> Dinarpal</label>
 					</span>
-					<!--span>
+					<span>
 						<label><input type="checkbox"> Check Payment</label>
-					</span>-->
-					<!--span>
+					</span>
+					<span>
 						<label><input type="checkbox"> Paypal</label>
 					</span>-->
 				</div>
