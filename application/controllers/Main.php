@@ -28,8 +28,24 @@
 	    	switch ($process) {
 	    		case '1':
 	    		    $this->load->model('m_user');
-	    			$data['arr'] = $this->m_user->get();
-	    			break;    		
+	    			$data['arr'][0] = $this->m_user->get();
+	    			$data['arr'][1] = array(
+	    			    'farid' => $data['arr'][0][0]->userName
+	    			);
+	    			$temp = array(
+	    			    "userID" => 2
+	    			);
+	    			$data['arr'][2] = $this->m_user->get($temp);
+	    			break;
+	    		case '2':
+	    		    $this->load->model('m_user');
+	    		    $temp = array(
+	    		        "userName" => "mizahuhu",
+	    		        "userEmail" => "miza@huhu.com"
+	    		    );
+	    		    $this->m_user->insert($temp);
+	    		    $data['arr'][0] = $this->m_user->get();
+	    	    
 	    	}
 	    	$this->_display($page,$data);
 	    }
