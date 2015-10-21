@@ -85,12 +85,12 @@
                  <div class="container">
                  <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header" >
-                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                         <!--button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
-						 </button>
+						 </button>-->
                       <a class="navbar-brand" style= "margin-top:-5px;" href="#"><img src="<?php echo base_url();?>assets/miza-cart/images/home/logo1.png" alt="" width="230px" height="75px" ></a>
 					</div>
 			
@@ -607,10 +607,10 @@
 	
 
 
-    <script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/main.js"></script>
+    <script src="<?php echo base_url();?>assets/miza-cart/js/jquery.js"></script>
+	<script src="<?php echo base_url();?>assets/miza-cart/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url();?>assets/miza-cart/js/jquery.scrollUp.min.js"></script>
+    <script src="<?php echo base_url();?>assets/miza-cart/js/jquery.prettyPhoto.js"></script>
+    <script src="<?php echo base_url();?>assets/miza-cart/js/main.js"></script>
 </body>
 </html>
