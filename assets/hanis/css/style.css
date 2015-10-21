@@ -4405,8 +4405,7 @@ ul.footer-nav li a {
 ul.footer-nav li a:hover {
 	color: #fff;
 }
-
-.back-to-top {
+/*.back-to-top {
     display: none;
     position: fixed;
     bottom: 18px;
@@ -4429,7 +4428,7 @@ ul.footer-nav li a:hover {
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
-}
+}*/
 
 
 

@@ -85,13 +85,12 @@
 
       <!-- Start Top Bar -->
       <div class="top-bar">
-        <div class="container">
+        
           <div class="row">
             <div class="col-md-6">
               <!-- Start Contact Info -->
-              <ul class="contact-details">
-                <li><a href="#"><i class="fa fa-map-marker"></i>Diatas bumi Allah</a>
-                </li>
+              <ul class="contact-details" style="height:48px; padding-left:50px; font-style:gisha,sans-serif; font-weight:600; font-size:14px;">
+               
                 <li><a href="#"><i class="fa fa-envelope-o"></i>pisangbyte@outlook.com</a>
                 </li>
                 <li><a href="#"><i class="fa fa-phone"></i> +12 345 678 000</a>
@@ -101,7 +100,7 @@
             </div>
             <div class="col-md-6">
               <!-- Start Social Links -->
-              <ul class="social-list">
+              <ul class="social-list" style="padding-right:50px;">
                 <li>
                   <a class="facebook itl-tooltip" data-placement="bottom" title="Facebook" href="#"><i class="fa fa-facebook"></i></a>
                 </li>
@@ -119,24 +118,24 @@
               <!-- End Social Links -->
             </div>
           </div>
-        </div>
+        
       </div>
       <!-- End Top Bar -->
 
       <!-- Start Header ( Logo & Naviagtion ) -->
       <div class="navbar navbar-default navbar-top">
-        <div class="container">
-          <div class="navbar-header">
+        
+         <div class="navbar-header" style="padding-left:100px;">
             <!-- Stat Toggle Nav Link For Mobiles -->
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
               <i class="fa fa-bars"></i>
             </button>
             <!-- End Toggle Nav Link For Mobiles -->
-            <a class="navbar-brand" href="index.html"><img style="margin-top:-7px;"alt="" src="<?php echo base_url();?>assets/hanis/images/anis4.png"></a>
+            <a class="navbar-brand" href="index.html" style="height:98px;"><img style="margin-top:-7px; height:70px; "alt="" width="230px; padding-left:78px;" src="<?php echo base_url();?>assets/anot/images/home/logo1.png"></a>
           </div>
           <div class="navbar-collapse collapse">
             <!-- Stat Search -->
-            <div class="search-side">
+            <div class="search-side" style="padding-right:90px;">
               <a class="show-search"><i class="fa fa-search"></i></a>
               <div class="search-form">
                 <form autocomplete="off" role="search" method="get" class="searchform" action="#">
@@ -146,7 +145,7 @@
             </div>
             <!-- End Search -->
             <!-- Start Navigation List -->
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right" style="padding-right:50px;">
               <li>
                 <a class="active" href="profile.html">Home</a>
                 <ul class="dropdown">
@@ -192,8 +191,12 @@
             </ul>
             <!-- End Navigation List -->
           </div>
-        </div>
+        
 
+
+
+
+        <!--a class="navbar-brand" href="index.html" style="height:98px; margin-right:50px;"><img style="margin-top:-7px; height:70px; "alt="" width="230px;" src="<?php echo base_url();?>assets/anot/images/home/logo1.png"></a>-->
         <!-- Mobile Menu Start -->
       <!--  <ul class="wpb-mobile-menu">
           <li>
@@ -331,7 +334,7 @@
     <div id="content">
        
         <!-- Divider -->
-        <div class="hr1 margin-top"></div>
+       
 
 
         <!-- Start Recent Projects Carousel -->
@@ -487,13 +490,20 @@
   
 
     <!-- Start Footer -->
-   <br> <footer></br>
-      <div class="container">
+   <br> <br> 
+
+
+
+
+  </div>
+  <!-- End Container -->
+<footer >
+      <div class="container" >
         <div class="row footer-widgets">
-		<!-- Start Contact Widget -->
+    <!-- Start Contact Widget -->
           <div class="col-md-4">
             <div class="footer-widget contact-widget" style="margin-left:40px">
-			
+      
               <h4><img src="<?php echo base_url();?>assets/hanis/images/anis2.png" class="img-responsive" alt="Footer Logo" /></h4>
               <p>"YOUR DINAR MARKETPLACE"</p>
               <ul>
@@ -505,11 +515,11 @@
           </div>
           <!-- .col-md-3 -->
           <!-- End Contact Widget -->
-		  
-		   <!-- Start Flickr Widget -->
+      
+       <!-- Start Flickr Widget -->
           <div class="col-md-4">
             <div class="footer-widget contact-widget">
-			<p>In Collaboration With</p>
+      <p>In Collaboration With</p>
               <h4><img src="<?php echo base_url();?>assets/hanis/images/dinarpal.png" class="img-responsive" alt="Footer Logo" /></h4>
               <p>"WE GIVE GOLD VALUE TO YOUR MONEY"</p>
             </div>
@@ -541,30 +551,22 @@
           <!-- .col-md-3 -->
           <!-- End Subscribe & Social Links Widget -->
 
-
-        
-
-         
-
-          
-
-
         </div>
         <!-- .row -->
 
         <!-- Start Copyright -->
         <div class="copyright-section">
-          <div class="row">
+          <!--div class="row">-->
             <div class="col-md-5">
-              <p>&copy; 2014 Margo - All Rights Reserved <a href="http://graygrids.com">GrayGrids</a> </p>
+              <p>Pisang Sdn Bhd. All Rights Reserved <a href="#"></a> </p>
             </div>
-            <div class="col-md-6">
+            <!--div class="col-md-6">
               <ul class="footer-nav">
                 <li><a href="#">Sitemap</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Contact</a></li>
               </ul>
-            </div>
+            </div>-->
           </div>
         </div>
         <!-- End Copyright -->
@@ -572,10 +574,6 @@
       </div>
     </footer>
     <!-- End Footer -->
-
-  </div>
-  <!-- End Container -->
-
   <!-- Go To Top Link -->
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
