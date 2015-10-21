@@ -27,7 +27,8 @@
 	        $data = null;
 	    	switch ($process) {
 	    		case '1':
-	    			# code...
+	    		    $this->load->model('m_user');
+	    			$data['arr'] = $this->m_user->get();
 	    			break;    		
 	    	}
 	    	$this->_display($page,$data);
