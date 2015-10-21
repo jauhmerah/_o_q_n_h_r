@@ -72,8 +72,8 @@
 			                        	<label class="sr-only" for="form-password">Password</label>
 			                        	<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
 			                        </div>
-									<label class="checkbox" >
-                                         <input  type="checkbox" style="margin-top:9px" value="remember-me"> Remember me
+									<label class="checkbox" style="padding-left:20px;" >
+                                         <input  type="checkbox" name="form-checkbox"style="margin-top:9px" value="remember-me"> Remember me
                                          <span class="pull-right">
                                                 <a data-toggle="modal" href="#myModal"> Forgot Password?</a>
 

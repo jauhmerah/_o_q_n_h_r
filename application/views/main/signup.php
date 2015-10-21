@@ -79,7 +79,7 @@
 	                        	<input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
 	                        </div>
 							<div class="form-group">
-	                        	<label class="sr-only" for="form-email">Username</label>
+	                        	<label class="sr-only" for="form-username">Username</label>
 	                        	<input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
 	                        </div>
 							<div class="form-group">
@@ -90,8 +90,8 @@
 	                        	<label class="sr-only" for="form-retype-password">Re-type Password</label>
 	                        	<input type="text" name="form-re-type-password" placeholder="Re-type-password..." class="form-re-type-password form-control" id="form-re-type-password">
 	                        </div>
-							<label class="checkbox">
-                        <input type="checkbox" style="margin-top:9px" value="agree this condition"> I agree to the Terms of Service and Privacy Policy
+							<label class="checkbox" style="padding-left:20px">
+                        <input type="checkbox" name="form-checkbox"style="margin-top:9px" value="agree this condition"> I agree to the Terms of Service and Privacy Policy
                             </label>
 	                    	<!--div class="form-group">
 	                    		<label class="sr-only" for="form-first-name">First name</label>
