@@ -319,9 +319,9 @@
 						<tr class="cart_menu">
 							<td class="image">Item</td>
 							<td class="description"></td>
-							<td class="price">Price</td>
-							<td class="quantity">Quantity</td>
-							<td class="total">Total</td>
+							<td class="price" style="padding-left:40px;">Price</td>
+							<td class="quantity" style="padding-left:30px;">Quantity</td>
+							<td class="total" style="padding-left:20px;">Total</td>
 							<td></td>
 						</tr>
 					</thead>
@@ -330,21 +330,21 @@
 							<td class="cart_product">
 								<a href=""><img src="<?php echo base_url();?>assets/miza-cart/images/cart/Men4.jpg" alt=""></a>
 							</td>
-							<td class="cart_description">
+							<td class="cart_description" style="padding-left:60px;">
 								<h4><a href="">Plain T-shirt</a></h4>
 								<!--p>Web ID: 1089772</p>-->
 							</td>
-							<td class="cart_price">
+							<td class="cart_price" style="padding-left:40px;">
 								<p>RM59</p>
 							</td>
-							<td class="cart_quantity">
+							<td class="cart_quantity" style="padding-left:30px;">
 								<div class="cart_quantity_button">
 									<a class="cart_quantity_up" href=""> + </a>
 									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
 									<a class="cart_quantity_down" href=""> - </a>
 								</div>
 							</td>
-							<td class="cart_total">
+							<td class="cart_total" style="padding-left:20px;">
 								<p class="cart_total_price">RM59</p>
 							</td>
 							<td class="cart_delete">
@@ -356,21 +356,21 @@
 							<td class="cart_product">
 								<a href=""><img src="<?php echo base_url()?>assets/miza-cart/images/cart/Men5.jpg" alt=""></a>
 							</td>
-							<td class="cart_description">
+							<td class="cart_description" style="padding-left:60px;">
 								<h4><a href="">Plain T-shirt</a></h4>
 								<!--p>Web ID: 1089772</p>-->
 							</td>
-							<td class="cart_price">
+							<td class="cart_price" style="padding-left:40px;">
 								<p>RM59</p>
 							</td>
-							<td class="cart_quantity">
+							<td class="cart_quantity" style="padding-left:30px;">
 								<div class="cart_quantity_button">
 									<a class="cart_quantity_up" href=""> + </a>
 									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
 									<a class="cart_quantity_down" href=""> - </a>
 								</div>
 							</td>
-							<td class="cart_total">
+							<td class="cart_total" style="padding-left:20px;">
 								<p class="cart_total_price">RM59</p>
 							</td>
 							<td class="cart_delete">
@@ -381,21 +381,21 @@
 							<td class="cart_product">
 								<a href=""><img src="<?php echo base_url()?>assets/miza-cart/images/cart/Men2.jpg" alt=""></a>
 							</td>
-							<td class="cart_description">
+							<td class="cart_description" style="padding-left:60px;">
 								<h4><a href="">Plain T-shirt</a></h4>
 								<!--p>Web ID: 1089772</p>-->
 							</td>
-							<td class="cart_price">
+							<td class="cart_price" style="padding-left:40px;">
 								<p>RM59</p>
 							</td>
-							<td class="cart_quantity">
+							<td class="cart_quantity" style="padding-left:30px;">
 								<div class="cart_quantity_button">
 									<a class="cart_quantity_up" href=""> + </a>
 									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
 									<a class="cart_quantity_down" href=""> - </a>
 								</div>
 							</td>
-							<td class="cart_total">
+							<td class="cart_total" style="padding-left:20px;">
 								<p class="cart_total_price">RM59</p>
 							</td>
 							<td class="cart_delete">
