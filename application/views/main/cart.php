@@ -448,6 +448,6 @@
 	<script src="<?php echo base_url();?>assets/miza-cart/js/bootstrap.min.js"></script>
 	<script src="<?php echo base_url();?>assets/miza-cart/js/jquery.scrollUp.min.js"></script>
     <script src="<?php echo base_url();?>assets/miza-cart/js/jquery.prettyPhoto.js"></script>
-    <script src="<?php echo base_url();?>assets/miza-cart/js/main.js"></script>
+    <!--script src="<?php echo base_url();?>assets/miza-cart/js/main.js"></script>-->
 </body>
 </html>

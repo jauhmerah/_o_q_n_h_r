@@ -429,8 +429,10 @@
 				</table>
 			</div>
 			<div class="payment-options" >
-				<h4>Payment Type</p>
-				<a class="btn btn-primary" href="">Dinarpal</a>
+				<h4>Payment Gateway</p>
+					<img style= "width:110px; height:50px;" src= "<?php echo base_url();?>assets/miza-cart/images/home/dinarpal.png">
+					<br><a class="btn btn-primary" href="">Submit & Go to Payment Form</a>
+					<a class="btn btn-primary" href="<?php echo site_url('main/page/checkout');?>">Cancel</a>
 					<!--span>
 						<label><input type="checkbox"> Dinarpal</label>
 					</span>
@@ -611,6 +613,6 @@
 	<script src="<?php echo base_url();?>assets/miza-cart/js/bootstrap.min.js"></script>
     <script src="<?php echo base_url();?>assets/miza-cart/js/jquery.scrollUp.min.js"></script>
     <script src="<?php echo base_url();?>assets/miza-cart/js/jquery.prettyPhoto.js"></script>
-    <script src="<?php echo base_url();?>assets/miza-cart/js/main.js"></script>
+    <!--script src="<?php echo base_url();?>assets/miza-cart/js/main.js"></script>-->
 </body>
 </html>

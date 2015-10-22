@@ -4,7 +4,7 @@ jQuery(document).ready(function() {
     /*
         Fullscreen background
     */
-    $.backstretch("../assets/miza-signin/assets/img/backgrounds/safari2.jpg");
+    $.backstretch("../assets/miza-signin/assets/img/backgrounds/pasarmalam.jpg");
     
     /*
         Form validation
