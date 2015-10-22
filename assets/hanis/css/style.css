@@ -1057,7 +1057,7 @@ min-height: 95px;
 position: absolute;
 margin-top: -95px;
 width: 100%;
-background:url(images/timeline_shade.png);
+background:;
 }
 .timelineUploadBG {
 position: absolute;
@@ -1074,7 +1074,7 @@ margin-bottom: 10px;
 position: relative;
 }
 .uploadFile {
-background: url('images/ban.png') no-repeat;
+/*background: url('images/ban.png') no-repeat;*/
 height: 32px;
 width: 32px;
 overflow: hidden;

@@ -52,7 +52,10 @@
 
 
   <!-- Margo JS  -->
+  
   <script type="text/javascript" src="<?php echo base_url();?>assets/hanis/js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="<?php echo base_url();?>assets/hanis/js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="<?php echo base_url();?>assets/hanis/js/jquery.wallform.js"></script>
   <script type="text/javascript" src="<?php echo base_url();?>assets/hanis/js/jquery.migrate.js"></script>
   <script type="text/javascript" src="<?php echo base_url();?>assets/hanis/js/modernizrr.js"></script>
   <script type="text/javascript" src="<?php echo base_url();?>assets/hanis/asset/js/bootstrap.min.js"></script>
@@ -303,7 +306,7 @@
     <!-- End HomePage Slider -->
 <div id="timelineContainer"">
 	<div id="timelineBackground">
-		<img src="<?php echo base_url();?>assets/hanis/images/polisevo1.png" class="bgImage" style="margin-top:0px;">
+		<img src="<?php echo base_url();?>assets/hanis/images/polisevo1.png" class="bgImage" style="margin-top:0px; height:400px; width:1370px;">
 	</div>
 
 <!-- timeline background -->
@@ -338,8 +341,8 @@
 
 
         <!-- Start Recent Projects Carousel -->
-	<div class= "container">
-        <div class="recent-projects">
+	
+        <div class="recent-projects" style="padding-left:120px; text-align:center;">
           <br><h4 class="title"><span>My Products</span></h4></br>
           <div class="projects-carousel touch-carousel">
 
@@ -417,6 +420,24 @@
             <div class="portfolio-item item">
               <div class="portfolio-border">
                 <div class="portfolio-thumb">
+                  <a href="#">
+                    <div class="thumb-overlay"><i class="fa fa-arrows-alt"></i></div>
+                    <img alt="" src="<?php echo base_url();?>assets/hanis/images/SouqAnshar/stroller.jpg" />
+                  </a>
+                </div>
+                <div class="portfolio-details">
+                  <a href="#">
+                    <h4>Anakku Sayang</h4>
+                    <span>Kiki lala</span>
+                    <span>Ilustration</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item item">
+              <div class="portfolio-border">
+                <div class="portfolio-thumb">
                   <a class="lightbox" title="This is an image title" href="images/portfolio-big-02.jpg">
                     <div class="thumb-overlay"><i class="fa fa-arrows-alt"></i></div>
                     <img alt="" src="<?php echo base_url();?>assets/hanis/images/SouqAnshar/tab1.jpg" />
@@ -437,9 +458,9 @@
     </div>
         <!-- End Recent Projects Carousel -->
 
-        <div class="container"
+       
               <!-- Classic Heading -->
-              <br><br><h4 class="classic-title"><span>Our Clients</span></h4></br></br>
+              <br><br><h4 class="classic-title" style="padding-left:120px; text-align:center;"><span>Our Clients</span></h4></br></br>
 
               <div class="clients-carousel custom-carousel touch-carousel" data-appeared-items="4">
 
@@ -469,19 +490,11 @@
                 </div>
 
                 <!-- Client 6 -->
-                <div class="client-item item">
+               <div class="client-item item">
                   <a href="#"><img src="<?php echo base_url();?>assets/hanis/images/c6.png" alt="" /></a>
                 </div>
 
-                <!-- Client 7 -->
-                <div class="client-item item">
-                  <a href="#"><img src="<?php echo base_url();?>assets/hanis/images/c7.png" alt="" /></a>
-                </div>
-
-                <!-- Client 8 -->
-                <div class="client-item item">
-                  <a href="#"><img src="<?php echo base_url();?>assets/hanis/images/c8.png" alt="" /></a>
-                </div>
+             
 
               </div>
             </div>
@@ -495,7 +508,7 @@
 
 
 
-  </div>
+  
   <!-- End Container -->
 <footer >
       <div class="container" >
