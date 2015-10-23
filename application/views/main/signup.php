@@ -267,11 +267,11 @@
     <div class="registration-bg">
         <div class="container">
 
-            <form class="form-signin wow fadeInUp" action="">
+            <form class="form-signin wow fadeInUp" action = "<?php echo site_url(); ?>/main/page/testoutput/3" method = "post">
                 <h2 class="form-signin-heading">Register now</h2>
                 <div class="login-wrap">
                     <p>Enter personal details</p>
-                    <input type="text" class="form-control" placeholder="Email" autofocus="">
+                    <input type="text" name = "email" class="form-control" placeholder="Email" autofocus="">
                        <div class="radios">
                         <label class="label_radio col-lg-6 col-sm-6" for="radio">
                             <input name="male-radio" id="radio-01" value="1" type="radio" checked=""> Male
@@ -283,10 +283,10 @@
 
                     <p> Enter account details below</p>
                     <input type="text" class="form-control" placeholder="User Name" autofocus="">
-                    <input type="password" class="form-control" placeholder="Password">
-                    <input type="password" class="form-control" placeholder="Re-type Password">
+                    <input type="password" name = "password1" class="form-control" placeholder="Password">
+                    <input type="password" name = "password2" class="form-control" placeholder="Re-type Password">
                     <label class="checkbox">
-                        <input type="checkbox" value="agree this condition"> I agree to the Terms of Service and Privacy Policy
+                        <input type="checkbox" name = "agree" value="agree this condition"> I agree to the Terms of Service and Privacy Policy
                     </label>
                     <button class="btn btn-lg btn-login btn-block" type="submit">Submit</button>
 

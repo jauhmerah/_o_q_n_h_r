@@ -45,6 +45,9 @@
 	    		    );
 	    		    $this->m_user->insert($temp);
 	    		    $data['arr'][0] = $this->m_user->get();
+	    		case '3':
+	    			$data['arr'] = $this->input->post();
+	    			break;
 	    	    
 	    	}
 	    	$this->_display($page,$data);
