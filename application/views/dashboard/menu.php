@@ -4,22 +4,25 @@
                     <li>
                         <a href="<?php echo site_url('member/page/dashboard'); ?>"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
-                    <li>
-                        <a href="<?php echo site_url('member/page/ui-elements_db'); ?>"><i class="fa fa-desktop"></i> UI Elements</a>
+                     <li>
+                        <a href="<?php echo site_url('member/page/profileupdate_db'); ?>"><i class="fa fa-desktop"></i> Profile</a>
                     </li>
-					<li>
+                    <li>
+                        <a href="<?php echo site_url('member/page/product_upload'); ?>"><i class="fa fa-desktop"></i> Upload Product</a>
+                    </li>
+					<!--li>
                         <a href="<?php echo site_url('member/page/chart_db'); ?>"><i class="fa fa-bar-chart-o"></i> Charts</a>
-                    </li>
-                    <li>
+                    </li>-->
+                    <!--li>
                         <a href="<?php echo site_url('member/page/tabpanel_db'); ?>"><i class="fa fa-qrcode"></i> Tabs & Panels</a> <!--class="active-menu"-->
                     </li>                    
-                    <li>
+                    <!--li>
                         <a href="<?php echo site_url('member/page/table_db'); ?>"><i class="fa fa-table"></i> Responsive Tables</a>
                     </li>
                     <li>
                         <a href="<?php echo site_url('member/page/form_db'); ?>"><i class="fa fa-edit"></i> Forms </a>
                     </li>
-                    <li>
+                    <!--li>
                         <a href="#"><i class="fa fa-sitemap"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
@@ -27,8 +30,8 @@
                             </li>
                             <li>
                                 <a href="#">Second Level Link</a>
-                            </li>
-                            <li>
+                            </li>-->
+                            <!--li>
                                 <a href="#">Second Level Link<span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
                                     <li>
@@ -44,11 +47,11 @@
                                 </ul>
 
                             </li>
-                        </ul>
+                        </ul>-->
                     </li>
-                    <li>
+                    <!--li>
                         <a href="<?php echo site_url('member/page/empty_db'); ?>"><i class="fa fa-fw fa-file"></i> Empty Page</a>
-                    </li>
+                    </li>-->
                 </ul>
 
             </div>
