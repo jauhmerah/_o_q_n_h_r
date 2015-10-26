@@ -22,3 +22,26 @@
                                             <label>Item Name</label>
                                             <input class="form-control" placeholder="Please enter your item name.">
                                         </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                 <div class="row">
+                               <div class="col-lg-6">
+                                            <label>Category</label>
+                                            <select class="form-control">
+                                                <option>Fashion</option>
+                                                <option>Electronic</option>
+                                                <option>Travel</option>
+                                                <option>Automotive</option>
+                                                <option>Business</option>
+                                                <option>Service</option>
+                                            </select>
+                               </div>
+                                 </div>
+
+
+                            </div>
+
+
+                          
