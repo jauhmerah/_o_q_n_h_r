@@ -58,8 +58,8 @@
 	    		case '4':
 	    			$post =  $this->input->post();
 	    			$temp = array(
-	    				"userName" => $post['userID'],
-	    				"userEmail" => $post['password']
+	    				"userName" => $post['username'],
+	    				"userPassword" => $post['password']
 	    			);
 	    			$this->load->model('m_user');
 	    			if (!$this->m_user->get($temp)) {

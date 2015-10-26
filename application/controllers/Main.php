@@ -53,7 +53,8 @@
 	    	    	$arr =  $this->input->post();
 	    	    	$temp = array(
 	    	    		"userName" => $arr['username'],
-	    	    		"userEmail" => $arr['email']
+	    	    		"userEmail" => $arr['email'],
+	    	    		"userPassword" => $arr['password']
 	    	    	);
 	    	    	$this->load->model('m_user');
 	    	    	$this->m_user->insert($temp);
