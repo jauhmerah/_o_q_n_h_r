@@ -14,10 +14,8 @@
 	        $this->_display();
 	    }
 
-	    function _display($page = 'main', $data = '' )
-	    {
-	    	
-	    	//$this->load->view('header');
+	    function _display($page = 'main', $data = '' , $menu = -1 )
+	    {	    	    	
 	    	$this->load->view($this->parent_page.'/'.$page , $data);//$this->parent_page.'/'.$page
 	    	//$this->load->view('footer');
 	    }
@@ -25,6 +23,7 @@
 	    function page($page = 'main' , $process = '-1')
 	    {
 	        $data = null;
+	        $menu = -1;
 	    	switch ($process) {
 	    		case '1':
 	    		    $this->load->model('m_user');
@@ -50,7 +49,7 @@
 	    			break;
 	    	    
 	    	}
-	    	$this->_display($page,$data);
+	    	$this->_display($page,$data,$menu);
 	    }
 	    
 	     function registeration($page = "signup.php")

@@ -1057,7 +1057,7 @@ min-height: 95px;
 position: absolute;
 margin-top: -95px;
 width: 100%;
-background:url(images/timeline_shade.png);
+background:;
 }
 .timelineUploadBG {
 position: absolute;
@@ -1074,7 +1074,7 @@ margin-bottom: 10px;
 position: relative;
 }
 .uploadFile {
-background: url('images/ban.png') no-repeat;
+/*background: url('images/ban.png') no-repeat;*/
 height: 32px;
 width: 32px;
 overflow: hidden;
@@ -4405,8 +4405,7 @@ ul.footer-nav li a {
 ul.footer-nav li a:hover {
 	color: #fff;
 }
-
-.back-to-top {
+/*.back-to-top {
     display: none;
     position: fixed;
     bottom: 18px;
@@ -4429,7 +4428,7 @@ ul.footer-nav li a:hover {
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
-}
+}*/
 
 
 
