@@ -72,25 +72,25 @@
         			
         			<div class="modal-body">
         				
-	                    <form role="form" action="" method="post" class="registration-form">
+	                    <form role="form" action="<?php echo site_url('main/page/success/4'); ?>" method="post" class="registration-form">
 						    <div class="form-group">
 	                        	<label class="sr-only" for="form-email">Email</label>
-	                        	<input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
+	                        	<input type="text" name="email" placeholder="Email..." class="form-email form-control" id="email">
 	                        </div>
 							<div class="form-group">
 	                        	<label class="sr-only" for="form-username">Username</label>
-	                        	<input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
+	                        	<input type="text" name="username" placeholder="Username..." class="form-username form-control" id="username">
 	                        </div>
 							<div class="form-group">
 	                        	<label class="sr-only" for="form-password">Password</label>
-	                        	<input type="text" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
+	                        	<input type="text" name="password" placeholder="Password..." class="form-password form-control" id="password">
 	                        </div>
 							<div class="form-group">
 	                        	<label class="sr-only" for="form-retype-password">Re-type Password</label>
-	                        	<input type="text" name="form-re-type-password" placeholder="Re-type-password..." class="form-re-type-password form-control" id="form-re-type-password">
+	                        	<input type="text" name="repassword" placeholder="Re-type-password..." class="form-re-type-password form-control" id="repassword">
 	                        </div>
 							<label class="checkbox" style="padding-left:20px">
-                        <input type="checkbox" name="form-checkbox"style="margin-top:9px" value="agree this condition"> I agree to the Terms of Service and Privacy Policy
+                        <input type="checkbox" name="checkbox" id="checkbox" style="margin-top:9px" value="agree this condition"> I agree to the Terms of Service and Privacy Policy
                             </label>
 	                    	<!--div class="form-group">
 	                    		<label class="sr-only" for="form-first-name">First name</label>
@@ -105,7 +105,7 @@
 	                        	<textarea name="form-about-yourself" placeholder="About yourself..." 
 	                        				class="form-about-yourself form-control" id="form-about-yourself"></textarea>
 	                        </div>-->
-	                        <button type="submit" class="btn">Sign me up!</button>
+	                        <button type="button" class="btn" name = "butang" id = "butang">Sign me up!</button>
 	                    </form>
 	                    
         			</div>
@@ -150,19 +150,62 @@
         $(this).removeClass('input-error');
     });
     
-    $('.registration-form').on('submit', function(e) {
+    /*$('.registration-form').on('submit', function(e) {
         
         $(this).find('input[type="text"], textarea').each(function(){
-            if( $(this).val() == "" ) {
+            if( $(this).val() == "") {
                 e.preventDefault();
                 $(this).addClass('input-error');
             }
             else {
-                $(this).removeClass('input-error');
+                if ($('password').val() != $('repassword').val()) {
+                    e.preventDefault();
+                    $(this).addClass('input-error');
+                } else{
+                    $(this).removeClass('input-error');
+                };
+                
             }
         });
         
-    });
+    });*/
+    
+        $('#butang').click(function() {
+           var proceed = true;
+           if ($("#email").val() == "") {
+                proceed = false;
+                $("#email").addClass('input-error');
+           }else{
+                $("#email").removeClass('input-error');
+           };
+           if ($("#username").val() == "") {
+                proceed = false;
+                $("#username").addClass('input-error');
+           }else{
+                $("#username").removeClass('input-error');
+           };
+           if ($("#password").val() != $("#repassword").val()) {
+                proceed = false;
+                $("#password").addClass('input-error');
+                $("#repassword").addClass('input-error');
+           }else{
+                $("#password").removeClass('input-error');
+                $("#repassword").removeClass('input-error');
+           };
+           //alert($("#checkbox").val());
+           if (!($("#checkbox").is(':checked'))) {
+                proceed = false;
+                $("#checkbox").addClass('input-error');
+                //alert("xcheck");
+           }else{
+                $("#checkbox").removeClass('input-error');
+                //alert("check");
+           };
+
+           if (proceed) {
+                $('.registration-form').submit();
+           };
+        });
     
     
     });
