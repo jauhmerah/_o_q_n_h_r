@@ -32,16 +32,42 @@
 	    	}
 	    	$this->_display($page,$data);
 	    }
-	    
-	    function login($page = "login.php")
+
+	    public function pecahhati($first = null , $second = null)
 	    {
-	        $this->load->view($this->parent_page.'/'.$page);
+	    	if ($this->input->post()) {
+	    		$word = $this->input->post();
+	    		$first = $word['text1'];
+	    		$second = $word['text2'];
+	    	}
+	    	$arr1 = $this->pecahkata($first);
+	    	$arr2 = $this->pecahkata($second);
+	    	print_r($arr1);
+	    	print_r($arr2);
+	    	$sama = $this->carisama($arr1 , $arr2);
+	    	echo $sama;
+	    	
+	    	
 	    }
 
-	     function registeration($page = "signup.php")
+	    public function pecahkata($word = null)
 	    {
-	        $this->load->view($this->parent_page.'/'.$page);
-	    }
+	    	$arr = str_split($word);
+	    	$size = sizeof($arr);
+	    	$text = "";
+	    	for ($i=0; $i < ($size - 1); $i++) { 
+	    		$text = $text . $arr[$i] . $arr[$i+1];
+	    		if ($i < ($size - 2)) {
+	    			$text = $text . "|";
+	    		}
+	    	}
+	    	$arr = explode("|", $text);
+	    	return $arr;
+	    } 
+
+	    public function carisama($arr1 = null , $arr2 = null){
+
+	    }   
 	}
 	        
 ?>
