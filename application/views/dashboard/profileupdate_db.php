@@ -19,7 +19,7 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     
-                                            <div class="form-group">
+                                        <div class="form-group">
                                             <label>Username</label>
                                             <input class="form-control" placeholder="Please enter your username.">
                                         </div>
