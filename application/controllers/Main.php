@@ -46,16 +46,17 @@
 	    	echo "<br>";
 	    	print_r($arr2);
 	    	echo "<br>";
-	    	$sama = $this->carisama($arr1 , $arr2);
+	    	$kick1 = $this->kicksama($arr1);
+	    	$kick2 = $this->kicksama($arr2);
+	    	//print_r($kick2);
+	    	$sama = $this->carisama($kick1 , $kick2);
 	    	echo $sama;
-
-	    	$kick = $this->kicksama($arr1);
-	    	print_r($kick);
-	    	
-	    	
-
-	    	
-	    	
+	    	echo "<br>";
+	    	$formula = $this->formula($arr1, $arr2);
+	    	echo $formula;
+	    	echo "<br>";
+	    	$percentage = $this->percentage($sama,$formula);
+	    	echo $percentage;
 	    }
 
 	    public function pecahkata($word = null)
@@ -92,45 +93,52 @@
 
 	    } 
 
-	   public function kicksama($arr1 = null)
+	   public function kicksama($arr = null)
 	    {
 	    	$num = 0;
-	    	$size = sizeof($arr1);
+	    	$size = sizeof($arr);
 	    	
-	    	for($i=0; $i< $size; $i++)
-	    	{
-	    		for($j=$i; $j < $size; $j++)
-	    		{
-	    			if($arr1[$i] == $arr1[$j])
-	    			{
-	    				$temp[$num] = [$i];
-	    				$num++;
-	    			}
+	    	for ($i=($size-1); $i >= 0; $i--) {
+	    		$m = 1;
+	    		if ($i > 0) {
+	    			for ($j=($i-1); $j >= 0 ; $j--) {
+	    				echo $arr[$i];
+	    				echo "<=>"; 
+	    				echo $arr[$j];
+	    				echo "<br>";
+		    			if ($arr[$i] == $arr[$j]) {
+		    				echo "True<br>";
+		    				$m = 0 ;
+		    			}
+		    		}	
 	    		}
-	    	}
-
-	    	$num=0;
-	    	$num2=0;
-	    	for ($i=0; $i< $size; $i++)
-	    	{ 
-	    		if($arr2[$i]!= $temp[$num])
-	    		{
-	    			$arr2[$num2] = $arr1[$i];
-	    			$num2++;
-	    		}
-	    		else
-	    		{
+	    		if ($m == 1) {
+	    			$temp[$num] = $arr[$i];
 	    			$num++;
-	    			if (sizeof($temp) == $num) 
-	    			{
-	    				break;
-	    			}
-	    			return $arr2;
-
 	    		}
-	    		   		    				
 	    	}
+	    	return $temp;
+	    }
 
+	    public function formula($arr1 = null, $arr2 = null)
+	    {
+	    	$temp= 0;
+	    	$size1= sizeof($arr1);
+	    	$size2= sizeof($arr2);
+	    	if($size1 != 0 && $size2 != 0)
+	    	{
+	    		$temp= sqrt($size1) * sqrt($size2);
+	    	}
+	    	
+	    	return $temp;
+	    }
+
+	    public function percentage($sama, $formula)
+	    {
+	    	$temp2=0;
+
+	    	$temp2=$sama/$formula;
+	    	return $temp2;
 	    }
 	}
 	        
