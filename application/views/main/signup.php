@@ -75,7 +75,7 @@
 	                    <form role="form" action="<?php echo site_url('main/page/success/4'); ?>" method="post" class="registration-form">
 						    <div class="form-group">
 	                        	<label class="sr-only" for="form-email">Email</label>
-	                        	<input type="text" name="useremail" placeholder="Email..." class="form-email form-control" id="email">
+	                        	<input type="text" name="email" placeholder="Email..." class="form-email form-control" id="email">
 	                        </div>
 							<div class="form-group">
 	                        	<label class="sr-only" for="form-username">Username</label>
