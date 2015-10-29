@@ -17,7 +17,7 @@
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->       
-    <link rel="shortcut icon" href="<?php echo base_url();?>assets/miza-cart/ico/favicon.ico">
+    <link rel="shortcut icon" href="<?php echo base_url();?>assets/miza-cart/images/ico/fv1.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo base_url();?>assets/miza-cart/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo base_url();?>assets/miza-cart/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo base_url();?>assets/miza-cart/apple-touch-icon-72-precomposed.png">
@@ -431,7 +431,7 @@
 			<div class="payment-options" >
 				<h4>Payment Gateway</p>
 					<img style= "width:110px; height:50px;" src= "<?php echo base_url();?>assets/miza-cart/images/home/dinarpal.png">
-					<br><a class="btn btn-primary" href="">Submit & Go to Payment Form</a>
+					<br><a class="btn btn-primary" href="">Submit & Go</a>
 					<a class="btn btn-primary" href="<?php echo site_url('main/page/checkout');?>">Cancel</a>
 					<!--span>
 						<label><input type="checkbox"> Dinarpal</label>
