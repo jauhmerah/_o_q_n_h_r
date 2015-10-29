@@ -47,9 +47,10 @@
         </div>
         <!-- /.container -->
         <div class="item">
-    <img style="width:1349px;"src="<?php echo base_url();?>assets/anot/verifypage/css/sky.jpg" alt="">
-    <div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Congratulations for your registration!
-    </nav>
+    <img style="width:1349px; height:800px;"src="<?php echo base_url();?>assets/anot/verifypage/css/sky.jpg" alt="">
+    <div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Congratulations on your registration!
+     <p><h4 style="font-style:gisha;text-align:center;">Before you can access the website, we need to verify your account. A verification email should be sent to your inbox.</h4></p> </div>
+    </div>
    
 
     <!-- Put your page content here! -->

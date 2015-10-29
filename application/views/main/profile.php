@@ -310,18 +310,18 @@
 	</div>
 
 <!-- timeline background -->
-	<div id="timelineShade">
+	<!--div id="timelineShade">
 	<form id="bgimageform" method="post" enctype="multipart/form-data" action="image_upload_ajax_bg.php">
     <div class="uploadFile timelineUploadBG">
       <input type="file" name="photoimg" id="bgphotoimg" class="custom-file-input">
      </div>
 	</form>
-	</div>
+	</div>-->
 
 <!-- timeline profile picture -->
-    <div id="timelineContainer">
+  <div id="timelineContainer">
 	<div id="timelineProfilePic">
-	<img src="<?php echo base_url();?>assets/hanis/images/arash.jpg" class="bgImage" style="margin-top:0px;">
+	<img class="img-circle" src="<?php echo base_url();?>assets/hanis/images/arash.jpg" class="bgImage" style="margin-top:0px;">
 	<form id="bgimageform" method="post" enctype="multipart/form-data" action="image_upload_ajax_bg.php">
 	<div class="uploadFile timelineUploadBG"></div>
 	</form>

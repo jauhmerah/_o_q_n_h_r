@@ -18,8 +18,14 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    
-                                        <div class="form-group">
+                                     <div class="form-group">
+                                            <label>Upload Your Profile Picture</label>
+                                            <!--<input type="file">-->
+                                            <?php echo form_open_multipart('main/upload');?>
+                                            <input type="file" name="userfile"/><br><br>
+                                            <input type="submit" name="submit" value="upload image">
+                                        </div>
+                                       <div>
                                             <label>Username</label>
                                             <input class="form-control" placeholder="Please enter your username.">
                                         </div>
@@ -41,10 +47,8 @@
                                                 </label>
                                             </div>
                                         </div>
-                                         <div class="form-group">
-                                            <label>Upload Your Profile Picture</label>
-                                            <input type="file">
-                                        </div>
+                                        
+                                       
                                     </div>
                                 </div>
                             </div>

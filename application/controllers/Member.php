@@ -26,11 +26,15 @@
 	    {
 	        $data = null;	        
 	    	switch ($process) {
-	    		case '1':	    		    
+	    		case '1':
+	    		$this->load->model('m_user');
+	    			    		    
 	    			break;	    	    
 	    	}
 	    	$this->_display($page,$data);
 	    }
+
+	   
 	}
 	        
 ?>

@@ -1,5 +1,11 @@
 <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
+                <br>
+                <div id="timelineProfilePic">
+                 <img class="img-circle" src="<?php echo base_url();?>assets/hanis/images/arash.jpg" class="bgImage" style="margin-top:0px; margin-left:45px;width:150px;">
+   
+    </form>
+    <br>
                 <ul class="nav" id="main-menu">
                     <li>
                         <a href="<?php echo site_url('member/page/dashboard'); ?>"><i class="fa fa-dashboard"></i> Dashboard</a>

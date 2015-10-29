@@ -14,7 +14,7 @@
 	        $this->_display();
 	    }
 
-	    function _display($page = 'main', $data = '' , $menu = -1 )
+	    function _display($page = 'main', $data = '' )
 	    {	    	    	
 	    	$this->load->view($this->parent_page.'/'.$page , $data);//$this->parent_page.'/'.$page
 	    	//$this->load->view('footer');
@@ -52,7 +52,28 @@
 	     function registeration($page = "signup.php")
 	    {
 	        $this->load->view($this->parent_page.'/'.$page);
-	    }
+	   
+	   }
+
+	    public function upload(){
+	   	$config['upload_path'] = "./images/";
+	   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
+	   	$this->load->library('upload',$config);
+
+	   	if(!$this->upload->do_upload()){
+	   		
+	   		$error = array ('error'=>$this->upload->display_errors());
+	   		//$this->load->view('upload_form',$error);
+	   		$this->_display('upload_form', $error);
+
+	   	}else{
+	   		$file_data =$this->upload->data();
+	   		$data['img'] = base_url().'/images/'.$file_data['file_name'];
+	   		//$this->load->view('success',$data);
+	   		$this->_display('success', $data);
+	   	}
+	   }
+	   
 	}
 	        
 ?>
