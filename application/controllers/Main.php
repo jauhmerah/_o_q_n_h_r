@@ -10,9 +10,30 @@
 	        $this->load->helper('url');
 	    }
 	
-	    function index() {
+	   function index() {
 	        $this->_display();
-	    }
+	        $verificationCode = random_string('alnum', 20);  
+                  
+                $email_msg = "Dear User,  
+                <p
+                Please click on below URL or paste into your browser to verify your Email Address.<p></p>";  
+                $email_msg .= "http://yourdomain/user/verify/" . $verificationCode;  
+                $email_msg .= "<p>Thanks,  
+                Support Team</p>";  
+                $subject = "Email Verification";  
+                $this->load->library('email');  
+                $config['charset'] = 'iso-8859-1';  
+                $config['wordwrap'] = TRUE;  
+                $config['mailtype'] = 'html';  
+                $this->email->initialize($config);  
+                $this->email->from('admin@souqanshar.com', 'Support Team');  
+                $this->email->to($email);  
+                $this->email->subject($subject);  
+                $this->email->message($email_msg);  
+                $this->email->send();  
+                  
+                // Insert user record     
+	    } 
 
 	    function _display($page = 'main', $data = '')
 	    {	    	    	
@@ -52,11 +73,15 @@
 	    	    //sign up process
 	    	    	$arr =  $this->input->post();
 	    	    	$temp = array(
-	    	    		"userName" => $arr['username'],
-	    	    		"userEmail" => $arr['email']
+	    	    		"us_name" => $arr['username'],
+	    	    		"us_email" => $arr['email'],
+	    	    		"us_password" => $arr['password']
+	    	    		
 	    	    	);
 	    	    	$this->load->model('m_user');
 	    	    	$this->m_user->insert($temp);
+
+
 	    	    	break;
 	    	    case '5':
 	    	    	$data['error'] = true;
@@ -68,7 +93,13 @@
 	     function registeration($page = "signup.php")
 	    {
 	        $this->load->view($this->parent_page.'/'.$page);
+
 	    }
+
+	    
+            
+
+	   
 	}
 	        
 ?>

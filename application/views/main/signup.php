@@ -83,11 +83,11 @@
 	                        </div>
 							<div class="form-group">
 	                        	<label class="sr-only" for="form-password">Password</label>
-	                        	<input type="text" name="password" placeholder="Password..." class="form-password form-control" id="password">
+	                        	<input type="password" name="password" placeholder="Password..." class="form-password form-control" id="password">
 	                        </div>
 							<div class="form-group">
 	                        	<label class="sr-only" for="form-retype-password">Re-type Password</label>
-	                        	<input type="text" name="repassword" placeholder="Re-type-password..." class="form-re-type-password form-control" id="repassword">
+	                        	<input type="password" name="repassword" placeholder="Re-type-password..." class="form-re-type-password form-control" id="repassword">
 	                        </div>
 							<label class="checkbox" style="padding-left:20px">
                         <input type="checkbox" name="checkbox" id="checkbox" style="margin-top:9px" value="agree this condition"> I agree to the Terms of Service and Privacy Policy

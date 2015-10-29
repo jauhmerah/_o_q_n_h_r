@@ -278,8 +278,8 @@
             <form class="form-signin wow fadeInUp" action="<?php echo site_url('member/page/dashboard/4');?>">
             <h2 class="form-signin-heading">login to souq anshar</h2>
             <div class="login-wrap">
-                <input type="text" class="form-control" placeholder="User ID" autofocus name = "userID">
-                <input type="text" class="form-control" placeholder="email" name = "password">
+                <input type="text" class="form-control" placeholder="Username" autofocus name = "username">
+                <input type="text" class="form-control" placeholder="Your Password" name = "password">
                 <label class="checkbox">
                     <!--<input type="checkbox" value="remember-me"> Remember me-->
                     <span class="pull-right">

@@ -47,7 +47,7 @@
 	    			//login process
 	    			$post =  $this->input->post();
 	    			$temp = array(
-	    			    "userID" => 2
+	    			    "us_id" => 2
 	    			);
 	    			break;
     			case '3':
@@ -58,8 +58,8 @@
 	    		case '4':
 	    			$post =  $this->input->post();
 	    			$temp = array(
-	    				"userName" => $post['userID'],
-	    				"userEmail" => $post['password']
+	    				"us_name" => $post['username'],
+	    				"us_password" => $post['password']
 	    			);
 	    			$this->load->model('m_user');
 	    			if (!$this->m_user->get($temp)) {
@@ -69,6 +69,8 @@
 	    	}
 	    	$this->_display($page,$data);
 	    }
+
+	    
 	}
 	        
 ?>
