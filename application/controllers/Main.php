@@ -16,7 +16,9 @@
 	    }
 
 	    function _display($page = 'main', $data = '' )
-	    {	    	    	
+	    {
+	    	
+	    	//$this->load->view('header');
 	    	$this->load->view($this->parent_page.'/'.$page , $data);//$this->parent_page.'/'.$page
 	    	//$this->load->view('footer');
 	    }
@@ -24,32 +26,13 @@
 	    function page($page = 'main' , $process = '-1')
 	    {
 	        $data = null;
-	        $menu = -1;
 	    	switch ($process) {
 	    		case '1':
-	    		    $this->load->model('m_user');
-	    			$data['arr'][0] = $this->m_user->get();
-	    			$data['arr'][1] = array(
-	    			    'farid' => $data['arr'][0][0]->userName
-	    			);
-	    			$temp = array(
-	    			    "userID" => 2
-	    			);
-	    			$data['arr'][2] = $this->m_user->get($temp);
-	    			break;
-	    		case '2':
-	    		    $this->load->model('m_user');
-	    		    $temp = array(
-	    		        "userName" => "mizahuhu",
-	    		        "userEmail" => "miza@huhu.com"
-	    		    );
-	    		    $this->m_user->insert($temp);
-	    		    $data['arr'][0] = $this->m_user->get();
-	    	    
+	    			# code...
+	    			break;    		
 	    	}
-	    	$this->_display($page,$data,$menu);
+	    	$this->_display($page,$data);
 	    }
-<<<<<<< HEAD
 
 	    public function pecahhati($first = null , $second = null)
 	    {
@@ -171,44 +154,12 @@
 
 	   public function search($terms)
 	   {
+	   		$this->load->model("m_user");
 
-    		$this->db->select('sub_cat_id, sub_cat');
-    		$this->db->from('cat_shoes');
-    		/*$this->db->join('categories', 'cat_id = prod_category', 'inner');
-    		$this->db->like('name', $terms);
-    		$this->db->or_like('description', $terms);*/
+    		$temp = $this->m_user->get()
 
-    		$query = $this->db->get();
-    		return $query->result_array();
+    		
 		}
-=======
-	    
-	     function registeration($page = "signup.php")
-	    {
-	        $this->load->view($this->parent_page.'/'.$page);
-	   
-	   }
-
-	    public function upload(){
-	   	$config['upload_path'] = "./images/";
-	   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
-	   	$this->load->library('upload',$config);
-
-	   	if(!$this->upload->do_upload()){
-	   		
-	   		$error = array ('error'=>$this->upload->display_errors());
-	   		//$this->load->view('upload_form',$error);
-	   		$this->_display('upload_form', $error);
-
-	   	}else{
-	   		$file_data =$this->upload->data();
-	   		$data['img'] = base_url().'/images/'.$file_data['file_name'];
-	   		//$this->load->view('success',$data);
-	   		$this->_display('success', $data);
-	   	}
-	   }
-	   
->>>>>>> origin/anot
 	}
 	        
 ?>
