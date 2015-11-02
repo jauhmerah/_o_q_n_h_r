@@ -275,13 +275,13 @@
     <div class="login-bg">
         <div class="container">
             <div class="form-wrapper">
-            <form class="form-signin wow fadeInUp" action="login.php">
+            <form class="form-signin wow fadeInUp" action="<?php echo site_url('member/page/dashboard/4');?>">
             <h2 class="form-signin-heading">login to souq anshar</h2>
             <div class="login-wrap">
-                <input type="text" class="form-control" placeholder="User ID" autofocus>
-                <input type="password" class="form-control" placeholder="Password">
+                <input type="text" class="form-control" placeholder="Username" autofocus name = "username">
+                <input type="text" class="form-control" placeholder="Your Password" name = "password">
                 <label class="checkbox">
-                    <input type="checkbox" value="remember-me"> Remember me
+                    <!--<input type="checkbox" value="remember-me"> Remember me-->
                     <span class="pull-right">
                         <a data-toggle="modal" href="#myModal"> Forgot Password?</a>
 
@@ -301,7 +301,7 @@
                 </div>
                 <div class="registration">
                     Don't have an account yet?
-                    <a class="" href="registration.php">
+                    <a class="" href="<?php echo site_url('main/page/signup'); ?>">
                         Create an account
                     </a>
                 </div>
@@ -441,6 +441,11 @@
 
     <script src="js/wow.min.js"></script>
     <script>
+    <?php
+      if(isset($error)){
+        echo "alert('wrong password');";
+      }
+    ?>
         wow = new WOW(
           {
             boxClass:     'wow',      // default

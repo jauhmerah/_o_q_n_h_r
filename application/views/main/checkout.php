@@ -17,7 +17,7 @@
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->       
-    <link rel="shortcut icon" href="<?php echo base_url();?>assets/miza-cart/ico/favicon.ico">
+    <link rel="shortcut icon" href="<?php echo base_url();?>assets/miza-cart/images/ico/fv1.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo base_url();?>assets/miza-cart/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo base_url();?>assets/miza-cart/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo base_url();?>assets/miza-cart/apple-touch-icon-72-precomposed.png">
@@ -85,12 +85,12 @@
                  <div class="container">
                  <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header" >
-                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                         <!--button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
-						 </button>
+						 </button>-->
                       <a class="navbar-brand" style= "margin-top:-5px;" href="#"><img src="<?php echo base_url();?>assets/miza-cart/images/home/logo1.png" alt="" width="230px" height="75px" ></a>
 					</div>
 			
@@ -230,25 +230,28 @@
 								<form>
 									<select>
 										<option>-- Country --</option>
-										<option>United States</option>
-										<option>Bangladesh</option>
+										<!--option>United States</option>-->
+										<!--option>Bangladesh</option>
 										<option>UK</option>
 										<option>India</option>
 										<option>Pakistan</option>
 										<option>Ucrane</option>
-										<option>Canada</option>
-										<option>Dubai</option>
+										<option>Canada</option>-->
+										<option>Malaysia</option>
 									</select>
 									<select>
 										<option>-- State / Province / Region --</option>
-										<option>United States</option>
-										<option>Bangladesh</option>
-										<option>UK</option>
-										<option>India</option>
-										<option>Pakistan</option>
-										<option>Ucrane</option>
-										<option>Canada</option>
-										<option>Dubai</option>
+										<option>Johor</option>
+										<option>Malacca</option>
+										<option>Kelantan</option>
+										<option>Negeri Sembilan</option>
+										<option>Perak</option>
+										<option>Perlis</option>
+										<option>Kedah</option>
+										<option>Terengganu</option>
+										<option>Pahang</option>
+										<option>Penang</option>
+										<option>Selangor</option>
 									</select>
 									<!--input type="password" placeholder="Confirm password">
 									<input type="text" placeholder="Phone *">-->
@@ -316,33 +319,33 @@
 						<tr class="cart_menu">
 							<td class="image">Item</td>
 							<td class="description"></td>
-							<td class="price">Price</td>
-							<td class="quantity">Quantity</td>
-							<td class="total">Total</td>
+							<td class="price" style="padding-left:40px;">Price</td>
+							<td class="quantity" style="padding-left:30px;">Quantity</td>
+							<td class="total" style="padding-left:20px;">Total</td>
 							<td></td>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td class="cart_product">
-								<a href=""><img src="images/cart/one.png" alt=""></a>
+								<a href=""><img src="<?php echo base_url();?>assets/miza-cart/images/cart/Men4.jpg" alt=""></a>
 							</td>
-							<td class="cart_description">
-								<h4><a href="">Colorblock Scuba</a></h4>
-								<p>Web ID: 1089772</p>
+							<td class="cart_description" style="padding-left:60px;">
+								<h4><a href="">Plain T-shirt</a></h4>
+								<!--p>Web ID: 1089772</p>-->
 							</td>
-							<td class="cart_price">
-								<p>$59</p>
+							<td class="cart_price" style="padding-left:40px;">
+								<p>RM59</p>
 							</td>
-							<td class="cart_quantity">
+							<td class="cart_quantity" style="padding-left:30px;">
 								<div class="cart_quantity_button">
 									<a class="cart_quantity_up" href=""> + </a>
 									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
 									<a class="cart_quantity_down" href=""> - </a>
 								</div>
 							</td>
-							<td class="cart_total">
-								<p class="cart_total_price">$59</p>
+							<td class="cart_total" style="padding-left:20px;">
+								<p class="cart_total_price">RM59</p>
 							</td>
 							<td class="cart_delete">
 								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
@@ -351,24 +354,24 @@
 
 						<tr>
 							<td class="cart_product">
-								<a href=""><img src="images/cart/two.png" alt=""></a>
+								<a href=""><img src="<?php echo base_url()?>assets/miza-cart/images/cart/Men5.jpg" alt=""></a>
 							</td>
-							<td class="cart_description">
-								<h4><a href="">Colorblock Scuba</a></h4>
-								<p>Web ID: 1089772</p>
+							<td class="cart_description" style="padding-left:60px;">
+								<h4><a href="">Plain T-shirt</a></h4>
+								<!--p>Web ID: 1089772</p>-->
 							</td>
-							<td class="cart_price">
-								<p>$59</p>
+							<td class="cart_price" style="padding-left:40px;">
+								<p>RM59</p>
 							</td>
-							<td class="cart_quantity">
+							<td class="cart_quantity" style="padding-left:30px;">
 								<div class="cart_quantity_button">
 									<a class="cart_quantity_up" href=""> + </a>
 									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
 									<a class="cart_quantity_down" href=""> - </a>
 								</div>
 							</td>
-							<td class="cart_total">
-								<p class="cart_total_price">$59</p>
+							<td class="cart_total" style="padding-left:20px;">
+								<p class="cart_total_price">RM59</p>
 							</td>
 							<td class="cart_delete">
 								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
@@ -376,24 +379,24 @@
 						</tr>
 						<tr>
 							<td class="cart_product">
-								<a href=""><img src="images/cart/three.png" alt=""></a>
+								<a href=""><img src="<?php echo base_url()?>assets/miza-cart/images/cart/Men2.jpg" alt=""></a>
 							</td>
-							<td class="cart_description">
-								<h4><a href="">Colorblock Scuba</a></h4>
-								<p>Web ID: 1089772</p>
+							<td class="cart_description" style="padding-left:60px;">
+								<h4><a href="">Plain T-shirt</a></h4>
+								<!--p>Web ID: 1089772</p>-->
 							</td>
-							<td class="cart_price">
-								<p>$59</p>
+							<td class="cart_price" style="padding-left:40px;">
+								<p>RM59</p>
 							</td>
-							<td class="cart_quantity">
+							<td class="cart_quantity" style="padding-left:30px;">
 								<div class="cart_quantity_button">
 									<a class="cart_quantity_up" href=""> + </a>
 									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
 									<a class="cart_quantity_down" href=""> - </a>
 								</div>
 							</td>
-							<td class="cart_total">
-								<p class="cart_total_price">$59</p>
+							<td class="cart_total" style="padding-left:20px;">
+								<p class="cart_total_price">RM59</p>
 							</td>
 							<td class="cart_delete">
 								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
@@ -405,11 +408,11 @@
 								<table class="table table-condensed total-result">
 									<tr>
 										<td>Cart Sub Total</td>
-										<td>$59</td>
+										<td>RM59</td>
 									</tr>
 									<tr>
 										<td>Exo Tax</td>
-										<td>$2</td>
+										<td>RM2</td>
 									</tr>
 									<tr class="shipping-cost">
 										<td>Shipping Cost</td>
@@ -417,7 +420,7 @@
 									</tr>
 									<tr>
 										<td>Total</td>
-										<td><span>$61</span></td>
+										<td><span>RM61</span></td>
 									</tr>
 								</table>
 							</td>
@@ -425,15 +428,18 @@
 					</tbody>
 				</table>
 			</div>
-			<div class="payment-options">
-
-					<span>
+			<div class="payment-options" >
+				<h4>Payment Gateway</p>
+					<img style= "width:110px; height:50px;" src= "<?php echo base_url();?>assets/miza-cart/images/home/dinarpal.png">
+					<br><a class="btn btn-primary" href="">Submit & Go</a>
+					<a class="btn btn-primary" href="<?php echo site_url('main/page/checkout');?>">Cancel</a>
+					<!--span>
 						<label><input type="checkbox"> Dinarpal</label>
 					</span>
-					<!--span>
+					<span>
 						<label><input type="checkbox"> Check Payment</label>
-					</span>-->
-					<!--span>
+					</span>
+					<span>
 						<label><input type="checkbox"> Paypal</label>
 					</span>-->
 				</div>
@@ -603,10 +609,10 @@
 	
 
 
-    <script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/main.js"></script>
+    <script src="<?php echo base_url();?>assets/miza-cart/js/jquery.js"></script>
+	<script src="<?php echo base_url();?>assets/miza-cart/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url();?>assets/miza-cart/js/jquery.scrollUp.min.js"></script>
+    <script src="<?php echo base_url();?>assets/miza-cart/js/jquery.prettyPhoto.js"></script>
+    <!--script src="<?php echo base_url();?>assets/miza-cart/js/main.js"></script>-->
 </body>
 </html>

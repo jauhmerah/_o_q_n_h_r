@@ -11,7 +11,7 @@ class M_user extends CI_Model {
     /**
      * @name string PRI_INDEX Holds the name of the tables' primary index used in this model
      */
-    const PRI_INDEX = 'userID';
+    const PRI_INDEX = 'us_id';
 
     /**
      * Retrieves record(s) from the database
@@ -93,6 +93,8 @@ class M_user extends CI_Model {
         }
         $this->db->delete(self::TABLE_NAME, $where);
         return $this->db->affected_rows();
+
     }
+      
 }
 ?>
