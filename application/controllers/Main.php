@@ -35,11 +35,8 @@
                 // Insert user record     
 	    } 
 
-<<<<<<< HEAD
 	    function _display($page = 'main', $data = '')
-=======
-	    function _display($page = 'main', $data = '' )
->>>>>>> origin/anot
+
 	    {	    	    	
 	    	$this->load->view($this->parent_page.'/'.$page , $data);//$this->parent_page.'/'.$page
 	    	//$this->load->view('footer');
@@ -93,14 +90,8 @@
 	    	}
 	    	$this->_display($page,$data);
 	    }
-<<<<<<< HEAD
-	    
-	     function registeration($page = "signup.php")
-	    {
-	        $this->load->view($this->parent_page.'/'.$page);
-<<<<<<< HEAD
 
-=======
+
 
 	    public function pecahhati($first = null , $second = null)
 	    {
@@ -208,15 +199,8 @@
 
 	    	$temp2=$sama/$formula;
 	    	return $temp2;
->>>>>>> origin/miza
+
 	    }
-
-	    
-            
-
-=======
-	   
-	   }
 
 	    public function upload(){
 	   	$config['upload_path'] = "./images/";
@@ -236,8 +220,6 @@
 	   		$this->_display('success', $data);
 	   	}
 	   }
->>>>>>> origin/anot
-	   
 	}
 	        
 ?>

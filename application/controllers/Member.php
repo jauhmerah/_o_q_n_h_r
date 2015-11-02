@@ -24,7 +24,7 @@
 
 	    function page($page = 'main' , $process = '-1')
 	    {
-<<<<<<< HEAD
+
 	        $data = null;
 	        switch ($process) {
 	    		case '1':
@@ -67,19 +67,11 @@
 	    				redirect(site_url('main/page/signin/5'));
 	    			}
 	    			break;
-=======
-	        $data = null;	        
-	    	switch ($process) {
-	    		case '1':
-	    		$this->load->model('m_user');
-	    			    		    
-	    			break;	    	    
->>>>>>> origin/anot
+
 	    	}
 	    	$this->_display($page,$data);
 	    }
 
-<<<<<<< HEAD
 	    public function upload(){
 	   	$config['upload_path'] = "./images/";
 	   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
@@ -99,13 +91,7 @@
 	   	}
 	   }
 
-=======
-<<<<<<< HEAD
-	    
-=======
->>>>>>> origin/master
-	   
->>>>>>> origin/anot
+
 	}
 	        
 ?>
