@@ -21,17 +21,29 @@
                                      <div class="form-group">
                                             <label>Upload Your Profile Picture</label>
                                             <!--<input type="file">-->
+
                                             <?php echo form_open_multipart('main/upload');?>
                                             <input type="file" name="userfile"/><br><br>
-                                            <input type="submit" name="submit" value="upload image">
+                                            <input type="submit" name="submit" value="Upload image">
                                         </div>
                                        <div>
                                             <label>Username</label>
                                             <input class="form-control" placeholder="Please enter your username.">
                                         </div>
+
+                                        <div class="form-group">
+                                            <label>Address</label>
+                                            <input class="form-control" placeholder="Please enter your address.">
+                                        </div>
+
                                         <div class="form-group">
                                             <label>Email Address</label>
                                             <input class="form-control" placeholder="Please enter your email address.">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Phone Number</label>
+                                            <input class="form-control" placeholder="Please enter your phone number.">
                                         </div>
 
                                          <div class="form-group">
@@ -48,7 +60,7 @@
                                             </div>
                                         </div>
                                         
-                                       
+                                       <input type="submit" name="submit" value="Update">
                                     </div>
                                 </div>
                             </div>
