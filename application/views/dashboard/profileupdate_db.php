@@ -20,11 +20,16 @@
                                 <div class="col-lg-6">
                                      <div class="form-group">
                                             <label>Upload Your Profile Picture</label>
-                                            <!--<input type="file">-->
-
-                                            <?php echo form_open_multipart('main/upload');?>
+                                            <!--<input type="file">-->huhu
+                                            <?php
+                                                if (isset($error)) {
+                                                     echo $error;
+                                                 }                                                 
+                                            ?>
+                                            <form action = "<?= site_url('member/upload');?>" method = 'post'>
                                             <input type="file" name="userfile"/><br><br>
                                             <input type="submit" name="submit" value="Upload image">
+                                        </form>
                                         </div>
                                        <div>
                                             <label>Username</label>
