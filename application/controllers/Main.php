@@ -8,6 +8,7 @@
 	    function __construct() {
 	        parent::__construct();
 	        $this->load->helper('url');
+
 	    }
 	
 	    function index() {
@@ -52,11 +53,11 @@
 	    	$sama = $this->carisama($kick1 , $kick2);
 	    	echo $sama;
 	    	echo "<br>";
-	    	$formula = $this->formula($arr1, $arr2);
+	    	/*$formula = $this->formula($arr1, $arr2);
 	    	echo $formula;
-	    	echo "<br>";
-	    	$percentage = $this->percentage($sama,$formula);
-	    	echo $percentage;
+	    	echo "<br>";*/
+	    	$percentage = $this->percentage($sama,$arr1, $arr2);
+	    	echo ($percentage);
 	    }
 
 	    public function pecahkata($word = null)
@@ -120,7 +121,7 @@
 	    	return $temp;
 	    }
 
-	    public function formula($arr1 = null, $arr2 = null)
+	    /*public function formula($arr1 = null, $arr2 = null)
 	    {
 	    	$temp= 0;
 	    	$size1= sizeof($arr1);
@@ -131,15 +132,38 @@
 	    	}
 	    	
 	    	return $temp;
-	    }
+	    }*/
 
-	    public function percentage($sama, $formula)
+	    /*public function percentage($sama, $formula)
 	    {
 	    	$temp2=0;
 
 	    	$temp2=$sama/$formula;
 	    	return $temp2;
+	    }*/
+
+	    public function percentage($sama, $arr1 = null, $arr2 = null)
+	    {
+	    	$temp2=0;
+	    	$size1= sizeof($arr1);
+	    	$size2= sizeof($arr2);
+	    	if($size1 != 0 && $size2 != 0)
+	    	$temp2=$sama/(sqrt($size1) * sqrt($size2));
+	    	return $temp2;
 	    }
+
+	   public function search($terms)
+	   {
+
+    		$this->db->select('sub_cat_id, sub_cat');
+    		$this->db->from('cat_shoes');
+    		/*$this->db->join('categories', 'cat_id = prod_category', 'inner');
+    		$this->db->like('name', $terms);
+    		$this->db->or_like('description', $terms);*/
+
+    		$query = $this->db->get();
+    		return $query->result_array();
+		}
 	}
 	        
 ?>

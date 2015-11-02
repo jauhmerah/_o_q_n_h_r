@@ -87,5 +87,10 @@ class M_user extends CI_Model {
         $this->db->delete(self::TABLE_NAME, $where);
         return $this->db->affected_rows();
     }
+
+    
+
+            
+   
 }
 ?>
