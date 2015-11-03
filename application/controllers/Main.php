@@ -152,14 +152,12 @@
 	    	return $temp2;
 	    }
 
-	   public function search($terms)
+	  /* public function search($terms)
 	   {
 	   		$this->load->model("m_user");
 
-    		$temp = $this->m_user->get()
-
-    		
-		}
+    		$temp = $this->m_user->get() 		
+		}*/
 	}
 	        
 ?>
