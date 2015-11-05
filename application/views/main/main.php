@@ -131,19 +131,19 @@
                         <p>Your First Dinar Marketplace</p>-->
                         <div class="search-form wow pulse" data-wow-delay="0.8s" style="width:700px; margin:0 auto;" >
                             <form action="" class=" form-inline">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="What are you looking for?" style="width:310px;">
+                                <div class="form-group" action= "<?php echo site_url('search/search_keyword');?>" method= "post">
+                                    <input type="text" name= "keyword" class="form-control" placeholder="What are you looking for?" style="width:310px;">
                                 </div>
 								 <div class="form-group">
                                     <select name="" id="" class="form-control">
 										<option>Select Your Category</option>
-										<option>All</option>										
-                                        <option selected>Fashion</option>
-                                        <option>Electronics</option>
-                                        <option>Travel</option>
-                                        <option>Automotive</option>
-										<option>Business</option>
-										<option>Services</option>
+										<option>All</option>
+                                        										
+                                         <option selected>Shoes</option>
+                                        <option>House</option>
+                                        <option>Pets</option>
+                                        <option>Accessories</option>
+                                        <option>Clothes</option>
 										
                                     </select>
                                 </div>

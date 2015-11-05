@@ -1,12 +1,12 @@
 <?php 
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class Cat_shoes extends CI_Model {
+class M_item extends CI_Model {
 
     /**
      * @name string TABLE_NAME Holds the name of the table in use by this model
      */
-    const TABLE_NAME = 'cat_shoes';
+    const TABLE_NAME = '';
 
     /**
      * @name string PRI_INDEX Holds the name of the tables' primary index used in this model
@@ -93,44 +93,24 @@ class Cat_shoes extends CI_Model {
         return $this->db->affected_rows();
     }
 
-   /* public function search($item = Array())
-    {
-        $this->db->select('*');
-        $this->db->from(self::TABLE_NAME);
-        $this->db->like($item);
-        $result = $this->db->get()->result();
-        return $result;
-    }*/
-
     function get_search($match=NULL,$table=NULL) {
-        $this->db->select('*');
+        
         if($table!=NULL)
         {
+            $this->db->select('*');
             $this->db->from($table);
-        }
-        
-          $this->db->like('sub_cat',$match);
+            $this->db->like('item_name',$match);
           $result = $this->db->get()->result();
           
           return $result;
+        }else
+        {
+            return false;
+        }
+        
+          
     }
 
-     
-    /*public function searching() 
-    {
-        $condition = "sub_cat=" . "'" . $name . "'";
-        $this->db->select('*');
-        $this->db->from('cat_shoes');
-        $this->db->where($condition);
-        $this->db->limit(1);
-        $query = $this->db->get();
-
-        if ($query->num_rows() == 1) {
-        return $query->result();
-        } else {
-        return false;
-        }
-        }*/
 
 }
 
