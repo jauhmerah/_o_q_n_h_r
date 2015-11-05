@@ -71,6 +71,21 @@
 	    				redirect(site_url('main/page/signin/5'));
 	    			}
 	    			break;
+	    		case '5':
+	    	        $arr =  $this->input->post();
+	    	    	$temp = array(
+	    	    		"us_name" => $arr['username'],
+	    	    		"us_email" => $arr['email'],
+	    	    		"us_password" => $arr['password'],
+	    	    		"pr_add" => $arr['address'],
+	    	    		"pr_phone" => $arr['phone'],
+	    	    		"pr_gender" => $arr['gender']
+
+	    	    	);
+	    	    	$this->load->model('m_profile');
+	    	    	$this->m_profile->insert($temp);
+	    	    	break;
+
 
 	    	}
 	    	$this->_display($page,$data);

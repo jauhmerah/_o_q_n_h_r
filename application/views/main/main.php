@@ -81,7 +81,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
               <div class="button navbar-right" >
-                  <button class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s">Login</button>
+                  <button class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s">Sign in</button>
                   <button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Sign up</button> <img src="<?php echo base_url();?>assets/img/cart7.png">
               </div>
               <!--ul class="main-nav nav navbar-nav navbar-right">

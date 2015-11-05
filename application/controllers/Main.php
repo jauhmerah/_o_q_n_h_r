@@ -12,7 +12,7 @@
 	
 	   function index() {
 	        $this->_display();
-	        $verificationCode = random_string('alnum', 20);  
+	       /*$verificationCode = random_string('alnum', 20);  
                   
                 $email_msg = "Dear User,  
                 <p
@@ -32,7 +32,7 @@
                 $this->email->message($email_msg);  
                 $this->email->send();  
                   
-                // Insert user record     
+                // Insert user record  */   
 	    } 
 
 	    function _display($page = 'main', $data = '')
@@ -81,12 +81,11 @@
 	    	    	);
 	    	    	$this->load->model('m_user');
 	    	    	$this->m_user->insert($temp);
-
-
 	    	    	break;
 	    	    case '5':
 	    	    	$data['error'] = true;
 	    	    	break;
+	    	    
 	    	}
 	    	$this->_display($page,$data);
 	    }
@@ -217,7 +216,7 @@
 	   		$file_data =$this->upload->data();
 	   		$data['img'] = base_url().'/images/'.$file_data['file_name'];
 	   		//$this->load->view('success',$data);
-	   		$this->_display('success', $data);
+	   		$this->_display('successupload', $data);
 	   	}
 	   }
 	}
