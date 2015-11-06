@@ -1032,8 +1032,7 @@ background-color:#ffffff;
 #timelineProfilePic {
 width: 180px;
 height: 180px;
-border: 2px solid #000;
-background-color: #ffffff;
+/*background-color: #ffffff;*/
 position: absolute;
 margin-top: -125px;
 margin-left: 20px;

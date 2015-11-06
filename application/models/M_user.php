@@ -95,6 +95,16 @@ class M_user extends CI_Model {
         return $this->db->affected_rows();
 
     }
+
+
+    /*public searchItem($sukaJoin = array()){
+        $this->db->select('*');
+        $this->db->from(self::TABLE_NAME);
+        $this->db->like($sukaJoin);
+        $result = $this->db->get()->result();
+        return $result;
+    }*/
+
       
 }
 ?>

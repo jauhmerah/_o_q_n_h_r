@@ -1,5 +1,7 @@
 <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
+            <div id="timelineProfilePic">
+          
                 <ul class="nav" id="main-menu">
                     <li>
                         <a href="<?php echo site_url('member/page/dashboard'); ?>"><i class="fa fa-dashboard"></i> Dashboard</a>

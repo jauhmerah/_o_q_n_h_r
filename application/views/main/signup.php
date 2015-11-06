@@ -22,7 +22,7 @@
         <![endif]-->
 
         <!-- Favicon and touch icons -->
-        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="shortcut icon" href="<?php echo base_url();?>assets/miza-signup/assets/ico/fv1.ico">
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo base_url();?>assets/miza-signup/assets/ico/apple-touch-icon-144-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo base_url();?>assets/miza-signup/assets/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo base_url();?>assets/miza-signup/assets/ico/apple-touch-icon-72-precomposed.png">
@@ -72,7 +72,7 @@
         			
         			<div class="modal-body">
         				
-	                    <form role="form" action="<?php echo site_url('main/page/success/4'); ?>" method="post" class="registration-form">
+	                    <form role="form" action="<?php echo site_url('main/page/success_verify/4'); ?>" method="post" class="registration-form">
 						    <div class="form-group">
 	                        	<label class="sr-only" for="form-email">Email</label>
 	                        	<input type="text" name="email" placeholder="Email..." class="form-email form-control" id="email">

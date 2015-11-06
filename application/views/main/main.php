@@ -81,7 +81,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
               <div class="button navbar-right" >
-                  <button class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s">Login</button>
+                  <button class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s">Sign in</button>
                   <button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Sign up</button> <img src="<?php echo base_url();?>assets/img/cart7.png">
               </div>
               <!--ul class="main-nav nav navbar-nav navbar-right">
@@ -103,13 +103,19 @@
                   <div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-5.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >"I will not sell defective goods. I feel satisfied with my little profit because I know Allah will bless me."
                    <p><h3 style="font-style:gisha;text-align:center;">(Abdul Rahman bin Auf)</h3></p> </div></div>
 				   
-				   
-                  <div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-10.jpg" alt="The Last of us"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:40px; font-weight:800; text-align:center; " class = "col-md-8 col-md-offset-2" >Buy & Sell with Souq Anshar!
+				  <div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-10.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Buy and Sell with Souq Anshar!
+                   <p><h3 style="font-style:gisha;text-align:center;">Your First Dinar and Dirham Marketplace.</h3></p> </div></div>
+
+                   <div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-8.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Syariah Compliant Marketplace
+                   <p><h3 style="font-style:gisha;text-align:center;">Use muamalah system that meets the syariah law.</h3></p> </div></div>
+                   
+                    
+                  <!--div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-10.jpg" alt="The Last of us"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:40px; font-weight:800; text-align:center; " class = "col-md-8 col-md-offset-2" >Buy & Sell with Souq Anshar!
                    <p><h4 style="font-style:gisha;text-align:center; font-size:29px; font-weight:600px;">Your First Dinar and Dirham Marketplace</h4> </p> </div></div>
 				   
 				   
                   <div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-9.jpg" alt="GTA V"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:40px; font-weight:800; text-align:center; " class = "col-md-8 col-md-offset-2" > Shop Anytime and Anywhere with Souq Anshar!
-                   <!--p><h3 style="font-style:gisha;text-align:center;">Your First Dinarhgfghfghg Marketplace</h3></p>--> </div></div>
+                   <!--p><h3 style="font-style:gisha;text-align:center;">Your First Dinarhgfghfghg Marketplace</h3></p> </div></div>-->
                  
                 </div>
             </div>
@@ -163,21 +169,21 @@
                         <div class="single-work wow fadeInUp" data-wow-delay="0.8s">
                             <img src="<?php echo base_url();?>assets/img/icon1.png" alt="">
                             <h3>Open for Halal Business</h3>
-                            <p>Using the outcomes from the job, we will put together a plan for the most effective marketing strategy to get the best results.</p>
+                            <p>Purchase product on our halal marketplace that follows the muamalah laws and principles. </p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="single-work  wow fadeInUp"  data-wow-delay="0.9s">
 						<img src="<?php echo base_url();?>assets/img/icon2.png" alt="">
                             <h3>Buy & Sell your Items Online</h3>
-                            <p>Using the outcomes from the job, we will put together a plan for the most effective marketing strategy to get the best results.</p>
+                            <p>We bring buyers and sellers together in one online medium to help reduce steps and cost.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="single-work wow fadeInUp"  data-wow-delay="1s">
                             <img src="<?php echo base_url();?>assets/img/icon3.png" alt="">
                             <h3>Pay using DinarPal</h3>
-                            <p>Use DinarPal as your payment gateway bla bla bla bla bla bla bla bla bla bla blablablabla bla bla bla bla bla bla bla bla.</p>
+                            <p>Shops and pay using DinarPal and experience the sensational of purchasing and paying using dinar and dirham.</p>
                         </div>
                     </div>
                 </div>
