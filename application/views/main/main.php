@@ -94,7 +94,7 @@
               </ul>-->
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
-        </nav>
+        </nav>=
 		 
         <div class="slider-area">
             <div class="slider">
@@ -131,14 +131,14 @@
                         <p>Your First Dinar Marketplace</p>-->
                         <div class="search-form wow pulse" data-wow-delay="0.8s" style="width:700px; margin:0 auto;" >
                             <form action="" class=" form-inline">
-                                <div class="form-group">
+                                <div class="form-group" action="<?php echo site_url('main/search');?>" method="post">
                                     <input type="text" class="form-control" placeholder="What are you looking for?" style="width:310px;">
                                 </div>
 								 <div class="form-group">
                                     <select name="" id="" class="form-control">
 										<option>Select Your Category</option>
-										<option>All</option>										
-                                        <option selected>Fashion</option>
+										<option selected>All</option>										
+                                        <option >Fashion</option>
                                         <option>Electronics</option>
                                         <option>Travel</option>
                                         <option>Automotive</option>
