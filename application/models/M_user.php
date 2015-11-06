@@ -87,12 +87,26 @@ class M_user extends CI_Model {
         }
         $this->db->delete(self::TABLE_NAME, $where);
         return $this->db->affected_rows();
+
     }
 
+<<<<<<< HEAD
     
 
             
    
+=======
+
+    /*public searchItem($sukaJoin = array()){
+        $this->db->select('*');
+        $this->db->from(self::TABLE_NAME);
+        $this->db->like($sukaJoin);
+        $result = $this->db->get()->result();
+        return $result;
+    }*/
+
+      
+>>>>>>> anot
 }
 
 ?>

@@ -1,16 +1,12 @@
 <?php 
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class M_search extends CI_Model {
+class Cat_shoes extends CI_Model {
 
     /**
      * @name string TABLE_NAME Holds the name of the table in use by this model
      */
-<<<<<<< HEAD
     const TABLE_NAME = 'cat_shoes';
-=======
-    const TABLE_NAME = 'm_search';
->>>>>>> anot
 
     /**
      * @name string PRI_INDEX Holds the name of the tables' primary index used in this model
@@ -25,6 +21,11 @@ class M_search extends CI_Model {
      *                      If string, value will be used to match against PRI_INDEX
      * @return mixed Single record if ID is given, or array of results
      */
+    function __construct() {
+            parent::__construct();
+            $this->load->database();
+    }
+
     public function get($where = NULL) {
         $this->db->select('*');
         $this->db->from(self::TABLE_NAME);
@@ -92,9 +93,7 @@ class M_search extends CI_Model {
         return $this->db->affected_rows();
     }
 
-<<<<<<< HEAD
-=======
-    /*public function search($item = Array('title'=>))
+   /* public function search($item = Array())
     {
         $this->db->select('*');
         $this->db->from(self::TABLE_NAME);
@@ -103,11 +102,36 @@ class M_search extends CI_Model {
         return $result;
     }*/
 
->>>>>>> anot
-    
+    function get_search($match=NULL,$table=NULL) {
+        $this->db->select('*');
+        if($table!=NULL)
+        {
+            $this->db->from($table);
+        }
+        
+          $this->db->like('sub_cat',$match);
+          $result = $this->db->get()->result();
+          
+          return $result;
+    }
 
-            
-   
+     
+    /*public function searching() 
+    {
+        $condition = "sub_cat=" . "'" . $name . "'";
+        $this->db->select('*');
+        $this->db->from('cat_shoes');
+        $this->db->where($condition);
+        $this->db->limit(1);
+        $query = $this->db->get();
+
+        if ($query->num_rows() == 1) {
+        return $query->result();
+        } else {
+        return false;
+        }
+        }*/
+
 }
 
 ?>

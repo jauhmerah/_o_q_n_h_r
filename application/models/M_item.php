@@ -1,16 +1,12 @@
 <?php 
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class M_search extends CI_Model {
+class M_item extends CI_Model {
 
     /**
      * @name string TABLE_NAME Holds the name of the table in use by this model
      */
-<<<<<<< HEAD
-    const TABLE_NAME = 'cat_shoes';
-=======
-    const TABLE_NAME = 'm_search';
->>>>>>> anot
+    const TABLE_NAME = '';
 
     /**
      * @name string PRI_INDEX Holds the name of the tables' primary index used in this model
@@ -25,6 +21,11 @@ class M_search extends CI_Model {
      *                      If string, value will be used to match against PRI_INDEX
      * @return mixed Single record if ID is given, or array of results
      */
+    function __construct() {
+            parent::__construct();
+            $this->load->database();
+    }
+
     public function get($where = NULL) {
         $this->db->select('*');
         $this->db->from(self::TABLE_NAME);
@@ -92,22 +93,25 @@ class M_search extends CI_Model {
         return $this->db->affected_rows();
     }
 
-<<<<<<< HEAD
-=======
-    /*public function search($item = Array('title'=>))
-    {
-        $this->db->select('*');
-        $this->db->from(self::TABLE_NAME);
-        $this->db->like($item);
-        $result = $this->db->get()->result();
-        return $result;
-    }*/
+    function get_search($match=NULL,$table=NULL) {
+        
+        if($table!=NULL)
+        {
+            $this->db->select('*');
+            $this->db->from($table);
+            $this->db->like('item_name',$match);
+          $result = $this->db->get()->result();
+          
+          return $result;
+        }else
+        {
+            return false;
+        }
+        
+          
+    }
 
->>>>>>> anot
-    
 
-            
-   
 }
 
 ?>
