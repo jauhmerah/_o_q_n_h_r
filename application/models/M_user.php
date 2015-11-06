@@ -1,4 +1,3 @@
-
 <?php 
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 
@@ -90,12 +89,6 @@ class M_user extends CI_Model {
 
     }
 
-<<<<<<< HEAD
-    
-
-            
-   
-=======
 
     /*public searchItem($sukaJoin = array()){
         $this->db->select('*');
@@ -105,8 +98,6 @@ class M_user extends CI_Model {
         return $result;
     }*/
 
-      
->>>>>>> anot
 }
 
 ?>

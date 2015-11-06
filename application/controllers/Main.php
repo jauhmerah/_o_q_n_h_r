@@ -26,20 +26,13 @@
 	    function page($page = 'main' , $process = '-1')
 	    {
 	        $data = null;
-<<<<<<< HEAD
-	    	switch ($process) {
-	    		case '1':
-	    			# code...
-	    			break;    		
-=======
+
 	    	switch ($process)
 	    	{
 	    		case '18':
 	    			$this->load->model('cat_shoes');
 	    			$data['arr'][0] = $this->cat_shoes->get();  
 	    			break;
-
->>>>>>> anot
 	    	}
 	    	$this->_display($page,$data);
 	    }
@@ -135,59 +128,23 @@
 	    	return $temp;
 	    }
 
-<<<<<<< HEAD
-	    /*public function formula($arr1 = null, $arr2 = null)
-=======
+
 
 	    public function percentage($sama, $arr1 = null, $arr2 = null)
->>>>>>> anot
 	    {
 	    	$temp2=0;
 	    	$size1= sizeof($arr1);
 	    	$size2= sizeof($arr2);
 	    	if($size1 != 0 && $size2 != 0)
-<<<<<<< HEAD
-	    	{
-	    		$temp= sqrt($size1) * sqrt($size2);
-	    	}
-	    	
-	    	return $temp;
-	    }*/
-
-	    /*public function percentage($sama, $formula)
-=======
 	    	$temp2=$sama/(sqrt($size1) * sqrt($size2));
 	    	return $temp2;
 	    }
 
 	  	public function searching()
->>>>>>> anot
 	    {
 	    	$this->load->database();
 	   		$this->load->model('cat_shoes');
 
-<<<<<<< HEAD
-	    	$temp2=$sama/$formula;
-	    	return $temp2;
-	    }*/
-
-	    public function percentage($sama, $arr1 = null, $arr2 = null)
-	    {
-	    	$temp2=0;
-	    	$size1= sizeof($arr1);
-	    	$size2= sizeof($arr2);
-	    	if($size1 != 0 && $size2 != 0)
-	    	$temp2=$sama/(sqrt($size1) * sqrt($size2));
-	    	return $temp2;
-	    }
-
-	  /* public function search($terms)
-	   {
-	   		$this->load->model("m_user");
-
-    		$temp = $this->m_user->get() 		
-		}*/
-=======
          //load the method of model  
          $data['h']=$this->cat_shoes->select();  
          //return the data in view  
@@ -235,8 +192,7 @@
 	    	$data['arr'] = $this->m_item->get_search($search,$table);
 			$this->load->view('main/testoutput', $data);
 	    			
-		}		
->>>>>>> anot
+		}
 	}
 	        
 ?>

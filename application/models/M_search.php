@@ -6,11 +6,9 @@ class M_search extends CI_Model {
     /**
      * @name string TABLE_NAME Holds the name of the table in use by this model
      */
-<<<<<<< HEAD
-    const TABLE_NAME = 'cat_shoes';
-=======
+
     const TABLE_NAME = 'm_search';
->>>>>>> anot
+
 
     /**
      * @name string PRI_INDEX Holds the name of the tables' primary index used in this model
@@ -92,8 +90,7 @@ class M_search extends CI_Model {
         return $this->db->affected_rows();
     }
 
-<<<<<<< HEAD
-=======
+
     /*public function search($item = Array('title'=>))
     {
         $this->db->select('*');
@@ -103,11 +100,7 @@ class M_search extends CI_Model {
         return $result;
     }*/
 
->>>>>>> anot
-    
 
-            
-   
 }
 
 ?>
