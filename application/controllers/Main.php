@@ -13,7 +13,7 @@
 	
 	    function index() {
 	        $this->_display();
-<<<<<<< HEAD
+
 	       /*$verificationCode = random_string('alnum', 20);  
                   
                 $email_msg = "Dear User,  
@@ -37,10 +37,7 @@
                 // Insert user record  */   
 	    } 
 
-	    function _display($page = 'main', $data = '')
-=======
-	    }
->>>>>>> origin/miza
+	
 
 	    function _display($page = 'main', $data = '' )
 	    {
@@ -53,19 +50,19 @@
 	    function page($page = 'main' , $process = '-1')
 	    {
 	        $data = null;
-<<<<<<< HEAD
+
 	    	switch ($process) {
 	    		case '1':
 	    			# code...
 	    			break;    		
-=======
+
 	    	switch ($process)
 	    	{
 	    		case '18':
 	    			$this->load->model('cat_shoes');
 	    			$data['arr'][0] = $this->cat_shoes->get();  
 	    			break;
-<<<<<<< HEAD
+	    			
 	    	    case '4':
 	    	    //sign up process
 	    	    	$arr =  $this->input->post();
@@ -82,12 +79,11 @@
 	    	    	$data['error'] = true;
 	    	    	break;
 	    	    
-=======
 
->>>>>>> anot
->>>>>>> origin/miza
+
 	    	}
 	    	$this->_display($page,$data);
+	    }
 	    }
 
 	    public function pecahhati($first = null , $second = null)
@@ -181,7 +177,6 @@
 	    	return $temp;
 	    }
 
-<<<<<<< HEAD
 	    /*public function formula($arr1 = null, $arr2 = null)
 =======
 
@@ -201,18 +196,18 @@
 	    }*/
 
 	    /*public function percentage($sama, $formula)
-=======
+
 	    	$temp2=$sama/(sqrt($size1) * sqrt($size2));
 	    	return $temp2;
 	    }
 
 	  	public function searching()
->>>>>>> anot
+
 	    {
 	    	$this->load->database();
 	   		$this->load->model('cat_shoes');
 
-<<<<<<< HEAD
+
 	    	$temp2=$sama/$formula;
 	    	return $temp2;
 	    }*/
@@ -227,7 +222,7 @@
 	    	return $temp2;
 	    }
 
-<<<<<<< HEAD
+
 	    public function upload(){
 	   	$config['upload_path'] = "./images/";
 	   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
@@ -246,22 +241,8 @@
 	   		$this->_display('successupload', $data);
 	   	}
 	   }
-=======
-	  /* public function search($terms)
-	   {
-	   		$this->load->model("m_user");
-
-    		$temp = $this->m_user->get() 		
-		}*/
-=======
-         //load the method of model  
-         $data['h']=$this->cat_shoes->select();  
-         //return the data in view  
-         $this->load->view('search', $data);  
-
     		
-		}
-
+		
 		public function search()
 		{
 			$this->load->model('m_item');
@@ -302,8 +283,7 @@
 			$this->load->view('main/testoutput', $data);
 	    			
 		}		
->>>>>>> anot
->>>>>>> origin/miza
+
 	}
 	        
-?>
+?> 

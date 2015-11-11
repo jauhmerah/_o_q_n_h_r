@@ -94,7 +94,7 @@
               </ul>-->
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
-        </nav>=
+        </nav>
 		 
         <div class="slider-area">
             <div class="slider">
@@ -129,41 +129,32 @@
                     <!--div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
                         <h2>Buy & Sell with Souq Anshar!</h2>
                         <p>Your First Dinar Marketplace</p>-->
-                        <div class="search-form wow pulse" data-wow-delay="0.8s" style="width:700px; margin:0 auto;" >
-                            <form action="" class=" form-inline">
-<<<<<<< HEAD
-                                <div class="form-group" action="<?php echo site_url('main/search');?>" method="post">
-                                    <input type="text" class="form-control" placeholder="What are you looking for?" style="width:310px;">
-=======
-                                <div class="form-group" action= "<?php echo site_url('search/search_keyword');?>" method= "post">
-                                    <input type="text" name= "keyword" class="form-control" placeholder="What are you looking for?" style="width:310px;">
->>>>>>> origin/miza
-                                </div>
+                        <div class="search-form wow pulse"  data-wow-delay="0.8s" style="width:700px; margin:0 auto;" >
+                            <form action="<?php echo site_url('main/search');?>" method="post" class=" form-inline">
+
+                                <div class="form-group" action="" >
+
+                             
+                                    <input type="text" name="itemname"class="form-control" placeholder="What are you looking for?" style="width:310px;">
+                                    </div>
+
 								 <div class="form-group">
-                                    <select name="" id="" class="form-control">
+                                    <select name="sub_cat" id="" class="form-control">
 										<option>Select Your Category</option>
-<<<<<<< HEAD
-										<option selected>All</option>										
-                                        <option >Fashion</option>
-                                        <option>Electronics</option>
-                                        <option>Travel</option>
-                                        <option>Automotive</option>
-										<option>Business</option>
-										<option>Services</option>
-=======
-										<option>All</option>
-                                        										
-                                         <option selected>Shoes</option>
-                                        <option>House</option>
-                                        <option>Pets</option>
-                                        <option>Accessories</option>
-                                        <option>Clothes</option>
->>>>>>> origin/miza
-										
+
+										<!--option selected>All</option>-->										
+                                        <option value = "5">Business</option>
+                                        <option value = "3">Travel</option>
+                                        <option value = "4">Automotive</option>
+                                        <option value = "1">Fashion</option>
+                                        <option value = "2">Electronics</option>
+                                        
+				
                                     </select>
                                 </div>
-                                <input type="submit" class="btn" value="Search" style="width:100px; margin:0 auto;">
+                                <input type="submit"name="action"class="btn" value="Search" style="width:100px; margin:0 auto;">
 								
+
 
                             </form>
                         </div>
