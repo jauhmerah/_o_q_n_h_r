@@ -55,7 +55,7 @@
 			</div>
 		</div><!--/header_top-->
 		
-		<div class="header-middle" style= "background:#000000; height:100px; " ><img style= "margin-left:100px; margin-top:10px; "src= "<?php echo base_url();?>assets/anot/images/home/logo1.png" width= "230px" height="70px">
+		<div class="header-middle" style= "background:#000000; height:100px; " ><img style= "margin-left:100px; margin-top:10px; "src= "<?php echo base_url();?>assets/anot/images/home/logo1.png" width= "230px" height="70px" >
 		<!--header-middle-->
 			<div class="container">
 			

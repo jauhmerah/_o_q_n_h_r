@@ -1,6 +1,6 @@
 <?php 
 	if (!defined('BASEPATH')) exit('No direct script access allowed');
-	
+
 	class Main extends CI_Controller {
 	
 		var $parent_page = "main";
@@ -51,16 +51,13 @@
 	    {
 	        $data = null;
 
-	    	switch ($process) {
-	    		case '1':
-	    			# code...
-	    			break;    		
+	    	   		
 
 	    	switch ($process)
 	    	{
 	    		case '18':
-	    			$this->load->model('cat_shoes');
-	    			$data['arr'][0] = $this->cat_shoes->get();  
+	    			$this->load->model('m_cart');
+	    			$data['arr'][0] = $this->sa_category->get();  
 	    			break;
 	    			
 	    	    case '4':
@@ -83,7 +80,7 @@
 
 	    	}
 	    	$this->_display($page,$data);
-	    }
+	    
 	    }
 
 	    public function pecahhati($first = null , $second = null)
@@ -282,8 +279,11 @@
 	    	$data['arr'] = $this->m_item->get_search($search,$table);
 			$this->load->view('main/testoutput', $data);
 	    			
-		}		
+		}
 
-	}
+		
+	} 		
+
+	
 	        
 ?> 
