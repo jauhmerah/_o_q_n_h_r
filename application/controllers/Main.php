@@ -13,7 +13,7 @@
 	
 	    function index() {
 	        $this->_display();
-<<<<<<< HEAD
+
 	       /*$verificationCode = random_string('alnum', 20);  
                   
                 $email_msg = "Dear User,  
@@ -37,10 +37,7 @@
                 // Insert user record  */   
 	    } 
 
-	    function _display($page = 'main', $data = '')
-=======
-	    }
->>>>>>> origin/miza
+
 
 	    function _display($page = 'main', $data = '' )
 	    {
@@ -60,7 +57,7 @@
 	    			$this->load->model('m_item');
 	    			$data['arr'] = $this->m_item->get();  
 	    			break;
-<<<<<<< HEAD
+
 	    	    case '4':
 	    	    //sign up process
 	    	    	$arr =  $this->input->post();
@@ -90,8 +87,7 @@
 	    	    	$this->m_user->insert($temp);
 	    	    	break;
 	    	    
-=======
->>>>>>> origin/miza
+
 	    	}
 	    	$this->_display($page,$data);
 	    }
