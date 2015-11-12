@@ -30,8 +30,8 @@
 	    	switch ($process)
 	    	{
 	    		case '18':
-	    			$this->load->model('cat_shoes');
-	    			$data['arr'][0] = $this->cat_shoes->get();  
+	    			$this->load->model('m_item');
+	    			$data['arr'] = $this->m_item->get();  
 	    			break;
 	    	}
 	    	$this->_display($page,$data);
@@ -193,6 +193,41 @@
 			$this->load->view('main/testoutput', $data);
 	    			
 		}
+
+		public function add()
+		{
+			$data = array(
+				'item_id' =>'3',
+				'item_name' => 'Torchlight',
+				
+				'item_price' => 16.9,
+				
+				);
+
+			$this->cart->insert($data);
+			echo "add() called";
+		}
+
+		public function show()
+		{
+			$cart = $this->cart->contents();
+
+			echo "<pre>";
+			print_r($cart);
+			 echo "</pre>";
+
+		}
+
+		public function lala()
+	 {
+
+	        $this->load->model('Products_model');
+	        $data['products'] = $this->Products_model->get_all();
+	        echo "<pre>";
+			print_r($data['products']);
+	        /*$this->load->view('products',$data);*/
+	  } 
+
 	}
 	        
 ?>

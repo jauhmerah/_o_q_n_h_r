@@ -92,7 +92,7 @@
 		                    </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <!--<div class="row">
                         <div class="col-sm-6 col-sm-offset-3 social-login">
                         	<h3>...or login with:</h3>
                         	<div class="social-login-buttons">
@@ -107,7 +107,7 @@
 	                        	</a>-->
                         	</div>
                         </div>
-                    </div>
+                    <!--</div>-->
                 </div>
             </div>
             
