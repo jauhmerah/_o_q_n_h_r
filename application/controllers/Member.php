@@ -79,19 +79,30 @@
 	    	    		"us_password" => $arr['password'],
 	    	    		"pr_add" => $arr['address'],
 	    	    		"pr_phone" => $arr['phone'],
-	    	    		"pr_gender" => $arr['gender']
+	    	    		"pr_gender" => $arr['gender'],
+	    	    		"pr_image"=>$arr['image']
 
 	    	    	);
 	    	    	$this->load->model('m_profile');
 	    	    	$this->m_profile->insert($temp);
 	    	    	break;
-
+	    	    case '6':
+	    	        $arr =  $this->input->post();
+	    	    	$temp = array(
+	    	    		"pl_name" => $arr['itemname'],
+	    	    		"pl_price" => $arr['price'],
+	    	    		"pl_category" => $arr['category'],
+	    	    		"pl_subcategory" => $arr['subcategory']
+	    	    		);
+	    	    	$this->load->model('m_profile');
+	    	    	$this->m_user->insert($temp);
+	    	    	break;
 
 	    	}
 	    	$this->_display($page,$data);
-	    }
+	    
 
-	    public function upload(){
+	    /*public function upload(){
 	   	$config['upload_path'] = "./images/";
 	   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
 	   	$this->load->library('upload',$config);
@@ -107,7 +118,7 @@
 	   		$data['img'] = base_url().'/images/'.$file_data['file_name'];
 	   		//$this->load->view('success',$data);
 	   		$this->_display('berjaya', $data);
-	   	}
+	   	}*/
 	   }
 
 

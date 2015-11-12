@@ -8,8 +8,8 @@
                     </div>
                 </div> 
                  <!-- /. ROW  -->
-              <form role="form" action = "<?= site_url('member/page/profileupdate_db/5');?>" method = 'post'>
-              <div class="row">
+            <form role="form" action = "<?= site_url('member/page/profileupdate_db/5');?>" method = 'post'>
+             <div class="row">
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -30,9 +30,9 @@
                                                  }                                                 
                                             ?>
 
-                                            <form action = "<?= site_url('member/upload');?>" method = 'post'>
+                                        <form action = "<?php echo  form_open_multipart('upload_controller/do_upload')?>" method = 'post'>
                                             <input type="file" name="userfile"/><br>
-                                            <input type="submit" name="submit" value="Upload image">
+                                            <input type="submit" name="pr_image" value="Upload image">
                                         </form>
                                         </div>
                                        <div class="form-group">
@@ -74,13 +74,38 @@
                                         <br>
                                         <br>
 
+                                         <button type="submit" name="submit" value="Update" class="button" data-toggle="modal" data-target="#myModal">Update</button>
 
-                                        
-                                       <button type="submit" name="submit" value="Update" class="button" data-toggle="modal" data-target="#myModal">Update</button>
-                                       
+
                                     
-                                </div>
-                            </div>
+
+                                       
+                                       <!-- <div class="modal collapse in" id="basicModalError" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="false" style="display:block;">
+                                            <div class="modal-dialog" style="margin-top:20%;">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                                           <i class="fa fa-times">
+                                                           </i>
+                                                       </button>
+                                                       <br>
+                                                    </div>     
+                                                     <div class="modal-body">
+                                                             <div class="alert alert-success fade in" role="alert">Update success ..</div>-->
+                                                            <!-- <div class="col-md-6" style="float:left;">
+                                                                "Successfully update!"
+                                                             <i class="fa fa-check">
+                                                              </i>
+                                                              </div>  
+                                                             <div class="col-md-6" align="right"></div>
+                                                                <button type="button" class="button green-button" data-toggle="modal" data-dismiss="modal" style="height:30px;line-height:5px;">Close</button>
+                                                            </div>
+                                                     </div>
+                                                </div> -->    
+
+                                            </div>
+                                        </div>
+                                    </div>
                         </div>
                     </div>
                 </div>
@@ -91,20 +116,7 @@
 
             </div>
         </div>
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" style="display: none;">
-                                       <div class="modal-dialog">
-                                         <div class="modal-content">
-                                            <div class="modal-header">
-                                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button> 
-                                            </div>     
-                                         <div class="modal-body">
-                                            <div class="alert alert-success fade in" role="alert">Update success ..</div>
-                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
-                                        </div>
-
-
+       
 
 <!-- /. WRAPPER  -->
     <!-- JS Scripts-->
@@ -119,6 +131,9 @@
     <script src="<?php echo base_url();?>assets/anot/dashboard/assets/js/morris/morris.js"></script>
     <!-- Custom Js -->
     <script src="<?php echo base_url();?>assets/anot/dashboard/assets/css/bootstrap.css"></script>
+
+    <script>
+<div class="modal-backdrop  in"></div>
     
 
 
