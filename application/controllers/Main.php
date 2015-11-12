@@ -85,6 +85,19 @@
 	    	    case '5':
 	    	    	$data['error'] = true;
 	    	    	break;
+
+	    	    case '4':
+	    	    //cart process
+	    	    	$arr =  $this->input->post();
+	    	    	$temp = array(
+	    	    		"us_name" => $arr['username'],
+	    	    		"us_email" => $arr['email'],
+	    	    		"us_password" => $arr['password']
+	    	    		
+	    	    	);
+	    	    	$this->load->model('m_user');
+	    	    	$this->m_user->insert($temp);
+	    	    	break;
 	    	    
 	    	}
 	    	$this->_display($page,$data);
