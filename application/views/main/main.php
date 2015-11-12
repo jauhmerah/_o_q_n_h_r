@@ -129,24 +129,23 @@
                         <h2>Buy & Sell with Souq Anshar!</h2>
                         <p>Your First Dinar Marketplace</p>-->
                         <div class="search-form wow pulse" data-wow-delay="0.8s" style="width:700px; margin:0 auto;" >
-                            <form action="" class=" form-inline">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="What are you looking for?" style="width:310px;">
+                            <form action= "<?php echo site_url('main/search');?>" method= "post" class=" form-inline">
+                                <div class="form-group" >
+                                    <input type="text" name= "itemname" class="form-control" placeholder="What are you looking for?" style="width:310px;">
                                 </div>
 								 <div class="form-group">
-                                    <select name="" id="" class="form-control">
+                                    <select name="sub_cat" id="" class="form-control">
 										<option>Select Your Category</option>
-										<option>All</option>										
-                                        <option selected>Fashion</option>
-                                        <option>Electronics</option>
-                                        <option>Travel</option>
-                                        <option>Automotive</option>
-										<option>Business</option>
-										<option>Services</option>
+										<!--<option selected>All</option>-->                                      
+                                        <option value = "5">Business</option>
+                                        <option value = "3">Travel</option>
+                                        <option value = "4">Automotive</option>
+                                        <option value = "1">Fashion</option>
+                                        <option value = "2">Electronics</option>
 										
                                     </select>
                                 </div>
-                                <input type="submit" class="btn" value="Search" style="width:100px; margin:0 auto;">
+                                <input type="submit" name= "action"class="btn" placeholder="Select Your Catagory"value="Search" style="width:100px; margin:0 auto;">
 								
 
                             </form>

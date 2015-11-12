@@ -28,13 +28,26 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+<style>
+body { 
+    background-image: url('<?php echo base_url();?>assets/anot/verifypage/css/sky.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    color:#FFF;
+}
+</style>
+
 </head>
 
 <body>
      
 
 
-   
+    <div  style="text-align:center; margin-top:20%; font-size: 30px;" class = "col-md-8 col-md-offset-2" >You have successfully verified your account!
+     <p><h4 style="font-style:gisha;text-align:center;">Before you can access the website, we need to verify your account. A verification email should be sent to your inbox.</h4></p> </div>
+    </div>
+
 
     <!-- Navigation -->
     <!--nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">-->
@@ -49,10 +62,15 @@
         </div>
         <!-- /.container -->
         <div class="item">
+<<<<<<< HEAD
     <img style="width:1349px; height:800px;"src="<?php echo base_url();?>assets/anot/verifypage/css/sky.jpg" alt="">
     <div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:400; text-align:center;" class = "col-md-8 col-md-offset-2" >You have successfully verified your account!
      <p><h4 style="font-style:gisha;text-align:center;color:#fff;"><a href="<?php echo site_url('main/page/signin'); ?>">Click here to Sign in</h4></p> </div>
     </div>
+=======
+    
+    
+>>>>>>> origin/miza
    
 
     <!-- Put your page content here! -->

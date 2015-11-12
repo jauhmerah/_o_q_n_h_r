@@ -8,10 +8,12 @@
 	    function __construct() {
 	        parent::__construct();
 	        $this->load->helper('url');
+
 	    }
 	
-	   function index() {
+	    function index() {
 	        $this->_display();
+<<<<<<< HEAD
 	       /*$verificationCode = random_string('alnum', 20);  
                   
                 $email_msg = "Dear User,  
@@ -36,8 +38,14 @@
 	    } 
 
 	    function _display($page = 'main', $data = '')
+=======
+	    }
+>>>>>>> origin/miza
 
-	    {	    	    	
+	    function _display($page = 'main', $data = '' )
+	    {
+	    	
+	    	//$this->load->view('header');
 	    	$this->load->view($this->parent_page.'/'.$page , $data);//$this->parent_page.'/'.$page
 	    	//$this->load->view('footer');
 	    }
@@ -45,31 +53,14 @@
 	    function page($page = 'main' , $process = '-1')
 	    {
 	        $data = null;
-	        switch ($process) {
-	    		case '1':
-	    		    $this->load->model('m_user');
-	    			$data['arr'] = $this->m_user->get();
-	    			/*$data['arr'][1] = array(
-	    			    'farid' => $data['arr'][0][0]->userName
-	    			);
-	    			$temp = array(
-	    			    "userID" => 2
-	    			);
-	    			$data['arr'][2] = $this->m_user->get($temp);*/
+
+	    	switch ($process)
+	    	{
+	    		case '18':
+	    			$this->load->model('m_item');
+	    			$data['arr'] = $this->m_item->get();  
 	    			break;
-	    		case '2':
-	    		    $this->load->model('m_user');
-	    		    $temp = array(
-	    		        "userName" => "mizahuhu",
-	    		        "userEmail" => "miza@huhu.com"
-	    		    );
-	    		    $this->m_user->insert($temp);
-	    		    $data['arr'][0] = $this->m_user->get();
-	    		case '3':
-	    			//view apa yg dipost
-	    			// main/page/testoutput/3
-	    			$data['arr'] = $this->input->post();
-	    			break;
+<<<<<<< HEAD
 	    	    case '4':
 	    	    //sign up process
 	    	    	$arr =  $this->input->post();
@@ -99,11 +90,11 @@
 	    	    	$this->m_user->insert($temp);
 	    	    	break;
 	    	    
+=======
+>>>>>>> origin/miza
 	    	}
 	    	$this->_display($page,$data);
 	    }
-
-
 
 	    public function pecahhati($first = null , $second = null)
 	    {
@@ -124,11 +115,11 @@
 	    	$sama = $this->carisama($kick1 , $kick2);
 	    	echo $sama;
 	    	echo "<br>";
-	    	$formula = $this->formula($arr1, $arr2);
+	    	/*$formula = $this->formula($arr1, $arr2);
 	    	echo $formula;
-	    	echo "<br>";
-	    	$percentage = $this->percentage($sama,$formula);
-	    	echo $percentage;
+	    	echo "<br>";*/
+	    	$percentage = $this->percentage($sama,$arr1, $arr2);
+	    	echo ($percentage);
 	    }
 
 	    public function pecahkata($word = null)
@@ -170,15 +161,19 @@
 	    	$num = 0;
 	    	$size = sizeof($arr);
 	    	
-	    	for ($i=($size-1); $i >= 0; $i--) {
+	    	for ($i=($size-1); $i >= 0; $i--)
+	    	{
 	    		$m = 1;
-	    		if ($i > 0) {
-	    			for ($j=($i-1); $j >= 0 ; $j--) {
+	    		if ($i > 0) 
+	    		{
+	    			for ($j=($i-1); $j >= 0 ; $j--) 
+	    			{
 	    				echo $arr[$i];
 	    				echo "<=>"; 
 	    				echo $arr[$j];
 	    				echo "<br>";
-		    			if ($arr[$i] == $arr[$j]) {
+		    			if ($arr[$i] == $arr[$j])
+		    			{
 		    				echo "True<br>";
 		    				$m = 0 ;
 		    			}
@@ -192,28 +187,107 @@
 	    	return $temp;
 	    }
 
-	    public function formula($arr1 = null, $arr2 = null)
+
+
+	    public function percentage($sama, $arr1 = null, $arr2 = null)
 	    {
-	    	$temp= 0;
+	    	$temp2=0;
 	    	$size1= sizeof($arr1);
 	    	$size2= sizeof($arr2);
 	    	if($size1 != 0 && $size2 != 0)
-	    	{
-	    		$temp= sqrt($size1) * sqrt($size2);
-	    	}
-	    	
-	    	return $temp;
-	    }
-
-	    public function percentage($sama, $formula)
-	    {
-	    	$temp2=0;
-
-	    	$temp2=$sama/$formula;
+	    	$temp2=$sama/(sqrt($size1) * sqrt($size2));
 	    	return $temp2;
-
 	    }
 
+	  	public function searching()
+	    {
+	    	$this->load->database();
+	   		$this->load->model('cat_shoes');
+
+         //load the method of model  
+         $data['h']=$this->cat_shoes->select();  
+         //return the data in view  
+         $this->load->view('search', $data);  
+
+    		
+		}
+
+		public function search()
+		{
+			$this->load->model('m_item');
+			$process = $this->input->post('sub_cat');
+			$search = $this->input->post("itemname");
+
+
+			/*$data['arr'] = $this->m_item->get_search($temp,"cat_shoes");
+			$this->load->view('main/testoutput', $data)*/
+			
+			$data = null;
+	        switch ($process) 
+	        {
+	    		case '1':
+	    			//nk load semua data dlm db	    		    
+	    		    $table = 'cat_fashion';
+	    		    break;
+	    		case '2':
+	    			//nk load semua data dlm db
+	    		    $table = 'cat_electronics';
+	    		    break;
+	    		case '3':
+	    			//nk load semua data dlm db
+	    		    $table = 'cat_travel';
+	    		    break;
+
+	    		case '4':
+	    			//nk load semua data dlm db
+	    		    $table = 'cat_automotive';
+	    		    break;
+	    		case '5':
+	    			//nk load semua data dlm db
+	    		    $table = 'cat_business';
+	    		    break;
+	    	}
+
+	    	$data['arr'] = $this->m_item->get_search($search,$table);
+			$this->load->view('main/testoutput', $data);
+	    			
+		}
+
+		public function add()
+		{
+			$data = array(
+				'item_id' =>'3',
+				'item_name' => 'Torchlight',
+				
+				'item_price' => 16.9,
+				
+				);
+
+			$this->cart->insert($data);
+			echo "add() called";
+		}
+
+		public function show()
+		{
+			$cart = $this->cart->contents();
+
+			echo "<pre>";
+			print_r($cart);
+			 echo "</pre>";
+
+		}
+
+		public function lala()
+	 {
+
+	        $this->load->model('Products_model');
+	        $data['products'] = $this->Products_model->get_all();
+	        echo "<pre>";
+			print_r($data['products']);
+	        /*$this->load->view('products',$data);*/
+	  } 
+
+<<<<<<< HEAD
 	    public function upload(){
 	   	$config['upload_path'] = "./images/";
 	   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
@@ -232,6 +306,8 @@
 	   		$this->_display('successupload', $data);
 	   	}
 	   }
+=======
+>>>>>>> origin/miza
 	}
 	        
 ?>
