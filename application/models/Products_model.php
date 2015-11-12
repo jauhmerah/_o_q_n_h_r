@@ -7,7 +7,9 @@ class Products_model extends CI_Model
 	 	$results = $this->db->get('cat_travel')->result();
 	 	return $results;
 	       
-	 } 
+	 }
+
+	 
 
 	  
 

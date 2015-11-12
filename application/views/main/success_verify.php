@@ -45,7 +45,7 @@ body {
 
 
     <div  style="text-align:center; margin-top:20%; font-size: 30px;" class = "col-md-8 col-md-offset-2" >You have successfully verified your account!
-     <p><h4 style="font-style:gisha;text-align:center;">Before you can access the website, we need to verify your account. A verification email should be sent to your inbox.</h4></p> </div>
+     <p><h4 style="font-style:gisha;text-align:center;color:#fff;"><a href="<?php echo site_url('main/page/signin');?>">Click here to Sign in</h4></p> </div>
     </div>
 
 

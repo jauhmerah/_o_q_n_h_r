@@ -222,10 +222,11 @@
 	 {
 
 	        $this->load->model('Products_model');
-	        $data['products'] = $this->Products_model->get_all();
+	       
+	        $data['products'] = $this->Products_model->get_all($table);
 	        echo "<pre>";
 			print_r($data['products']);
-	        /*$this->load->view('products',$data);*/
+	       /* $this->load->view('products',$data);*/
 	  } 
 
 	}
