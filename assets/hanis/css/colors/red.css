@@ -44,7 +44,7 @@ a.main-button, input[type="submit"] {
 }
 .navbar-default .navbar-nav > li:hover > a,
 .navbar-default .navbar-nav > li > a.active {
-	color: #ee3733;
+	color: #ffa300;
 }
 
 .dropdown > li:hover > a, .sup-dropdown li:hover > a {
@@ -56,7 +56,7 @@ a.main-button, input[type="submit"] {
 }
 
 .navbar-default .navbar-nav > li > a.active, .navbar-default .navbar-nav > li:hover > a {
-	border-color: #ee3733;
+	border-color: #ffa300;
 }
 
 .dropdown  li a.active, .sup-dropdown li a.active {

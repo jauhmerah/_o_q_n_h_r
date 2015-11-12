@@ -37,7 +37,7 @@
         </div>
         <!-- Body content -->
 		
-		<div class="header-connect">
+		<!--div class="header-connect">
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 col-sm-8 col-xs-8">
@@ -55,14 +55,14 @@
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <!--<li><a href="#"><i class="fa fa-vine"></i></a></li>
                                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>-->
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div-->
 
        
         <nav class="navbar navbar-default">
@@ -75,23 +75,22 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" style= "margin-top:-15.5px;" href="<?php echo site_url('huhu/haha'); ?>"><img src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="230px" height="70px"></a>
+              <a class="navbar-brand" style= "margin-top:-15.5px;" href="<?php echo site_url('huhu/haha'); ?>"><img src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="230px" height="79px"></a>
             </div>
 			
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <div class="button navbar-right" >
-                  <button class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s">Sign in</button>
-                  <button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Sign up</button> <img src="<?php echo base_url();?>assets/img/cart7.png">
-              </div>
+                 <a href="<?php echo site_url('main/page/signin');?>"><button class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s">Sign In</button></a>
+                 <a href="<?php echo site_url('main/page/signup');?>"><button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Sign Up</button></a>
               <!--ul class="main-nav nav navbar-nav navbar-right">
-                <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="#">Home</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="#">Profile</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="#">Job Seekers</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="#">Employeers</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="#">About us</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="#">Blog</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.5s"><a href="#">Contact</a></li>
-              </ul>-->
+              </ul-->
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>

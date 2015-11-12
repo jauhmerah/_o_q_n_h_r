@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--title>Bootstrap Login Form Template</title>-->
-		<title>Souq Anshar | Login</title>
+		<title>Souq Anshar | Sign In</title>
 
         <!-- CSS -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
@@ -55,15 +55,15 @@
 						
                         	<div class="form-top" >
                         		<div class="form-top-left">
-                        			<h3>Login to Souq Anshar</h3>
-                            		<p>Enter your username and password to log on:</p>
+                        			<h3>Sign In to Souq Anshar</h3>
+                            		<p>Enter your username and password to Sign In:</p>
                         		</div>
                         		<div class="form-top-right">
                         			<i class="fa fa-key"></i>
                         		</div>
                             </div>
                             <div class="form-bottom">
-			                    <form role="form" action="<?php echo site_url('member/page/dashboard/4');?>" method="post" class="login-form">
+			                    <form role="form" action="<?php echo site_url('member/page/dashboard/5');?>" method="post" class="login-form">
 			                    	<div class="form-group">
 			                    		<label class="sr-only" for="form-username">Username</label>
 			                        	<input type="text" name="username" placeholder="Username..." class="form-username form-control" id="form-username">
