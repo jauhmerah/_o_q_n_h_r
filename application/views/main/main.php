@@ -99,13 +99,13 @@
             <div class="slider">
                 <div id="bg-slider" class="owl-carousel owl-theme">
                   
-                  <div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-5.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >"I will not sell defective goods. I feel satisfied with my little profit because I know Allah will bless me."
+                  <div class="item"><img style="height:680px;" src="<?php echo base_url();?>assets/img/slider-image-5.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >"I will not sell defective goods. I feel satisfied with my little profit because I know Allah will bless me."
                    <p><h3 style="font-style:gisha;text-align:center;">(Abdul Rahman bin Auf)</h3></p> </div></div>
 				   
-				  <div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-10.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Buy and Sell with Souq Anshar!
+				  <div class="item"><img style="height:680px;" src="<?php echo base_url();?>assets/img/slider-image-10.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Buy and Sell with Souq Anshar!
                    <p><h3 style="font-style:gisha;text-align:center;">Your First Dinar and Dirham Marketplace.</h3></p> </div></div>
 
-                   <div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-8.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Syariah Compliant Marketplace
+                   <div class="item"><img style="height:680px;" src="<?php echo base_url();?>assets/img/slider-image-8.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Syariah Compliant Marketplace
                    <p><h3 style="font-style:gisha;text-align:center;">Use muamalah system that meets the syariah law.</h3></p> </div></div>
                    
                     

@@ -283,8 +283,8 @@
 	        /*$this->load->view('products',$data);*/
 	  } 
 
-<<<<<<< HEAD
-	    public function upload(){
+
+	    /*public function upload(){
 	   	$config['upload_path'] = "./images/";
 	   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
 	   	$this->load->library('upload',$config);
@@ -301,9 +301,8 @@
 	   		//$this->load->view('success',$data);
 	   		$this->_display('successupload', $data);
 	   	}
-	   }
-=======
->>>>>>> origin/miza
+	   }*/
+
 	}
 	        
 ?>

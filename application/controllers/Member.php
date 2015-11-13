@@ -94,8 +94,8 @@
 	    	    		"pl_category" => $arr['category'],
 	    	    		"pl_subcategory" => $arr['subcategory']
 	    	    		);
-	    	    	$this->load->model('m_profile');
-	    	    	$this->m_user->insert($temp);
+	    	    	$this->load->model('m_product');
+	    	    	$this->M_product->insert($temp);
 	    	    	break;
 
 	    	}

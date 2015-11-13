@@ -17,9 +17,9 @@
                     <li>
                         <a href="<?php echo site_url('member/page/product_upload'); ?>"><i class="fa fa-desktop"></i> Upload Product</a>
                     </li>
-					<!--li>
-                        <a href="<?php echo site_url('member/page/chart_db'); ?>"><i class="fa fa-bar-chart-o"></i> Charts</a>
-                    </li>-->
+					<li>
+                        <a href="<?php echo site_url('member/page/changepassword'); ?>"><i class="fa fa-bar-chart-o"></i> Change Password</a>
+                    </li>
                     <!--li>
                         <a href="<?php echo site_url('member/page/tabpanel_db'); ?>"><i class="fa fa-qrcode"></i> Tabs & Panels</a> <!--class="active-menu"-->
                     </li>                    
