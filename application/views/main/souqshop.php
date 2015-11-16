@@ -337,6 +337,7 @@
 										<div class="overlay-content" style="background:#ffa300">
 											<h2>RM237</h2>
 											<p>Gevalia Free Coffee Maker</p>
+											<a href="<?php echo site_url('main/page/productdetails'); ?>">View</p> 
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
@@ -362,6 +363,7 @@
 										<div class="overlay-content"style="background:#ffa300">
 											<h2>RM999.99</h2>
 											<p>Samsung Galaxy Tab S 10.5-inch</p>
+											<a href="<?php echo site_url('main/page/productdetails'); ?>">View</p> 
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
@@ -387,6 +389,7 @@
 										<div class="overlay-content"style="background:#ffa300">
 											<h2>RM2500</h2>
 											<p>Modenas Elegan 200</p>
+											<a href="<?php echo site_url('main/page/productdetails'); ?>">View</p> 
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
@@ -412,6 +415,7 @@
 										<div class="overlay-content"style="background:#ffa300">
 											<h2>RM69</h2>
 											<p>WILDCRAFT Kailash Travel Bag</p>
+											<a href="<?php echo site_url('main/page/productdetails'); ?>">View</p> 
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
@@ -438,6 +442,7 @@
 										<div class="overlay-content"style="background:#ffa300">
 											<h2>RM2999.99</h2>
 											<p>Apple MacBook Pro 13-inch</p>
+											<a href="<?php echo site_url('main/page/productdetails'); ?>">View</p> 
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
@@ -464,6 +469,7 @@
 										<div class="overlay-content"style="background:#ffa300">
 											<h2>RM2555</h2>
 											<p>Hitachi Washing Machine</p>
+											<a href="<?php echo site_url('main/page/productdetails'); ?>">View</p> 
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
@@ -490,6 +496,7 @@
 										<div class="overlay-content"style="background:#ffa300">
 											<h2>RM199</h2>
 											<p>Popular Hip Hop Sweatshirt</p>
+											<a href="<?php echo site_url('main/page/productdetails'); ?>">View</p> 
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
@@ -516,6 +523,7 @@
 										<div class="overlay-content"style="background:#ffa300">
 											<h2>RM75</h2>
 											<p>Telekung Sulam Eksklusif</p>
+											<a href="<?php echo site_url('main/page/productdetails'); ?>">View</p> 
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
@@ -542,6 +550,7 @@
 										<div class="overlay-content"style="background:#ffa300">
 											<h2>RM250</h2>
 											<p>Renaissance Woody Fragrance</p>
+											<a href="<?php echo site_url('main/page/productdetails'); ?>">View</p> 
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
@@ -568,6 +577,7 @@
 										<div class="overlay-content"style="background:#ffa300">
 											<h2>RM199.99</h2>
 											<p>British Style Autumn Running Shoes</p>
+											<a href="<?php echo site_url('main/page/productdetails'); ?>">View</p> 
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
@@ -595,6 +605,7 @@
 										<div class="overlay-content"style="background:#ffa300">
 											<h2>RM60</h2>
 											<p>Floral CC Dress</p>
+											<a href="<?php echo site_url('main/page/productdetails'); ?>">View</p> 
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
@@ -621,6 +632,7 @@
 										<div class="overlay-content"style="background:#ffa300">
 											<h2>RM129</h2>
 											<p>Baby Stroller</p>
+											<a href="<?php echo site_url('main/page/productdetails'); ?>">View</p> 
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
