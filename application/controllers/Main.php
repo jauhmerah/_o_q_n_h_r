@@ -33,6 +33,16 @@
 	    			$this->load->model('m_item');
 	    			$data['arr'] = $this->m_item->get();  
 	    			break;
+	    		case 'x1':
+	    			$arr = $this->input->get();	    			
+	    			$this->load->model('m_item');
+	    			$arr1 = array(
+	    				"item_id" => $arr['item']
+	    			);
+	    			$temp = $this->m_item->get($arr1,$arr['cat']);
+	    			$data['products'] = $temp;
+	    			/*print_r($temp);*/
+	    			break;
 	    	}
 	    	$this->_display($page,$data);
 	    }
@@ -162,7 +172,9 @@
 
 			/*$data['arr'] = $this->m_item->get_search($temp,"cat_shoes");
 			$this->load->view('main/testoutput', $data)*/
-			
+			/**
+				kat sini kono dynamic
+			*/
 			$data = null;
 	        switch ($process) 
 	        {
@@ -186,13 +198,37 @@
 	    		case '5':
 	    			//nk load semua data dlm db
 	    		    $table = 'cat_business';
-	    		    break;
+	    		    break;	    		
+	    		
 	    	}
 
-	    	$data['arr'] = $this->m_item->get_search($search,$table);
-			$this->load->view('main/testoutput', $data);
+	    	$data['products'] = $this->m_item->get_search($search,$table);
+	    	$data['table'] = $table;
+	    	$this->load->view('main/souqshop', $data);
+	    	/*if($data['products']!=NULL)
+	    	{
+	    		$this->load->view('main/souqshop', $data);
+	    	}else
+	    	{
+	    		echo "no data found";
+	    		
+	    	}*/
+	    	
+	    	
+			
 	    			
 		}
+
+		public function preview($sub_id)//this know only one parameter will be come to this
+		{
+   			 $data['details']=$this->Products_model->get_details($sub_id);//passing the product id to get details of your product
+
+		}
+
+
+
+
+		
 
 		public function add()
 		{
@@ -219,15 +255,15 @@
 		}
 
 		public function lala()
-	 {
+	 	{
 
-	        $this->load->model('Products_model');
+	        $this->load->model('m_item');
 	       
-	        $data['products'] = $this->Products_model->get_all($table);
-	        echo "<pre>";
+	        $data['products'] = $this->m_item->get_details();
+	       echo "<pre>";
 			print_r($data['products']);
-	       /* $this->load->view('products',$data);*/
-	  } 
+	        /*$this->load->view('main/products',$data);*/
+	 	} 
 
 	}
 	        

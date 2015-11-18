@@ -313,6 +313,7 @@
 				</div>
 				
 				<br><div class="col-sm-9 padding-right"></br>
+
 					<div class="product-details"><!--product-details-->
 						<div class="col-sm-5">
 							<div class="view-product">
@@ -351,27 +352,40 @@
 							</div>
 
 						</div>
+						
+						
 						<div class="col-sm-7">
+							
 							<div class="product-information"><!--/product-information-->
+
 								<img src="<?php echo base_url();?>assets/anot/images/product-details/new.jpg" class="newarrival" alt="" />
-								<h2>Krups KT600 Coffee Maker</h2>
-								<p>Product ID: 1089772</p>
+								<h2><?php echo $products->item_name?></h2>
+								<!--p>Product ID: 1089772</p-->
 								<!--img src="images/product-details/rating.png" alt="" />-->
 								<span>
-									<span>RM59.90</span>
-									<label>Quantity:</label>
-									<input type="text" value="3" />
+									<span>RM<?php echo $products->item_price?></span>
+									
+									<!--Mcm mana nak masuk database ni?-->
+									<div class="form-group" >
+										<label>Quantity:</label>
+                                    <input type="text" name= "itemqty" class="form-control" >
+                                    </div>
+									
+									
 									<button type="button" class="btn btn-fefault cart">
 										<i class="fa fa-shopping-cart"></i>
 										Add to cart
 									</button>
 								</span>
-								<p><b>Availability:</b> In Stock</p>
-								<p><b>Condition:</b> New</p>
-								<p><b>Brand:</b> Krups</p>
+								<p><b>Availability:</b><?php echo $products->item_availability?></p>
+								<p><b>Condition:</b><?php echo $products->item_condition?></p>
+								<p><b>Brand:</b><?php echo $products->item_brand?></p>
 								<a href=""><img src="<?php echo base_url();?>assets/anot/images/product-details/share.png" class="share img-responsive"  alt="" /></a>
 							</div><!--/product-information-->
+							
 						</div>
+						
+						
 					</div><!--/product-details-->
 					
 					<!--div class="category-tab shop-details-tab"><!--category-tab-->
@@ -810,7 +824,7 @@
 		<div class="footer-bottom">
 			<div class="container">
 				<div class="row">
-					<p class="pull-left">Pisang Sdn Bhd, All rights reserved.</p>
+					<p style="text-align:center;">Pisang Sdn Bhd, All rights reserved.</p>
 					<!--p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">Themeum</a></span></p>-->
 				</div>
 			</div>

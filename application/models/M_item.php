@@ -26,9 +26,9 @@ class M_item extends CI_Model {
             $this->load->database();
     }
 
-    public function get($where = NULL) {
+    public function get($where = NULL , $table = null) {
         $this->db->select('*');
-        $this->db->from(self::TABLE_NAME);
+        $this->db->from($table);
         if ($where !== NULL) {
             if (is_array($where)) {
                 foreach ($where as $field=>$value) {
@@ -103,7 +103,7 @@ class M_item extends CI_Model {
           $result = $this->db->get()->result();
           
           return $result;
-        }else
+        } else
         {
             return false;
         }
@@ -111,6 +111,17 @@ class M_item extends CI_Model {
           
     }
 
+
+
+    function get_details()
+     {
+         $query = $this->db->query("SELECT * FROM sub_category WHERE sub_id='$sub_id'");
+        $result = $query->result_array();
+        return $result; //return as object array
+           
+     }
+
+     
 
 }
 
