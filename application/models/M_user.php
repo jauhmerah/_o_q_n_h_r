@@ -96,6 +96,8 @@ class M_user extends CI_Model {
 
     }
 
+    
+
 
     /*public searchItem($sukaJoin = array()){
         $this->db->select('*');

@@ -40,9 +40,17 @@
                                             <input type="text" name="username" placeholder="Please enter your username." class="form-username form-control" id="username">
                                         </div>
 
+<<<<<<< Updated upstream
                                         <div class="form-group">
                                             <label>Email Address</label>
                                             <input type="text" name="email" placeholder="Please enter your email address." class="form-email form-control" id="email">
+=======
+                                      <div class="form-group">
+                                          <div class="col-md-6">
+                                            <label>Item Price</label>
+                                            <input class="form-control" name="price" placeholder="Please enter your item price.">
+                                            <!--input type="text" name="email" placeholder="Please enter your email address." class="form-email form-control" id="email">-->
+>>>>>>> Stashed changes
                                         </div>
 
                                         <div class="form-group">
@@ -71,8 +79,52 @@
                                                 </label>
 
                                         </div>
+<<<<<<< Updated upstream
                                         <br>
                                         <br>
+=======
+                                     </div>
+                                  </div>   
+                              </div>
+                                <!--<div id='preview'>
+                              </div>
+                                <form id="imageform" method="post" enctype="multipart/form-data" action='ajaxImageUpload.php' style="clear:both">
+                                    Upload image: 
+                                    <div id='imageloadstatus' style='display:none'><img src="loader.gif" alt="Uploading...."/></div>
+                                    <div id='imageloadbutton'>
+                                   <input type="file" name="photos[]" id="photoimg" multiple="true" />
+                                    </div>
+                                </form><p>-->
+                              <br /><br />
+                              <div id="row">
+                                <div class="col-sm-9 col-md-5">
+                                  <form id="imageform" method="post" enctype="multipart/form-data"action='ajaxImageUpload.php' style="clear:both">
+                                    <img src='#' width="180" height="180"></img>
+                                      <input type="file" name="userfile" size="20" />
+                                       <br/>
+                                     <input type="submit" value="upload" name="upload" class="btn" style="background-color:#ffa300 "/>
+                                   </form><p>
+                                </div>
+                                <div class="col-sm-3 col-md-5">
+                                  <form id="imageform" method="post" enctype="multipart/form-data"action='ajaxImageUpload.php' style="clear:both">
+                                    <img src='#' width="180" height="180"></img>
+                                      <input type="file" name="userfile" size="20" />
+                                       <br/>
+                                     <input type="submit" value="upload" name="upload" class="btn" style="background-color:#ffa300 "/>
+                                   </form><p>
+                                </div>
+                                <div class="col-sm-9 col-md-5">
+                                  <form id="imageform" method="post" enctype="multipart/form-data"action='ajaxImageUpload.php' style="clear:both">
+                                   <img src='#' width="180" height="180"></img>
+                                      <input type="file" name="userfile" size="20" />
+                                       <br/>
+                                     <input type="submit" value="upload" name="upload" class="btn" style="background-color:#ffa300" />
+                                  </form>
+                                </div>
+                              </div>
+
+
+>>>>>>> Stashed changes
 
 
                                         

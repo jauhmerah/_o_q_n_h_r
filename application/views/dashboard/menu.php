@@ -8,18 +8,18 @@
                     <!--li>
                         <a href="<?php echo site_url('main/page/profile'); ?>"><i class="fa fa-user"></i> Profile</a>
                     </li-->
-                    <li>
+                    <!--li>
                         <a href="<?php echo site_url('member/page/dashboard'); ?>"><i class="fa fa-dashboard"></i> Dashboard</a>
-                    </li>
+                    </li-->
                      <li>
                         <a href="<?php echo site_url('member/page/profileupdate_db'); ?>"><i class="fa fa-user"></i>Update Profile</a>
                     </li>
                     <li>
                         <a href="<?php echo site_url('member/page/product_upload'); ?>"><i class="fa fa-desktop"></i> Upload Product</a>
                     </li>
-					<!--li>
-                        <a href="<?php echo site_url('member/page/chart_db'); ?>"><i class="fa fa-bar-chart-o"></i> Charts</a>
-                    </li>-->
+					<li>
+                        <a href="<?php echo site_url('member/page/changepassword'); ?>"><i class="fa fa-bar-chart-o"></i> Change Password</a>
+                    </li>
                     <!--li>
                         <a href="<?php echo site_url('member/page/tabpanel_db'); ?>"><i class="fa fa-qrcode"></i> Tabs & Panels</a> <!--class="active-menu"-->
                     </li>                    

@@ -81,8 +81,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <div class="button navbar-right" >
-                 <a href="<?php echo site_url('main/page/signin');?>"><button class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s">Sign In</button></a>
-                 <a href="<?php echo site_url('main/page/signup');?>"><button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Sign Up</button></a>
+                <!--a href="<?php echo site_url('main/page/cart');?>"><img src="<?php echo base_url();?>assets/img/cart1.png" title="Cart" width="35px" height="35px"--></a>&nbsp;
+                 <a href="<?php echo site_url('main/page/cart');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Cart</button></a>
+                 <a href="<?php echo site_url('main/page/signin');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Sign In</button></a>
+                 <a href="<?php echo site_url('main/page/signup');?>"><button class="navbar-btn nav-button " data-wow-delay="0.6s">Sign Up</button></a>
+                 <!--a href="<?php echo site_url('main/page/cart');?>"><button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Cart</button></a-->
               <!--ul class="main-nav nav navbar-nav navbar-right">
                 <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="#">Profile</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="#">Job Seekers</a></li>
@@ -213,7 +216,7 @@
 		
 		
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="<?php echo base_url();?>assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <!--script>window.jQuery || document.write('<script src="<?php echo base_url();?>assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script-->
         <script src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
         <script src="<?php echo base_url();?>assets/js/owl.carousel.min.js"></script>
         <script src="<?php echo base_url();?>assets/js/wow.js"></script>
