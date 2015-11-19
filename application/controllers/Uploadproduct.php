@@ -1,14 +1,14 @@
 <?php
-class Upload extends CI_Controller {
+class Uploadproduct extends CI_Controller {
 function __construct()
 {
 parent::__construct();
 $this->load->helper(array('form', 'url'));
-$this->load->model('upload_model');
+$this->load->model('m_productupload');
 }
 function index()
 {
-$this->load->view('dashboard/imageprofile', array('error' => ' ' ));
+$this->load->view('dashboard/upload_products', array('error' => ' ' ));
 }
 function do_upload()
 {
@@ -32,13 +32,16 @@ else
 $data=$this->upload->data();
 $this->thumb($data);
 $file=array(
-
+'pl_name'=>$data['itemname'],
+'pl_category'=>$data['category'],
+'pl_price'=>$data['price'],
+'pl_subcategory'=>$data['subcategory'],
 'img_name'=>$data['raw_name'],
 'thumb_name'=>$data['raw_name'].'_thumb',
 'ext'=>$data['file_ext'],
 
 );
-$this->upload_model->add_image($file);
+$this->m_productupload->add_image($file);
 $data = array('upload_data' => $this->upload->data());
 $this->load->view('main/profile', $data);
 }

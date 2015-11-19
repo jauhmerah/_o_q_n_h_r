@@ -8,71 +8,25 @@
                     </div>
                 </div> 
                  <!-- /. ROW  -->
-                  <?php echo form_open_multipart('upload/do_upload');?>
-
-                    <?php echo "<input type='file' name= 'userfile' size='20' />";?>
-
-                    <br /><br />
-
-                    <?php echo "<input type= 'submit' value='upload' />";?>
-
-                   <div id="timelineProfilePic">
-                          <img class="img-circle" src= "<?php echo base_url('./upload'); ?>" class="bgImage" style="margin-top:0px; margin-left:45px;width:150px;">
-                    </div>
-
+               
+                  <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Upload Your Picture
+                        </div>
+ 
+                    <?php echo form_open_multipart('upload/do_upload');?>
+                     
+                    <input type="file" name="userfile" size="50" />
+                     
+                    <br>
+                     
+                    <input type="submit" value="upload" class="btn btn-warning" name="upload" />
+                     
                     </form>
-                    
-                        
-                                                  
-                    
-                             
+                  </div>
                                 </div>
                                 </div>   
                                 </div>
-                                <!--<div id='preview'>
-                              </div>
-                                <form id="imageform" method="post" enctype="multipart/form-data" action='ajaxImageUpload.php' style="clear:both">
-                                    Upload image: 
-                                    <div id='imageloadstatus' style='display:none'><img src="loader.gif" alt="Uploading...."/></div>
-                                    <div id='imageloadbutton'>
-                                   <inpu t type="file" name="photos[]" id="photoimg" multiple="true" />
-                                    </div>
-                                </form>-->
-                              <!--<br /><br />
-                              <div id="row">
-                                <div class="col-xs-6 col-sm-4">
-                                  <form id="imageform" method="post" enctype="multipart/form-data"action='ajaxImageUpload.php' style="clear:both">
-                                    <img src='#' width="180" height="180"></img>
-                                      <input type="file" name="userfile" size="20" />
-                                       <br/>
-                                     <input type="submit" value="upload" name="upload" class="btn" style="background-color:#ffa300 "/>
-                                   </form>
-                                </div>
-                                <div class="col-xs-6 col-sm-4">
-                                  <form id="imageform" method="post" enctype="multipart/form-data"action='ajaxImageUpload.php' style="clear:both">
-                                    <img src='#' width="180" height="180"></img>
-                                      <input type="file" name="userfile" size="20" />
-                                       <br/>
-                                     <input type="submit" value="upload" name="upload" class="btn" style="background-color:#ffa300 "/>
-                                   </form>
-                                </div>
-                                <div class="col-xs-6 col-sm-4">
-                                  <form id="imageform" method="post" enctype="multipart/form-data"action='ajaxImageUpload.php' style="clear:both">
-                                   <img src='#' width="180" height="180"></img>
-                                      <input type="file" name="userfile" size="20" />
-                                       <br/>
-                                     <input type="submit" value="upload" name="upload" class="btn" style="background-color:#ffa300" />
-                                  </form>
-                                </div>
-                              </div>-->
-
-
-
-            
-                
-
-                     
-                                       
                                     
                                 </div>
                             </div>
