@@ -7,12 +7,14 @@
 
 	    function __construct() {
 	        parent::__construct();
+	        $this->load->model('m_user');
 	        $this->load->helper('url');
 	    }
 	
 	    function index() {
 	        $this->_display();
 	    }
+	    
 
 	    function _display($page = 'dashboard', $data = '')
 	    {	    	    	
@@ -60,17 +62,6 @@
 					// member/page/testoutput/3
 					$data['arr'] = $this->input->post();
     			break;
-	    		case '4':
-	    			$post =  $this->input->post();
-	    			$temp = array(
-	    				"us_name" => $post['username'],
-	    				"us_password" => $post['password']
-	    			);
-	    			$this->load->model('m_user');
-	    			if (!$this->m_user->get($temp)) {
-	    				redirect(site_url('main/page/signin/5'));
-	    			}
-	    			break;
 	    		case '5':
 	    	        $arr =  $this->input->post();
 	    	    	$temp = array(
@@ -79,19 +70,38 @@
 	    	    		"us_password" => $arr['password'],
 	    	    		"pr_add" => $arr['address'],
 	    	    		"pr_phone" => $arr['phone'],
-	    	    		"pr_gender" => $arr['gender']
+	    	    		"pr_gender" => $arr['gender'],
+	    	    		"pr_image"=>$arr['image']
 
 	    	    	);
 	    	    	$this->load->model('m_profile');
 	    	    	$this->m_profile->insert($temp);
 	    	    	break;
-
+	    	    case '6':
+	    	        $arr =  $this->input->post();
+	    	    	$temp = array(
+	    	    		"pl_name" => $arr['itemname'],
+	    	    		"pl_price" => $arr['price'],
+	    	    		"pl_category" => $arr['category'],
+	    	    		"pl_subcategory" => $arr['subcategory']
+	    	    		);
+	    	    	$this->load->model('m_product');
+	    	    	$this->M_product->insert($temp);
+	    	    	break;
 
 	    	}
 	    	$this->_display($page,$data);
-	    }
 
-	    public function upload(){
+	/*public function logout()
+	{
+		$this->session->sess_destroy();
+		redirect('main');
+	}*/
+
+	    
+	    
+
+	    /*public function upload(){
 	   	$config['upload_path'] = "./images/";
 	   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
 	   	$this->load->library('upload',$config);
@@ -107,10 +117,8 @@
 	   		$data['img'] = base_url().'/images/'.$file_data['file_name'];
 	   		//$this->load->view('success',$data);
 	   		$this->_display('berjaya', $data);
-	   	}
+	   	}*/
 	   }
-
-
-	}
+}
 	        
 ?>

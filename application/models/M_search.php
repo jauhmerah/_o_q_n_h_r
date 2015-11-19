@@ -1,17 +1,19 @@
 <?php 
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class M_user extends CI_Model {
+class M_search extends CI_Model {
 
     /**
      * @name string TABLE_NAME Holds the name of the table in use by this model
      */
-    const TABLE_NAME = 'sa_user';
+
+    const TABLE_NAME = 'm_search';
+
 
     /**
      * @name string PRI_INDEX Holds the name of the tables' primary index used in this model
      */
-    const PRI_INDEX = 'us_id';
+    const PRI_INDEX = 'sub_cat_id';
 
     /**
      * Retrieves record(s) from the database
@@ -21,14 +23,7 @@ class M_user extends CI_Model {
      *                      If string, value will be used to match against PRI_INDEX
      * @return mixed Single record if ID is given, or array of results
      */
-
-    function __construct() {
-            parent::__construct();
-            $this->load->database();
-    }
-
     public function get($where = NULL) {
-        
         $this->db->select('*');
         $this->db->from(self::TABLE_NAME);
         if ($where !== NULL) {
@@ -93,48 +88,19 @@ class M_user extends CI_Model {
         }
         $this->db->delete(self::TABLE_NAME, $where);
         return $this->db->affected_rows();
-
-    }
-
-    public function takeUser($us_name, $us_password)
-    {
-        $this->db->select('us_name', 'password');
-        $this->db->from('sa_user');
-        $this->db->where('username', $us_name);
-        $this->db->where('password', $us_password);
-        $query = $this->db->get();
-        return $query->num_rows();
-}
-
-
-    public function dataUser($us_name, $us_password)
-    {
-        $this->db->select('*');
-        $this->db->from('sa_user');
-        $this->db->where('username', $us_name);
-        $this->db->where('password', $us_password);
-        $query = $this->db->get();
-        return $query->num_rows();
-    }
-
-    public function userData($us_name)
-    {
-        $this->db->select('username');
-        $this->db->where('username', $us_name);
-        $query = $this->db->get('sa_user');
-        return $query->row();
     }
 
 
-
-    /*public searchItem($sukaJoin = array()){
+    /*public function search($item = Array('title'=>))
+    {
         $this->db->select('*');
         $this->db->from(self::TABLE_NAME);
-        $this->db->like($sukaJoin);
+        $this->db->like($item);
         $result = $this->db->get()->result();
         return $result;
     }*/
 
-      
+
 }
+
 ?>
