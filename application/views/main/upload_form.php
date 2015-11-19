@@ -1,15 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="utf-8"/>
-	<meta http-equiv="X-UA-Compatible" content="IE-9"/>
+<title>Upload Form</title>
 </head>
 <body>
-	<?php echo $error;?>
-	<?php echo form_open_multipart('main/upload');?>
-	<input type="file" name="userfile"/><br><br>
-	<input type="submit" name="submit" value="upload image">
+
+
+
+<!--<?php echo $error;?>-->
+<?php echo form_open_multipart('upload/do_upload');?>
+
+<?php echo "<input type='file' name= 'userfile' size='20' />";?>
+
+<br /><br />
+
+<?php echo "<input type= 'submit' value='upload' />";?>
+
 </form>
+
 </body>
 </html>
-

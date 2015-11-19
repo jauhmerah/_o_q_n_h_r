@@ -1,0 +1,1 @@
+<img src="<?=base_url().'/upload/'; ?><?php echo $upload_data['file_name']; ?>" width="300" height="300">
