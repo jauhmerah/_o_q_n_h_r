@@ -86,6 +86,17 @@
 	    	    	$this->load->model('m_user');
 	    	    	$this->m_user->insert($temp);
 	    	    	break;
+
+	    	    case 'x2':
+	    			$arr = $this->input->get();	    			
+	    			$this->load->model('m_user');
+	    			$arr1 = array(
+	    				"sa_name" => $arr['name']
+	    			);
+	    			$temp = $this->m_user->get($arr1);
+	    			//$data['anot'] = $temp;
+	    			print_r($temp);
+	    			break;
 	    	    
 
 	    	}
@@ -273,16 +284,7 @@
 
 		}
 
-		public function lulu()
-	 {
-
-	        $this->load->model('m_user');
-	        $data['anot'] = $this->m_user->get_all();
-	        echo "<pre>";
-			print_r($data['anot']);
-	        /*$this->load->view('products',$data);*/
-	  } 
-
+	
 
 	    /*public function upload(){
 	   	$config['upload_path'] = "./images/";

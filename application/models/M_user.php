@@ -92,10 +92,11 @@ class M_user extends CI_Model {
 
     function get_all(){
 
-        $this->db->select('*');
+        $this->db->select('us_name,us_email');
         $this->db->from('sa_user');
         $results=$this->db->get()->result();
         return $results;
+       
     }
 
 

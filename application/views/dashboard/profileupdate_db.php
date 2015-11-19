@@ -9,10 +9,10 @@
                 </div> 
                  <!-- /. ROW  -->
 
-                <!--?php echo form_open_multipart('main/upload/do_upload');?>
+                <?php echo form_open_multipart('main/upload/do_upload');?>
                     <input type="file" name="userfile"/><br><br>
                     <input type="submit" name="submit" value="upload image">
-                </form-->
+                </form>
 
           
 
@@ -110,7 +110,7 @@
 
                                          <div class="col-sm-4">  <br> 
                                            <input type="submit" class="btn btn-warning" style="background-color:#2DAADF" value="UPDATE"></input>
-                                        </diV
+                                        </div>
                                         
                                       
                                     

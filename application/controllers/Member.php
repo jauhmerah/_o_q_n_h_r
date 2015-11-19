@@ -101,8 +101,21 @@
 	    	    	$this->M_product->insert($temp);
 	    	    	break;
 
+	    	    	case 'x2':
+	    			$arr = $this->input->get();	    			
+	    			$this->load->model('m_user');
+	    			$arr1 = array(
+	    				"sa_name" => $arr['name']
+	    			);
+	    			$temp = $this->m_user->get($arr1);
+	    			//$data['anot'] = $temp;
+	    			print_r($temp);
+	    			break;
+
 
 	    	}
+
+	    	
 	    	$this->_display($page,$data);
 	    }
 
@@ -125,7 +138,19 @@
 	   		//$this->load->view('success',$data);
 	   		$this->_display('successupload', $data);
 	   	}
-		}
+
+	}
+			public function lulu()
+	 {
+
+	        $this->load->model('m_user');
+	        $data['anot'] = $this->m_user->get_all();
+	        //echo "<pre>";
+			//print_r($data['anot']);
+			$this->load->view('profileupdate_db',$data);
+	  } 
+
+
 
 	    
 
