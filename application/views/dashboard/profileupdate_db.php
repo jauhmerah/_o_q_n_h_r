@@ -8,14 +8,14 @@
                     </div>
                 </div> 
                  <!-- /. ROW  -->
-<<<<<<< HEAD
-                <?php echo form_open_multipart('main/upload/do_upload');?>
+
+                <!--?php echo form_open_multipart('main/upload/do_upload');?>
                     <input type="file" name="userfile"/><br><br>
                     <input type="submit" name="submit" value="upload image">
-                </form>
-=======
+                </form-->
+
           
->>>>>>> origin/anis_pro_process
+
               <form role="form" action = "<?= site_url('member/page/profileupdate_db/5');?>" method = 'post'>
               <div class="row">
                 <div class="col-lg-12">
@@ -26,14 +26,13 @@
                         <!--<div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-6">
-<<<<<<< HEAD
+
 
                                 <!--<div id="timelineProfilePic">
                                  <img class="img-circle" src="<?php echo base_url();?>assets/hanis/images/arash.jpg" class="bgImage" style="margin-top:0px; margin-left:45px;width:150px;">
-=======
+
                                 <!--<div id="timelineProfilePic">
-                                 <img class="img-circle" src= '".$cfet['image']."' class="bgImage" style="margin-top:0px; margin-left:45px;width:150px;">
->>>>>>> origin/anis_pro_process
+
                                     <p>
                                      <div class="form-group">
                                             <label>Upload Your Profile Picture</label>
@@ -54,12 +53,12 @@
                                             <!--<form action = "<?= site_url('main/upload');?>" method = 'post'>
                                             <input type="file" name="userfile"/><br>
                                             <input type="submit" name="submit" value="Upload image">
-<<<<<<< HEAD
+
                                         </form>-->
                                         </div>
-=======
+
                                         </form>
-                                        </div>-->
+                                        </div>
                                        <!-- Upload input-->
                                        <!-- <div class="control-group">
                                             <label class="control-label">Upload<span style="color: red;">*</span></label>
@@ -69,7 +68,7 @@
                                                 <p class="help-block"></p>
                                             </div>
                                         </div> -->
->>>>>>> origin/anis_pro_process
+
                                        <div class="form-group">
                                             <label>Username</label>
                                             <input type="text" name="username" placeholder="Please enter your username." class="form-username form-control" id="username">

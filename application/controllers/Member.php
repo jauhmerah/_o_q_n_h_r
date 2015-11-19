@@ -79,19 +79,17 @@
 	    	    		
 	    	    		"pr_add" => $arr['address'],
 	    	    		"pr_phone" => $arr['phone'],
-	    	    		"pr_gender" => $arr['gender'],
-	    	    		"pr_image"=>$arr['image']
-
+	    	    		"pr_gender" => $arr['gender']
+	    	    		
 	    	    	);
 	    	    	$this->load->model('m_profile');
 	    	    	$this->m_profile->insert($temp);
 	    	    	break;
 	    	    case '6':
-<<<<<<< HEAD
+
 	    	    	$data['error'] = true;
 	    	    	break;
 
-=======
 	    	        $arr =  $this->input->post();
 	    	    	$temp = array(
 	    	    		"pl_name" => $arr['itemname'],
@@ -102,15 +100,14 @@
 	    	    	$this->load->model('m_product');
 	    	    	$this->M_product->insert($temp);
 	    	    	break;
->>>>>>> origin/anis_pro_process
+
 
 	    	}
 	    	$this->_display($page,$data);
 	    }
 
-<<<<<<< HEAD
-	   public function upload(){
-=======
+	  
+
 	    	public function upload(){
 				   	$config['upload_path'] = "./images/";
 				   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
@@ -159,7 +156,7 @@
 	   		$this->_display('berjaya', $data);
 	   	}*/
 	  
->>>>>>> origin/anis_pro_process
+
 
 	}
 	        
