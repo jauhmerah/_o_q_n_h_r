@@ -109,20 +109,7 @@ class M_item extends CI_Model {
         }
         
           
-    }
-
-
-
-    function get_details()
-     {
-         $query = $this->db->query("SELECT * FROM sub_category WHERE sub_id='$sub_id'");
-        $result = $query->result_array();
-        return $result; //return as object array
-           
-     }
-
-     
-
+    }    
 }
 
 ?>

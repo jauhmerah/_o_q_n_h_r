@@ -138,8 +138,6 @@
 	    	return $temp;
 	    }
 
-
-
 	    public function percentage($sama, $arr1 = null, $arr2 = null)
 	    {
 	    	$temp2=0;
@@ -158,9 +156,7 @@
          //load the method of model  
          $data['h']=$this->cat_shoes->select();  
          //return the data in view  
-         $this->load->view('search', $data);  
-
-    		
+         $this->load->view('search', $data);      		
 		}
 
 		public function search()
@@ -204,44 +200,7 @@
 
 	    	$data['products'] = $this->m_item->get_search($search,$table);
 	    	$data['table'] = $table;
-	    	$this->load->view('main/souqshop', $data);
-	    	/*if($data['products']!=NULL)
-	    	{
-	    		$this->load->view('main/souqshop', $data);
-	    	}else
-	    	{
-	    		echo "no data found";
-	    		
-	    	}*/
-	    	
-	    	
-			
-	    			
-		}
-
-		public function preview($sub_id)//this know only one parameter will be come to this
-		{
-   			 $data['details']=$this->Products_model->get_details($sub_id);//passing the product id to get details of your product
-
-		}
-
-
-
-
-		
-
-		public function add()
-		{
-			$data = array(
-				'item_id' =>'3',
-				'item_name' => 'Torchlight',
-				
-				'item_price' => 16.9,
-				
-				);
-
-			$this->cart->insert($data);
-			echo "add() called";
+	    	$this->load->view('main/souqshop', $data); 			
 		}
 
 		public function show()
@@ -257,9 +216,9 @@
 		public function lala()
 	 	{
 
-	        $this->load->model('m_item');
+	        $this->load->model('Products_model');
 	       
-	        $data['products'] = $this->m_item->get_details();
+	        $data['products'] = $this->Products_model->get_all();
 	       echo "<pre>";
 			print_r($data['products']);
 	        /*$this->load->view('main/products',$data);*/

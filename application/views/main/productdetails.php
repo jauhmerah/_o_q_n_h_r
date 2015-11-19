@@ -368,7 +368,7 @@
 									<!--Mcm mana nak masuk database ni?-->
 									<div class="form-group" >
 										<label>Quantity:</label>
-                                    <input type="text" name= "itemqty" class="form-control" >
+                                    <input type="text"  name= "itemqty" class="form-control" >
                                     </div>
 									
 									
