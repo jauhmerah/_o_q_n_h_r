@@ -85,13 +85,16 @@
 	    	    	$this->load->model('m_profile');
 	    	    	$this->m_profile->insert($temp);
 	    	    	break;
+	    	    case '6':
+	    	    	$data['error'] = true;
+	    	    	break;
 
 
 	    	}
 	    	$this->_display($page,$data);
 	    }
 
-	    public function upload(){
+	   public function upload(){
 	   	$config['upload_path'] = "./images/";
 	   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
 	   	$this->load->library('upload',$config);
@@ -106,7 +109,7 @@
 	   		$file_data =$this->upload->data();
 	   		$data['img'] = base_url().'/images/'.$file_data['file_name'];
 	   		//$this->load->view('success',$data);
-	   		$this->_display('berjaya', $data);
+	   		$this->_display('successupload', $data);
 	   	}
 	   }
 

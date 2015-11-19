@@ -8,10 +8,14 @@
                     </div>
                 </div> 
                  <!-- /. ROW  -->
-                <?php echo form_open_multipart('main/upload/do_upload');?>
-                    <input type="file" name="userfile"/><br><br>
-                    <input type="submit" name="submit" value="upload image">
-                </form>
+           
+              <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Section: Basic Info
+                        </div>
+					<img src="<?php echo $img?>" width="300" height="300"> 
               <form role="form" action = "<?= site_url('member/page/profileupdate_db/5');?>" method = 'post'>
               <div class="row">
                 <div class="col-lg-12">

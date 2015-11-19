@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,7 +40,7 @@
 		<div class="header-connect">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5 col-sm-8 col-xs-8">
+                   <div class="col-md-5 col-sm-8 col-xs-8">
                         <div class="header-half header-call">
                           <p>
                                 <span><i class="icon-cloud"></i>+012-2228069</span>
@@ -68,37 +68,41 @@
         <nav class="navbar navbar-default">
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" style= "margin-top:-15.5px;" href="<?php echo site_url('huhu/haha'); ?>"><img src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="230px" height="70px"></a>
-            </div>
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" style= "margin-top:-15.5px;" href="<?php echo site_url('huhu/haha'); ?>"><img src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="230px" height="70px"></a>
+                    </div>
 			
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
-              <div class="button navbar-right" >
-                  <button class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s">Sign in</button>
-                  <button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Sign up</button> <img src="<?php echo base_url();?>assets/img/cart7.png">
-              </div>
-              <!--ul class="main-nav nav navbar-nav navbar-right">
-                <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="#">Home</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="#">Job Seekers</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="#">Employeers</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="#">About us</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="#">Blog</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.5s"><a href="#">Contact</a></li>
-              </ul>-->
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+                        <div class="button navbar-right" >
+                              <button class="navbar-btn nav-button " data-wow-delay="0.8s">Sign in</button>
+                             <button class="navbar-btn nav-button " data-wow-delay="0.6s">Sign up</button> <img src="<?php echo base_url();?>assets/img/cart7.png">
+                          </div>
+                            <!--  <ul class="main-nav nav navbar-nav navbar-right">
+                                <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="#">Home</a></li>
+                                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="#">Job Seekers</a></li>
+                                <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="#">Employeers</a></li>
+                                <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="#">About us</a></li>
+                                <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="#">Blog</a></li>
+                                <li class="wow fadeInDown" data-wow-delay="0.5s"><a href="#">Contact</a></li>
+                              </ul>  -->
+                    </div><!-- /.navbar-collapse -->
+
+            </div><!-- /.container-fluid -->
         </nav>
 		 
+
+
         <div class="slider-area">
             <div class="slider">
                 <div id="bg-slider" class="owl-carousel owl-theme">
+
                   
                   <div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-5.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >"I will not sell defective goods. I feel satisfied with my little profit because I know Allah will bless me."
                    <p><h3 style="font-style:gisha;text-align:center;">(Abdul Rahman bin Auf)</h3></p> </div></div>
@@ -119,22 +123,17 @@
                  
                 </div>
             </div>
+        </div>
             <div class="container slider-content">
-			<br></br>
-			<br></br>
-			<br></br>
-			<br></br>
-			<br></br>
+		
                 <div class="row">
                     <!--div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
                         <h2>Buy & Sell with Souq Anshar!</h2>
                         <p>Your First Dinar Marketplace</p>-->
-                        <div class="search-form wow pulse"  data-wow-delay="0.8s" style="width:700px; margin:0 auto;" >
+                        <div class="search-form wow pulse"  data-wow-delay="0.8s" style="width:700px; margin:0 auto;margin-top:25%;" >
                             <form action="<?php echo site_url('main/search');?>" method="post" class=" form-inline">
 
                                 <div class="form-group" action="" >
-
-                             
                                     <input type="text" name="itemname"class="form-control" placeholder="What are you looking for?" style="width:310px;">
                                     </div>
 
@@ -159,9 +158,8 @@
                             </form>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+            </div>   
+           
 
         <div class="content-area">
             <div class="container">
@@ -194,6 +192,7 @@
                     </div>
                 </div>
             </div>
+        </div>
           
           <div class="footer-area">
             <div class="container">
