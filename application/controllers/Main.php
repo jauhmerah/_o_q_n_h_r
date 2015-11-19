@@ -37,7 +37,11 @@
                 // Insert user record  */   
 	    } 
 
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> origin/anis_pro_process
 
 	    function _display($page = 'main', $data = '' )
 	    {
@@ -51,6 +55,7 @@
 	    {
 	        $data = null;
 
+<<<<<<< HEAD
 	    	   		
 
 	    	switch ($process)
@@ -60,6 +65,15 @@
 	    			$data['arr'][0] = $this->sa_category->get();  
 	    			break;
 	    			
+=======
+	    	switch ($process)
+	    	{
+	    		case '18':
+	    			$this->load->model('m_item');
+	    			$data['arr'] = $this->m_item->get();  
+	    			break;
+
+>>>>>>> origin/anis_pro_process
 	    	    case '4':
 	    	    //sign up process
 	    	    	$arr =  $this->input->post();
@@ -75,9 +89,25 @@
 	    	    case '5':
 	    	    	$data['error'] = true;
 	    	    	break;
+
+	    	    case '4':
+	    	    //cart process
+	    	    	$arr =  $this->input->post();
+	    	    	$temp = array(
+	    	    		"us_name" => $arr['username'],
+	    	    		"us_email" => $arr['email'],
+	    	    		"us_password" => $arr['password']
+	    	    		
+	    	    	);
+	    	    	$this->load->model('m_user');
+	    	    	$this->m_user->insert($temp);
+	    	    	break;
 	    	    
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/anis_pro_process
 	    	}
 	    	$this->_display($page,$data);
 	    
@@ -174,16 +204,20 @@
 	    	return $temp;
 	    }
 
+<<<<<<< HEAD
 	    /*public function formula($arr1 = null, $arr2 = null)
 =======
+=======
+
+>>>>>>> origin/anis_pro_process
 
 	    public function percentage($sama, $arr1 = null, $arr2 = null)
->>>>>>> anot
 	    {
 	    	$temp2=0;
 	    	$size1= sizeof($arr1);
 	    	$size2= sizeof($arr2);
 	    	if($size1 != 0 && $size2 != 0)
+<<<<<<< HEAD
 <<<<<<< HEAD
 	    	{
 	    		$temp= sqrt($size1) * sqrt($size2);
@@ -194,16 +228,22 @@
 
 	    /*public function percentage($sama, $formula)
 
+=======
+>>>>>>> origin/anis_pro_process
 	    	$temp2=$sama/(sqrt($size1) * sqrt($size2));
 	    	return $temp2;
 	    }
 
 	  	public function searching()
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/anis_pro_process
 	    {
 	    	$this->load->database();
 	   		$this->load->model('cat_shoes');
 
+<<<<<<< HEAD
 
 	    	$temp2=$sama/$formula;
 	    	return $temp2;
@@ -238,6 +278,13 @@
 	   		$this->_display('successupload', $data);
 	   	}
 	   }
+=======
+         //load the method of model  
+         $data['h']=$this->cat_shoes->select();  
+         //return the data in view  
+         $this->load->view('search', $data);  
+
+>>>>>>> origin/anis_pro_process
     		
 		
 		public function search()
@@ -281,9 +328,67 @@
 	    			
 		}
 
+<<<<<<< HEAD
 		
 	} 		
 
 	
+=======
+		public function add()
+		{
+			$data = array(
+				'item_id' =>'3',
+				'item_name' => 'Torchlight',
+				
+				'item_price' => 16.9,
+				
+				);
+
+			$this->cart->insert($data);
+			echo "add() called";
+		}
+
+		public function show()
+		{
+			$cart = $this->cart->contents();
+
+			echo "<pre>";
+			print_r($cart);
+			 echo "</pre>";
+
+		}
+
+		public function lala()
+	 {
+
+	        $this->load->model('Products_model');
+	        $data['products'] = $this->Products_model->get_all();
+	        echo "<pre>";
+			print_r($data['products']);
+	        /*$this->load->view('products',$data);*/
+	  } 
+
+
+	    /*public function upload(){
+	   	$config['upload_path'] = "./images/";
+	   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
+	   	$this->load->library('upload',$config);
+
+	   	if(!$this->upload->do_upload()){
+	   		
+	   		$error = array ('error'=>$this->upload->display_errors());
+	   		//$this->load->view('upload_form',$error);
+	   		$this->_display('upload_form', $error);
+
+	   	}else{
+	   		$file_data =$this->upload->data();
+	   		$data['img'] = base_url().'/images/'.$file_data['file_name'];
+	   		//$this->load->view('success',$data);
+	   		$this->_display('successupload', $data);
+	   	}
+	   }*/
+
+	}
+>>>>>>> origin/anis_pro_process
 	        
 ?> 

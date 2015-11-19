@@ -25,9 +25,38 @@
 </head><!--/head-->
 
 <body>
-	<header id="header"><!--header-->
-		<div class="header_top"><!--header_top-->
-			<div class="container">
+
+<nav class="navbar navbar-default">
+          <div class="container" style="background:#000;">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header" >
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" style= "margin-top:-5px;" href="<?php echo site_url('huhu/haha'); ?>"><img src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="230px" height="79px"></a>
+            </div>
+			
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <div class="button navbar-right" >
+                 <!--a href="<?php echo site_url('main/page/signin');?>"><button class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s">Sign In</button></a>
+                 <a href="<?php echo site_url('main/page/signup');?>"><button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Sign Up</button></a>-->
+              <ul class="main-nav nav navbar-nav navbar-right">
+              	<br>
+                <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="<?php echo site_url('main/page/souqshop');?>">Home</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/profile');?>">Profile</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="<?php echo site_url('member/page/dashboard');?>">Dashboard</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="<?php echo site_url('main/page/cart');?>">Cart</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="<?php echo site_url('main');?>">Logout</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+		<!--div class="header_top"><!--header_top-->
+			<!--div class="container">
 				<div class="row">
 					<div class="col-sm-6">
 						<div class="contactinfo">
@@ -50,7 +79,7 @@
 			</div>
 		</div><!--/header_top-->
 		
-		<div class="header-middle"><!--header-middle-->
+		<!--div class="header-middle"><!--header-middle-->
 			<!--div class="container">
 				<div class="row">
 					<div class="col-sm-4">
@@ -81,18 +110,7 @@
 							</div>
 						</div>-->
 						
-			  <nav class="navbar navbar-default" style="background:#000000;" >
-                 <div class="container">
-                 <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header" >
-                         <!--button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						 </button>-->
-                      <a class="navbar-brand" style= "margin-top:-5px;" href="#"><img src="<?php echo base_url();?>assets/miza-cart/images/home/logo1.png" alt="" width="230px" height="75px" ></a>
-					</div>
+			
 			
                 <!--ul class="main-nav nav navbar-nav navbar-right">
                 <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="#">Home</a></li>
@@ -180,7 +198,7 @@
 			<!--div class="step-one">
 				<h2 class="heading">Step1</h2>
 			</div>-->
-			<div class="checkout-options" style="background-color:#000000; padding: 20px;padding-top:5px;" >
+			<div class="checkout-options" style="background-color:#ffa300; padding: 20px;padding-top:5px;" >
 				<h3>Account & Billing Details</h3>
 				<!--p>Checkout options</p>-->
 				<!--ul class="nav">
@@ -297,7 +315,7 @@
 				<h2>Review & Payment</h2>
 			</div>-->
 
-			<div class="checkout-options" style="background-color:#000000; padding: 20px;padding-top:5px;margin-top:70px;" >
+			<div class="checkout-options" style="background-color:#ffa300; padding: 20px;padding-top:5px;margin-top:70px;" >
 				<h3>Review & Payment</h3>
 				<!--p>Checkout options</p>-->
 				<!--ul class="nav">

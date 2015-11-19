@@ -37,7 +37,7 @@
         </div>
         <!-- Body content -->
 		
-		<div class="header-connect">
+		<!--div class="header-connect">
             <div class="container">
                 <div class="row">
                    <div class="col-md-5 col-sm-8 col-xs-8">
@@ -55,19 +55,20 @@
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <!--<li><a href="#"><i class="fa fa-vine"></i></a></li>
                                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>-->
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div-->
 
        
         <nav class="navbar navbar-default">
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
+<<<<<<< HEAD
                     <div class="navbar-header">
                       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
@@ -95,6 +96,33 @@
                     </div><!-- /.navbar-collapse -->
 
             </div><!-- /.container-fluid -->
+=======
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" style= "margin-top:-15.5px;" href="<?php echo site_url('huhu/haha'); ?>"><img src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="230px" height="79px"></a>
+            </div>
+			
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <div class="button navbar-right" >
+                 <a href="<?php echo site_url('main/page/signin');?>"><button class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s">Sign In</button></a>
+                 <a href="<?php echo site_url('main/page/signup');?>"><button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Sign Up</button></a>
+              <!--ul class="main-nav nav navbar-nav navbar-right">
+                <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="#">Profile</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="#">Job Seekers</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="#">Employeers</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="#">About us</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="#">Blog</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.5s"><a href="#">Contact</a></li>
+              </ul-->
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+>>>>>>> origin/anis_pro_process
         </nav>
 		 
 
@@ -104,13 +132,13 @@
                 <div id="bg-slider" class="owl-carousel owl-theme">
 
                   
-                  <div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-5.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >"I will not sell defective goods. I feel satisfied with my little profit because I know Allah will bless me."
+                  <div class="item"><img style="height:680px;" src="<?php echo base_url();?>assets/img/slider-image-5.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >"I will not sell defective goods. I feel satisfied with my little profit because I know Allah will bless me."
                    <p><h3 style="font-style:gisha;text-align:center;">(Abdul Rahman bin Auf)</h3></p> </div></div>
 				   
-				  <div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-10.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Buy and Sell with Souq Anshar!
+				  <div class="item"><img style="height:680px;" src="<?php echo base_url();?>assets/img/slider-image-10.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Buy and Sell with Souq Anshar!
                    <p><h3 style="font-style:gisha;text-align:center;">Your First Dinar and Dirham Marketplace.</h3></p> </div></div>
 
-                   <div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-8.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Syariah Compliant Marketplace
+                   <div class="item"><img style="height:680px;" src="<?php echo base_url();?>assets/img/slider-image-8.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Syariah Compliant Marketplace
                    <p><h3 style="font-style:gisha;text-align:center;">Use muamalah system that meets the syariah law.</h3></p> </div></div>
                    
                     
@@ -130,6 +158,7 @@
                     <!--div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
                         <h2>Buy & Sell with Souq Anshar!</h2>
                         <p>Your First Dinar Marketplace</p>-->
+<<<<<<< HEAD
                         <div class="search-form wow pulse"  data-wow-delay="0.8s" style="width:700px; margin:0 auto;margin-top:25%;" >
                             <form action="<?php echo site_url('main/search');?>" method="post" class=" form-inline">
 
@@ -142,16 +171,34 @@
 										<option>Select Your Category</option>
 
 										<!--option selected>All</option>-->										
+=======
+                        <div class="search-form wow pulse" data-wow-delay="0.8s" style="width:700px; margin:0 auto;" >
+                            <form action= "<?php echo site_url('main/search');?>" method= "post" class=" form-inline">
+                                <div class="form-group" >
+                                    <input type="text" name= "itemname" class="form-control" placeholder="What are you looking for?" style="width:310px;">
+                                </div>
+								 <div class="form-group">
+                                    <select name="sub_cat" id="" class="form-control">
+										<option>Select Your Category</option>
+										<!--<option selected>All</option>-->                                      
+>>>>>>> origin/anis_pro_process
                                         <option value = "5">Business</option>
                                         <option value = "3">Travel</option>
                                         <option value = "4">Automotive</option>
                                         <option value = "1">Fashion</option>
                                         <option value = "2">Electronics</option>
+<<<<<<< HEAD
                                         
 				
                                     </select>
                                 </div>
                                 <input type="submit"name="action"class="btn" value="Search" style="width:100px; margin:0 auto;">
+=======
+										
+                                    </select>
+                                </div>
+                                <input type="submit" name= "action"class="btn" placeholder="Select Your Catagory"value="Search" style="width:100px; margin:0 auto;">
+>>>>>>> origin/anis_pro_process
 								
 
 

@@ -76,25 +76,66 @@
 	    	    	$temp = array(
 	    	    		"us_name" => $arr['username'],
 	    	    		"us_email" => $arr['email'],
-	    	    		"us_password" => $arr['password'],
+	    	    		
 	    	    		"pr_add" => $arr['address'],
 	    	    		"pr_phone" => $arr['phone'],
-	    	    		"pr_gender" => $arr['gender']
+	    	    		"pr_gender" => $arr['gender'],
+	    	    		"pr_image"=>$arr['image']
 
 	    	    	);
 	    	    	$this->load->model('m_profile');
 	    	    	$this->m_profile->insert($temp);
 	    	    	break;
 	    	    case '6':
+<<<<<<< HEAD
 	    	    	$data['error'] = true;
 	    	    	break;
 
+=======
+	    	        $arr =  $this->input->post();
+	    	    	$temp = array(
+	    	    		"pl_name" => $arr['itemname'],
+	    	    		"pl_price" => $arr['price'],
+	    	    		"pl_category" => $arr['category'],
+	    	    		"pl_subcategory" => $arr['subcategory']
+	    	    		);
+	    	    	$this->load->model('m_product');
+	    	    	$this->M_product->insert($temp);
+	    	    	break;
+>>>>>>> origin/anis_pro_process
 
 	    	}
 	    	$this->_display($page,$data);
 	    }
 
+<<<<<<< HEAD
 	   public function upload(){
+=======
+	    	public function upload(){
+				   	$config['upload_path'] = "./images/";
+				   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
+				   	$this->load->library('upload',$config);
+
+	   		if(!$this->upload->do_upload()){
+	   		
+	   		$error = array ('error'=>$this->upload->display_errors());
+	   		//$this->load->view('upload_form',$error);
+	   		$this->_display('upload_form', $error);
+
+	   	}else{
+	   		$file_data =$this->upload->data();
+	   		$data['img'] = base_url().'/images/'.$file_data['file_name'];
+	   		//$this->load->view('success',$data);
+	   		$this->_display('successupload', $data);
+	   	}
+		}
+
+	    
+
+	    
+
+	    /*public function upload(){
+>>>>>>> origin/anis_pro_process
 	   	$config['upload_path'] = "./images/";
 	   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
 	   	$this->load->library('upload',$config);
@@ -109,10 +150,16 @@
 	   		$file_data =$this->upload->data();
 	   		$data['img'] = base_url().'/images/'.$file_data['file_name'];
 	   		//$this->load->view('success',$data);
+<<<<<<< HEAD
 	   		$this->_display('successupload', $data);
 	   	}
 	   }
 
+=======
+	   		$this->_display('berjaya', $data);
+	   	}*/
+	  
+>>>>>>> origin/anis_pro_process
 
 	}
 	        

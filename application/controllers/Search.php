@@ -1,5 +1,6 @@
 <?php
 
+
 class Search Extends CI_Controller
 {
 	function __construct()
@@ -18,5 +19,6 @@ class Search Extends CI_Controller
 	  	$data['results']=$this->mymodel->search($keyword);
 		$this->load->view('view_result',$data);
 	  }
+
 }
 ?>

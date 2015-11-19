@@ -58,7 +58,7 @@
         </div>-->
         
         <!-- MODAL -->
-        
+         
         	<div class="modal-dialog">
         		<div class="modal-content">
         			
@@ -134,6 +134,7 @@
         Fullscreen background
     */
     $.backstretch("<?php echo base_url();?>assets/miza-signup/assets/img/backgrounds/pasarmalam3.jpg");
+   
     
     /*
         Modals
