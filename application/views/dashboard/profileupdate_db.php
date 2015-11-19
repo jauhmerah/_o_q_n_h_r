@@ -1,13 +1,14 @@
 <div id="page-wrapper">
             <div id="page-inner" >
-			 <div class="row">
-			 	      <div class="col-md-12">
+             <div class="row">
+                      <div class="col-md-12">
                         <h1 class="page-header">
-                            Profile Update <small>*Update all about yourself*</small>
+                            Profile Update <small>*Update Your Profile Here*</small>
                         </h1>
                     </div>
                 </div> 
                  <!-- /. ROW  -->
+          
               <form role="form" action = "<?= site_url('member/page/profileupdate_db/5');?>" method = 'post'>
               <div class="row">
                 <div class="col-lg-12">
@@ -18,8 +19,8 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                <div id="timelineProfilePic">
-                                 <img class="img-circle" src="<?php echo base_url();?>assets/hanis/images/arash.jpg" class="bgImage" style="margin-top:0px; margin-left:45px;width:150px;">
+                                <!--<div id="timelineProfilePic">
+                                 <img class="img-circle" src= '".$cfet['image']."' class="bgImage" style="margin-top:0px; margin-left:45px;width:150px;">
                                     <p>
                                      <div class="form-group">
                                             <label>Upload Your Profile Picture</label>
@@ -34,7 +35,16 @@
                                             <input type="file" name="userfile"/><br>
                                             <input type="submit" name="submit" value="Upload image">
                                         </form>
-                                        </div>
+                                        </div>-->
+                                       <!-- Upload input-->
+                                       <!-- <div class="control-group">
+                                            <label class="control-label">Upload<span style="color: red;">*</span></label>
+                                            <div class="controls">
+                                                <input name="userfile" name="userfile" type="file"
+                                                class="input-xlarge">
+                                                <p class="help-block"></p>
+                                            </div>
+                                        </div> -->
                                        <div class="form-group">
                                             <label>Username</label>
                                             <input type="text" name="username" placeholder="Please enter your username." class="form-username form-control" id="username">
@@ -45,10 +55,10 @@
                                             <input type="text" name="email" placeholder="Please enter your email address." class="form-email form-control" id="email">
                                         </div>
 
-                                        <div class="form-group">
+                                        <!--<div class="form-group">
                                             <label>Password</label>
                                             <input type="password" name="password" placeholder="Please enter your password." class="form-password form-control" id="password">
-                                        </div>
+                                        </div>-->
 
                                         <div class="form-group">
                                             <label>Address</label>
@@ -74,10 +84,11 @@
                                         <br>
                                         <br>
 
-
+                                         <div class="col-sm-4">  <br> 
+                                           <input type="submit" class="btn btn-warning" style="background-color:#2DAADF" value="UPDATE"></input>
+                                        </diV
                                         
-                                       <button type="submit" name="submit" value="Update" class="button" data-toggle="modal" data-target="#myModal">Update</button>
-                                       
+                                      
                                     
                                 </div>
                             </div>
@@ -91,7 +102,7 @@
 
             </div>
         </div>
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" style="display: none;">
+       <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" style="display: none;">
                                        <div class="modal-dialog">
                                          <div class="modal-content">
                                             <div class="modal-header">
@@ -102,7 +113,7 @@
                                          <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 
-                                        </div>
+                                        </div>-->
 
 
 

@@ -67,7 +67,7 @@
 	    	    	$temp = array(
 	    	    		"us_name" => $arr['username'],
 	    	    		"us_email" => $arr['email'],
-	    	    		"us_password" => $arr['password'],
+	    	    		
 	    	    		"pr_add" => $arr['address'],
 	    	    		"pr_phone" => $arr['phone'],
 	    	    		"pr_gender" => $arr['gender'],
@@ -92,9 +92,33 @@
 	    	}
 	    	$this->_display($page,$data);
 
+<<<<<<< HEAD
 
 
 	    
+=======
+	    	public function upload(){
+				   	$config['upload_path'] = "./images/";
+				   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
+				   	$this->load->library('upload',$config);
+
+	   		if(!$this->upload->do_upload()){
+	   		
+	   		$error = array ('error'=>$this->upload->display_errors());
+	   		//$this->load->view('upload_form',$error);
+	   		$this->_display('upload_form', $error);
+
+	   	}else{
+	   		$file_data =$this->upload->data();
+	   		$data['img'] = base_url().'/images/'.$file_data['file_name'];
+	   		//$this->load->view('success',$data);
+	   		$this->_display('successupload', $data);
+	   	}
+		}
+
+	    
+
+>>>>>>> origin/anis_pro_process
 	    
 
 	    /*public function upload(){
@@ -114,7 +138,13 @@
 	   		//$this->load->view('success',$data);
 	   		$this->_display('berjaya', $data);
 	   	}*/
+<<<<<<< HEAD
 	   }
 }
+=======
+	  
+
+	}
+>>>>>>> origin/anis_pro_process
 	        
 ?>

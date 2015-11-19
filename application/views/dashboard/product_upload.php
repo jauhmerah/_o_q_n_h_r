@@ -1,59 +1,54 @@
 <div id="page-wrapper">
             <div id="page-inner" >
-       <div class="row">
-              <div class="col-md-12">
+			 <div class="row">
+			 	      <!--<div class="col-md-12">-->
                         <h1 class="page-header">
-                            Profile Update <small>*Update all about yourself*</small>
+                            NEW ITEM <small> <br> Upload a clear picture of your items. Please refer the photo guides for more information.</small>
                         </h1>
                     </div>
                 </div> 
                  <!-- /. ROW  -->
-              <form role="form" action = "<?= site_url('member/page/profileupdate_db/5');?>" method = 'post'>
+              <form role="form" action = "<?= site_url('member/page/product_upload/6');?>" method = 'post'>
               <div class="row">
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Section: Basic Info
+                            Section: Product Info
                         </div>
                         <div class="panel-body">
                             <div class="row">
-                                <div class="col-lg-6">
-                                <div id="timelineProfilePic">
-                                 <img class="img-circle" src="<?php echo base_url();?>assets/hanis/images/arash.jpg" class="bgImage" style="margin-top:0px; margin-left:45px;width:150px;">
-                                    <p>
-                                     <div class="form-group">
-                                            <label>Upload Your Profile Picture</label>
-                                            
-                                            <?php
-                                                if (isset($error)) {
-                                                     echo $error;
-                                                 }                                                 
-                                            ?>
-
-                                            <form action = "<?= site_url('member/upload');?>" method = 'post'>
-                                            <input type="file" name="userfile"/><br>
-                                            <input type="submit" name="submit" value="Upload image">
-                                        </form>
-                                        </div>
+                                <div class="col-md-12">
+                               
                                        <div class="form-group">
-                                            <label>Username</label>
-                                            <input type="text" name="username" placeholder="Please enter your username." class="form-username form-control" id="username">
+                                        <div class="col-md-6">
+                                            <label>Item name</label>
+                                            <input class="form-control" name="itemname" placeholder="Please enter your item name.">
+                                            <!--input type="text" name="username" placeholder="Please enter your username." class="form-username form-control" id="username">-->
                                         </div>
+                                      </div>
+
 
 <<<<<<< Updated upstream
                                         <div class="form-group">
+<<<<<<< HEAD
                                             <label>Email Address</label>
                                             <input type="text" name="email" placeholder="Please enter your email address." class="form-email form-control" id="email">
 =======
                                       <div class="form-group">
+=======
+>>>>>>> origin/anis_pro_process
                                           <div class="col-md-6">
                                             <label>Item Price</label>
                                             <input class="form-control" name="price" placeholder="Please enter your item price.">
                                             <!--input type="text" name="email" placeholder="Please enter your email address." class="form-email form-control" id="email">-->
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> origin/anis_pro_process
                                         </div>
+                                      </div>
 
-                                        <div class="form-group">
+                                        <!--div class="form-group">
                                             <label>Password</label>
                                             <input type="password" name="password" placeholder="Please enter your password." class="form-password form-control" id="password">
                                         </div>
@@ -78,7 +73,72 @@
                                                  <input type="radio" name="gender" id="gender_m" value="Female" checked="">Female   
                                                 </label>
 
+                                        </div>-->
+                                        
+                                    <div class="form-group"><br><br><br>
+                                       <div class="row">
+                                         <div class="col-md-6">
+                                                <label>Category</label>
+                                                <select class="form-control" name="category">
+                                                    <option>Fashion</option>
+                                                    <option>Electronic</option>
+                                                    <option>Travel</option>
+                                                    <option>Automotive</option>
+                                                    <option>Business</option>
+                                                    <option>Service</option>
+                                          </select>
                                         </div>
+                                      </div>
+                                    </div>
+                               
+
+                               <div class="form-group">
+                                  <div class="row">
+                                     <div class="col-md-6">
+                                            <label>Subcategory</label>
+                                             <select class="form-control" name="subcategory">
+                                                <optgroup label ="Fashion">
+                                                   <option value ="healthandbeauty">Health and Beauty</option>
+                                                   <option value ="womenswear">Women's Wear</option>
+                                                   <option value ="menswear">Men's Wear</option>
+                                                   <option value ="kids">Kids</option>
+                                                   <option value ="sportwear">Sport Wear</option>
+                                                </optgroup>
+                                                <optgroup label ="Electronic">
+                                                   <option value ="homeappliances">Home Appliances</option>
+                                                   <option value ="homeandliving">Home and Living</option>
+                                                   <option value ="cameras">Cameras</option>
+                                                   <option value ="computersandlaptops">Computers and Laptops</option>
+                                                </optgroup>
+                                                <optgroup label ="Travel">
+                                                   <option value ="bagsandbackpacks">Bags and Backpacks</option>
+                                                   <option value ="luggage">Luggage</option>
+                                                   <option value ="travlaccessories">Travel's Accessories</option>
+                                                </optgroup>
+                                                <optgroup label ="Automative">
+                                                    <option value ="carcare">Car Care</option>
+                                                    <option value ="toolsandequipment">Tools and Equipments</option>
+                                                    <option value ="interioraccessories">Interior Accessories</option>
+                                                    <option value ="motorcycles">Motorcycles</option>
+                                                    <option value ="replacementparts">Replacement Parts</option>
+                                                    <option value ="wheelandtyres">Wheel and Tyres</option>
+                                                    <option value ="oilsandfluids">Oils and Fluids</option>
+                                                </optgroup>
+                                                <optgroup label ="Business">
+                                                    <option value ="businessplans">Business Plans</option>
+                                                    <option value ="careeradvices">Career Advices</option>
+                                                    <option value ="interioraccesories">Interior Accessories</option>
+                                                    <option value ="presentations">Presentations</option>
+                                                    <option value ="marketresearch">Market Research</option>
+                                                </optgroup>
+                                                 <optgroup label ="Services">
+                                                    <option value ="counselling">Counseling</option>
+                                                    <option value ="composing">Composing</option>
+                                                    <option value ="Web Design">Web Design</option>
+                                                </optgroup>
+                                             </select>
+                                        </div>
+<<<<<<< HEAD
 <<<<<<< Updated upstream
                                         <br>
                                         <br>
@@ -86,6 +146,11 @@
                                      </div>
                                   </div>   
                               </div>
+=======
+                                </div>
+                                </div>   
+                                </div>
+>>>>>>> origin/anis_pro_process
                                 <!--<div id='preview'>
                               </div>
                                 <form id="imageform" method="post" enctype="multipart/form-data" action='ajaxImageUpload.php' style="clear:both">
@@ -124,11 +189,19 @@
                               </div>
 
 
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> origin/anis_pro_process
 
+             <div class="col-sm-4">  <br> <br>
+                  <input type="submit" class="btn btn-warning" style="background-color:#2DAADF" value="Add Product"></input>
+             </div>
+              
+                
 
                                         
-                                       <button type="submit" name="submit" value="Update" class="button" data-toggle="modal" data-target="#myModal">Update</button>
+                                       <!--button type="submit" name="submit" value="Update" class="button" data-toggle="modal" data-target="#myModal">Update</button>-->
                                        
                                     
                                 </div>
@@ -141,23 +214,7 @@
         </div>
         <!-- /. PAGE WRAPPER  -->
 
-            </div>
-        </div>
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" style="display: none;">
-                                       <div class="modal-dialog">
-                                         <div class="modal-content">
-                                            <div class="modal-header">
-                                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button> 
-                                            </div>     
-                                         <div class="modal-body">
-                                            <div class="alert alert-success fade in" role="alert">Update success ..</div>
-                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
-                                        </div>
-
-
-
+           
 <!-- /. WRAPPER  -->
     <!-- JS Scripts-->
     <!-- jQuery Js -->

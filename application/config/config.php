@@ -308,7 +308,11 @@ $config['cache_query_string'] = FALSE;
 | http://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
+<<<<<<< HEAD
 $config['encryption_key'] = '!@#$%^&*';
+=======
+$config['encryption_key'] = '1234567891011121314151617181920';
+>>>>>>> origin/anis_pro_process
 
 /*
 |--------------------------------------------------------------------------

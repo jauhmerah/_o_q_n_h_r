@@ -21,14 +21,7 @@ class M_user extends CI_Model {
      *                      If string, value will be used to match against PRI_INDEX
      * @return mixed Single record if ID is given, or array of results
      */
-
-    function __construct() {
-            parent::__construct();
-            $this->load->database();
-    }
-
     public function get($where = NULL) {
-        
         $this->db->select('*');
         $this->db->from(self::TABLE_NAME);
         if ($where !== NULL) {
@@ -135,6 +128,6 @@ class M_user extends CI_Model {
         return $result;
     }*/
 
-      
 }
+
 ?>

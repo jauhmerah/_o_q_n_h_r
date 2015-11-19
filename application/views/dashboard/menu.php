@@ -20,6 +20,12 @@
 					<li>
                         <a href="<?php echo site_url('member/page/changepassword'); ?>"><i class="fa fa-bar-chart-o"></i> Change Password</a>
                     </li>
+<<<<<<< HEAD
+=======
+                    <li>
+                        <a href="<?php echo site_url('member/page/imageprofile'); ?>"><i class="fa fa-bar-chart-o"></i> Change Profile Image</a>
+                    </li>
+>>>>>>> origin/anis_pro_process
                     <!--li>
                         <a href="<?php echo site_url('member/page/tabpanel_db'); ?>"><i class="fa fa-qrcode"></i> Tabs & Panels</a> <!--class="active-menu"-->
                     </li>                    

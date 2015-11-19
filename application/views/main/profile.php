@@ -348,7 +348,8 @@
 <!-- timeline profile picture -->
   <div id="timelineContainer">
 	<div id="timelineProfilePic">
-	<img class="img-circle" src="<?php echo base_url();?>assets/hanis/images/arash.jpg" class="bgImage" style="margin-top:0px;">
+	<img class="img-circle" width="304" height="236" alt="uploaded image" src="<?=base_url(). 'upload/' . $upload_data['raw_name'].$upload_data['file_ext'];?>">
+
 	<form id="bgimageform" method="post" enctype="multipart/form-data" action="image_upload_ajax_bg.php">
 	<div class="uploadFile timelineUploadBG"></div>
 	</form>
