@@ -92,11 +92,7 @@
 	    	}
 	    	$this->_display($page,$data);
 
-	/*public function logout()
-	{
-		$this->session->sess_destroy();
-		redirect('main');
-	}*/
+
 
 	    
 	    
