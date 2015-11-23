@@ -82,7 +82,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <div class="button navbar-right" >
                 <!--a href="<?php echo site_url('main/page/cart');?>"><img src="<?php echo base_url();?>assets/img/cart1.png" title="Cart" width="35px" height="35px"--></a>&nbsp;
-                 <a href="<?php echo site_url('main/page/cart');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Cart</button></a>
+                 <!--a href="<?php echo site_url('main/page/cart');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Cart</button></a-->
                  <a href="<?php echo site_url('main/page/signin');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Sign In</button></a>
                  <a href="<?php echo site_url('main/page/signup');?>"><button class="navbar-btn nav-button " data-wow-delay="0.6s">Sign Up</button></a>
                  <!--a href="<?php echo site_url('main/page/cart');?>"><button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Cart</button></a-->

@@ -58,12 +58,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-<<<<<<< HEAD
-$autoload['libraries'] = array('database', 'session');
-=======
-$autoload['libraries'] = array('database','cart');
->>>>>>> origin/anis_pro_process
-
+$autoload['libraries'] = array('database', 'session', 'cart');
 /*
 | -------------------------------------------------------------------
 |  Auto-load Drivers

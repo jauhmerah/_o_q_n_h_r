@@ -77,9 +77,9 @@
 
 </head>
 
-<body> 
+<body>
 
-<nav class="navbar navbar-default">
+  <nav class="navbar navbar-default">
           <div class="container" style="background:#000;">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header" >
@@ -114,6 +114,19 @@
         
           <div class="row">
             <div class="col-md-6">
+
+  <!-- Container -->
+  <!--div id="container">
+
+    <!-- Start Header -->
+    <!--div class="hidden-header"></div>
+    <header class="clearfix">
+
+      <!-- Start Top Bar -->
+      <!--div class="top-bar">
+        
+          <div class="row">
+            <div class="col-md-6">
               <!-- Start Contact Info -->
               <!--ul class="contact-details" style="height:48px; padding-left:50px; font-style:gisha,sans-serif; font-weight:600; font-size:14px;">
                
@@ -142,10 +155,6 @@
                 </li>
               </ul>
               <!-- End Social Links -->
-            </div>
-          </div>
-        
-      </div>
       <!-- End Top Bar -->
 
       <!-- Start Header ( Logo & Naviagtion ) -->
@@ -171,21 +180,17 @@
             </div>
             <!-- End Search -->
             <!-- Start Navigation List -->
-          
             <!--ul class="nav navbar-nav navbar-right" style="padding-right:50px;">
               <li>
-                <a href="<?php echo site_url('main/page/souqshop'); ?>"><i class="fa fa-home"></i> Home</a>
-              </li>
-              <li>
-                <a href="<?php echo site_url('main/page/cart'); ?>"><i class="fa fa-shopping-cart"></i> Cart</a>
-              </li-->
-                <!--ul class="dropdown">
+                <a class="active" href="profile.html">Home</a>
+                <ul class="dropdown">
                   <li><a href="profile.html">My Profile</a></li>
-                  <li><a href="index-01.html">Change Password</a></li>
                   <li><a href="index-01.html">Dashboard</a></li>
                 </ul>
               </li>
-              <li-->
+              <li>
+                <a href="about.html">My Cart</a>
+              </li>
              <!-- <li>--
                 <a href="#">Shortcodes</a>
                 <ul class="dropdown">
@@ -220,8 +225,7 @@
               <li><a href="contact.html">Contact</a></li>
             </ul>
             <!-- End Navigation List -->
-          </div>
-        
+
 
 
 
@@ -317,11 +321,8 @@
           </li>
         </ul>
         <!-- Mobile Menu End -->
-
-      </div>
       <!-- End Header ( Logo & Naviagtion ) -->
 
-    </header>
     <!-- End Header -->
 
 
@@ -331,33 +332,32 @@
           
        
     <!-- End HomePage Slider -->
-<div id="timelineContainer"">
-	<div id="timelineBackground">
-		<img src="<?php echo base_url();?>assets/hanis/images/polisevo1.png" class="bgImage" style="margin-top:0px; height:400px; width:1370px;">
-	</div>
+<div id="timelineContainer">
+  <div id="timelineBackground">
+    <img src="<?php echo base_url();?>assets/hanis/images/polisevo1.png" class="bgImage" style="margin-top:0px; height:400px; width:1370px;">
+  </div>
 
 <!-- timeline background -->
-	<!--div id="timelineShade">
-	<form id="bgimageform" method="post" enctype="multipart/form-data" action="image_upload_ajax_bg.php">
+  <!--div id="timelineShade">
+  <form id="bgimageform" method="post" enctype="multipart/form-data" action="image_upload_ajax_bg.php">
     <div class="uploadFile timelineUploadBG">
       <input type="file" name="photoimg" id="bgphotoimg" class="custom-file-input">
      </div>
-	</form>
-	</div>-->
+  </form>
+  </div>-->
 
 <!-- timeline profile picture -->
   <div id="timelineContainer">
-	<div id="timelineProfilePic">
-	<img class="img-circle" width="304" height="236" alt="uploaded image" src="<?=base_url(). 'upload/' . $upload_data['raw_name'].$upload_data['file_ext'];?>">
-
-	<form id="bgimageform" method="post" enctype="multipart/form-data" action="image_upload_ajax_bg.php">
-	<div class="uploadFile timelineUploadBG"></div>
-	</form>
-	</div>
-	<!-- timeline title -->
-		<div id="timelineTitle">Bos Hensem Bila Nak Tengok Wayang</div>
+  <div id="timelineProfilePic">
+  <img class="img-circle" src="<?php echo base_url();?>assets/hanis/images/arash.jpg" class="bgImage" style="margin-top:0px;">
+  <form id="bgimageform" method="post" enctype="multipart/form-data" action="image_upload_ajax_bg.php">
+  <div class="uploadFile timelineUploadBG"></div>
+  </form>
+  </div>
+  <!-- timeline title -->
+    <div id="timelineTitle">Arash Rashidi</div>
 </div>
-	
+  
 
 
 
@@ -369,7 +369,7 @@
 
 
         <!-- Start Recent Projects Carousel -->
-	
+  
         <div class="recent-projects" style="padding-left:120px; text-align:center;">
           <br><h4 class="title"><span>My Products</span></h4></br>
           <div class="projects-carousel touch-carousel">
@@ -619,10 +619,10 @@
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
   <!-- Style Switcher -->
-  <div class="switcher-box">
-    <a class="open-switcher show-switcher"><i class="fa fa-cog fa-2x"></i></a>
-    <h4>Style Switcher</h4>
-    <span>12 Predefined Color Skins</span>
+  <!--div class="switcher-box"-->
+    <!--a class="open-switcher show-switcher"><i class="fa fa-cog fa-2x"></i></a-->
+    <!--h4>Style Switcher</h4-->
+    <!--span>12 Predefined Color Skins</span>
     <ul class="colors-list">
       <li>
         <a onClick="setActiveStyleSheet('blue'); return false;" title="Blue" class="blue"></a>
@@ -717,7 +717,7 @@
         <a href="#" class="bg14"></a>
       </li>
     </ul>
-  </div>
+  </div-->
 
   <script type="text/javascript" src="<?php echo base_url();?>assets/hanis/js/script.js"></script>
 

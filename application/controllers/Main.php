@@ -9,17 +9,13 @@
 	        parent::__construct();
 	        $this->load->model('m_user');
 	        $this->load->helper('url');
-<<<<<<< HEAD
 	        $this->load->library('session');
-=======
->>>>>>> origin/anis_pro_process
 
 	    }
 	
 	    function index() {
 	        $this->_display();
 
-<<<<<<< HEAD
 	        /*$session = $this->session->userdata('isLogin');  
 	        if($session == FALSE)  
 	        {  
@@ -28,8 +24,6 @@
 	    		redirect('main');  
 	    	}*/
 
-=======
->>>>>>> origin/anis_pro_process
 	       /*$verificationCode = random_string('alnum', 20);  
                   
                 $email_msg = "Dear User,  
@@ -53,11 +47,6 @@
                 // Insert user record  */   
 	    } 
 
-
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/anis_pro_process
 	    function _display($page = 'main', $data = '' )
 	    {
 	    	
@@ -242,7 +231,6 @@
 			$this->load->model('m_item');
 			$process = $this->input->post('sub_cat');
 			$search = $this->input->post("itemname");
-<<<<<<< HEAD
 
 
 			/*$data['arr'] = $this->m_item->get_search($temp,"cat_shoes");
@@ -264,8 +252,6 @@
 	    		    $table = 'cat_travel';
 	    		    break;
 
-=======
-
 
 			/*$data['arr'] = $this->m_item->get_search($temp,"cat_shoes");
 			$this->load->view('main/testoutput', $data)*/
@@ -285,8 +271,6 @@
 	    			//nk load semua data dlm db
 	    		    $table = 'cat_travel';
 	    		    break;
-
->>>>>>> origin/anis_pro_process
 	    		case '4':
 	    			//nk load semua data dlm db
 	    		    $table = 'cat_automotive';
@@ -302,7 +286,7 @@
 	    			
 		}
 
-		public function add()
+		/*public function add()
 		{
 			$data = array(
 				'item_id' =>'3',
@@ -356,15 +340,11 @@
 	   	}
 	   }*/
 
-<<<<<<< HEAD
-	public function logout()
+	/*public function logout()
 	{
 		$this->session->sess_destroy();
 		redirect('main');
-	}
-
-=======
->>>>>>> origin/anis_pro_process
-	}
+	}*/
+}
 	        
 ?>

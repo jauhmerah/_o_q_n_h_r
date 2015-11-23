@@ -92,15 +92,10 @@
 	    	}
 	    	$this->_display($page,$data);
 
-<<<<<<< HEAD
-
-
-	    
-=======
-	    	public function upload(){
-				   	$config['upload_path'] = "./images/";
-				   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
-				   	$this->load->library('upload',$config);
+	    /*public function upload(){
+			$config['upload_path'] = "./images/";
+			$config['allowed_types'] = 'jpg|jpeg|gif|png';
+			$this->load->library('upload',$config);
 
 	   		if(!$this->upload->do_upload()){
 	   		
@@ -114,12 +109,7 @@
 	   		//$this->load->view('success',$data);
 	   		$this->_display('successupload', $data);
 	   	}
-		}
-
-	    
-
->>>>>>> origin/anis_pro_process
-	    
+		}*/
 
 	    /*public function upload(){
 	   	$config['upload_path'] = "./images/";
@@ -138,13 +128,7 @@
 	   		//$this->load->view('success',$data);
 	   		$this->_display('berjaya', $data);
 	   	}*/
-<<<<<<< HEAD
 	   }
 }
-=======
-	  
-
-	}
->>>>>>> origin/anis_pro_process
 	        
 ?>

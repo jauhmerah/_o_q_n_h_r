@@ -17,8 +17,7 @@
                         </div>
                         <div class="panel-body">
                             <div class="row">
-                                <div class="col-md-12">
-                               
+                                <div class="col-md-12">                              
                                        <div class="form-group">
                                         <div class="col-md-6">
                                             <label>Item name</label>
@@ -26,25 +25,17 @@
                                             <!--input type="text" name="username" placeholder="Please enter your username." class="form-username form-control" id="username">-->
                                         </div>
                                       </div>
-
-
-<<<<<<< Updated upstream
                                         <div class="form-group">
-<<<<<<< HEAD
+                                          <div class="col-md-6">
                                             <label>Email Address</label>
                                             <input type="text" name="email" placeholder="Please enter your email address." class="form-email form-control" id="email">
-=======
+                                          </div>
+                                        </div>
                                       <div class="form-group">
-=======
->>>>>>> origin/anis_pro_process
                                           <div class="col-md-6">
                                             <label>Item Price</label>
                                             <input class="form-control" name="price" placeholder="Please enter your item price.">
                                             <!--input type="text" name="email" placeholder="Please enter your email address." class="form-email form-control" id="email">-->
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> origin/anis_pro_process
                                         </div>
                                       </div>
 
@@ -138,19 +129,12 @@
                                                 </optgroup>
                                              </select>
                                         </div>
-<<<<<<< HEAD
-<<<<<<< Updated upstream
                                         <br>
                                         <br>
-=======
                                      </div>
                                   </div>   
                               </div>
-=======
-                                </div>
-                                </div>   
-                                </div>
->>>>>>> origin/anis_pro_process
+                            </div>
                                 <!--<div id='preview'>
                               </div>
                                 <form id="imageform" method="post" enctype="multipart/form-data" action='ajaxImageUpload.php' style="clear:both">
@@ -187,16 +171,14 @@
                                   </form>
                                 </div>
                               </div>
-
-
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> origin/anis_pro_process
-
-             <div class="col-sm-4">  <br> <br>
+             <!--div class="col-sm-4"-->
+             <div class="col-md-12">
+              <br>
                   <input type="submit" class="btn btn-warning" style="background-color:#2DAADF" value="Add Product"></input>
              </div>
+           </div>
+         </div>
+       </div>
               
                 
 
