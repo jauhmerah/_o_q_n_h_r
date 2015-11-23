@@ -40,7 +40,7 @@
               </button>
               <a class="navbar-brand" style= "margin-top:-5px;" href="<?php echo site_url('huhu/haha'); ?>"><img src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="230px" height="79px"></a>
             </div>
-<<<<<<< HEAD
+
 			
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -238,26 +238,12 @@
 			<img src="images/shop/advertisement.jpg" alt="" />
 		</div>
 	</section>-->
-=======
+
 			
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <div class="button navbar-right" >
-                 <!--a href="<?php echo site_url('main/page/signin');?>"><button class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s">Sign In</button></a>
-                 <a href="<?php echo site_url('main/page/signup');?>"><button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Sign Up</button></a>-->
-              <ul class="main-nav nav navbar-nav navbar-right">
-              	<br>
-                <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="<?php echo site_url('main/page/souqshop');?>">Home</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/profile');?>">Profile</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="<?php echo site_url('member/page/dashboard');?>">Dashboard</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="<?php echo site_url('main/page/cart');?>">Cart</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="<?php echo site_url('main');?>">Logout</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
+          
 
->>>>>>> origin/miza
+
 	
 	<section>
 		<div class="container">
@@ -430,7 +416,7 @@
 				</div>-->
 
 				<div class="col-sm-9 padding-right" ;">
-					<div class="features_items"><!--features_items-->
+					<div class="features_items">
 					<br>	<h2 class="title text-center">All Items</h2></br>
 					<?php
 					if(sizeof($products)==0)
@@ -449,147 +435,10 @@
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content" style="background:#ffa300">
-<<<<<<< HEAD
-											<h2>RM237</h2>
-											<p>Gevalia Free Coffee Maker</p>
-											<a href="<?php echo site_url('main/page/productdetails'); ?>">View</p> 
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-									</div>
-								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="<?php echo base_url();?>assets/anot/images/souq/tab.jpg" alt="" />
-										<h2>RM999.99</h2>
-										<p>Samsung Galaxy Tab S 10.5-inch</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content"style="background:#ffa300">
-											<h2>RM999.99</h2>
-											<p>Samsung Galaxy Tab S 10.5-inch</p>
-											<a href="<?php echo site_url('main/page/productdetails'); ?>">View</p> 
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-									</div>
-								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="<?php echo base_url();?>assets/anot/images/souq/modenas.jpg" alt="" />
-										<h2>RM2500</h2>
-										<p> Modenas Elegan 200</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content"style="background:#ffa300">
-											<h2>RM2500</h2>
-											<p>Modenas Elegan 200</p>
-											<a href="<?php echo site_url('main/page/productdetails'); ?>">View</p> 
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-									</div>
-								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="<?php echo base_url();?>assets/anot/images/souq/Travel/travel1.png" alt="" />
-										<h2>RM69</h2>
-										<p>WILDCRAFT Kailash Travel Bag</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content"style="background:#ffa300">
-											<h2>RM69</h2>
-											<p>WILDCRAFT Kailash Travel Bag</p>
-											<a href="<?php echo site_url('main/page/productdetails'); ?>">View</p> 
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-									</div>
-									
-								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="<?php echo base_url();?>assets/anot/images/souq/applemac.jpg" alt="" />
-										<h2>RM2999.99</h2>
-										<p>Apple MacBook Pro 13-inch</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content"style="background:#ffa300">
-											<h2>RM2999.99</h2>
-											<p>Apple MacBook Pro 13-inch</p>
-											<a href="<?php echo site_url('main/page/productdetails'); ?>">View</p> 
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-									</div>
-									<img src="<?php echo base_url();?>assets/anot/images/home/sale.png" class="new" alt="" />
-								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="<?php echo base_url();?>assets/anot/images/souq/washing1.jpg" alt="" />
-										<h2>RM2555</h2>
-										<p>Hitachi Washing Machine</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content"style="background:#ffa300">
-											<h2>RM2555</h2>
-											<p>Hitachi Washing Machine</p>
-											<a href="<?php echo site_url('main/page/productdetails'); ?>">View</p> 
-=======
+
 											<h2>RM <?php echo $data->item_price?></h2>
-											<p><?php echo $data->item_name?></p>
-											<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.$table); ?>">View</p>
->>>>>>> origin/miza
+											<p><?php echo $data->item_price?></p>
+											<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.$table); ?>">View</p> 
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
@@ -602,176 +451,11 @@
 								</div>
 							</div>
 						</div>
+						
 						<?php }?>
-						
-<<<<<<< HEAD
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="<?php echo base_url();?>assets/anot/images/souq/shirt.jpg" alt="" />
-										<h2>RM199</h2>
-										<p>Popular Hip Hop Sweatshirt</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content"style="background:#ffa300">
-											<h2>RM199</h2>
-											<p>Popular Hip Hop Sweatshirt</p>
-											<a href="<?php echo site_url('main/page/productdetails'); ?>">View</p> 
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-									</div>
-								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="<?php echo base_url();?>assets/anot/images/souq/telekung.jpg" alt="" />
-										<h2>RM75</h2>
-										<p>Telekung Sulam Eksklusif</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content"style="background:#ffa300">
-											<h2>RM75</h2>
-											<p>Telekung Sulam Eksklusif</p>
-											<a href="<?php echo site_url('main/page/productdetails'); ?>">View</p> 
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-									</div>
-								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="<?php echo base_url();?>assets/anot/images/souq/perfumemen.jpg" alt="" />
-										<h2>RM250</h2>
-										<p>Renaissance Woody Fragrance</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content"style="background:#ffa300">
-											<h2>RM250</h2>
-											<p>Renaissance Woody Fragrance</p>
-											<a href="<?php echo site_url('main/page/productdetails'); ?>">View</p> 
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-									</div>
-								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="<?php echo base_url();?>assets/anot/images/souq/shoes.jpg" alt="" />
-										<h2>RM199.99</h2>
-										<p>British Style Autumn Running Shoes</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content"style="background:#ffa300">
-											<h2>RM199.99</h2>
-											<p>British Style Autumn Running Shoes</p>
-											<a href="<?php echo site_url('main/page/productdetails'); ?>">View</p> 
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-									</div>
-								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						
-						
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="<?php echo base_url();?>assets/anot/images/souq/dress.jpg" alt="" />
-										<h2>RM60</h2>
-										<p>Floral CC Dress</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content"style="background:#ffa300">
-											<h2>RM60</h2>
-											<p>Floral CC Dress</p>
-											<a href="<?php echo site_url('main/page/productdetails'); ?>">View</p> 
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-									</div>
-								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="<?php echo base_url();?>assets/anot/images/souq/stroller.jpg" alt="" />
-										<h2>RM129</h2>
-										<p>Baby Stroller</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content"style="background:#ffa300">
-											<h2>RM129</h2>
-											<p>Baby Stroller</p>
-											<a href="<?php echo site_url('main/page/productdetails'); ?>">View</p> 
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-									</div>
-								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						
-						<!--ul class="pagination">
-=======
+			
 						<!--<ul class="pagination">
->>>>>>> origin/miza
+
 							<li class="active"><a href="">1</a></li>
 							<li><a href="">2</a></li>
 							<li><a href="">3</a></li>

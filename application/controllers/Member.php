@@ -110,15 +110,6 @@
 	    	$this->_display($page,$data);
 
 
-	  	public function lulu()
-	 {
-
-	        $this->load->model('m_user');
-	        $data['anot'] = $this->m_user->get_all();
-	        //echo "<pre>";
-			//print_r($data['anot']);
-			$this->load->view('profileupdate_db',$data);
-	  } 
 
 
 
@@ -156,8 +147,8 @@
 
 	}
 
-	   }
-}
+	   
+
 
 	        
 ?>

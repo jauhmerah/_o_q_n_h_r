@@ -39,15 +39,9 @@ body {
 </style>
 
 </head>
-<body>
-<<<<<<< HEAD
-   <div  style="text-align:center; margin-top:20%; font-size: 30px;" class = "col-md-8 col-md-offset-2" >You have successfully verified your account!
-=======
-     
-
-
+<body>   
     <div  style="text-align:center; margin-top:20%; font-size: 30px;" class = "col-md-8 col-md-offset-2" >You have successfully verified your account!
->>>>>>> origin/miza
+
      <p><h4 style="font-style:gisha;text-align:center;color:#fff;"><a href="<?php echo site_url('main/page/signin');?>">Click here to Sign in</h4></p> </div>
     </div>
 

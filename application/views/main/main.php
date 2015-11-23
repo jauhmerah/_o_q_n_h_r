@@ -36,13 +36,12 @@
             <div id="status">&nbsp;</div>
         </div>
         <!-- Body content -->
-<<<<<<< HEAD
+
         
         <!--div class="header-connect">
-=======
-		
+
 		<!--div class="header-connect">
->>>>>>> origin/miza
+
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 col-sm-8 col-xs-8">
@@ -85,7 +84,7 @@
 
             
             <!-- Collect the nav links, forms, and other content for toggling -->
-<<<<<<< HEAD
+
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <div class="button navbar-right" >
                 
@@ -108,32 +107,18 @@
     </div>
          
         <div class="slider-area">
-=======
+
              <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <div class="button navbar-right" >
-                <!--a href="<?php echo site_url('main/page/cart');?>"><img src="<?php echo base_url();?>assets/img/cart1.png" title="Cart" width="35px" height="35px"--></a>&nbsp;
-                 <!--a href="<?php echo site_url('main/page/cart');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Cart</button></a-->
-                 <a href="<?php echo site_url('main/page/signin');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Sign In</button></a>
-                 <a href="<?php echo site_url('main/page/signup');?>"><button class="navbar-btn nav-button " data-wow-delay="0.6s">Sign Up</button></a>
-                 <!--a href="<?php echo site_url('main/page/cart');?>"><button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Cart</button></a-->
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
-		 
+           
       <div class="slider-area">
->>>>>>> origin/miza
+
             <div class="slider">
                 <div id="bg-slider" class="owl-carousel owl-theme">
                   
                   <div class="item"><img style="height:680px;" src="<?php echo base_url();?>assets/img/slider-image-5.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >"I will not sell defective goods. I feel satisfied with my little profit because I know Allah will bless me."
                    <p><h3 style="font-style:gisha;text-align:center;">(Abdul Rahman bin Auf)</h3></p> </div></div>
                    
-<<<<<<< HEAD
-                  <div class="item"><img style="height:680px;" src="<?php echo base_url();?>assets/img/slider-image-10.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Buy and Sell with Souq Anshar!
-=======
                   <div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-10.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Buy and Sell with Souq Anshar!
->>>>>>> origin/miza
                    <p><h3 style="font-style:gisha;text-align:center;">Your First Dinar and Dirham Marketplace.</h3></p> </div></div>
 
                    <div class="item"><img style="height:680px;" src="<?php echo base_url();?>assets/img/slider-image-8.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Syariah Compliant Marketplace
@@ -168,13 +153,12 @@
                                 </div>
                                  <div class="form-group">
                                     <select name="sub_cat" id="" class="form-control">
-<<<<<<< HEAD
+
                                         <option>Select Your Category</option>
                                         <!--<option selected>All</option>-->                                      
-=======
-										<option>Select Your Category</option>
-										<option value = "6">All</option>                                     
->>>>>>> origin/miza
+
+									                                    
+
                                         <option value = "5">Business</option>
                                         <option value = "3">Travel</option>
                                         <option value = "4">Automotive</option>

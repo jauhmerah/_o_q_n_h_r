@@ -16,7 +16,7 @@
 	    function index() {
 	        $this->_display();
 
-<<<<<<< HEAD
+
 	        /*$session = $this->session->userdata('isLogin');  
 	        if($session == FALSE)  
 	        {  
@@ -25,8 +25,8 @@
 	    		redirect('main');  
 	    	}*/
 
-=======
->>>>>>> origin/miza
+
+
 	       /*$verificationCode = random_string('alnum', 20);  
                   
                 $email_msg = "Dear User,  
@@ -69,8 +69,7 @@
 	    			$data['arr'] = $this->m_item->get();  
 	    			break;
 
-<<<<<<< HEAD
-=======
+
 	    		case 'x1':
 	    			$arr = $this->input->get();	    			
 	    			$this->load->model('m_item');
@@ -83,7 +82,7 @@
 	    			break;
 
 
->>>>>>> origin/miza
+
 	    	    case '4':
 	    	    //sign up process
 	    	    	$arr =  $this->input->post();
@@ -95,15 +94,12 @@
 	    	    	);
 	    	    	$this->load->model('m_user');
 	    	    	$this->m_user->insert($temp);
-<<<<<<< HEAD
-	    	   
-=======
->>>>>>> origin/miza
+
 	    	    	break;
 	    	    case '5':
 	    	    	$data['error'] = true;
 	    	    	break;
-<<<<<<< HEAD
+
 		    	case '6':
 		    		$post = $this->input->post();
 		    		$temp = array(
@@ -126,8 +122,7 @@
 	    			</script>";  
 		    		break;
 
-=======
->>>>>>> origin/miza
+
 
 	    	    case '4':
 	    	    //cart process
@@ -141,7 +136,7 @@
 	    	    	$this->load->model('m_user');
 	    	    	$this->m_user->insert($temp);
 	    	    	break;
-<<<<<<< HEAD
+
 
 	    	    case 'x2':
 	    			$arr = $this->input->get();	    			
@@ -155,8 +150,7 @@
 	    			break;
 	    	    
 
-=======
->>>>>>> origin/miza
+
 	    	}
 	    	$this->_display($page,$data);
 	    }
@@ -287,21 +281,7 @@
 			/**
 				kat sini kena dynamic
 			*/
-			$data = null;
-	        switch ($process) 
-	        {
-	    		case '1':
-	    			//nk load semua data dlm db	    		    
-	    		    $table = 'cat_fashion';
-	    		    break;
-	    		case '2':
-	    			//nk load semua data dlm db
-	    		    $table = 'cat_electronics';
-	    		    break;
-	    		case '3':
-	    			//nk load semua data dlm db
-	    		    $table = 'cat_travel';
-	    		    break;
+			
 
 
 			/*$data['arr'] = $this->m_item->get_search($temp,"cat_shoes");
@@ -333,9 +313,9 @@
 	    		
 	    	}
 
-<<<<<<< HEAD
-	    	$data['arr'] = $this->m_item->get_search($search,$table);
-			$this->load->view('main/testoutput', $data);
+	    	$data ['products']=$this->m_item->get_search($search,$table);
+	    	$data['table'] = $table;
+			$this->load->view('main/souqshop', $data);
 	    			
 		}
 
@@ -351,11 +331,11 @@
 
 			$this->cart->insert($data);
 			echo "add() called";
-=======
+
 	    	$data['products'] = $this->m_item->get_search($search,$table);
 	    	$data['table'] = $table;
 	    	$this->load->view('main/souqshop', $data); 			
->>>>>>> origin/miza
+
 		}
 		//tutup search function
 
@@ -369,7 +349,7 @@
 			 echo "</pre>";
 		}//tutup cart process
 
-<<<<<<< HEAD
+
 		}
 
 	
@@ -395,9 +375,9 @@
 
 
 
-=======
+
 		//keluarkan semua item
-		public function lala()
+		 function lala()
 	 	{
 
 	        $this->load->model('Products_model');
@@ -427,7 +407,7 @@
 	   		$this->_display('successupload', $data);
 	   	}
 	   }*/
->>>>>>> origin/miza
+
 
 	}
 
@@ -436,7 +416,7 @@
 		$this->session->sess_destroy();
 		redirect('main');
 	}*/
-}
+
 
 	        
 ?>
