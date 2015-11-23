@@ -7,12 +7,14 @@
 
 	    function __construct() {
 	        parent::__construct();
+	        $this->load->model('m_user');
 	        $this->load->helper('url');
 	    }
 	
 	    function index() {
 	        $this->_display();
 	    }
+	    
 
 	    function _display($page = 'dashboard', $data = '')
 	    {	    	    	
@@ -60,17 +62,6 @@
 					// member/page/testoutput/3
 					$data['arr'] = $this->input->post();
     			break;
-	    		case '4':
-	    			$post =  $this->input->post();
-	    			$temp = array(
-	    				"us_name" => $post['username'],
-	    				"us_password" => $post['password']
-	    			);
-	    			$this->load->model('m_user');
-	    			if (!$this->m_user->get($temp)) {
-	    				redirect(site_url('main/page/signin/5'));
-	    			}
-	    			break;
 	    		case '5':
 	    	        $arr =  $this->input->post();
 	    	    	$temp = array(
@@ -117,14 +108,20 @@
 
 	    	
 	    	$this->_display($page,$data);
-	    }
 
+<<<<<<< HEAD
 	  
 
 	    	public function upload(){
 				   	$config['upload_path'] = "./images/";
 				   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
 				   	$this->load->library('upload',$config);
+=======
+	    /*public function upload(){
+			$config['upload_path'] = "./images/";
+			$config['allowed_types'] = 'jpg|jpeg|gif|png';
+			$this->load->library('upload',$config);
+>>>>>>> origin/mai_huhu
 
 	   		if(!$this->upload->do_upload()){
 	   		
@@ -138,6 +135,7 @@
 	   		//$this->load->view('success',$data);
 	   		$this->_display('successupload', $data);
 	   	}
+<<<<<<< HEAD
 
 	}
 			public function lulu()
@@ -155,6 +153,9 @@
 	    
 
 	    
+=======
+		}*/
+>>>>>>> origin/mai_huhu
 
 	    /*public function upload(){
 >>>>>>> origin/anis_pro_process
@@ -180,9 +181,14 @@
 =======
 	   		$this->_display('berjaya', $data);
 	   	}*/
+<<<<<<< HEAD
 	  
 
 
 	}
+=======
+	   }
+}
+>>>>>>> origin/mai_huhu
 	        
 ?>

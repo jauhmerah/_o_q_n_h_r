@@ -18,7 +18,7 @@
         <nav class="navbar-default top-navbar" role="navigation">
           <!--div class="container" style="background:#000;">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header" style="background:#000000;padding-left:100px; padding-bottom:15px;" ><img src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="230px" height="79px"></a>
+            <div class="navbar-header" style="background:#000000;padding-left:105px; padding-bottom:15px; margin-top:10px;" ><img src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="230px" height="79px"></a>
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>

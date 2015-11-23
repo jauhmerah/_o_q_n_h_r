@@ -257,7 +257,12 @@ color: #FFA300;
 }
 .top-navbar .nav > li > a:hover, .top-navbar .nav > li > a:focus {
 text-decoration: none;
+<<<<<<< HEAD
 color: #ffffff;
+=======
+/*background-color: #225081;*/
+color: #fff;
+>>>>>>> origin/mai_huhu
 }
 .top-navbar .dropdown-menu{
 min-width: 230px;

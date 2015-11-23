@@ -89,6 +89,36 @@ class M_user extends CI_Model {
 
     }
 
+    public function takeUser($us_name, $us_password)
+    {
+        $this->db->select('us_name', 'password');
+        $this->db->from('sa_user');
+        $this->db->where('username', $us_name);
+        $this->db->where('password', $us_password);
+        $query = $this->db->get();
+        return $query->num_rows();
+}
+
+
+    public function dataUser($us_name, $us_password)
+    {
+        $this->db->select('*');
+        $this->db->from('sa_user');
+        $this->db->where('username', $us_name);
+        $this->db->where('password', $us_password);
+        $query = $this->db->get();
+        return $query->num_rows();
+    }
+
+    public function userData($us_name)
+    {
+        $this->db->select('username');
+        $this->db->where('username', $us_name);
+        $query = $this->db->get('sa_user');
+        return $query->row();
+    }
+
+
 
     function get_all(){
 

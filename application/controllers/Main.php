@@ -7,12 +7,22 @@
 
 	    function __construct() {
 	        parent::__construct();
+	        $this->load->model('m_user');
 	        $this->load->helper('url');
+	        $this->load->library('session');
 
 	    }
 	
 	    function index() {
 	        $this->_display();
+
+	        /*$session = $this->session->userdata('isLogin');  
+	        if($session == FALSE)  
+	        {  
+	        	redirect('main/page/signin');  
+	    	}else{ 
+	    		redirect('main');  
+	    	}*/
 
 	       /*$verificationCode = random_string('alnum', 20);  
                   
@@ -36,8 +46,6 @@
                   
                 // Insert user record  */   
 	    } 
-
-
 
 	    function _display($page = 'main', $data = '' )
 	    {
@@ -69,11 +77,34 @@
 	    	    	);
 	    	    	$this->load->model('m_user');
 	    	    	$this->m_user->insert($temp);
+	    	   
 	    	    	break;
 	    	    case '5':
 	    	    	$data['error'] = true;
 	    	    	break;
+		    	case '6':
+		    		$post = $this->input->post();
+		    		$temp = array(
+		    			"us_name" => $post['username'],
+		    			"us_password" => $post['password']
+		    		);
+		    		$this->load->model('m_user');
+		    		$cek = $this->m_user->get($temp);
+		    		if (!$cek) {
+		    			$this->session->flashdata($us_name);
+		    			redirect(site_url('main/page/signin/5'));
+		    		}
+		    		else{//$this->session->set_flashdata($us_name);	    				    			
+	    			$this->session->set_userdata($temp);    
+	    			redirect('main/page/main_2'); 
+	    			}
+	    			echo "<script>  
+	    			alert('Failed Login: Check your username and password!');  
+	    			history.go(-1);  
+	    			</script>";  
+		    		break;
 
+<<<<<<< HEAD
 	    	    case '4':
 	    	    //cart process
 	    	    	$arr =  $this->input->post();
@@ -97,6 +128,8 @@
 	    			//$data['anot'] = $temp;
 	    			print_r($temp);
 	    			break;
+=======
+>>>>>>> origin/mai_huhu
 	    	    
 
 	    	}
@@ -245,6 +278,25 @@
 	    		    $table = 'cat_travel';
 	    		    break;
 
+
+			/*$data['arr'] = $this->m_item->get_search($temp,"cat_shoes");
+			$this->load->view('main/testoutput', $data)*/
+			
+			$data = null;
+	        switch ($process) 
+	        {
+	    		case '1':
+	    			//nk load semua data dlm db	    		    
+	    		    $table = 'cat_fashion';
+	    		    break;
+	    		case '2':
+	    			//nk load semua data dlm db
+	    		    $table = 'cat_electronics';
+	    		    break;
+	    		case '3':
+	    			//nk load semua data dlm db
+	    		    $table = 'cat_travel';
+	    		    break;
 	    		case '4':
 	    			//nk load semua data dlm db
 	    		    $table = 'cat_automotive';
@@ -260,7 +312,7 @@
 	    			
 		}
 
-		public function add()
+		/*public function add()
 		{
 			$data = array(
 				'item_id' =>'3',
@@ -305,8 +357,17 @@
 	   	}
 	   }*/
 
+<<<<<<< HEAD
 
 
 	}
+=======
+	/*public function logout()
+	{
+		$this->session->sess_destroy();
+		redirect('main');
+	}*/
+}
+>>>>>>> origin/mai_huhu
 	        
 ?>

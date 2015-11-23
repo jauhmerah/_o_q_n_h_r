@@ -15,7 +15,7 @@
                         <a href="<?php echo site_url('member/page/profileupdate_db'); ?>"><i class="fa fa-user"></i>Update Profile</a>
                     </li>
                     <li>
-                        <a href="<?php echo site_url('member/page/product_upload'); ?>"><i class="fa fa-desktop"></i> Upload Product</a>
+                        <a href="<?php echo site_url('member/page/upload_products'); ?>"><i class="fa fa-desktop"></i> Upload Product</a>
                     </li>
 					<li>
                         <a href="<?php echo site_url('member/page/changepassword'); ?>"><i class="fa fa-bar-chart-o"></i> Change Password</a>

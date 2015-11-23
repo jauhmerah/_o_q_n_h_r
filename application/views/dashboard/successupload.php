@@ -1,13 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="utf-8"/>
-	<meta http-equiv="X-UA-Compatible" content="IE-9"/>
+<title>Upload Form</title>
 </head>
 <body>
-	<h1>File has been uploaded</h1>
-	<img src="<?php echo $img?>" width="300" height="300"> 
-
-
+ 
+<h3>Your file was successfully uploaded!</h3>
+ 
+<p>The uploaded Image:</p>
+ 
+<img alt="uploaded image" src="<?=base_url(). 'upload/' . $upload_data['raw_name'].$upload_data['file_ext'];?>">
+ 
+<!--<p>The Thumbnail Image:</p>
+ 
+<img alt="Thumbnail image" src="<?=base_url(). 'upload/' . $upload_data['raw_name'].'_thumb'.$upload_data['file_ext'];?>">
+<p><?php echo anchor('upload', 'Upload Another File!'); ?></p>-->
+ 
 </body>
 </html>

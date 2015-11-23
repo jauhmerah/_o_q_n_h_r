@@ -6,7 +6,7 @@
             </h1>
          </div>
     </div> 
-    <form role="form" action = "<?= site_url('member/page/product_upload/6');?>" method = 'post'>
+    <form role="form" action = "<?= site_url('member/page/profile/do_upload');?>" method = 'post'>
     	 <div class="row">
     	 	<div class="col-lg-12">
     	 		<div class="panel panel-default">
@@ -102,53 +102,24 @@
                                 		</form>
                                     </div>
                                 </div>-->
+
                                 <div id="timelineProfilePic">
                                     <div class="row">
-                                		<div class="col-sm-6">
+                                		<div class="col-sm-6"><br></br>
                                 			<img class="img-rounded" src="<?php echo base_url();?>assets/hanis/images/arash.jpg" class="bgImage" style="margin-top:0px; margin-left:45px;width:150px;"></img>
                                 		<div class="form-group">
                                 	 		<label>Upload Your Product</label>
-			                                	 	<?php
-			                                                if (isset($error)) {
-			                                                     echo $error;
-			                                                 }                                                 
-			                                        ?>
-                                    		<form action = "<?= site_url('member/upload');?>" method = 'post'>
-                                    			 <input type="file" name="userfile"/><br></input>
-                                    	 		 <input type="submit" name="submit" value="Upload image"></input>
-                                    		</form>
+			                                	 <?php echo form_open_multipart('upload/do_upload');?>
+                     
+                                                        <input type="file" name="userfile" size="50" />
+                                                         
+                                                        <br>
+                                                         
+                                                        <!--<input type="submit" value="upload" class="btn btn-warning" name="upload" />-->
+                                                 
+                                                </form>
                                 		</div>
                                 	</div>
-                                    <div class="col-sm-4">
-                                			<img class="img-rounded" src="<?php echo base_url();?>assets/hanis/images/arash.jpg" class="bgImage" style="margin-top:0px; margin-left:45px;width:150px;"></img>
-                                		<div class="form-group">
-                                	 		<label>Upload Your Product</label>
-			                                	 	<?php
-			                                                if (isset($error)) {
-			                                                     echo $error;
-			                                                 }                                                 
-			                                        ?>
-                                    		<form action = "<?= site_url('member/upload');?>" method = 'post'>
-                                    			 <input type="file" name="userfile"/><br></input>
-                                    	 		 <input type="submit" name="submit" value="Upload image"></input>
-                                    		</form>
-                                		</div>
-                                	 </div>
-                                	 <div class="col-sm-4">
-                                			<img class="img-rounded" src="<?php echo base_url();?>assets/hanis/images/arash.jpg" class="bgImage" style="margin-top:0px; margin-left:45px;width:150px;"></img>
-                                		<div class="form-group">
-                                	 		<label>Upload Your Product</label>
-			                                	 	<?php
-			                                                if (isset($error)) {
-			                                                     echo $error;
-			                                                 }                                                 
-			                                        ?>
-                                    		<form action = "<?= site_url('member/upload');?>" method = 'post'>
-                                    			 <input type="file" name="userfile"/><br></input>
-                                    	 		 <input type="submit" name="submit" value="Upload image"></input>
-                                    		</form>
-                                		</div>
-                                	 </div>
                                     </div>
                                 </div>	
                                 <div class="col-sm-8">  <br> <br>
