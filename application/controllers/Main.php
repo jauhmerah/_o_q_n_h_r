@@ -13,7 +13,29 @@
 	
 	    function index() {
 	        $this->_display();
-	    }
+
+	       /*$verificationCode = random_string('alnum', 20);  
+                  
+                $email_msg = "Dear User,  
+                <p
+                Please click on below URL or paste into your browser to verify your Email Address.<p></p>";  
+                $email_msg .= "http://yourdomain/user/verify/" . $verificationCode;  
+                $email_msg .= "<p>Thanks,  
+                Support Team</p>";  
+                $subject = "Email Verification";  
+                $this->load->library('email');  
+                $config['charset'] = 'iso-8859-1';  
+                $config['wordwrap'] = TRUE;  
+                $config['mailtype'] = 'html';  
+                $this->email->initialize($config);  
+                $this->email->from('admin@souqanshar.com', 'Support Team');  
+                $this->email->to($email);  
+                $this->email->subject($subject);  
+                $this->email->message($email_msg);  
+                $this->email->send();  
+                  
+                // Insert user record  */   
+	    } 
 
 	    function _display($page = 'main', $data = '' )
 	    {
@@ -33,6 +55,7 @@
 	    			$this->load->model('m_item');
 	    			$data['arr'] = $this->m_item->get();  
 	    			break;
+
 	    		case 'x1':
 	    			$arr = $this->input->get();	    			
 	    			$this->load->model('m_item');
@@ -43,11 +66,42 @@
 	    			$data['products'] = $temp;
 	    			/*print_r($temp);*/
 	    			break;
+
+
+	    	    case '4':
+	    	    //sign up process
+	    	    	$arr =  $this->input->post();
+	    	    	$temp = array(
+	    	    		"us_name" => $arr['username'],
+	    	    		"us_email" => $arr['email'],
+	    	    		"us_password" => $arr['password']
+	    	    		
+	    	    	);
+	    	    	$this->load->model('m_user');
+	    	    	$this->m_user->insert($temp);
+	    	    	break;
+	    	    case '5':
+	    	    	$data['error'] = true;
+	    	    	break;
+
+	    	    case '4':
+	    	    //cart process
+	    	    	$arr =  $this->input->post();
+	    	    	$temp = array(
+	    	    		"us_name" => $arr['username'],
+	    	    		"us_email" => $arr['email'],
+	    	    		"us_password" => $arr['password']
+	    	    		
+	    	    	);
+	    	    	$this->load->model('m_user');
+	    	    	$this->m_user->insert($temp);
+	    	    	break;
 	    	}
 	    	$this->_display($page,$data);
 	    }
 
-	    public function pecahhati($first = null , $second = null)
+	    //cari nisbah perkataan yang sama
+	    public function pecahankata($first = null , $second = null)
 	    {
 	    	if ($this->input->post()) {
 	    		$word = $this->input->post();
@@ -104,7 +158,6 @@
             	}
             }
             return $num;
-
 	    } 
 
 	   public function kicksama($arr = null)
@@ -147,7 +200,9 @@
 	    	$temp2=$sama/(sqrt($size1) * sqrt($size2));
 	    	return $temp2;
 	    }
+	    //tutup nisbah perkataan yang sama
 
+	    //search function
 	  	public function searching()
 	    {
 	    	$this->load->database();
@@ -169,7 +224,7 @@
 			/*$data['arr'] = $this->m_item->get_search($temp,"cat_shoes");
 			$this->load->view('main/testoutput', $data)*/
 			/**
-				kat sini kono dynamic
+				kat sini kena dynamic
 			*/
 			$data = null;
 	        switch ($process) 
@@ -194,7 +249,7 @@
 	    		case '5':
 	    			//nk load semua data dlm db
 	    		    $table = 'cat_business';
-	    		    break;	    		
+	    		    break;	
 	    		
 	    	}
 
@@ -202,7 +257,9 @@
 	    	$data['table'] = $table;
 	    	$this->load->view('main/souqshop', $data); 			
 		}
+		//tutup search function
 
+		//cart process
 		public function show()
 		{
 			$cart = $this->cart->contents();
@@ -210,9 +267,9 @@
 			echo "<pre>";
 			print_r($cart);
 			 echo "</pre>";
+		}//tutup cart process
 
-		}
-
+		//keluarkan semua item
 		public function lala()
 	 	{
 
@@ -222,7 +279,27 @@
 	       echo "<pre>";
 			print_r($data['products']);
 	        /*$this->load->view('main/products',$data);*/
-	 	} 
+	 	}//tutup keluarkan semua item
+
+
+	    /*public function upload(){
+	   	$config['upload_path'] = "./images/";
+	   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
+	   	$this->load->library('upload',$config);
+
+	   	if(!$this->upload->do_upload()){
+	   		
+	   		$error = array ('error'=>$this->upload->display_errors());
+	   		//$this->load->view('upload_form',$error);
+	   		$this->_display('upload_form', $error);
+
+	   	}else{
+	   		$file_data =$this->upload->data();
+	   		$data['img'] = base_url().'/images/'.$file_data['file_name'];
+	   		//$this->load->view('success',$data);
+	   		$this->_display('successupload', $data);
+	   	}
+	   }*/
 
 	}
 	        
