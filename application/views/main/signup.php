@@ -28,6 +28,7 @@
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo base_url();?>assets/miza-signup/assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="<?php echo base_url();?>assets/miza-signup/assets/ico/apple-touch-icon-57-precomposed.png">
 
+
     </head>
 
     <body>
@@ -134,7 +135,7 @@
         Fullscreen background
     */
     $.backstretch("<?php echo base_url();?>assets/miza-signup/assets/img/backgrounds/pasarmalam3.jpg");
-   
+
     
     /*
         Modals

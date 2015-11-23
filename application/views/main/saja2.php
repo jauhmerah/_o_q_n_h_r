@@ -9,10 +9,10 @@ Category:<br>
 </form>-->
 
 <?php echo form_open('main/search'); ?>
-		<div>
+		<!--<div>
 			<?php echo form_label('sub_cat:', 'sub_cat'); ?>
 			<input name = "itemname" placeholder = "Search">
-		</div>
+		</div>-->
 			 <div class="form-group">
                                     <select name="sub_cat" id="" class="form-control" placeholder = "Select Your Category">
 										

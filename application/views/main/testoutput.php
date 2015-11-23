@@ -1,7 +1,7 @@
 <?php
 
     echo "<pre>";
-    print_r($arr);
+    print_r($temp);
     echo "</pre>";
 
 ?>

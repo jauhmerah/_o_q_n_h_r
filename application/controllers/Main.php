@@ -16,6 +16,7 @@
 	    function index() {
 	        $this->_display();
 
+<<<<<<< HEAD
 	        /*$session = $this->session->userdata('isLogin');  
 	        if($session == FALSE)  
 	        {  
@@ -24,6 +25,8 @@
 	    		redirect('main');  
 	    	}*/
 
+=======
+>>>>>>> origin/miza
 	       /*$verificationCode = random_string('alnum', 20);  
                   
                 $email_msg = "Dear User,  
@@ -66,6 +69,21 @@
 	    			$data['arr'] = $this->m_item->get();  
 	    			break;
 
+<<<<<<< HEAD
+=======
+	    		case 'x1':
+	    			$arr = $this->input->get();	    			
+	    			$this->load->model('m_item');
+	    			$arr1 = array(
+	    				"item_id" => $arr['item']
+	    			);
+	    			$temp = $this->m_item->get($arr1,$arr['cat']);
+	    			$data['products'] = $temp;
+	    			/*print_r($temp);*/
+	    			break;
+
+
+>>>>>>> origin/miza
 	    	    case '4':
 	    	    //sign up process
 	    	    	$arr =  $this->input->post();
@@ -77,11 +95,15 @@
 	    	    	);
 	    	    	$this->load->model('m_user');
 	    	    	$this->m_user->insert($temp);
+<<<<<<< HEAD
 	    	   
+=======
+>>>>>>> origin/miza
 	    	    	break;
 	    	    case '5':
 	    	    	$data['error'] = true;
 	    	    	break;
+<<<<<<< HEAD
 		    	case '6':
 		    		$post = $this->input->post();
 		    		$temp = array(
@@ -104,6 +126,8 @@
 	    			</script>";  
 		    		break;
 
+=======
+>>>>>>> origin/miza
 
 	    	    case '4':
 	    	    //cart process
@@ -117,6 +141,7 @@
 	    	    	$this->load->model('m_user');
 	    	    	$this->m_user->insert($temp);
 	    	    	break;
+<<<<<<< HEAD
 
 	    	    case 'x2':
 	    			$arr = $this->input->get();	    			
@@ -130,11 +155,14 @@
 	    			break;
 	    	    
 
+=======
+>>>>>>> origin/miza
 	    	}
 	    	$this->_display($page,$data);
 	    }
 
-	    public function pecahhati($first = null , $second = null)
+	    //cari nisbah perkataan yang sama
+	    public function pecahankata($first = null , $second = null)
 	    {
 	    	if ($this->input->post()) {
 	    		$word = $this->input->post();
@@ -191,7 +219,6 @@
             	}
             }
             return $num;
-
 	    } 
 
 	   public function kicksama($arr = null)
@@ -225,8 +252,6 @@
 	    	return $temp;
 	    }
 
-
-
 	    public function percentage($sama, $arr1 = null, $arr2 = null)
 	    {
 	    	$temp2=0;
@@ -236,7 +261,9 @@
 	    	$temp2=$sama/(sqrt($size1) * sqrt($size2));
 	    	return $temp2;
 	    }
+	    //tutup nisbah perkataan yang sama
 
+	    //search function
 	  	public function searching()
 	    {
 	    	$this->load->database();
@@ -245,9 +272,7 @@
          //load the method of model  
          $data['h']=$this->cat_shoes->select();  
          //return the data in view  
-         $this->load->view('search', $data);  
-
-    		
+         $this->load->view('search', $data);      		
 		}
 
 		public function search()
@@ -259,7 +284,9 @@
 
 			/*$data['arr'] = $this->m_item->get_search($temp,"cat_shoes");
 			$this->load->view('main/testoutput', $data)*/
-			
+			/**
+				kat sini kena dynamic
+			*/
 			$data = null;
 	        switch ($process) 
 	        {
@@ -302,9 +329,11 @@
 	    		case '5':
 	    			//nk load semua data dlm db
 	    		    $table = 'cat_business';
-	    		    break;
+	    		    break;	
+	    		
 	    	}
 
+<<<<<<< HEAD
 	    	$data['arr'] = $this->m_item->get_search($search,$table);
 			$this->load->view('main/testoutput', $data);
 	    			
@@ -322,8 +351,15 @@
 
 			$this->cart->insert($data);
 			echo "add() called";
+=======
+	    	$data['products'] = $this->m_item->get_search($search,$table);
+	    	$data['table'] = $table;
+	    	$this->load->view('main/souqshop', $data); 			
+>>>>>>> origin/miza
 		}
+		//tutup search function
 
+		//cart process
 		public function show()
 		{
 			$cart = $this->cart->contents();
@@ -331,7 +367,9 @@
 			echo "<pre>";
 			print_r($cart);
 			 echo "</pre>";
+		}//tutup cart process
 
+<<<<<<< HEAD
 		}
 
 	
@@ -357,6 +395,39 @@
 
 
 
+=======
+		//keluarkan semua item
+		public function lala()
+	 	{
+
+	        $this->load->model('Products_model');
+	       
+	        $data['products'] = $this->Products_model->get_all();
+	       echo "<pre>";
+			print_r($data['products']);
+	        /*$this->load->view('main/products',$data);*/
+	 	}//tutup keluarkan semua item
+
+
+	    /*public function upload(){
+	   	$config['upload_path'] = "./images/";
+	   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
+	   	$this->load->library('upload',$config);
+
+	   	if(!$this->upload->do_upload()){
+	   		
+	   		$error = array ('error'=>$this->upload->display_errors());
+	   		//$this->load->view('upload_form',$error);
+	   		$this->_display('upload_form', $error);
+
+	   	}else{
+	   		$file_data =$this->upload->data();
+	   		$data['img'] = base_url().'/images/'.$file_data['file_name'];
+	   		//$this->load->view('success',$data);
+	   		$this->_display('successupload', $data);
+	   	}
+	   }*/
+>>>>>>> origin/miza
 
 	}
 
