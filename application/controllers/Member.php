@@ -109,36 +109,8 @@
 	    	
 	    	$this->_display($page,$data);
 
-<<<<<<< HEAD
-	  
 
-	    	public function upload(){
-				   	$config['upload_path'] = "./images/";
-				   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
-				   	$this->load->library('upload',$config);
-=======
-	    /*public function upload(){
-			$config['upload_path'] = "./images/";
-			$config['allowed_types'] = 'jpg|jpeg|gif|png';
-			$this->load->library('upload',$config);
->>>>>>> origin/mai_huhu
-
-	   		if(!$this->upload->do_upload()){
-	   		
-	   		$error = array ('error'=>$this->upload->display_errors());
-	   		//$this->load->view('upload_form',$error);
-	   		$this->_display('upload_form', $error);
-
-	   	}else{
-	   		$file_data =$this->upload->data();
-	   		$data['img'] = base_url().'/images/'.$file_data['file_name'];
-	   		//$this->load->view('success',$data);
-	   		$this->_display('successupload', $data);
-	   	}
-<<<<<<< HEAD
-
-	}
-			public function lulu()
+	  	public function lulu()
 	 {
 
 	        $this->load->model('m_user');
@@ -150,15 +122,13 @@
 
 
 
-	    
+	 
 
-	    
-=======
-		}*/
->>>>>>> origin/mai_huhu
+		}
+
 
 	    /*public function upload(){
->>>>>>> origin/anis_pro_process
+ origin/anis_pro_process
 	   	$config['upload_path'] = "./images/";
 	   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
 	   	$this->load->library('upload',$config);
@@ -173,22 +143,21 @@
 	   		$file_data =$this->upload->data();
 	   		$data['img'] = base_url().'/images/'.$file_data['file_name'];
 	   		//$this->load->view('success',$data);
-<<<<<<< HEAD
+
 	   		$this->_display('successupload', $data);
 	   	}
 	   }
 
-=======
 	   		$this->_display('berjaya', $data);
 	   	}*/
-<<<<<<< HEAD
+
 	  
 
 
 	}
-=======
+
 	   }
 }
->>>>>>> origin/mai_huhu
+
 	        
 ?>

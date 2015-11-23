@@ -52,12 +52,12 @@
 				</div>
 			</div>
 		</div><!--/header_top-->
-<<<<<<< HEAD
+
 		
-<nav class="navbar navbar-default">
-=======
+
+
 		<nav class="navbar navbar-default">
->>>>>>> origin/mai_huhu
+
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">

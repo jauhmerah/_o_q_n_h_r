@@ -104,7 +104,7 @@
 	    			</script>";  
 		    		break;
 
-<<<<<<< HEAD
+
 	    	    case '4':
 	    	    //cart process
 	    	    	$arr =  $this->input->post();
@@ -128,8 +128,6 @@
 	    			//$data['anot'] = $temp;
 	    			print_r($temp);
 	    			break;
-=======
->>>>>>> origin/mai_huhu
 	    	    
 
 	    	}
@@ -357,17 +355,17 @@
 	   	}
 	   }*/
 
-<<<<<<< HEAD
+
 
 
 	}
-=======
+
 	/*public function logout()
 	{
 		$this->session->sess_destroy();
 		redirect('main');
 	}*/
 }
->>>>>>> origin/mai_huhu
+
 	        
 ?>

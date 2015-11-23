@@ -77,16 +77,14 @@
               </button>
               <a class="navbar-brand" style= "margin-top:-15.5px;" href="<?php echo site_url('huhu/haha'); ?>"><img src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="230px" height="79px"></a>
             </div>
+
             
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <div class="button navbar-right" >
-                <!--a href="<?php echo site_url('main/page/cart');?>"><img src="<?php echo base_url();?>assets/img/cart1.png" title="Cart" width="35px" height="35px"--></a>&nbsp;
-<<<<<<< HEAD
-                 <a href="<?php echo site_url('main/page/cart');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Cart</button></a>
-=======
+                
                  <!--a href="<?php echo site_url('main/page/cart');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Cart</button></a-->
->>>>>>> origin/mai_huhu
+
                  <a href="<?php echo site_url('main/page/signin');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Sign In</button></a>
                  <a href="<?php echo site_url('main/page/signup');?>"><button class="navbar-btn nav-button " data-wow-delay="0.6s">Sign Up</button></a>
                  <!--a href="<?php echo site_url('main/page/cart');?>"><button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Cart</button></a-->
@@ -101,6 +99,7 @@
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
+    </div>
          
         <div class="slider-area">
             <div class="slider">
@@ -114,7 +113,7 @@
 
                    <div class="item"><img style="height:680px;" src="<?php echo base_url();?>assets/img/slider-image-8.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Syariah Compliant Marketplace
                    <p><h3 style="font-style:gisha;text-align:center;">Use muamalah system that meets the syariah law.</h3></p> </div></div>
-                   
+                
                     
                   <!--div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-10.jpg" alt="The Last of us"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:40px; font-weight:800; text-align:center; " class = "col-md-8 col-md-offset-2" >Buy & Sell with Souq Anshar!
                    <p><h4 style="font-style:gisha;text-align:center; font-size:29px; font-weight:600px;">Your First Dinar and Dirham Marketplace</h4> </p> </div></div>
@@ -125,6 +124,7 @@
                  
                 </div>
             </div>
+
             <div class="container slider-content">
             <br></br>
             <br></br>
