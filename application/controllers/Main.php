@@ -318,41 +318,17 @@
 			$this->load->view('main/souqshop', $data);
 	    			
 		}
-
-		/*public function add()
-		{
-			$data = array(
-				'item_id' =>'3',
-				'item_name' => 'Torchlight',
-				
-				'item_price' => 16.9,
-				
-				);
-
-			$this->cart->insert($data);
-			echo "add() called";
-
-	    	$data['products'] = $this->m_item->get_search($search,$table);
-	    	$data['table'] = $table;
-	    	$this->load->view('main/souqshop', $data); 			
-
-		}
 		//tutup search function
 
 		//cart process
-		public function show()
+		/*public function show()
 		{
 			$cart = $this->cart->contents();
 
 			echo "<pre>";
 			print_r($cart);
 			 echo "</pre>";
-		}//tutup cart process
-
-
-		}
-
-	
+		}*///tutup cart process
 
 	    /*public function upload(){
 	   	$config['upload_path'] = "./images/";
@@ -372,8 +348,6 @@
 	   		$this->_display('successupload', $data);
 	   	}
 	   }*/
-
-
 
 
 		//keluarkan semua item
@@ -409,14 +383,12 @@
 	   }*/
 
 
+		/*public function logout()
+		{
+			$this->session->sess_destroy();
+			redirect('main');
+		}*/
+
 	}
-
-	/*public function logout()
-	{
-		$this->session->sess_destroy();
-		redirect('main');
-	}*/
-
-
 	        
 ?>
