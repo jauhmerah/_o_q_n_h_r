@@ -133,7 +133,7 @@
 								 <div class="form-group">
                                     <select name="sub_cat" id="" class="form-control">
 										<option>Select Your Category</option>
-										<option value = "6">All</option>                                     
+										<!--<option value = "6">All</option>-->                                   
                                         <option value = "5">Business</option>
                                         <option value = "3">Travel</option>
                                         <option value = "4">Automotive</option>
