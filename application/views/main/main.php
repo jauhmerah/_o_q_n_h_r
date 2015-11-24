@@ -115,13 +115,13 @@
             <div class="slider">
                 <div id="bg-slider" class="owl-carousel owl-theme">
                   
-                  <div class="item"><img style="height:680px;" src="<?php echo base_url();?>assets/img/slider-image-5.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >"I will not sell defective goods. I feel satisfied with my little profit because I know Allah will bless me."
+                  <div class="item"><img  src="<?php echo base_url();?>assets/img/slider-image-5.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >"I will not sell defective goods. I feel satisfied with my little profit because I know Allah will bless me."
                    <p><h3 style="font-style:gisha;text-align:center;">(Abdul Rahman bin Auf)</h3></p> </div></div>
                    
-                  <div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-10.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Buy and Sell with Souq Anshar!
+                  <div class="item"><img  src="<?php echo base_url();?>assets/img/slider-image-10.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Buy and Sell with Souq Anshar!
                    <p><h3 style="font-style:gisha;text-align:center;">Your First Dinar and Dirham Marketplace.</h3></p> </div></div>
 
-                   <div class="item"><img style="height:680px;" src="<?php echo base_url();?>assets/img/slider-image-8.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Syariah Compliant Marketplace
+                  <div class="item"><img  src="<?php echo base_url();?>assets/img/slider-image-8.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Syariah Compliant Marketplace
                    <p><h3 style="font-style:gisha;text-align:center;">Use muamalah system that meets the syariah law.</h3></p> </div></div>
                 
                     
@@ -134,7 +134,6 @@
                  
                 </div>
             </div>
-
             <div class="container slider-content">
             <br></br>
             <br></br>
@@ -145,8 +144,7 @@
                     <!--div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
                         <h2>Buy & Sell with Souq Anshar!</h2>
                         <p>Your First Dinar Marketplace</p>-->
-                        <div class="search-form wow pulse" data-wow-delay="0.8s" style="width:700px; margin:0 auto;" >
-                          
+                        <div class="search-form wow pulse" data-wow-delay="0.8s" style="width:700px; margin:0 auto;" >                          
                             <form action= "<?php echo site_url('main/search');?>" method= "post" class=" form-inline">
                                 <div class="form-group" >
                                     <input type="text" name= "itemname" class="form-control" placeholder="What are you looking for?" style="width:310px;">
@@ -218,7 +216,7 @@
                     <!--div class="col-md-4">
                         <div class="single-footer">-->
                 <div class="row footer-copy">
-                    <p><span>About Us</span> |<span>Pisang Sdn Bhd, All rights reserved. </span> | <span>Graphic Designed by <a href="#">lalala</a></span> | <span> Web Designed by <a href="#">lululu</a></span> </p>
+                    <p style="text-align:center;">Pisang Sdn Bhd, All rights reserved.</p>
                 </div>
             </div>
         </div>

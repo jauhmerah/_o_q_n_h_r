@@ -109,7 +109,27 @@ class M_item extends CI_Model {
         }
         
           
-    }    
+    } 
+
+    function get_allz1()
+     {
+        $this->db->select('*');
+        $this->db->from('cat_fashion');
+        
+        $results = $this->db->get()->result();
+        return $results;
+           
+     }  
+
+      function get_allz2()
+     {
+        $this->db->select('*');
+        $this->db->from('cat_electronics');
+        
+        $results = $this->db->get()->result();
+        return $results;
+           
+     }       
 }
 
 ?>

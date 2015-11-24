@@ -31,7 +31,29 @@ foreach($products as $data){?>
 								<div class="single-products">
 									<div class="productinfo text-center">
 										
-										<h2><b>Availability:</b><?php echo $data->item_price?></h2>
+										
+										<p><?php echo $data->item_name?></p>
+										<p><?php echo $data->item_availability?></p>
+
+										
+									</div>
+									
+								</div>
+								
+							</div>
+						</div>	
+	<?php }?>
+<?php 
+foreach($products2 as $data){?>
+
+
+<div class="col-sm-4">
+	
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										
+										
 										<p><?php echo $data->item_name?></p>
 										<p><?php echo $data->item_availability?></p>
 

@@ -618,8 +618,7 @@
 			
 			<div class="container">
 				<div class="row">
-					<p class="pull-left">Copyright © Souq Anshar.com All rights reserved.</p>
-					<p class="pull-right">Designed by <span><a target="_blank" >lala</a></span></p>
+					<p style="text-align:center;">Pisang Sdn Bhd, All rights reserved.</p>
 				</div>
 			</div>
 		        </div>

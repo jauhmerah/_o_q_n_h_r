@@ -356,11 +356,25 @@
 
 	        $this->load->model('Products_model');
 	       
-	        $data['products'] = $this->Products_model->get_all();
-	       echo "<pre>";
+	        $data['products'] = $this->Products_model->get_all2();
+	        $data['products2'] = $this->Products_model->get_all3();
+	       	/*echo "<pre>";
 			print_r($data['products']);
-	        /*$this->load->view('main/products',$data);*/
+			print_r($data['products2']);*/
+	        $this->load->view('main/souqshop2',$data);
 	 	}//tutup keluarkan semua item
+
+	 	//keluarkan semua item page souqshop2
+		 function productlist()
+	 	{
+
+	        $this->load->model('m_item');
+	       
+	        $data['products1'] = $this->m_item->get_allz1();
+	        $data['products2'] = $this->m_item->get_allz2();
+	        $this->load->view('main/souqshop2',$data);
+	 	}//tutup keluarkan semua item page souqshop2
+
 
 
 	    /*public function upload(){
