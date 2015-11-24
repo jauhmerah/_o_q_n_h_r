@@ -6,7 +6,7 @@ class M_user extends CI_Model {
     /**
      * @name string TABLE_NAME Holds the name of the table in use by this model
      */
-    const TABLE_NAME = 'm_user';
+    const TABLE_NAME = 'sa_user';
 
     /**
      * @name string PRI_INDEX Holds the name of the tables' primary index used in this model
@@ -89,14 +89,46 @@ class M_user extends CI_Model {
 
     }
 
+    public function takeUser($us_name, $us_password)
+    {
+        $this->db->select('us_name', 'password');
+        $this->db->from('sa_user');
+        $this->db->where('username', $us_name);
+        $this->db->where('password', $us_password);
+        $query = $this->db->get();
+        return $query->num_rows();
+}
 
-    /*public searchItem($sukaJoin = array()){
+
+    public function dataUser($us_name, $us_password)
+    {
         $this->db->select('*');
-        $this->db->from(self::TABLE_NAME);
-        $this->db->like($sukaJoin);
-        $result = $this->db->get()->result();
-        return $result;
-    }*/
+        $this->db->from('sa_user');
+        $this->db->where('username', $us_name);
+        $this->db->where('password', $us_password);
+        $query = $this->db->get();
+        return $query->num_rows();
+    }
+
+    public function userData($us_name)
+    {
+        $this->db->select('username');
+        $this->db->where('username', $us_name);
+        $query = $this->db->get('sa_user');
+        return $query->row();
+    }
+
+
+
+    function get_all(){
+
+        $this->db->select('us_name,us_email');
+        $this->db->from('sa_user');
+        $results=$this->db->get()->result();
+        return $results;
+       
+    }
+
 
 }
 

@@ -79,20 +79,56 @@
 
 <body>
 
+  <nav class="navbar navbar-default">
+          <div class="container" style="background:#000;">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header" >
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" style= "margin-top:0px;" href="<?php echo site_url('huhu/haha'); ?>"><img style="margin-left:-109px; margin-top:-17px; width:340px; height:79px;" src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="230px" height="79px"></a>
+            </div>
+      
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <div class="button navbar-right" style="margin-right:-120px;">
+                 <!--a href="<?php echo site_url('main/page/signin');?>"><button class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s">Sign In</button></a>
+                 <a href="<?php echo site_url('main/page/signup');?>"><button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Sign Up</button></a>-->
+              <ul class="main-nav nav navbar-nav navbar-right" style="margin-top:-15px;">
+                <br>
+                <li class="wow fadeInDown" data-wow-delay="0s"><a href="<?php echo site_url('main/page/main_2');?>">Home</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/souqshop');?>">Shops</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/profile');?>">Profile</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="<?php echo site_url('member/page/dashboard');?>">Dashboard</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="<?php echo site_url('main/page/cart');?>">Cart</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="<?php echo site_url('main');?>">Logout</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      <!-- Start Top Bar -->
+      <!--div class="top-bar">
+        
+          <div class="row">
+            <div class="col-md-6">
+
   <!-- Container -->
-  <div id="container">
+  <!--div id="container">
 
     <!-- Start Header -->
-    <div class="hidden-header"></div>
+    <!--div class="hidden-header"></div>
     <header class="clearfix">
 
       <!-- Start Top Bar -->
-      <div class="top-bar">
+      <!--div class="top-bar">
         
           <div class="row">
             <div class="col-md-6">
               <!-- Start Contact Info -->
-              <ul class="contact-details" style="height:48px; padding-left:50px; font-style:gisha,sans-serif; font-weight:600; font-size:14px;">
+              <!--ul class="contact-details" style="height:48px; padding-left:50px; font-style:gisha,sans-serif; font-weight:600; font-size:14px;">
                
                 <li><a href="#"><i class="fa fa-envelope-o"></i>pisangbyte@outlook.com</a>
                 </li>
@@ -101,9 +137,9 @@
               </ul>
               <!-- End Contact Info -->
             </div>
-            <div class="col-md-6">
+            <!--div class="col-md-6">
               <!-- Start Social Links -->
-              <ul class="social-list" style="padding-right:50px;">
+              <!--ul class="social-list" style="padding-right:50px;">
                 <li>
                   <a class="facebook itl-tooltip" data-placement="bottom" title="Facebook" href="#"><i class="fa fa-facebook"></i></a>
                 </li>
@@ -119,26 +155,22 @@
                 </li>
               </ul>
               <!-- End Social Links -->
-            </div>
-          </div>
-        
-      </div>
       <!-- End Top Bar -->
 
       <!-- Start Header ( Logo & Naviagtion ) -->
-      <div class="navbar navbar-default navbar-top">
+      <!--div class="navbar navbar-default navbar-top">
         
          <div class="navbar-header" style="padding-left:100px;">
             <!-- Stat Toggle Nav Link For Mobiles -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <!--button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
               <i class="fa fa-bars"></i>
             </button>
             <!-- End Toggle Nav Link For Mobiles -->
-            <a class="navbar-brand" href="index.html" style="height:98px;"><img style="margin-top:-7px; height:70px; "alt="" width="230px; padding-left:78px;" src="<?php echo base_url();?>assets/anot/images/home/logo1.png"></a>
+            <!--a class="navbar-brand" href="index.html" style="height:98px;"><img style="margin-top:-7px; height:70px; "alt="" width="230px; padding-left:78px;" src="<?php echo base_url();?>assets/anot/images/home/logo1.png"></a>
           </div>
           <div class="navbar-collapse collapse">
             <!-- Stat Search -->
-            <div class="search-side" style="padding-right:90px;">
+            <!--div class="search-side" style="padding-right:90px;">
               <a class="show-search"><i class="fa fa-search"></i></a>
               <div class="search-form">
                 <form autocomplete="off" role="search" method="get" class="searchform" action="#">
@@ -148,7 +180,7 @@
             </div>
             <!-- End Search -->
             <!-- Start Navigation List -->
-            <ul class="nav navbar-nav navbar-right" style="padding-right:50px;">
+            <!--ul class="nav navbar-nav navbar-right" style="padding-right:50px;">
               <li>
                 <a class="active" href="profile.html">Home</a>
                 <ul class="dropdown">
@@ -193,8 +225,7 @@
               <li><a href="contact.html">Contact</a></li>
             </ul>
             <!-- End Navigation List -->
-          </div>
-        
+
 
 
 
@@ -290,11 +321,8 @@
           </li>
         </ul>
         <!-- Mobile Menu End -->
-
-      </div>
       <!-- End Header ( Logo & Naviagtion ) -->
 
-    </header>
     <!-- End Header -->
 
 
@@ -304,32 +332,32 @@
           
        
     <!-- End HomePage Slider -->
-<div id="timelineContainer"">
-	<div id="timelineBackground">
-		<img src="<?php echo base_url();?>assets/hanis/images/polisevo1.png" class="bgImage" style="margin-top:0px; height:400px; width:1370px;">
-	</div>
+<div id="timelineContainer">
+  <div id="timelineBackground">
+    <img src="<?php echo base_url();?>assets/hanis/images/polisevo1.png" class="bgImage" style="margin-top:0px; height:400px; width:1370px;">
+  </div>
 
 <!-- timeline background -->
-	<!--div id="timelineShade">
-	<form id="bgimageform" method="post" enctype="multipart/form-data" action="image_upload_ajax_bg.php">
+  <!--div id="timelineShade">
+  <form id="bgimageform" method="post" enctype="multipart/form-data" action="image_upload_ajax_bg.php">
     <div class="uploadFile timelineUploadBG">
       <input type="file" name="photoimg" id="bgphotoimg" class="custom-file-input">
      </div>
-	</form>
-	</div>-->
+  </form>
+  </div>-->
 
 <!-- timeline profile picture -->
   <div id="timelineContainer">
-	<div id="timelineProfilePic">
-	<img class="img-circle" src="<?php echo base_url();?>assets/hanis/images/arash.jpg" class="bgImage" style="margin-top:0px;">
-	<form id="bgimageform" method="post" enctype="multipart/form-data" action="image_upload_ajax_bg.php">
-	<div class="uploadFile timelineUploadBG"></div>
-	</form>
-	</div>
-	<!-- timeline title -->
-		<div id="timelineTitle">Bos Hensem Bila Nak Tengok Wayang</div>
+  <div id="timelineProfilePic">
+  <img class="img-circle" src="<?php echo base_url();?>assets/hanis/images/arash.jpg" class="bgImage" style="margin-top:0px;">
+  <form id="bgimageform" method="post" enctype="multipart/form-data" action="image_upload_ajax_bg.php">
+  <div class="uploadFile timelineUploadBG"></div>
+  </form>
+  </div>
+  <!-- timeline title -->
+    <div id="timelineTitle">Arash Rashidi</div>
 </div>
-	
+  
 
 
 
@@ -341,7 +369,7 @@
 
 
         <!-- Start Recent Projects Carousel -->
-	
+  
         <div class="recent-projects" style="padding-left:120px; text-align:center;">
           <br><h4 class="title"><span>My Products</span></h4></br>
           <div class="projects-carousel touch-carousel">
@@ -591,10 +619,10 @@
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
   <!-- Style Switcher -->
-  <div class="switcher-box">
-    <a class="open-switcher show-switcher"><i class="fa fa-cog fa-2x"></i></a>
-    <h4>Style Switcher</h4>
-    <span>12 Predefined Color Skins</span>
+  <!--div class="switcher-box"-->
+    <!--a class="open-switcher show-switcher"><i class="fa fa-cog fa-2x"></i></a-->
+    <!--h4>Style Switcher</h4-->
+    <!--span>12 Predefined Color Skins</span>
     <ul class="colors-list">
       <li>
         <a onClick="setActiveStyleSheet('blue'); return false;" title="Blue" class="blue"></a>
@@ -689,7 +717,7 @@
         <a href="#" class="bg14"></a>
       </li>
     </ul>
-  </div>
+  </div-->
 
   <script type="text/javascript" src="<?php echo base_url();?>assets/hanis/js/script.js"></script>
 

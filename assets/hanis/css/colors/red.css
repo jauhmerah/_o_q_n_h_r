@@ -42,10 +42,15 @@ a.main-button, input[type="submit"] {
 .slicknav_nav .active {
   color: #ee3733;
 }
-.navbar-default .navbar-nav > li:hover > a,
+/*.navbar-default .navbar-nav > li:hover > a,
 .navbar-default .navbar-nav > li > a.active {
-	color: #ee3733;
+<<<<<<< HEAD
+	color: #ffffff;
 }
+=======
+	color: #ffa300;
+}*/
+>>>>>>> origin/mai_huhu
 
 .dropdown > li:hover > a, .sup-dropdown li:hover > a {
 	color: #ee3733;
@@ -55,9 +60,9 @@ a.main-button, input[type="submit"] {
 	background-color: #ee3733;
 }
 
-.navbar-default .navbar-nav > li > a.active, .navbar-default .navbar-nav > li:hover > a {
-	border-color: #ee3733;
-}
+/*.navbar-default .navbar-nav > li > a.active, .navbar-default .navbar-nav > li:hover > a {
+	border-color: #ffa300;
+}*/
 
 .dropdown  li a.active, .sup-dropdown li a.active {
 	color: #ee3733;

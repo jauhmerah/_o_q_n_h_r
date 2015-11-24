@@ -7,12 +7,25 @@
 
 	    function __construct() {
 	        parent::__construct();
+	        $this->load->model('m_user');
 	        $this->load->helper('url');
+	        $this->load->library('session');
 
 	    }
 	
 	    function index() {
 	        $this->_display();
+
+
+	        /*$session = $this->session->userdata('isLogin');  
+	        if($session == FALSE)  
+	        {  
+	        	redirect('main/page/signin');  
+	    	}else{ 
+	    		redirect('main');  
+	    	}*/
+
+
 
 	       /*$verificationCode = random_string('alnum', 20);  
                   
@@ -56,6 +69,7 @@
 	    			$data['arr'] = $this->m_item->get();  
 	    			break;
 
+
 	    		case 'x1':
 	    			$arr = $this->input->get();	    			
 	    			$this->load->model('m_item');
@@ -66,6 +80,7 @@
 	    			$data['products'] = $temp;
 	    			/*print_r($temp);*/
 	    			break;
+
 
 
 	    	    case '4':
@@ -79,10 +94,35 @@
 	    	    	);
 	    	    	$this->load->model('m_user');
 	    	    	$this->m_user->insert($temp);
+
 	    	    	break;
 	    	    case '5':
 	    	    	$data['error'] = true;
 	    	    	break;
+
+		    	case '6':
+		    		$post = $this->input->post();
+		    		$temp = array(
+		    			"us_name" => $post['username'],
+		    			"us_password" => $post['password']
+		    		);
+		    		$this->load->model('m_user');
+		    		$cek = $this->m_user->get($temp);
+		    		if (!$cek) {
+		    			$this->session->flashdata($us_name);
+		    			redirect(site_url('main/page/signin/5'));
+		    		}
+		    		else{//$this->session->set_flashdata($us_name);	    				    			
+	    			$this->session->set_userdata($temp);    
+	    			redirect('main/page/main_2'); 
+	    			}
+	    			echo "<script>  
+	    			alert('Failed Login: Check your username and password!');  
+	    			history.go(-1);  
+	    			</script>";  
+		    		break;
+
+
 
 	    	    case '4':
 	    	    //cart process
@@ -96,6 +136,21 @@
 	    	    	$this->load->model('m_user');
 	    	    	$this->m_user->insert($temp);
 	    	    	break;
+
+
+	    	    case 'x2':
+	    			$arr = $this->input->get();	    			
+	    			$this->load->model('m_user');
+	    			$arr1 = array(
+	    				"sa_name" => $arr['name']
+	    			);
+	    			$temp = $this->m_user->get($arr1);
+	    			//$data['anot'] = $temp;
+	    			print_r($temp);
+	    			break;
+	    	    
+
+
 	    	}
 	    	$this->_display($page,$data);
 	    }
@@ -226,6 +281,12 @@
 			/**
 				kat sini kena dynamic
 			*/
+			
+
+
+			/*$data['arr'] = $this->m_item->get_search($temp,"cat_shoes");
+			$this->load->view('main/testoutput', $data)*/
+			
 			$data = null;
 	        switch ($process) 
 	        {
@@ -241,7 +302,6 @@
 	    			//nk load semua data dlm db
 	    		    $table = 'cat_travel';
 	    		    break;
-
 	    		case '4':
 	    			//nk load semua data dlm db
 	    		    $table = 'cat_automotive';
@@ -253,9 +313,29 @@
 	    		
 	    	}
 
+	    	$data ['products']=$this->m_item->get_search($search,$table);
+	    	$data['table'] = $table;
+			$this->load->view('main/souqshop', $data);
+	    			
+		}
+
+		/*public function add()
+		{
+			$data = array(
+				'item_id' =>'3',
+				'item_name' => 'Torchlight',
+				
+				'item_price' => 16.9,
+				
+				);
+
+			$this->cart->insert($data);
+			echo "add() called";
+
 	    	$data['products'] = $this->m_item->get_search($search,$table);
 	    	$data['table'] = $table;
 	    	$this->load->view('main/souqshop', $data); 			
+
 		}
 		//tutup search function
 
@@ -269,8 +349,35 @@
 			 echo "</pre>";
 		}//tutup cart process
 
+
+		}
+
+	
+
+	    /*public function upload(){
+	   	$config['upload_path'] = "./images/";
+	   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
+	   	$this->load->library('upload',$config);
+
+	   	if(!$this->upload->do_upload()){
+	   		
+	   		$error = array ('error'=>$this->upload->display_errors());
+	   		//$this->load->view('upload_form',$error);
+	   		$this->_display('upload_form', $error);
+
+	   	}else{
+	   		$file_data =$this->upload->data();
+	   		$data['img'] = base_url().'/images/'.$file_data['file_name'];
+	   		//$this->load->view('success',$data);
+	   		$this->_display('successupload', $data);
+	   	}
+	   }*/
+
+
+
+
 		//keluarkan semua item
-		public function lala()
+		 function lala()
 	 	{
 
 	        $this->load->model('Products_model');
@@ -301,6 +408,15 @@
 	   	}
 	   }*/
 
+
 	}
+
+	/*public function logout()
+	{
+		$this->session->sess_destroy();
+		redirect('main');
+	}*/
+
+
 	        
 ?>

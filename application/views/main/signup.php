@@ -73,7 +73,7 @@
         			
         			<div class="modal-body">
         				
-	                    <form role="form" action="<?php echo site_url('main/page/success/4'); ?>" method="post" class="registration-form">
+	                    <form role="form" action="<?php echo site_url('main/page/success_verify/4'); ?>" method="post" class="registration-form">
 						    <div class="form-group">
 	                        	<label class="sr-only" for="form-email">Email</label>
 	                        	<input type="text" name="email" placeholder="Email..." class="form-email form-control" id="email">

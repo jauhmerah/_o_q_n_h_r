@@ -41,6 +41,7 @@
               </button>
               <a class="navbar-brand" style= "margin-top:-5px;" href="<?php echo site_url('huhu/haha'); ?>"><img src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="230px" height="79px"></a>
             </div>
+
 			
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -49,7 +50,12 @@
                  <a href="<?php echo site_url('main/page/signup');?>"><button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Sign Up</button></a>-->
               <ul class="main-nav nav navbar-nav navbar-right">
               	<br>
-                <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="<?php echo site_url('main/page/souqshop');?>">Home</a></li>
+
+                <<li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="<?php echo site_url('main/page/main_2');?>">Home</a></li>
+
+                <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="<?php echo site_url('main/page/main_2');?>">Home</a></li>
+
+                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/souqshop');?>">Shops</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/profile');?>">Profile</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="<?php echo site_url('member/page/dashboard');?>">Dashboard</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="<?php echo site_url('main/page/cart');?>">Cart</a></li>
@@ -58,6 +64,186 @@
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
+
+
+
+
+	<!--nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <!--div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="navbar-brand" style= "background:#000000; height:100px;" href=""><img style= "margin-left:85px; margin-top:-5px; "src="<?php echo base_url();?>assets/anot/images/home/logo1.png" width="230px" height="79px"></div>
+            </div>
+			
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!--div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+              <div class="button navbar-right" >
+              <ul class="main-nav nav navbar-nav navbar-right">
+              	<br>
+                <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="<?php echo site_url('main/page/souqshop');?>">Home</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="<?php echo site_url('main/page/profile');?>">Profile</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="<?php echo site_url('main/page/dashboard');?>">Dashboard</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/cart');?>">Cart</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="<?php echo site_url('main');?>">Logout</a></li>-->
+              <!--/ul>
+            </div><!-- /.navbar-collapse -->
+          <!--/div><!-- /.container-fluid -->
+        <!--/nav>
+	<!--header id="header"><!--header-->
+		<!--div class="header_top" style= "background:#ffffff;"><!--header_top-->
+			<!--div class="container">
+				<div class="row">
+					<div class="col-sm-6 ">
+						<div class="contactinfo">
+							<ul class="nav nav-pills">
+								<li><a href=""><i class="fa fa-phone"></i> +012-2228069</a></li>
+								<li><a href=""><i class="fa fa-envelope"></i> admin@souqanshar.com</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="social-icons pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href=""><i class="fa fa-facebook"></i></a></li>
+								<li><a href=""><i class="fa fa-twitter"></i></a></li>
+								<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+								<li><a href=""><i class="fa fa-dribbble"></i></a></li>
+								<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header_top-->
+		
+
+		
+
+		<!--div class="header-middle" style= "background:#000000; height:100px; " ><img style= "margin-left:100px; margin-top:10px; "src= "<?php echo base_url();?>assets/anot/images/home/logo1.png" width= "230px" height="79px">
+
+		<!--header-middle-->
+			<!--div class="container">
+			
+				<!--div class="row">
+					<div class="col-sm-4">
+						<div class="logo pull-left">
+							<a href="index.html"><img src="images/home/logo.png" alt="" /></a>
+						</div>
+						<div class="btn-group pull-right">
+							<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+									USA
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="">Canada</a></li>
+									<li><a href="">UK</a></li>
+								</ul>
+							</div>-->
+							
+							<!--div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+									DOLLAR
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="">Canadian Dollar</a></li>
+									<li><a href="">Pound</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href=""><i class="fa fa-user"></i> Account</a></li>
+								<li><a href=""><i class="fa fa-star"></i> Wishlist</a></li>
+								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
+								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+								<li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>-->
+		</div><!--/header-middle-->
+	
+		<!--div class="header-bottom"><!--header-bottom-->
+			<!--div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+
+
+
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+            <ul class="main-nav nav navbar-nav navbar-right">
+                <br>
+                <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="<?php echo site_url('main/page/souqshop');?>">Home</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="<?php echo site_url('main/page/profile');?>">Profile</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="<?php echo site_url('main/page/dashboard');?>">Dashboard</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/cart');?>">Cart</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="<?php echo site_url('main');?>">Logout</a></li>
+                <!--li class="wow fadeInDown" data-wow-delay="0.4s"><a href="#">Blog</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.5s"><a href="#">Contact</a></li-->
+              </ul>
+          </div>
+
+						<!--div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a href="index.html">Home</a></li>
+								<li class="dropdown"><a href="#" class="active">Shop<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="shop.html" class="active">Products</a></li>
+										<li><a href="product-details.html">Product Details</a></li> 
+										<li><a href="checkout.html">Checkout</a></li> 
+										<li><a href="cart.html">Cart</a></li> 
+										<li><a href="login.html">Login</a></li> 
+                                    </ul>
+                                </li> 
+								<li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="blog.html">Blog List</a></li>
+										<li><a href="blog-single.html">Blog Single</a></li>
+                                    </ul>
+                                </li> 
+								<li><a href="404.html">404</a></li>
+								<li><a href="contact-us.html">Contact</a></li>
+							</ul>
+						</div>
+					</div>-->
+					<!--div class="col-sm-3">
+						<div class="search_box pull-right">
+							<input type="text" placeholder="Search"/>
+						</div>-->
+					</div>
+				</div>
+				</div>
+			</div>
+	</header>
+	
+	<!--section id="advertisement">
+		<div class="container">
+			<img src="images/shop/advertisement.jpg" alt="" />
+		</div>
+	</section>-->
+
+			
+            <!-- Collect the nav links, forms, and other content for toggling -->
+          
+
 
 	
 	<section>
@@ -231,7 +417,7 @@
 				</div>-->
 
 				<div class="col-sm-9 padding-right" ;">
-					<div class="features_items"><!--features_items-->
+					<div class="features_items">
 					<br>	<h2 class="title text-center">All Items</h2></br>
 					<?php
 					if(sizeof($products)==0)
@@ -250,9 +436,10 @@
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content" style="background:#ffa300">
+
 											<h2>RM <?php echo $data->item_price?></h2>
-											<p><?php echo $data->item_name?></p>
-											<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.$table); ?>">View</p>
+											<p><?php echo $data->item_price?></p>
+											<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.$table); ?>">View</p> 
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
@@ -265,9 +452,11 @@
 								</div>
 							</div>
 						</div>
-						<?php }?>
 						
+						<?php }?>
+			
 						<!--<ul class="pagination">
+
 							<li class="active"><a href="">1</a></li>
 							<li><a href="">2</a></li>
 							<li><a href="">3</a></li>

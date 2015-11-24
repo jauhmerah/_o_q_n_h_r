@@ -39,36 +39,13 @@ body {
 </style>
 
 </head>
-
-<body>
-     
-
-
+<body>   
     <div  style="text-align:center; margin-top:20%; font-size: 30px;" class = "col-md-8 col-md-offset-2" >You have successfully verified your account!
+
      <p><h4 style="font-style:gisha;text-align:center;color:#fff;"><a href="<?php echo site_url('main/page/signin');?>">Click here to Sign in</h4></p> </div>
     </div>
 
-
-    <!-- Navigation -->
-    <!--nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">-->
-        <div class="container" >
-
-            
-           <!-- Brand and toggle get grouped for better mobile display -->
-            
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <!--div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-        <div class="item">
     
-    
-   
-
-    <!-- Put your page content here! -->
-
-    <!-- jQuery -->
     <script src="<?php echo base_url();?>assets/anot/verifypage/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
