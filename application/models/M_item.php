@@ -106,30 +106,49 @@ class M_item extends CI_Model {
         } else
         {
             return false;
-        }
-        
-          
+        }         
     } 
 
-    function get_allz1()
+    //keluarkan semua item page souqshop2
+      function get_allz1()
      {
-        $this->db->select('*');
-        $this->db->from('cat_fashion');
-        
+        $this->db->select("*");
+        $this->db->from('cat_fashion');       
         $results = $this->db->get()->result();
-        return $results;
-           
+        return $results;          
      }  
 
       function get_allz2()
      {
-        $this->db->select('*');
-        $this->db->from('cat_electronics');
-        
+        $this->db->select("*");
+        $this->db->from('cat_electronics');        
         $results = $this->db->get()->result();
-        return $results;
-           
-     }       
+        return $results;          
+     }  
+
+     function get_allz3()
+     {
+        $this->db->select("*");
+        $this->db->from('cat_travel');        
+        $results = $this->db->get()->result();
+        return $results;          
+     } 
+
+     function get_allz4()
+     {
+        $this->db->select("*");
+        $this->db->from('cat_automotive');        
+        $results = $this->db->get()->result();
+        return $results;          
+     } 
+
+     function get_allz5()
+     {
+        $this->db->select("*");
+        $this->db->from('cat_business');        
+        $results = $this->db->get()->result();
+        return $results;          
+     }                        
 }
 
 ?>

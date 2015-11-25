@@ -429,19 +429,19 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="<?php echo base_url();?>assets/anot/images/souq/coffee maker1.jpg" alt="" />
+										<img src="<?php echo base_url();?>assets/anot/images/souq/gincu1.jpg" alt="" />
 										<h2>RM <?php echo $data->item_price?></h2>
 										<p><?php echo $data->item_name?></p>
 										<!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
 									</div>
 									<div class="product-overlay">
-										<!--<div class="overlay-content" style="background:#ffa300">
+										<div class="overlay-content" style="background:#ffa300">
 
 											<h2>RM <?php echo $data->item_price?></h2>
 											<p><?php echo $data->item_name?></p>
-											<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.$table); ?>">View</p> 
+											<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.'cat_fashion'); ?>">View</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>-->
+										</div>
 									</div>
 								</div>
 								<div class="choose">
@@ -451,8 +451,7 @@
 									</ul>
 								</div>
 							</div>
-						</div>
-						
+						</div>						
 						<?php }?>
 
 						<?php
@@ -461,19 +460,19 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="<?php echo base_url();?>assets/anot/images/souq/coffee maker1.jpg" alt="" />
+										<img src="<?php echo base_url();?>assets/anot/images/souq/gincu1.jpg" alt="" />
 										<h2>RM <?php echo $data->item_price?></h2>
 										<p><?php echo $data->item_name?></p>
 										<!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
 									</div>
 									<div class="product-overlay">
-										<!--<div class="overlay-content" style="background:#ffa300">
+										<div class="overlay-content" style="background:#ffa300">
 
 											<h2>RM <?php echo $data->item_price?></h2>
 											<p><?php echo $data->item_name?></p>
-											<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.$table); ?>">View</p> 
+											<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.'cat_electronics'); ?>">View</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>-->
+										</div>
 									</div>
 								</div>
 								<div class="choose">
@@ -483,11 +482,102 @@
 									</ul>
 								</div>
 							</div>
-						</div>
-						
+						</div>						
 						<?php }?>
 			
-						
+						<?php
+						foreach($products3 as $data){?>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="<?php echo base_url();?>assets/anot/images/souq/gincu1.jpg" alt="" />
+										<h2>RM <?php echo $data->item_price?></h2>
+										<p><?php echo $data->item_name?></p>
+										<!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content" style="background:#ffa300">
+
+											<h2>RM <?php echo $data->item_price?></h2>
+											<p><?php echo $data->item_name?></p>
+											<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.'cat_travel'); ?>">View</p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										</div>
+									</div>
+								</div>
+								<div class="choose">
+									<ul class="nav nav-pills nav-justified">
+										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>						
+						<?php }?>
+
+						<?php
+						foreach($products4 as $data){?>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="<?php echo base_url();?>assets/anot/images/souq/gincu1.jpg" alt="" />
+										<h2>RM <?php echo $data->item_price?></h2>
+										<p><?php echo $data->item_name?></p>
+										<!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content" style="background:#ffa300">
+
+											<h2>RM <?php echo $data->item_price?></h2>
+											<p><?php echo $data->item_name?></p>
+											<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.'cat_automotive'); ?>">View</p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										</div>
+									</div>
+								</div>
+								<div class="choose">
+									<ul class="nav nav-pills nav-justified">
+										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>						
+						<?php }?>
+
+						<!--<?php
+						foreach($products5 as $data){?>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="<?php echo base_url();?>assets/anot/images/souq/gincu1.jpg" alt="" />
+										<h2>RM <?php echo $data->item_price?></h2>
+										<p><?php echo $data->item_name?></p>
+										<!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content" style="background:#ffa300">
+
+											<h2>RM <?php echo $data->item_price?></h2>
+											<p><?php echo $data->item_name?></p>
+											<!--<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.'cat_business'); ?>">View</p>-->
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										</div>
+									</div>
+								</div>
+								<div class="choose">
+									<ul class="nav nav-pills nav-justified">
+										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>						
+						<?php }?>-->
+
 						<!--<ul class="pagination">
 
 							<li class="active"><a href="">1</a></li>

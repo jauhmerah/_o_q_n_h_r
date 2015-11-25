@@ -47,7 +47,7 @@
               <ul class="main-nav nav navbar-nav navbar-right">
               	<br>
                 <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="<?php echo site_url('main/page/main_2');?>">Home</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/souqshop');?>">Shops</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/productlist');?>">Shops</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/profile');?>">Profile</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="<?php echo site_url('member/page/dashboard');?>">Dashboard</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="<?php echo site_url('main/page/cart');?>">Cart</a></li>

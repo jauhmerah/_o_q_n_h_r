@@ -14,7 +14,7 @@ class Products_model extends CI_Model
 
 	 function get_all2()
 	 {
-	 	$this->db->select("item_name,item_price,item_availability,item_condition,item_brand");
+	 	$this->db->select("*");
 	 	$this->db->from('cat_fashion');
 	 	
 	 	$results = $this->db->get()->result();
@@ -24,7 +24,7 @@ class Products_model extends CI_Model
 
 	  function get_all3()
 	 {
-	 	$this->db->select("item_name,item_price,item_availability,item_condition,item_brand");
+	 	$this->db->select("*");
 	 	$this->db->from('cat_electronics');
 	 	
 	 	$results = $this->db->get()->result();

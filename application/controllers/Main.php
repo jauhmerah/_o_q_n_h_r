@@ -320,58 +320,30 @@
 		}
 		//tutup search function
 
-		//cart process
-		/*public function show()
-		{
-			$cart = $this->cart->contents();
-
-			echo "<pre>";
-			print_r($cart);
-			 echo "</pre>";
-		}*///tutup cart process
-
-	    /*public function upload(){
-	   	$config['upload_path'] = "./images/";
-	   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
-	   	$this->load->library('upload',$config);
-
-	   	if(!$this->upload->do_upload()){
-	   		
-	   		$error = array ('error'=>$this->upload->display_errors());
-	   		//$this->load->view('upload_form',$error);
-	   		$this->_display('upload_form', $error);
-
-	   	}else{
-	   		$file_data =$this->upload->data();
-	   		$data['img'] = base_url().'/images/'.$file_data['file_name'];
-	   		//$this->load->view('success',$data);
-	   		$this->_display('successupload', $data);
-	   	}
-	   }*/
-
-
 		//keluarkan semua item
 		 function lala()
 	 	{
-
 	        $this->load->model('Products_model');
 	       
 	        $data['products'] = $this->Products_model->get_all2();
 	        $data['products2'] = $this->Products_model->get_all3();
-	       	/*echo "<pre>";
+	        /*$data['table1'] = $table1;*/
+	        /*$data['table2'] = $table2;*/
+	       	echo "<pre>";
 			print_r($data['products']);
-			print_r($data['products2']);*/
-	        $this->load->view('main/souqshop2',$data);
+			/*print_r($data['products2']);*/
+	        /*$this->load->view('main/products',$data);*/
 	 	}//tutup keluarkan semua item
 
 	 	//keluarkan semua item page souqshop2
 		 function productlist()
 	 	{
-
-	        $this->load->model('m_item');
-	       
+	        $this->load->model('m_item');	       
 	        $data['products1'] = $this->m_item->get_allz1();
 	        $data['products2'] = $this->m_item->get_allz2();
+	        $data['products3'] = $this->m_item->get_allz3();
+	        $data['products4'] = $this->m_item->get_allz4();
+	        /*$data['products5'] = $this->m_item->get_allz5();*/
 	        $this->load->view('main/souqshop2',$data);
 	 	}//tutup keluarkan semua item page souqshop2
 
@@ -395,7 +367,6 @@
 	   		$this->_display('successupload', $data);
 	   	}
 	   }*/
-
 
 		/*public function logout()
 		{

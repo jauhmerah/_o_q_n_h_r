@@ -429,7 +429,7 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="<?php echo base_url();?>assets/anot/images/souq/coffee maker1.jpg" alt="" />
+										<img src="<?php echo base_url();?>assets/anot/images/souq/gincu1.jpg" alt="" />
 										<h2>RM <?php echo $data->item_price?></h2>
 										<p><?php echo $data->item_name?></p>
 										<!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
