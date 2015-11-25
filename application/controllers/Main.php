@@ -408,15 +408,298 @@
 	   	}
 	   }*/
 
+	   function shoplist()
+	 	{
+
+	        $this->load->model('M_item');
+	       
+	        $data['products'] = $this->M_item->get_shop();
+	      echo "<pre>";
+			print_r($data['products']);
+	       /* $this->load->view('main/souqshop',$data);*/
+	 	}//tutup keluarkan semua item
+
+
+//ini semua function utk fashion category
+	 	function fashionx1()
+	 	{
+
+	        $this->load->model('M_fashion');
+	       
+	        $data['products'] = $this->M_fashion->get_fashionx1();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop',$data);
+	 	}//tutup keluarkan semua item
+
+
+
+	 	function fashionx2()
+	 	{
+
+	        $this->load->model('M_fashion');
+	       
+	        $data['products'] = $this->M_fashion->get_fashionx2();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop',$data);
+	 	}//tutup keluarkan semua item
+
+
+	 	function fashionx3()
+	 	{
+
+	        $this->load->model('M_fashion');
+	       
+	        $data['products'] = $this->M_fashion->get_fashionx3();
+	     /* echo "<pre>";
+			print_r($data['products']);*/
+	        $this->load->view('main/souqshop',$data);
+	 	}//tutup keluarkan semua item
+
+	 	function fashionx4()
+	 	{
+
+	        $this->load->model('M_fashion');
+	       
+	        $data['products'] = $this->M_fashion->get_fashionx4();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop',$data);
+	 	}//tutup keluarkan semua item
+
+	 	function fashionx5()
+	 	{
+
+	        $this->load->model('M_fashion');
+	       
+	        $data['products'] = $this->M_fashion->get_fashionx5();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop',$data);
+	 	}//tutup keluarkan semua item
+
+
+//ini semua function untuk electronics category
+
+	 		function electronicsx1()
+	 	{
+
+	        $this->load->model('M_electronics');
+	       
+	        $data['products'] = $this->M_electronics->get_electronicsx1();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop',$data);
+	 	}//tutup keluarkan semua item
+
+
+	 		function electronicsx2()
+	 	{
+
+	        $this->load->model('M_electronics');
+	       
+	        $data['products'] = $this->M_electronics->get_electronicsx2();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop',$data);
+	 	}//tutup keluarkan semua item
+
+	 		function electronicsx3()
+	 	{
+
+	        $this->load->model('M_electronics');
+	       
+	        $data['products'] = $this->M_electronics->get_electronicsx3();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop',$data);
+	 	}//tutup keluarkan semua item
+
+
+
+	 		function electronicsx4()
+	 	{
+
+	        $this->load->model('M_electronics');
+	       
+	        $data['products'] = $this->M_electronics->get_electronicsx4();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop',$data);
+	 	}//tutup keluarkan semua item
+
+//ini function utk travel category
+
+	 	function travelx1()
+	 	{
+
+	        $this->load->model('M_travel');
+	       
+	        $data['products'] = $this->M_travel->get_travelx1();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop',$data);
+	 	}//tutup keluarkan semua item
+ 
+ 		function travelx2()
+	 	{
+
+	        $this->load->model('M_travel');
+	       
+	        $data['products'] = $this->M_travel->get_travelx2();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop',$data);
+	 	}//tutup keluarkan semua item
+
+	 	function travelx3()
+	 	{
+
+	        $this->load->model('M_travel');
+	       
+	        $data['products'] = $this->M_travel->get_travelx3();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop',$data);
+	 	}//tutup keluarkan semua item
+
+
+//ini semua function utk travel category
+
+
+	 	function automotivex1()
+	 	{
+
+	        $this->load->model('M_automotive');
+	       
+	        $data['products'] = $this->M_automotive->get_automotivex1();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop',$data);
+	 	}//tutup keluarkan semua item
+
+	 	function automotivex2()
+	 	{
+
+	        $this->load->model('M_automotive');
+	       
+	        $data['products'] = $this->M_automotive->get_automotivex2();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop',$data);
+	 	}//tutup keluarkan semua item
+
+	 	function automotivex3()
+	 	{
+
+	        $this->load->model('M_automotive');
+	       
+	        $data['products'] = $this->M_automotive->get_automotivex3();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop',$data);
+	 	}//tutup keluarkan semua item
+
+	 	function automotivex4()
+	 	{
+
+	        $this->load->model('M_automotive');
+	       
+	        $data['products'] = $this->M_automotive->get_automotivex4();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop',$data);
+	 	}//tutup keluarkan semua item
+
+	 	function automotivex5()
+	 	{
+
+	        $this->load->model('M_automotive');
+	       
+	        $data['products'] = $this->M_automotive->get_automotivex5();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop',$data);
+	 	}//tutup keluarkan semua item
+
+		function automotivex6()
+	 	{
+
+	        $this->load->model('M_automotive');
+	       
+	        $data['products'] = $this->M_automotive->get_automotivex6();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop',$data);
+	 	}//tutup keluarkan semua item
+
+	 	function automotivex7()
+	 	{
+
+	        $this->load->model('M_automotive');
+	       
+	        $data['products'] = $this->M_automotive->get_automotivex7();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop',$data);
+	 	}//tutup keluarkan semua item
+
+//ini semua function utk business category
+
+	 	function businessx1()
+	 	{
+
+	        $this->load->model('M_business');
+	       
+	        $data['products'] = $this->M_business->get_businessx1();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop',$data);
+	 	}//tutup keluarkan semua item
+
+
+	 	function businessx2()
+	 	{
+
+	        $this->load->model('M_business');
+	       
+	        $data['products'] = $this->M_business->get_businessx2();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop',$data);
+	 	}//tutup keluarkan semua item
+
+
+	 	function businessx3()
+	 	{
+
+	        $this->load->model('M_business');
+	       
+	        $data['products'] = $this->M_business->get_businessx3();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop',$data);
+	 	}//tutup keluarkan semua item
+
+
+	 	function businessx4()
+	 	{
+
+	        $this->load->model('M_business');
+	       
+	        $data['products'] = $this->M_business->get_businessx4();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop',$data);
+	 	}//tutup keluarkan semua item
+
+
+
 
 	}
 
-	/*public function logout()
-	{
-		$this->session->sess_destroy();
-		redirect('main');
-	}*/
 
-
+	 
 	        
 ?>

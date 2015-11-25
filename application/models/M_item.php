@@ -109,7 +109,21 @@ class M_item extends CI_Model {
         }
         
           
-    }    
+    } 
+        function get_shop()
+     {
+        $this->db->select('*');
+        $this->db->from('cat_fashion');
+        $this->db->where('sub_id=9');
+
+        
+        $results = $this->db->get()->result();
+        return $results;
+           
+     }   
+
+
+   
 }
 
 ?>
