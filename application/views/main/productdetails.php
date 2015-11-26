@@ -137,11 +137,11 @@
 								<div id="fashion" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
-											<li><a href="">Health and Beauty </a></li>
-											<li><a href="">Women's Wear </a></li>
-											<li><a href="">Men's Wear </a></li>
-											<li><a href="">Kids</a></li>
-											<li><a href="">Sport Wear </a></li>
+											<li><a href="<?php echo site_url('main/fashionx1');?>">Health and Beauty </a></li>
+											<li><a href="<?php echo site_url('main/fashionx2');?>">Women's Wear </a></li>
+											<li><a href="<?php echo site_url('main/fashionx3');?>">Men's Wear </a></li>
+											<li><a href="<?php echo site_url('main/fashionx4');?>">Kids</a></li>
+											<li><a href="<?php echo site_url('main/fashionx5');?>">Sport Wear </a></li>
 										</ul>
 									</div>
 								</div>
@@ -158,10 +158,10 @@
 								<div id="electronics" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
-											<li><a href="">Home Appliances</a></li>
-											<li><a href="">Home and Living</a></li>
-											<li><a href="">Cameras</a></li>
-											<li><a href="">Computers and Laptops</a></li>
+											<li><a href="<?php echo site_url('main/electronicsx1');?>">Home Appliances</a></li>
+											<li><a href="<?php echo site_url('main/electronicsx2');?>">Home and Living</a></li>
+											<li><a href="<?php echo site_url('main/electronicsx3');?>">Cameras</a></li>
+											<li><a href="<?php echo site_url('main/electronicsx4');?>">Computers and Laptops</a></li>
 	
 										</ul>
 									</div>
@@ -180,9 +180,9 @@
 								<div id="travel" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
-											<li><a href="">Bags and Backpacks</a></li>
-											<li><a href="">Luggage</a></li>
-											<li><a href="">Travel's Accessories</a></li>
+											<li><a href="<?php echo site_url('main/travelx1');?>">Bags and Backpacks</a></li>
+											<li><a href="<?php echo site_url('main/travelx2');?>">Luggage</a></li>
+											<li><a href="<?php echo site_url('main/travelx3');?>">Travel's Accessories</a></li>
 										</ul>
 									</div>
 								</div>
@@ -200,13 +200,13 @@
 								<div id="automotive" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
-											<li><a href="">Car Care</a></li>
-											<li><a href="">Tools and Equipments</a></li>
-											<li><a href="">Interior Accessories</a></li>
-											<li><a href="">Motorcycles</a></li>
-											<li><a href="">Replacement Parts</a></li>
-											<li><a href="">Wheel and Tyres</a></li>
-											<li><a href="">Oils and Fluids</a></li>
+											<li><a href="<?php echo site_url('main/automotivex1');?>">Car Care</a></li>
+											<li><a href="<?php echo site_url('main/automotivex2');?>">Tools and Equipments</a></li>
+											<li><a href="<?php echo site_url('main/automotivex3');?>">Interior Accessories</a></li>
+											<li><a href="<?php echo site_url('main/automotivex4');?>">Motorcycles</a></li>
+											<li><a href="<?php echo site_url('main/automotivex5');?>">Replacement Parts</a></li>
+											<li><a href="<?php echo site_url('main/automotivex6');?>">Wheel and Tyres</a></li>
+											<li><a href="<?php echo site_url('main/automotivex7');?>">Oils and Fluids</a></li>
 										</ul>
 									</div>
 								</div>
@@ -224,10 +224,10 @@
 								<div id="business" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
-											<li><a href="">Business Plans</a></li>
-											<li><a href="">Career Advices</a></li>
-											<li><a href="">Market Research</a></li>
-											<li><a href="">Presentations</a></li>
+											<li><a href="<?php echo site_url('main/businessx1');?>">Business Plans</a></li>
+											<li><a href="<?php echo site_url('main/businessx2');?>">Career Advices</a></li>
+											<li><a href="<?php echo site_url('main/businessx3');?>">Market Research</a></li>
+											<li><a href="<?php echo site_url('main/businessx4');?>">Presentations</a></li>
 										</ul>
 									</div>
 								</div>

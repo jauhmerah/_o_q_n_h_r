@@ -429,14 +429,13 @@
 										<img src="<?php echo base_url();?>assets/anot/images/souq/coffee maker1.jpg" alt="" />
 										<h2>RM <?php echo $data->item_price?></h2>
 										<p><?php echo $data->item_name?></p>
-										
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content" style="background:#ffa300">
 
 											<h2>RM <?php echo $data->item_price?></h2>
 											<p><?php echo $data->item_name?></p>
-											<a href="<?php echo site_url('main/page/productdetails/z1?item='.$data->item_id.'&cat='.'cat_fashion'); ?>">View</p> 
+											<a href="<?php echo site_url('main/page/productdetails/z4?item='.$data->item_id.'&cat='.'cat_travel'); ?>">View</p> 
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>

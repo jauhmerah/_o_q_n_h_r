@@ -81,6 +81,60 @@
 	    			/*print_r($temp);*/
 	    			break;
 
+	    		case 'z1':
+	    			$arr = $this->input->get();	    			
+	    			$this->load->model('m_item');
+	    			$arr1 = array(
+	    				"item_id" => $arr['item']
+	    			);
+	    			$temp = $this->m_item->get($arr1,$arr['cat']);
+	    			$data['products'] = $temp;
+	    			/*print_r($temp);*/
+	    			break;
+
+	    		case 'z2':
+	    			$arr = $this->input->get();	    			
+	    			$this->load->model('m_item');
+	    			$arr1 = array(
+	    				"item_id" => $arr['item']
+	    			);
+	    			$temp = $this->m_item->get($arr1,$arr['cat']);
+	    			$data['products'] = $temp;
+	    			/*print_r($temp);*/
+	    			break;
+
+	    		case 'z3':
+	    			$arr = $this->input->get();	    			
+	    			$this->load->model('m_item');
+	    			$arr1 = array(
+	    				"item_id" => $arr['item']
+	    			);
+	    			$temp = $this->m_item->get($arr1,$arr['cat']);
+	    			$data['products'] = $temp;
+	    			/*print_r($temp);*/
+	    			break;
+
+				case 'z4':
+	    			$arr = $this->input->get();	    			
+	    			$this->load->model('m_item');
+	    			$arr1 = array(
+	    				"item_id" => $arr['item']
+	    			);
+	    			$temp = $this->m_item->get($arr1,$arr['cat']);
+	    			$data['products'] = $temp;
+	    			/*print_r($temp);*/
+	    			break;
+
+	    		case 'z5':
+	    			$arr = $this->input->get();	    			
+	    			$this->load->model('m_item');
+	    			$arr1 = array(
+	    				"item_id" => $arr['item']
+	    			);
+	    			$temp = $this->m_item->get($arr1,$arr['cat']);
+	    			$data['products'] = $temp;
+	    			/*print_r($temp);*/
+	    			break;
 
 
 	    	    case '4':
@@ -419,7 +473,6 @@
 	       /* $this->load->view('main/souqshop',$data);*/
 	 	}//tutup keluarkan semua item
 
-
 //ini semua function utk fashion category
 	 	function fashionx1()
 	 	{
@@ -429,12 +482,10 @@
 	        $data['products'] = $this->M_fashion->get_fashionx1();
 	      /*echo "<pre>";
 			print_r($data['products']);*/
-	       $this->load->view('main/souqshop',$data);
+	       $this->load->view('main/souqshop1',$data);
 	 	}//tutup keluarkan semua item
 
-
-
-	 	function fashionx2()
+		function fashionx2()
 	 	{
 
 	        $this->load->model('M_fashion');
@@ -442,9 +493,8 @@
 	        $data['products'] = $this->M_fashion->get_fashionx2();
 	      /*echo "<pre>";
 			print_r($data['products']);*/
-	       $this->load->view('main/souqshop',$data);
+	       $this->load->view('main/souqshop1',$data);
 	 	}//tutup keluarkan semua item
-
 
 	 	function fashionx3()
 	 	{
@@ -454,7 +504,7 @@
 	        $data['products'] = $this->M_fashion->get_fashionx3();
 	     /* echo "<pre>";
 			print_r($data['products']);*/
-	        $this->load->view('main/souqshop',$data);
+	        $this->load->view('main/souqshop1',$data);
 	 	}//tutup keluarkan semua item
 
 	 	function fashionx4()
@@ -465,7 +515,7 @@
 	        $data['products'] = $this->M_fashion->get_fashionx4();
 	      /*echo "<pre>";
 			print_r($data['products']);*/
-	       $this->load->view('main/souqshop',$data);
+	       $this->load->view('main/souqshop1',$data);
 	 	}//tutup keluarkan semua item
 
 	 	function fashionx5()
@@ -476,7 +526,7 @@
 	        $data['products'] = $this->M_fashion->get_fashionx5();
 	      /*echo "<pre>";
 			print_r($data['products']);*/
-	       $this->load->view('main/souqshop',$data);
+	       $this->load->view('main/souqshop1',$data);
 	 	}//tutup keluarkan semua item
 
 
@@ -490,7 +540,7 @@
 	        $data['products'] = $this->M_electronics->get_electronicsx1();
 	      /*echo "<pre>";
 			print_r($data['products']);*/
-	       $this->load->view('main/souqshop',$data);
+	       $this->load->view('main/souqshop3',$data);
 	 	}//tutup keluarkan semua item
 
 
@@ -502,10 +552,10 @@
 	        $data['products'] = $this->M_electronics->get_electronicsx2();
 	      /*echo "<pre>";
 			print_r($data['products']);*/
-	       $this->load->view('main/souqshop',$data);
+	       $this->load->view('main/souqshop3',$data);
 	 	}//tutup keluarkan semua item
 
-	 		function electronicsx3()
+	 	function electronicsx3()
 	 	{
 
 	        $this->load->model('M_electronics');
@@ -513,12 +563,12 @@
 	        $data['products'] = $this->M_electronics->get_electronicsx3();
 	      /*echo "<pre>";
 			print_r($data['products']);*/
-	       $this->load->view('main/souqshop',$data);
+	       $this->load->view('main/souqshop3',$data);
 	 	}//tutup keluarkan semua item
 
 
 
-	 		function electronicsx4()
+	 	function electronicsx4()
 	 	{
 
 	        $this->load->model('M_electronics');
@@ -526,8 +576,9 @@
 	        $data['products'] = $this->M_electronics->get_electronicsx4();
 	      /*echo "<pre>";
 			print_r($data['products']);*/
-	       $this->load->view('main/souqshop',$data);
+	       $this->load->view('main/souqshop3',$data);
 	 	}//tutup keluarkan semua item
+
 
 //ini function utk travel category
 
@@ -539,7 +590,7 @@
 	        $data['products'] = $this->M_travel->get_travelx1();
 	      /*echo "<pre>";
 			print_r($data['products']);*/
-	       $this->load->view('main/souqshop',$data);
+	       $this->load->view('main/souqshop4',$data);
 	 	}//tutup keluarkan semua item
  
  		function travelx2()
@@ -550,7 +601,7 @@
 	        $data['products'] = $this->M_travel->get_travelx2();
 	      /*echo "<pre>";
 			print_r($data['products']);*/
-	       $this->load->view('main/souqshop',$data);
+	       $this->load->view('main/souqshop4',$data);
 	 	}//tutup keluarkan semua item
 
 	 	function travelx3()
@@ -561,11 +612,10 @@
 	        $data['products'] = $this->M_travel->get_travelx3();
 	      /*echo "<pre>";
 			print_r($data['products']);*/
-	       $this->load->view('main/souqshop',$data);
+	       $this->load->view('main/souqshop4',$data);
 	 	}//tutup keluarkan semua item
 
-
-//ini semua function utk travel category
+	 	//ini semua function utk travel category
 
 
 	 	function automotivex1()
@@ -576,7 +626,7 @@
 	        $data['products'] = $this->M_automotive->get_automotivex1();
 	      /*echo "<pre>";
 			print_r($data['products']);*/
-	       $this->load->view('main/souqshop',$data);
+	       $this->load->view('main/souqshop5',$data);
 	 	}//tutup keluarkan semua item
 
 	 	function automotivex2()
@@ -587,7 +637,7 @@
 	        $data['products'] = $this->M_automotive->get_automotivex2();
 	      /*echo "<pre>";
 			print_r($data['products']);*/
-	       $this->load->view('main/souqshop',$data);
+	       $this->load->view('main/souqshop5',$data);
 	 	}//tutup keluarkan semua item
 
 	 	function automotivex3()
@@ -598,7 +648,7 @@
 	        $data['products'] = $this->M_automotive->get_automotivex3();
 	      /*echo "<pre>";
 			print_r($data['products']);*/
-	       $this->load->view('main/souqshop',$data);
+	       $this->load->view('main/souqshop5',$data);
 	 	}//tutup keluarkan semua item
 
 	 	function automotivex4()
@@ -609,7 +659,7 @@
 	        $data['products'] = $this->M_automotive->get_automotivex4();
 	      /*echo "<pre>";
 			print_r($data['products']);*/
-	       $this->load->view('main/souqshop',$data);
+	       $this->load->view('main/souqshop5',$data);
 	 	}//tutup keluarkan semua item
 
 	 	function automotivex5()
@@ -620,7 +670,7 @@
 	        $data['products'] = $this->M_automotive->get_automotivex5();
 	      /*echo "<pre>";
 			print_r($data['products']);*/
-	       $this->load->view('main/souqshop',$data);
+	       $this->load->view('main/souqshop5',$data);
 	 	}//tutup keluarkan semua item
 
 		function automotivex6()
@@ -631,7 +681,7 @@
 	        $data['products'] = $this->M_automotive->get_automotivex6();
 	      /*echo "<pre>";
 			print_r($data['products']);*/
-	       $this->load->view('main/souqshop',$data);
+	       $this->load->view('main/souqshop5',$data);
 	 	}//tutup keluarkan semua item
 
 	 	function automotivex7()
@@ -642,7 +692,7 @@
 	        $data['products'] = $this->M_automotive->get_automotivex7();
 	      /*echo "<pre>";
 			print_r($data['products']);*/
-	       $this->load->view('main/souqshop',$data);
+	       $this->load->view('main/souqshop5',$data);
 	 	}//tutup keluarkan semua item
 
 //ini semua function utk business category
@@ -655,7 +705,7 @@
 	        $data['products'] = $this->M_business->get_businessx1();
 	      /*echo "<pre>";
 			print_r($data['products']);*/
-	       $this->load->view('main/souqshop',$data);
+	       $this->load->view('main/souqshop6',$data);
 	 	}//tutup keluarkan semua item
 
 
@@ -667,7 +717,7 @@
 	        $data['products'] = $this->M_business->get_businessx2();
 	      /*echo "<pre>";
 			print_r($data['products']);*/
-	       $this->load->view('main/souqshop',$data);
+	       $this->load->view('main/souqshop6',$data);
 	 	}//tutup keluarkan semua item
 
 
@@ -679,7 +729,7 @@
 	        $data['products'] = $this->M_business->get_businessx3();
 	      /*echo "<pre>";
 			print_r($data['products']);*/
-	       $this->load->view('main/souqshop',$data);
+	       $this->load->view('main/souqshop6',$data);
 	 	}//tutup keluarkan semua item
 
 
@@ -691,15 +741,10 @@
 	        $data['products'] = $this->M_business->get_businessx4();
 	      /*echo "<pre>";
 			print_r($data['products']);*/
-	       $this->load->view('main/souqshop',$data);
+	       $this->load->view('main/souqshop6',$data);
 	 	}//tutup keluarkan semua item
 
 
 
-
-	}
-
-
-	 
-	        
+	}	        
 ?>
