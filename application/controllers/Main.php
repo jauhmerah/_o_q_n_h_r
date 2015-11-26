@@ -69,7 +69,6 @@
 	    			$data['arr'] = $this->m_item->get();  
 	    			break;
 
-
 	    		case 'x1':
 	    			$arr = $this->input->get();	    			
 	    			$this->load->model('m_item');
@@ -80,8 +79,6 @@
 	    			$data['products'] = $temp;
 	    			/*print_r($temp);*/
 	    			break;
-
-
 
 	    	    case '4':
 	    	    //sign up process
@@ -122,8 +119,6 @@
 	    			</script>";  
 		    		break;
 
-
-
 	    	    case '4':
 	    	    //cart process
 	    	    	$arr =  $this->input->post();
@@ -137,7 +132,6 @@
 	    	    	$this->m_user->insert($temp);
 	    	    	break;
 
-
 	    	    case 'x2':
 	    			$arr = $this->input->get();	    			
 	    			$this->load->model('m_user');
@@ -148,9 +142,6 @@
 	    			//$data['anot'] = $temp;
 	    			print_r($temp);
 	    			break;
-	    	    
-
-
 	    	}
 	    	$this->_display($page,$data);
 	    }
@@ -325,14 +316,19 @@
 	 	{
 	        $this->load->model('Products_model');
 	       
-	        $data['products'] = $this->Products_model->get_all2();
-	        $data['products2'] = $this->Products_model->get_all3();
+	        
+	        /*$data['products2'] = $this->Products_model->get_all3();*/
 	        /*$data['table1'] = $table1;*/
 	        /*$data['table2'] = $table2;*/
+	        $data['products'] = $this->Products_model->get_all2();
 	       	echo "<pre>";
 			print_r($data['products']);
 			/*print_r($data['products2']);*/
-	        /*$this->load->view('main/products',$data);*/
+			
+	    			
+	    	
+	    	
+	        /*$this->load->view('main/souqshop',$data);*/
 	 	}//tutup keluarkan semua item
 
 	 	//keluarkan semua item page souqshop2

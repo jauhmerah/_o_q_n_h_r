@@ -16,6 +16,7 @@ class Products_model extends CI_Model
 	 {
 	 	$this->db->select("*");
 	 	$this->db->from('cat_fashion');
+	 	$this->db->where('sub_id=9');
 	 	
 	 	$results = $this->db->get()->result();
 	 	return $results;
