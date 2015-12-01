@@ -255,7 +255,7 @@
 									<h4 class="panel-title">
 										<a data-toggle="collapse" data-parent="#accordian" href="#fashion">
 											<span class="badge pull-right"><i class="fa fa-plus" ></i></span>
-											<a href="<?php echo site_url('main/shoplist');?>">Fashion</a>
+											Fashion
 										</a>
 									</h4>
 								</div>
@@ -426,16 +426,18 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="<?php echo base_url();?>assets/anot/images/souq/coffee maker1.jpg" alt="" />
+										<img src="<?php echo base_url();?>assets/anot/images/souq/modenas.jpg" alt="" />
 										<h2>RM <?php echo $data->item_price?></h2>
+										<h5>(<?php echo $data->dinar_price?>)</h5>
 										<p><?php echo $data->item_name?></p>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content" style="background:#ffa300">
 
 											<h2>RM <?php echo $data->item_price?></h2>
+											<h5>(<?php echo $data->dinar_price?>)</h5>
 											<p><?php echo $data->item_name?></p>
-											<a href="<?php echo site_url('main/page/productdetails/z4?item='.$data->item_id.'&cat='.'cat_travel'); ?>">View</p> 
+											<a href="<?php echo site_url('main/page/productdetails/z4?item='.$data->item_id.'&cat='.'cat_automotive'); ?>">View</p> 
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>

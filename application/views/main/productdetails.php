@@ -338,6 +338,9 @@
 								<span>
 									<span>RM<?php echo $products->item_price?></span>
 									
+									<h2>(<?php echo $products->dinar_price?>)</h2>
+
+									
 									<!--Mcm mana nak masuk database ni?-->
 									<div class="form-group" >
 										<label>Quantity:</label>
