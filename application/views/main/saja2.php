@@ -9,14 +9,15 @@ Category:<br>
 </form>-->
 
 <?php echo form_open('main/search'); ?>
-		<!--<div>
+		<div>
 			<?php echo form_label('sub_cat:', 'sub_cat'); ?>
 			<input name = "itemname" placeholder = "Search">
-		</div>-->
+		</div>
 			 <div class="form-group">
-                                    <select name="sub_cat" id="" class="form-control" placeholder = "Select Your Category">
+                                    <select name="sub_cat"id="" class="form-control" placeholder = "Select Your Category" matches=""/>
 										
-										<!--<option selected>All</option>-->										
+										<!--<option selected>All</option>-->
+										<option href="<?php echo site_url('main/saja2');?>">Select Your Category</option>										
                                         <option value = "5">Business</option>
                                         <option value = "3">Travel</option>
                                         <option value = "4">Automotive</option>

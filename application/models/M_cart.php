@@ -1,42 +1,50 @@
 <?php 
-if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 class M_cart extends CI_Model {
 
-    /**
-     * @name string TABLE_NAME Holds the name of the table in use by this model
-     */
-    /*const TABLE_NAME = 'sa_category';
+   
+     function get_semua()
+     {
+        $this->db->select("*");
+        $this->db->from('cat_fashion');       
+        $results = $this->db->get()->result();
+        return $results;          
+     }  
 
-    /**
-     * @name string PRI_INDEX Holds the name of the tables' primary index used in this model
-     */
-    /*const PRI_INDEX = 'cat_id';
-
-    /**
-     * Retrieves record(s) from the database
-     *
-     * @param mixed $where Optional. Retrieves only the records matching given criteria, or all records if not given.
-     *                      If associative array is given, it should fit field_name=>value pattern.
-     *                      If string, value will be used to match against PRI_INDEX
-     * @return mixed Single record if ID is given, or array of results
-     */
-    function __construct() {
-            parent::__construct();
-            /*$this->load->database();*/
+        // Add an item to the cart
+        function validate_add_cart_item(){
+            // Validate posted data, and then add the item!
+            $id = $this->input->post('product_id'); // Assign posted product_id to $id
+            $cty = $this->input->post('quantity'); // Assign posted quantity to $cty
+             
+            $this->db->where('id', $id); // Select where id matches the posted id
+            $query = $this->db->get('products', 1); // Select the products where a match is found and limit the query by 1
+             
+            // Check if a row has matched our product id
+            if($query->num_rows > 0){
+             
+    // We have a match!
+        foreach ($query->result() as $row)
+        {
+            // Create an array with product information
+            $data = array(
+                'item_id'      => $id,
+                'item_qty'     => $cty,
+                'item_price'   => $row->price,
+                'item_name'    => $row->name
+            );
+ 
+            // Add the data to the cart using the insert function that is available because we loaded the cart library
+            $this->cart->insert($data); 
+             
+            return TRUE; // Finally return TRUE
+        }
+     
+    }else{
+        // Nothing found! Return FALSE! 
+        return FALSE;
     }
+        }
 
-    function findAll()
-
-    {
-        return $this->db->get('cat_electronics')->result();
-
-    }
-
-   function find($item_id)
-   {
-    $this->db->where('item_id',$item_id);
-    return $this->db->get('cat_electronics')->row();
-   }
   }        
 ?>

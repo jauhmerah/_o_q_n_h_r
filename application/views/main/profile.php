@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><html lang="en" class="no-js"> <![endif]-->
 <html lang="en">
@@ -370,7 +370,7 @@
 
         <!-- Start Recent Projects Carousel -->
   
-        <div class="recent-projects" style="padding-left:120px; text-align:center;">
+        <div class="recent-projects" style="padding-left:60px; text-align:center;">
           <br><h4 class="title"><span>My Products</span></h4></br>
           <div class="projects-carousel touch-carousel">
 
@@ -484,16 +484,17 @@
  
         </div>
     </div>
+
         <!-- End Recent Projects Carousel -->
 
-       
+        
               <!-- Classic Heading -->
-              <br><br><h4 class="classic-title" style="padding-left:120px; text-align:center;"><span>Our Clients</span></h4></br></br>
+              <br><br><h4 class="classic-title" style="padding-left:60px; text-align:center;"><span>Our Clients</span></h4></br></br>
 
-              <div class="clients-carousel custom-carousel touch-carousel" data-appeared-items="4">
+              <div class="clients-carousel custom-carousel touch-carousel" data-appeared-items="4" >
 
                 <!-- Client 1 -->
-                <div class="client-item item">
+                <div class="client-item item" >
                   <a href="#"><img src="<?php echo base_url();?>assets/hanis/images/anot.png" alt="" /></a>
                 </div>
 
@@ -596,18 +597,18 @@
         <!-- .row -->
 
         <!-- Start Copyright -->
-        <div class="copyright-section">
+        <div class="copyright-section" >
           <!--div class="row">-->
             <div class="col-md-5">
-              <p>Pisang Sdn Bhd. All Rights Reserved <a href="#"></a> </p>
+              <p >Pisang Sdn Bhd. All Rights Reserved <a href="#"></a> </p>
             </div>
-            <!--div class="col-md-6">
+            <div class="col-md-6">
               <ul class="footer-nav">
                 <li><a href="#">Sitemap</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Contact</a></li>
               </ul>
-            </div>-->
+            </div>
           </div>
         </div>
         <!-- End Copyright -->

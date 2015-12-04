@@ -7,15 +7,21 @@
 
 	    function __construct() {
 	        parent::__construct();
+	        //Load Library and model.
 	        $this->load->model('m_user');
 	        $this->load->helper('url');
 	        $this->load->library('session');
+	       $this->load->model('m_cart');
+			$this->load->model('m_item');
+			 // Load the cart library to use it.
+   			 $this->load->library('cart');
+   			 
 
 	    }
 	
 	    function index() {
 	        $this->_display();
-
+	         
 
 	        /*$session = $this->session->userdata('isLogin');  
 	        if($session == FALSE)  
@@ -266,17 +272,13 @@
 			$process = $this->input->post('sub_cat');
 			$search = $this->input->post("itemname");
 
-
+				
+					    
 			/*$data['arr'] = $this->m_item->get_search($temp,"cat_shoes");
 			$this->load->view('main/testoutput', $data)*/
 			/**
 				kat sini kena dynamic
 			*/
-			
-
-
-			/*$data['arr'] = $this->m_item->get_search($temp,"cat_shoes");
-			$this->load->view('main/testoutput', $data)*/
 			
 			$data = null;
 	        switch ($process) 
@@ -301,13 +303,11 @@
 	    			//nk load semua data dlm db
 	    		    $table = 'cat_business';
 	    		    break;	
-	    		
-	    	}
 
-	    	$data ['products']=$this->m_item->get_search($search,$table);
-	    	$data['table'] = $table;
-			$this->load->view('main/souqshop', $data);
-	    			
+	    	}
+	    		$data ['products']=$this->m_item->get_search($search,$table);
+		    	$data['table'] = $table;		    		
+				$this->load->view('main/souqshop', $data); 	  			
 		}
 		//tutup search function
 
@@ -321,14 +321,25 @@
 	        /*$data['table1'] = $table1;*/
 	        /*$data['table2'] = $table2;*/
 	        $data['products'] = $this->Products_model->get_all2();
-	       	echo "<pre>";
-			print_r($data['products']);
+	       	/*echo "<pre>";
+			print_r($data['products']);*/
 			/*print_r($data['products2']);*/
 			
 	    			
 	    	
 	    	
-	        /*$this->load->view('main/souqshop',$data);*/
+	       
+
+	        if ($this->input->get('item_id') != '')
+			{
+			$this->cart->insert($data['products'][$this->input->get('item_id')]);
+			
+			}
+
+			
+		
+
+		 $this->load->view('main/miza',$data);
 	 	}//tutup keluarkan semua item
 
 	 	//keluarkan semua item page souqshop2
@@ -343,7 +354,119 @@
 	        $this->load->view('main/souqshop2',$data);
 	 	}//tutup keluarkan semua item page souqshop2
 
+	 	//function untuk cart & checkout page
+	 	function add()
+        {
+	        // Set array for send data.
+			$insert_data = array(
+			'item_id' => $this->input->post('item_id'),
+			'item_name' => $this->input->post('item_name'),
+			'item_price' => $this->input->post('item_price'),
+			'qty' => 1
+		);
 
+		// This function add items into cart.
+		   $this->cart->insert($insert_data);
+
+		// This will show insert data in cart.
+		   redirect('main/page/miza');
+		}
+
+		function remove($rowid) 
+		{
+			// Check rowid value.
+			if ($rowid==="all")
+		{
+			// Destroy data which store in session.
+			$this->cart->destroy();
+		}else
+		{
+			// Destroy selected rowid in session.
+			$data = array(
+			'rowid' => $rowid,
+			'qty' => 0
+		);
+			// Update cart data, after cancel.
+			$this->cart->update($data);
+		}
+
+			// This will show cancel data in cart.
+			redirect('main/page/mizatry');
+		}
+
+		function update_cart()
+		{
+
+			// Recieve post values,calcute them and update
+			$cart_info = $_POST['cart'] ;
+			foreach( $cart_info as $id => $cart)
+		{
+			$rowid = $cart['rowid'];
+			$price = $cart['item_price'];
+			$amount = $price * $cart['qty'];
+			$qty = $cart['qty'];
+
+			$data = array(
+			'rowid' => $rowid,
+			'item_price' => $price,
+			'amount' => $amount,
+			'qty' => $qty
+			);
+
+		    $this->cart->update($data);
+		}
+		    redirect('main/page/mizatry');
+		}
+
+		function checkout()
+		{
+			// Load "checkout".
+			$this->load->view('checkout');
+		}
+
+		public function save_order()
+		{
+			// This will store all values which inserted from user.
+			$customer = array(
+			'by_firstname' => $this->input->post('first_name'),
+			'by_lastname' => $this->input->post('last_name'),
+			'by_address1' => $this->input->post('by_address1'),
+			'by_address2' => $this->input->post('by_address2'),
+			'by_city' => $this->input->post('by_city'),
+			'by_postalcode' => $this->input->post('by_postalcode'),
+			'by_country' => $this->input->post('by_country'),
+			'by_state' => $this->input->post('by_state'),
+			'by_phone' => $this->input->post('by_phone'),
+			'by_email' => $this->input->post('by_email'),
+			);
+			// And store user information in database.
+			$cust_id = $this->m_item->insert_customer($customer);
+
+			$order = array(
+			'date' => date('Y-m-d'),
+			'buyer_id' => $cust_id
+			);
+
+			$ord_id = $this->m_item->insert_order($order);
+
+			if ($cart = $this->cart->contents()):
+			foreach ($cart as $item):
+			$order_detail = array(
+			'cr_orderID' => $ord_id,
+			'cr_itemID' => $item['cr_itemID'],
+			'cr_price' => $item['cr_price'],
+			'cr_quantity' => $item['qty']
+			);
+
+			// Insert product imformation with order detail, store in cart also store in database.
+
+			$cust_id = $this->m_item->insert_order_detail($order_detail);
+			endforeach;
+			endif;
+
+			// After storing all imformation in database load "billing_success".
+			$this->load->view('billing_success');
+		}
 
 	    /*public function upload(){
 	   	$config['upload_path'] = "./images/";
@@ -369,6 +492,40 @@
 			$this->session->sess_destroy();
 			redirect('main');
 		}*/
+
+		function lala2()
+	 	{
+	        $this->load->model('Products_model');
+	        $data['products'] = $this->Products_model->get_all2();
+	       	echo "<pre>";
+			print_r($data['products']);
+	    }
+
+	    function trying()
+	{
+	
+    $data['products'] = $this->m_cart->get_semua(); // Retrieve an array with all products
+   	/*echo "<pre>";
+    print_r($data['products']); // Print out the array to see if it works (Remove this line when done testing)*/
+     $data['content'] = 'testcart1/products';// Select our view file that will display our products
+    $this->load->view('testcart', $data); // Display the page with the above defined content
+
+	}
+
+	function add_cart_item(){
+     
+    if($this->m_cart->validate_add_cart_item() == TRUE){
+         
+        // Check if user has javascript enabled
+        if($this->input->post('ajax') != '1'){
+            redirect('cart'); // If javascript is not enabled, reload the page with new data
+        }else{
+            echo 'true'; // If javascript is enabled, return true, so the cart gets updated
+        }
+    }
+     
+}
+	    
 
 	}
 	        

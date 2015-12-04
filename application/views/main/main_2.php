@@ -28,6 +28,26 @@
         <link rel="stylesheet" href="<?php echo base_url();?>assets/css/owl.transitions.css">
         <link rel="stylesheet" href="<?php echo base_url();?>assets/style.css">
         <link rel="stylesheet" href="<?php echo base_url();?>assets/responsive.css">
+         <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+            <script type="text/javascript">
+
+  function checkForm(form)
+  {
+   
+    if(form.itemname.value == "") {
+      alert(" Please enter items that you are looking for");
+      form.itemname.focus();
+      return false;
+    }
+    if(form.sub_cat.value == "Select Your Category") {
+      alert(" Please choose your category");
+      form.sub_cat.focus();
+      return false;
+    }
+
+   }
+    
+</script>
 	
     </head>
     <body>
@@ -132,7 +152,7 @@
                         <h2>Buy & Sell with Souq Anshar!</h2>
                         <p>Your First Dinar Marketplace</p>-->
                         <div class="search-form wow pulse" data-wow-delay="0.8s" style="width:700px; margin:0 auto;" >
-                            <form action= "<?php echo site_url('main/search');?>" method= "post" class=" form-inline">
+                            <form action= "<?php echo site_url('main/search');?>" method= "post" class=" form-inline" onsubmit="return checkForm(this)">
                                 <div class="form-group" >
                                     <input type="text" name= "itemname" class="form-control" placeholder="What are you looking for?" style="width:310px;">
                                 </div>

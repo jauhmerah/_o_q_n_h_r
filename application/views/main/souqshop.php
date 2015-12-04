@@ -422,7 +422,24 @@
 					<?php
 					if(sizeof($products)==0)
 					{
-						echo '<h2 style="text-align:center">ITEM NOT FOUND</h2>';
+						echo '<h3 style="text-align:center">ITEM NOT FOUND</h3>';
+						
+						echo '<div class="form-group"';
+						echo form_open('main/search'); 
+						echo form_label('Please search again: ', 'itemname','style="text-align:center;"');
+						echo '<input id="itemname" type="text" name= "itemname" class="form-control" placeholder="What are you looking for?" style="width:310px;" required>';
+						echo '<select style="text-align:center; width:310px;" name="sub_cat"id="" class="form-control"placeholder = "Select Your Category" matches=""/>
+										<option >Select Your Category</option>										
+                                        <option value = "5">Business</option>
+                                        <option value = "3">Travel</option>
+                                        <option value = "4">Automotive</option>
+                                        <option value = "1">Fashion</option>
+										<option value = "2">Electronics</option>
+							  <select>';
+						echo '<br></br>';	  
+						echo '<input id="buttonCheck" type="submit" name= "action"class="btn" value="Search" style="width:100px; margin:0 auto; background-color:#ffa300;">';
+						echo form_close();
+						echo '<div>';	
 					} 
 					foreach($products as $data){?>
 						<div class="col-sm-4">

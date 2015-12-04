@@ -37,17 +37,32 @@ foreach($products as $data){?>
 
 										
 									</div>
+									
 									<div class="product-overlay">
 										<div class="overlay-content" style="background:#ffa300">
+											
+											
+											<?php
 
-											<h2>RM <?php echo $data->item_price?></h2>
+											// Create form and send values in 'main/add' function.
+											echo form_open('main/add'); ?>
 											<p><?php echo $data->item_name?></p>
-											<!--<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.$table); ?>">View</p>-->
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-									</div>
-							
-									
+										    <p><?php echo $data->item_availability?></p>
+											?> </div>
+											<div id='add_button'>
+											<?php
+											$btn = array(
+											'class' => 'fg-button teal',
+											'value' => 'Add to Cart',
+											'name' => 'action'
+											);
+
+											// Submit Button.
+											echo form_submit($btn);
+											echo form_close();
+											?>
+											</div>
+										</div>					
 								</div>
 								
 							</div>

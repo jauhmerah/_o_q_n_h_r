@@ -54,7 +54,7 @@
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
-        </nav>
+</nav>
 
 		<!--div class="header_top"><!--header_top-->
 			<!--div class="container"-->
