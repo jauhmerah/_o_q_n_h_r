@@ -87,9 +87,12 @@
                  <a href="<?php echo site_url('main/page/signup');?>"><button class="navbar-btn nav-button " data-wow-delay="0.6s">Sign Up</button></a>
                  <!--a href="<?php echo site_url('main/page/cart');?>"><button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Cart</button></a-->
               <ul class="main-nav nav navbar-nav navbar-right" style="margin-top:-15px;">
+                <!--li>
+                    <?php echo "<BR>Welcome, <b id='welcome'><i>" . $username . "</i></b><BR><BR>"; ?>    
+                </li-->
+                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/profile');?>"><?php echo "" . $username . "</b><BR><BR>"; ?></a></li>
                 <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="<?php echo site_url('main/page/main_2');?>">Home</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/souqshop');?>">Shops</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/profile');?>">Profile</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="<?php echo site_url('member/page/dashboard');?>">Dashboard</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="<?php echo site_url('main/page/cart');?>">Cart</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="<?php echo site_url('main');?>">Logout</a></li>

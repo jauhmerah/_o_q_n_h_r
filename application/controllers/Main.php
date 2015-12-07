@@ -1,6 +1,6 @@
 <?php 
 	if (!defined('BASEPATH')) exit('No direct script access allowed');
-	
+
 	class Main extends CI_Controller {
 	
 		var $parent_page = "main";
@@ -10,20 +10,15 @@
 	        $this->load->model('m_user');
 	        $this->load->helper('url');
 	        $this->load->library('session');
+	        $this->load->library('form_validation');
+
+	        // Load database
+   	         $this->load->model('login_database');
 
 	    }
 	
 	    function index() {
 	        $this->_display();
-
-	        /*$session = $this->session->userdata('isLogin');  
-	        if($session == FALSE)  
-	        {  
-	        	redirect('main/page/signin');  
-	    	}else{ 
-	    		redirect('main');  
-	    	}*/
-
 	       /*$verificationCode = random_string('alnum', 20);  
                   
                 $email_msg = "Dear User,  
@@ -51,6 +46,7 @@
 	    {
 	    	
 	    	//$this->load->view('header');
+
 	    	$this->load->view($this->parent_page.'/'.$page , $data);//$this->parent_page.'/'.$page
 	    	//$this->load->view('footer');
 	    }
@@ -62,9 +58,22 @@
 	    	switch ($process)
 	    	{
 	    		case '18':
-	    			$this->load->model('m_item');
-	    			$data['arr'] = $this->m_item->get();  
-	    			break;
+
+                        $data = $this->_checkSession();
+      
+		                if($data != false)
+		                { 
+
+			    			$this->load->model('m_item');
+			    			$data['arr'] = $this->m_item->get();  
+
+                        }
+						else
+						{
+							$this->_redirectPage();   
+						}
+
+	    		break;
 
 	    	    case '4':
 	    	    //sign up process
@@ -82,33 +91,34 @@
 	    	    case '5':
 	    	    	$data['error'] = true;
 	    	    	break;
-		    	case '6':
-		    		$post = $this->input->post();
-		    		$temp = array(
-		    			"us_name" => $post['username'],
-		    			"us_password" => $post['password']
-		    		);
-		    		$this->load->model('m_user');
-		    		$cek = $this->m_user->get($temp);
-		    		if (!$cek) {
-		    			$this->session->flashdata($us_name);
-		    			redirect(site_url('main/page/signin/5'));
-		    		}
-		    		else{//$this->session->set_flashdata($us_name);	    				    			
-	    			$this->session->set_userdata($temp);    
-	    			redirect('main/page/main_2'); 
-	    			}
-	    			echo "<script>  
-	    			alert('Failed Login: Check your username and password!');  
-	    			history.go(-1);  
-	    			</script>";  
-		    		break;
-
-	    	    
-
 	    	}
 	    	$this->_display($page,$data);
 	    }
+
+	    
+			
+	    public function _checkSession($menu = false)
+		 {
+			 if($this->session->userdata('logged_in'))     
+			 { 
+				$data = $this->session->userdata('logged_in');
+				return $data;
+			 }else
+			 {
+				 if($menu)
+				 {
+					return false; 
+				 }else
+				 {
+				 	return $this->_redirect('main/page/main_2');
+				 }
+			 }
+				 
+		 }
+
+
+ 
+
 
 	    public function pecahhati($first = null , $second = null)
 	    {
@@ -251,7 +261,7 @@
 	    			//nk load semua data dlm db
 	    		    $table = 'cat_travel';
 	    		    break;
-
+	        }
 
 			/*$data['arr'] = $this->m_item->get_search($temp,"cat_shoes");
 			$this->load->view('main/testoutput', $data)*/
@@ -317,34 +327,9 @@
 	        $data['products'] = $this->Products_model->get_all();
 	        echo "<pre>";
 			print_r($data['products']);
-	        /*$this->load->view('products',$data);*/
-	  } 
+	        /*$this->load->view('products',$data);
+	  }*/
 
-
-	    /*public function upload(){
-	   	$config['upload_path'] = "./images/";
-	   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
-	   	$this->load->library('upload',$config);
-
-	   	if(!$this->upload->do_upload()){
-	   		
-	   		$error = array ('error'=>$this->upload->display_errors());
-	   		//$this->load->view('upload_form',$error);
-	   		$this->_display('upload_form', $error);
-
-	   	}else{
-	   		$file_data =$this->upload->data();
-	   		$data['img'] = base_url().'/images/'.$file_data['file_name'];
-	   		//$this->load->view('success',$data);
-	   		$this->_display('successupload', $data);
-	   	}
-	   }*/
-
-	/*public function logout()
-	{
-		$this->session->sess_destroy();
-		redirect('main');
-	}*/
 }
 	        
 ?>

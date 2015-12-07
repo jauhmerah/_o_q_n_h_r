@@ -63,7 +63,8 @@
                         		</div>
                             </div>
                             <div class="form-bottom">
-			                    <form role="form" action="<?php echo site_url('main/page/main_2/6');?>" method="post" class="login-form">
+
+			                    <form role="form" action="<?php echo site_url('User_Authentication/user_login_process');?>" method="post" class="login-form">
 			                    	<div class="form-group">
 			                    		<label class="sr-only" for="form-username">Username</label>
 			                        	<input type="text" name="username" placeholder="Username..." class="form-username form-control" id="username" required>
