@@ -255,7 +255,7 @@
 									<h4 class="panel-title">
 										<a data-toggle="collapse" data-parent="#accordian" href="#fashion">
 											<span class="badge pull-right"><i class="fa fa-plus" ></i></span>
-											<a href="<?php echo site_url('main/shoplist');?>">Fashion</a>
+											Fashion
 										</a>
 									</h4>
 								</div>
