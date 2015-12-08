@@ -89,17 +89,17 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" style= "margin-top:0px;" href="<?php echo site_url('huhu/haha'); ?>"><img style="margin-left:-109px; margin-top:-17px; width:340px; height:79px;" src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="230px" height="79px"></a>
+              <a class="navbar-brand" style= "margin-top:0px;" href="<?php echo site_url('huhu/haha'); ?>"><img style="margin-left:-108px; margin-top:-14px; width:298px; height:65px;" src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="190px" height="65px"></a>
             </div>
       
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <div class="button navbar-right" style="margin-right:-120px;">
+              <div class="button navbar-right" style="margin-right:-146px;">
                  <!--a href="<?php echo site_url('main/page/signin');?>"><button class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s">Sign In</button></a>
                  <a href="<?php echo site_url('main/page/signup');?>"><button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Sign Up</button></a>-->
               <ul class="main-nav nav navbar-nav navbar-right" style="margin-top:-15px;">
                 <br>
-                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/profile');?>">Maizeaitulnasira</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/profile');?>">Profile</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0s"><a href="<?php echo site_url('main/page/main_2');?>">Home</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/souqshop');?>">Shops</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="<?php echo site_url('member/page/dashboard');?>">Dashboard</a></li>

@@ -109,7 +109,7 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
                         <h2>Buy & Sell with Souq Anshar!</h2>
-                        <p>Your First Dinar Dirham Marketplace and Use Muamalah System that Meets the Syariah Laws</p>
+                        <p>Your First Dinar Dirham Marketplace that Use Muamalah System that Meets the Syariah Laws</p>
                        
 
                         <div class="search-form wow pulse" data-wow-delay="0.8s">

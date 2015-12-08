@@ -19,21 +19,7 @@
 	
 	    function index() {
 	        $this->_display();
-<<<<<<< HEAD
-=======
 
-
-	        /*$session = $this->session->userdata('isLogin');  
-	        if($session == FALSE)  
-	        {  
-	        	redirect('main/page/signin');  
-	    	}else{ 
-	    		redirect('main');  
-	    	}*/
-
-
-
->>>>>>> origin/anot
 	       /*$verificationCode = random_string('alnum', 20);  
                   
                 $email_msg = "Dear User,  
@@ -174,47 +160,6 @@
 	    	    case '5':
 	    	    	$data['error'] = true;
 	    	    	break;
-<<<<<<< HEAD
-=======
-
-		    	case '6':
-		    		$post = $this->input->post();
-		    		$temp = array(
-		    			"us_name" => $post['username'],
-		    			"us_password" => $post['password']
-		    		);
-		    		$this->load->model('m_user');
-		    		$cek = $this->m_user->get($temp);
-		    		if (!$cek) {
-		    			$this->session->flashdata($us_name);
-		    			redirect(site_url('main/page/signin/5'));
-		    		}
-		    		else{//$this->session->set_flashdata($us_name);	    				    			
-	    			$this->session->set_userdata($temp);    
-	    			redirect('main/page/main_2'); 
-	    			}
-	    			echo "<script>  
-	    			alert('Failed Login: Check your username and password!');  
-	    			history.go(-1);  
-	    			</script>";  
-		    		break;
-
-
-
-	    	    case '4':
-	    	    //cart process
-	    	    	$arr =  $this->input->post();
-	    	    	$temp = array(
-	    	    		"us_name" => $arr['username'],
-	    	    		"us_email" => $arr['email'],
-	    	    		"us_password" => $arr['password']
-	    	    		
-	    	    	);
-	    	    	$this->load->model('m_user');
-	    	    	$this->m_user->insert($temp);
-	    	    	break;
-
-
 	    	    case 'x2':
 	    			$arr = $this->input->get();	    			
 	    			$this->load->model('m_user');
@@ -225,17 +170,10 @@
 	    			//$data['anot'] = $temp;
 	    			print_r($temp);
 	    			break;
-	    	    
-
-
->>>>>>> origin/anot
 	    	}
 	    	$this->_display($page,$data);
 	    }
 
-<<<<<<< HEAD
-	    
-			
 	    public function _checkSession($menu = false)
 		 {
 			 if($this->session->userdata('logged_in'))     
@@ -256,14 +194,7 @@
 		 }
 
 
- 
-
-
-	    public function pecahhati($first = null , $second = null)
-=======
-	    //cari nisbah perkataan yang sama
 	    public function pecahankata($first = null , $second = null)
->>>>>>> origin/anot
 	    {
 	    	if ($this->input->post()) {
 	    		$word = $this->input->post();
@@ -386,10 +317,8 @@
 			/*$data['arr'] = $this->m_item->get_search($temp,"cat_shoes");
 			$this->load->view('main/testoutput', $data)*/
 			/**
-				kat sini kena dynamic
 			*/
-			
-<<<<<<< HEAD
+
 			$data = null;
 	        switch ($process) 
 	        {
@@ -406,9 +335,6 @@
 	    		    $table = 'cat_travel';
 	    		    break;
 	        }
-=======
-
->>>>>>> origin/anot
 
 			/*$data['arr'] = $this->m_item->get_search($temp,"cat_shoes");
 			$this->load->view('main/testoutput', $data)*/
@@ -511,13 +437,11 @@
 	        $data['products'] = $this->Products_model->get_all();
 	       echo "<pre>";
 			print_r($data['products']);
-<<<<<<< HEAD
 	        /*$this->load->view('products',$data);
 	  }*/
 
 }
 	        
-=======
 	        /*$this->load->view('main/products',$data);*/
 	 	}//tutup keluarkan semua item
 
@@ -821,10 +745,5 @@
 	      /*echo "<pre>";
 			print_r($data['products']);*/
 	       $this->load->view('main/souqshop6',$data);
-	 	}//tutup keluarkan semua item
-
-
-
-	}	        
->>>>>>> origin/anot
+	 	}//tutup keluarkan semua item	        
 ?>
