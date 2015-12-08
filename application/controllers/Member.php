@@ -70,14 +70,17 @@
 	    	    		
 	    	    		"pr_add" => $arr['address'],
 	    	    		"pr_phone" => $arr['phone'],
-	    	    		"pr_gender" => $arr['gender'],
-	    	    		"pr_image"=>$arr['image']
-
+	    	    		"pr_gender" => $arr['gender']
+	    	    		
 	    	    	);
 	    	    	$this->load->model('m_profile');
 	    	    	$this->m_profile->insert($temp);
 	    	    	break;
 	    	    case '6':
+
+	    	    	$data['error'] = true;
+	    	    	break;
+
 	    	        $arr =  $this->input->post();
 	    	    	$temp = array(
 	    	    		"pl_name" => $arr['itemname'],
@@ -89,29 +92,34 @@
 	    	    	$this->M_product->insert($temp);
 	    	    	break;
 
+	    	    	case 'x2':
+	    			$arr = $this->input->get();	    			
+	    			$this->load->model('m_user');
+	    			$arr1 = array(
+	    				"sa_name" => $arr['name']
+	    			);
+	    			$temp = $this->m_user->get($arr1);
+	    			//$data['anot'] = $temp;
+	    			print_r($temp);
+	    			break;
+
+
 	    	}
+
+	    	
 	    	$this->_display($page,$data);
 
-	    /*public function upload(){
-			$config['upload_path'] = "./images/";
-			$config['allowed_types'] = 'jpg|jpeg|gif|png';
-			$this->load->library('upload',$config);
 
-	   		if(!$this->upload->do_upload()){
-	   		
-	   		$error = array ('error'=>$this->upload->display_errors());
-	   		//$this->load->view('upload_form',$error);
-	   		$this->_display('upload_form', $error);
 
-	   	}else{
-	   		$file_data =$this->upload->data();
-	   		$data['img'] = base_url().'/images/'.$file_data['file_name'];
-	   		//$this->load->view('success',$data);
-	   		$this->_display('successupload', $data);
-	   	}
-		}*/
+
+
+	 
+
+		}
+
 
 	    /*public function upload(){
+ origin/anis_pro_process
 	   	$config['upload_path'] = "./images/";
 	   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
 	   	$this->load->library('upload',$config);
@@ -126,9 +134,21 @@
 	   		$file_data =$this->upload->data();
 	   		$data['img'] = base_url().'/images/'.$file_data['file_name'];
 	   		//$this->load->view('success',$data);
+
+	   		$this->_display('successupload', $data);
+	   	}
+	   }
+
 	   		$this->_display('berjaya', $data);
 	   	}*/
-	   }
-}
+
+	  
+
+
+	}
+
+	   
+
+
 	        
 ?>

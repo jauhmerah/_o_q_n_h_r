@@ -4,13 +4,12 @@ class Products_model extends CI_Model
 {
 	function get_all()
 	 {
-	 	$results = $this->db->get('cat_travel')->result();
+	 	$this->db->select('*');
+	 	$this->db->from('sub_category');
+	 	
+	 	$results = $this->db->get()->result();
 	 	return $results;
 	       
-	 } 
-
-	  
-
-	 
+	 }	 
 }
 ?>

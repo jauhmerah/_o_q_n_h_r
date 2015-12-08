@@ -137,7 +137,7 @@ background-color: #00aeef;
   /*text-transform: uppercase;*/
 }
 .slider-content p {
-  font-size: 35px;
+  font-size: 25px;
   margin-bottom: 60px;
 }
 
@@ -167,7 +167,7 @@ background-color: #00aeef;
   font-style: gisha;
   height: 40px;
   margin-right: 10px;
-  width: 195px;
+  width: 299px;
 }
 .form-inline input[type=submit]{
 	background: #FFA300;

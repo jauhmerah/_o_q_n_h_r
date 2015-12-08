@@ -26,9 +26,9 @@ class M_item extends CI_Model {
             $this->load->database();
     }
 
-    public function get($where = NULL) {
+    public function get($where = NULL , $table = null) {
         $this->db->select('*');
-        $this->db->from(self::TABLE_NAME);
+        $this->db->from($table);
         if ($where !== NULL) {
             if (is_array($where)) {
                 foreach ($where as $field=>$value) {
@@ -103,15 +103,27 @@ class M_item extends CI_Model {
           $result = $this->db->get()->result();
           
           return $result;
-        }else
+        } else
         {
             return false;
         }
         
           
-    }
+    } 
+        function get_shop()
+     {
+        $this->db->select('*');
+        $this->db->from('cat_fashion');
+        $this->db->where('sub_id=9');
+
+        
+        $results = $this->db->get()->result();
+        return $results;
+           
+     }   
 
 
+   
 }
 
 ?>

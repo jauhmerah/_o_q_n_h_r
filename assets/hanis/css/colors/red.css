@@ -44,8 +44,13 @@ a.main-button, input[type="submit"] {
 }
 /*.navbar-default .navbar-nav > li:hover > a,
 .navbar-default .navbar-nav > li > a.active {
+<<<<<<< HEAD
+	color: #ffffff;
+}
+=======
 	color: #ffa300;
 }*/
+>>>>>>> origin/mai_huhu
 
 .dropdown > li:hover > a, .sup-dropdown li:hover > a {
 	color: #ee3733;

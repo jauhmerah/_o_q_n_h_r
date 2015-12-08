@@ -120,13 +120,15 @@ class M_user extends CI_Model {
 
 
 
-    /*public searchItem($sukaJoin = array()){
-        $this->db->select('*');
-        $this->db->from(self::TABLE_NAME);
-        $this->db->like($sukaJoin);
-        $result = $this->db->get()->result();
-        return $result;
-    }*/
+    function get_all(){
+
+        $this->db->select('us_name,us_email');
+        $this->db->from('sa_user');
+        $results=$this->db->get()->result();
+        return $results;
+       
+    }
+
 
 }
 

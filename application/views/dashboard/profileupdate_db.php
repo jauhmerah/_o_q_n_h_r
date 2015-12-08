@@ -8,7 +8,14 @@
                     </div>
                 </div> 
                  <!-- /. ROW  -->
+
+                <?php echo form_open_multipart('main/upload/do_upload');?>
+                    <input type="file" name="userfile"/><br><br>
+                    <input type="submit" name="submit" value="upload image">
+                </form>
+
           
+
               <form role="form" action = "<?= site_url('member/page/profileupdate_db/5');?>" method = 'post'>
               <div class="row">
                 <div class="col-lg-12">
@@ -16,26 +23,42 @@
                         <div class="panel-heading">
                             Section: Basic Info
                         </div>
-                        <div class="panel-body">
+                        <!--<div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-6">
+
+
                                 <!--<div id="timelineProfilePic">
-                                 <img class="img-circle" src= '".$cfet['image']."' class="bgImage" style="margin-top:0px; margin-left:45px;width:150px;">
+                                 <img class="img-circle" src="<?php echo base_url();?>assets/hanis/images/arash.jpg" class="bgImage" style="margin-top:0px; margin-left:45px;width:150px;">
+
+                                <!--<div id="timelineProfilePic">
+
                                     <p>
                                      <div class="form-group">
                                             <label>Upload Your Profile Picture</label>
                                             
-                                            <?php
+                                            <!--<?php
                                                 if (isset($error)) {
                                                      echo $error;
                                                  }                                                 
-                                            ?>
+                                            ?>-->
+                                            <!--<?php echo $error;?>
+                                                <?php echo form_open_multipart('member/upload');?>
+                                                <input type="file" name="userfile"/><br><br>
+                                                <input type="submit" name="submit" value="upload image">
 
-                                            <form action = "<?= site_url('member/upload');?>" method = 'post'>
+                                        
+                                           
+
+                                            <!--<form action = "<?= site_url('main/upload');?>" method = 'post'>
                                             <input type="file" name="userfile"/><br>
                                             <input type="submit" name="submit" value="Upload image">
+
+                                        </form>-->
+                                        </div>
+
                                         </form>
-                                        </div>-->
+                                        </div>
                                        <!-- Upload input-->
                                        <!-- <div class="control-group">
                                             <label class="control-label">Upload<span style="color: red;">*</span></label>
@@ -45,6 +68,7 @@
                                                 <p class="help-block"></p>
                                             </div>
                                         </div> -->
+
                                        <div class="form-group">
                                             <label>Username</label>
                                             <input type="text" name="username" placeholder="Please enter your username." class="form-username form-control" id="username">
@@ -86,7 +110,7 @@
 
                                          <div class="col-sm-4">  <br> 
                                            <input type="submit" class="btn btn-warning" style="background-color:#2DAADF" value="UPDATE"></input>
-                                        </diV
+                                        </div>
                                         
                                       
                                     

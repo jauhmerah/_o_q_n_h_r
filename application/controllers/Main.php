@@ -19,6 +19,21 @@
 	
 	    function index() {
 	        $this->_display();
+<<<<<<< HEAD
+=======
+
+
+	        /*$session = $this->session->userdata('isLogin');  
+	        if($session == FALSE)  
+	        {  
+	        	redirect('main/page/signin');  
+	    	}else{ 
+	    		redirect('main');  
+	    	}*/
+
+
+
+>>>>>>> origin/anot
 	       /*$verificationCode = random_string('alnum', 20);  
                   
                 $email_msg = "Dear User,  
@@ -75,6 +90,74 @@
 
 	    		break;
 
+
+	    		case 'x1':
+	    			$arr = $this->input->get();	    			
+	    			$this->load->model('m_item');
+	    			$arr1 = array(
+	    				"item_id" => $arr['item']
+	    			);
+	    			$temp = $this->m_item->get($arr1,$arr['cat']);
+	    			$data['products'] = $temp;
+	    			/*print_r($temp);*/
+	    			break;
+
+	    		case 'z1':
+	    			$arr = $this->input->get();	    			
+	    			$this->load->model('m_item');
+	    			$arr1 = array(
+	    				"item_id" => $arr['item']
+	    			);
+	    			$temp = $this->m_item->get($arr1,$arr['cat']);
+	    			$data['products'] = $temp;
+	    			/*print_r($temp);*/
+	    			break;
+
+	    		case 'z2':
+	    			$arr = $this->input->get();	    			
+	    			$this->load->model('m_item');
+	    			$arr1 = array(
+	    				"item_id" => $arr['item']
+	    			);
+	    			$temp = $this->m_item->get($arr1,$arr['cat']);
+	    			$data['products'] = $temp;
+	    			/*print_r($temp);*/
+	    			break;
+
+	    		case 'z3':
+	    			$arr = $this->input->get();	    			
+	    			$this->load->model('m_item');
+	    			$arr1 = array(
+	    				"item_id" => $arr['item']
+	    			);
+	    			$temp = $this->m_item->get($arr1,$arr['cat']);
+	    			$data['products'] = $temp;
+	    			/*print_r($temp);*/
+	    			break;
+
+				case 'z4':
+	    			$arr = $this->input->get();	    			
+	    			$this->load->model('m_item');
+	    			$arr1 = array(
+	    				"item_id" => $arr['item']
+	    			);
+	    			$temp = $this->m_item->get($arr1,$arr['cat']);
+	    			$data['products'] = $temp;
+	    			/*print_r($temp);*/
+	    			break;
+
+	    		case 'z5':
+	    			$arr = $this->input->get();	    			
+	    			$this->load->model('m_item');
+	    			$arr1 = array(
+	    				"item_id" => $arr['item']
+	    			);
+	    			$temp = $this->m_item->get($arr1,$arr['cat']);
+	    			$data['products'] = $temp;
+	    			/*print_r($temp);*/
+	    			break;
+
+
 	    	    case '4':
 	    	    //sign up process
 	    	    	$arr =  $this->input->post();
@@ -86,15 +169,71 @@
 	    	    	);
 	    	    	$this->load->model('m_user');
 	    	    	$this->m_user->insert($temp);
-	    	   
+
 	    	    	break;
 	    	    case '5':
 	    	    	$data['error'] = true;
 	    	    	break;
+<<<<<<< HEAD
+=======
+
+		    	case '6':
+		    		$post = $this->input->post();
+		    		$temp = array(
+		    			"us_name" => $post['username'],
+		    			"us_password" => $post['password']
+		    		);
+		    		$this->load->model('m_user');
+		    		$cek = $this->m_user->get($temp);
+		    		if (!$cek) {
+		    			$this->session->flashdata($us_name);
+		    			redirect(site_url('main/page/signin/5'));
+		    		}
+		    		else{//$this->session->set_flashdata($us_name);	    				    			
+	    			$this->session->set_userdata($temp);    
+	    			redirect('main/page/main_2'); 
+	    			}
+	    			echo "<script>  
+	    			alert('Failed Login: Check your username and password!');  
+	    			history.go(-1);  
+	    			</script>";  
+		    		break;
+
+
+
+	    	    case '4':
+	    	    //cart process
+	    	    	$arr =  $this->input->post();
+	    	    	$temp = array(
+	    	    		"us_name" => $arr['username'],
+	    	    		"us_email" => $arr['email'],
+	    	    		"us_password" => $arr['password']
+	    	    		
+	    	    	);
+	    	    	$this->load->model('m_user');
+	    	    	$this->m_user->insert($temp);
+	    	    	break;
+
+
+	    	    case 'x2':
+	    			$arr = $this->input->get();	    			
+	    			$this->load->model('m_user');
+	    			$arr1 = array(
+	    				"sa_name" => $arr['name']
+	    			);
+	    			$temp = $this->m_user->get($arr1);
+	    			//$data['anot'] = $temp;
+	    			print_r($temp);
+	    			break;
+	    	    
+
+
+>>>>>>> origin/anot
 	    	}
 	    	$this->_display($page,$data);
 	    }
 
+<<<<<<< HEAD
 	    
 			
 	    public function _checkSession($menu = false)
@@ -121,6 +260,10 @@
 
 
 	    public function pecahhati($first = null , $second = null)
+=======
+	    //cari nisbah perkataan yang sama
+	    public function pecahankata($first = null , $second = null)
+>>>>>>> origin/anot
 	    {
 	    	if ($this->input->post()) {
 	    		$word = $this->input->post();
@@ -177,7 +320,6 @@
             	}
             }
             return $num;
-
 	    } 
 
 	   public function kicksama($arr = null)
@@ -211,8 +353,6 @@
 	    	return $temp;
 	    }
 
-
-
 	    public function percentage($sama, $arr1 = null, $arr2 = null)
 	    {
 	    	$temp2=0;
@@ -222,7 +362,9 @@
 	    	$temp2=$sama/(sqrt($size1) * sqrt($size2));
 	    	return $temp2;
 	    }
+	    //tutup nisbah perkataan yang sama
 
+	    //search function
 	  	public function searching()
 	    {
 	    	$this->load->database();
@@ -231,9 +373,7 @@
          //load the method of model  
          $data['h']=$this->cat_shoes->select();  
          //return the data in view  
-         $this->load->view('search', $data);  
-
-    		
+         $this->load->view('search', $data);      		
 		}
 
 		public function search()
@@ -245,7 +385,11 @@
 
 			/*$data['arr'] = $this->m_item->get_search($temp,"cat_shoes");
 			$this->load->view('main/testoutput', $data)*/
+			/**
+				kat sini kena dynamic
+			*/
 			
+<<<<<<< HEAD
 			$data = null;
 	        switch ($process) 
 	        {
@@ -262,6 +406,9 @@
 	    		    $table = 'cat_travel';
 	    		    break;
 	        }
+=======
+
+>>>>>>> origin/anot
 
 			/*$data['arr'] = $this->m_item->get_search($temp,"cat_shoes");
 			$this->load->view('main/testoutput', $data)*/
@@ -288,11 +435,13 @@
 	    		case '5':
 	    			//nk load semua data dlm db
 	    		    $table = 'cat_business';
-	    		    break;
+	    		    break;	
+	    		
 	    	}
 
-	    	$data['arr'] = $this->m_item->get_search($search,$table);
-			$this->load->view('main/testoutput', $data);
+	    	$data ['products']=$this->m_item->get_search($search,$table);
+	    	$data['table'] = $table;
+			$this->load->view('main/souqshop', $data);
 	    			
 		}
 
@@ -308,8 +457,15 @@
 
 			$this->cart->insert($data);
 			echo "add() called";
-		}
 
+	    	$data['products'] = $this->m_item->get_search($search,$table);
+	    	$data['table'] = $table;
+	    	$this->load->view('main/souqshop', $data); 			
+
+		}
+		//tutup search function
+
+		//cart process
 		public function show()
 		{
 			$cart = $this->cart->contents();
@@ -317,19 +473,358 @@
 			echo "<pre>";
 			print_r($cart);
 			 echo "</pre>";
+		}//tutup cart process
+
 
 		}
 
-		public function lala()
-	 {
+	
+
+	    /*public function upload(){
+	   	$config['upload_path'] = "./images/";
+	   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
+	   	$this->load->library('upload',$config);
+
+	   	if(!$this->upload->do_upload()){
+	   		
+	   		$error = array ('error'=>$this->upload->display_errors());
+	   		//$this->load->view('upload_form',$error);
+	   		$this->_display('upload_form', $error);
+
+	   	}else{
+	   		$file_data =$this->upload->data();
+	   		$data['img'] = base_url().'/images/'.$file_data['file_name'];
+	   		//$this->load->view('success',$data);
+	   		$this->_display('successupload', $data);
+	   	}
+	   }*/
+
+
+
+
+		//keluarkan semua item
+		 function lala()
+	 	{
 
 	        $this->load->model('Products_model');
+	       
 	        $data['products'] = $this->Products_model->get_all();
-	        echo "<pre>";
+	       echo "<pre>";
 			print_r($data['products']);
+<<<<<<< HEAD
 	        /*$this->load->view('products',$data);
 	  }*/
 
 }
 	        
+=======
+	        /*$this->load->view('main/products',$data);*/
+	 	}//tutup keluarkan semua item
+
+
+	    /*public function upload(){
+	   	$config['upload_path'] = "./images/";
+	   	$config['allowed_types'] = 'jpg|jpeg|gif|png';
+	   	$this->load->library('upload',$config);
+
+	   	if(!$this->upload->do_upload()){
+	   		
+	   		$error = array ('error'=>$this->upload->display_errors());
+	   		//$this->load->view('upload_form',$error);
+	   		$this->_display('upload_form', $error);
+
+	   	}else{
+	   		$file_data =$this->upload->data();
+	   		$data['img'] = base_url().'/images/'.$file_data['file_name'];
+	   		//$this->load->view('success',$data);
+	   		$this->_display('successupload', $data);
+	   	}
+	   }*/
+
+	   function shoplist()
+	 	{
+
+	        $this->load->model('M_item');
+	       
+	        $data['products'] = $this->M_item->get_shop();
+	      echo "<pre>";
+			print_r($data['products']);
+	       /* $this->load->view('main/souqshop',$data);*/
+	 	}//tutup keluarkan semua item
+
+//ini semua function utk fashion category
+	 	function fashionx1()
+	 	{
+
+	        $this->load->model('M_fashion');
+	       
+	        $data['products'] = $this->M_fashion->get_fashionx1();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop1',$data);
+	 	}//tutup keluarkan semua item
+
+		function fashionx2()
+	 	{
+
+	        $this->load->model('M_fashion');
+	       
+	        $data['products'] = $this->M_fashion->get_fashionx2();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop1',$data);
+	 	}//tutup keluarkan semua item
+
+	 	function fashionx3()
+	 	{
+
+	        $this->load->model('M_fashion');
+	       
+	        $data['products'] = $this->M_fashion->get_fashionx3();
+	     /* echo "<pre>";
+			print_r($data['products']);*/
+	        $this->load->view('main/souqshop1',$data);
+	 	}//tutup keluarkan semua item
+
+	 	function fashionx4()
+	 	{
+
+	        $this->load->model('M_fashion');
+	       
+	        $data['products'] = $this->M_fashion->get_fashionx4();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop1',$data);
+	 	}//tutup keluarkan semua item
+
+	 	function fashionx5()
+	 	{
+
+	        $this->load->model('M_fashion');
+	       
+	        $data['products'] = $this->M_fashion->get_fashionx5();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop1',$data);
+	 	}//tutup keluarkan semua item
+
+
+//ini semua function untuk electronics category
+
+	 		function electronicsx1()
+	 	{
+
+	        $this->load->model('M_electronics');
+	       
+	        $data['products'] = $this->M_electronics->get_electronicsx1();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop3',$data);
+	 	}//tutup keluarkan semua item
+
+
+	 		function electronicsx2()
+	 	{
+
+	        $this->load->model('M_electronics');
+	       
+	        $data['products'] = $this->M_electronics->get_electronicsx2();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop3',$data);
+	 	}//tutup keluarkan semua item
+
+	 	function electronicsx3()
+	 	{
+
+	        $this->load->model('M_electronics');
+	       
+	        $data['products'] = $this->M_electronics->get_electronicsx3();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop3',$data);
+	 	}//tutup keluarkan semua item
+
+
+
+	 	function electronicsx4()
+	 	{
+
+	        $this->load->model('M_electronics');
+	       
+	        $data['products'] = $this->M_electronics->get_electronicsx4();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop3',$data);
+	 	}//tutup keluarkan semua item
+
+
+//ini function utk travel category
+
+	 	function travelx1()
+	 	{
+
+	        $this->load->model('M_travel');
+	       
+	        $data['products'] = $this->M_travel->get_travelx1();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop4',$data);
+	 	}//tutup keluarkan semua item
+ 
+ 		function travelx2()
+	 	{
+
+	        $this->load->model('M_travel');
+	       
+	        $data['products'] = $this->M_travel->get_travelx2();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop4',$data);
+	 	}//tutup keluarkan semua item
+
+	 	function travelx3()
+	 	{
+
+	        $this->load->model('M_travel');
+	       
+	        $data['products'] = $this->M_travel->get_travelx3();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop4',$data);
+	 	}//tutup keluarkan semua item
+
+	 	//ini semua function utk travel category
+
+
+	 	function automotivex1()
+	 	{
+
+	        $this->load->model('M_automotive');
+	       
+	        $data['products'] = $this->M_automotive->get_automotivex1();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop5',$data);
+	 	}//tutup keluarkan semua item
+
+	 	function automotivex2()
+	 	{
+
+	        $this->load->model('M_automotive');
+	       
+	        $data['products'] = $this->M_automotive->get_automotivex2();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop5',$data);
+	 	}//tutup keluarkan semua item
+
+	 	function automotivex3()
+	 	{
+
+	        $this->load->model('M_automotive');
+	       
+	        $data['products'] = $this->M_automotive->get_automotivex3();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop5',$data);
+	 	}//tutup keluarkan semua item
+
+	 	function automotivex4()
+	 	{
+
+	        $this->load->model('M_automotive');
+	       
+	        $data['products'] = $this->M_automotive->get_automotivex4();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop5',$data);
+	 	}//tutup keluarkan semua item
+
+	 	function automotivex5()
+	 	{
+
+	        $this->load->model('M_automotive');
+	       
+	        $data['products'] = $this->M_automotive->get_automotivex5();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop5',$data);
+	 	}//tutup keluarkan semua item
+
+		function automotivex6()
+	 	{
+
+	        $this->load->model('M_automotive');
+	       
+	        $data['products'] = $this->M_automotive->get_automotivex6();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop5',$data);
+	 	}//tutup keluarkan semua item
+
+	 	function automotivex7()
+	 	{
+
+	        $this->load->model('M_automotive');
+	       
+	        $data['products'] = $this->M_automotive->get_automotivex7();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop5',$data);
+	 	}//tutup keluarkan semua item
+
+//ini semua function utk business category
+
+	 	function businessx1()
+	 	{
+
+	        $this->load->model('M_business');
+	       
+	        $data['products'] = $this->M_business->get_businessx1();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop6',$data);
+	 	}//tutup keluarkan semua item
+
+
+	 	function businessx2()
+	 	{
+
+	        $this->load->model('M_business');
+	       
+	        $data['products'] = $this->M_business->get_businessx2();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop6',$data);
+	 	}//tutup keluarkan semua item
+
+
+	 	function businessx3()
+	 	{
+
+	        $this->load->model('M_business');
+	       
+	        $data['products'] = $this->M_business->get_businessx3();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop6',$data);
+	 	}//tutup keluarkan semua item
+
+
+	 	function businessx4()
+	 	{
+
+	        $this->load->model('M_business');
+	       
+	        $data['products'] = $this->M_business->get_businessx4();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	       $this->load->view('main/souqshop6',$data);
+	 	}//tutup keluarkan semua item
+
+
+
+	}	        
+>>>>>>> origin/anot
 ?>

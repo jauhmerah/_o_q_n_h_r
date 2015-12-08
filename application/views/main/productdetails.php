@@ -52,7 +52,12 @@
 				</div>
 			</div>
 		</div><!--/header_top-->
+
+		
+
+
 		<nav class="navbar navbar-default">
+
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -132,11 +137,11 @@
 								<div id="fashion" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
-											<li><a href="">Health and Beauty </a></li>
-											<li><a href="">Women's Wear </a></li>
-											<li><a href="">Men's Wear </a></li>
-											<li><a href="">Kids</a></li>
-											<li><a href="">Sport Wear </a></li>
+											<li><a href="<?php echo site_url('main/fashionx1');?>">Health and Beauty </a></li>
+											<li><a href="<?php echo site_url('main/fashionx2');?>">Women's Wear </a></li>
+											<li><a href="<?php echo site_url('main/fashionx3');?>">Men's Wear </a></li>
+											<li><a href="<?php echo site_url('main/fashionx4');?>">Kids</a></li>
+											<li><a href="<?php echo site_url('main/fashionx5');?>">Sport Wear </a></li>
 										</ul>
 									</div>
 								</div>
@@ -153,10 +158,10 @@
 								<div id="electronics" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
-											<li><a href="">Home Appliances</a></li>
-											<li><a href="">Home and Living</a></li>
-											<li><a href="">Cameras</a></li>
-											<li><a href="">Computers and Laptops</a></li>
+											<li><a href="<?php echo site_url('main/electronicsx1');?>">Home Appliances</a></li>
+											<li><a href="<?php echo site_url('main/electronicsx2');?>">Home and Living</a></li>
+											<li><a href="<?php echo site_url('main/electronicsx3');?>">Cameras</a></li>
+											<li><a href="<?php echo site_url('main/electronicsx4');?>">Computers and Laptops</a></li>
 	
 										</ul>
 									</div>
@@ -175,9 +180,9 @@
 								<div id="travel" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
-											<li><a href="">Bags and Backpacks</a></li>
-											<li><a href="">Luggage</a></li>
-											<li><a href="">Travel's Accessories</a></li>
+											<li><a href="<?php echo site_url('main/travelx1');?>">Bags and Backpacks</a></li>
+											<li><a href="<?php echo site_url('main/travelx2');?>">Luggage</a></li>
+											<li><a href="<?php echo site_url('main/travelx3');?>">Travel's Accessories</a></li>
 										</ul>
 									</div>
 								</div>
@@ -195,13 +200,13 @@
 								<div id="automotive" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
-											<li><a href="">Car Care</a></li>
-											<li><a href="">Tools and Equipments</a></li>
-											<li><a href="">Interior Accessories</a></li>
-											<li><a href="">Motorcycles</a></li>
-											<li><a href="">Replacement Parts</a></li>
-											<li><a href="">Wheel and Tyres</a></li>
-											<li><a href="">Oils and Fluids</a></li>
+											<li><a href="<?php echo site_url('main/automotivex1');?>">Car Care</a></li>
+											<li><a href="<?php echo site_url('main/automotivex2');?>">Tools and Equipments</a></li>
+											<li><a href="<?php echo site_url('main/automotivex3');?>">Interior Accessories</a></li>
+											<li><a href="<?php echo site_url('main/automotivex4');?>">Motorcycles</a></li>
+											<li><a href="<?php echo site_url('main/automotivex5');?>">Replacement Parts</a></li>
+											<li><a href="<?php echo site_url('main/automotivex6');?>">Wheel and Tyres</a></li>
+											<li><a href="<?php echo site_url('main/automotivex7');?>">Oils and Fluids</a></li>
 										</ul>
 									</div>
 								</div>
@@ -219,10 +224,10 @@
 								<div id="business" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
-											<li><a href="">Business Plans</a></li>
-											<li><a href="">Career Advices</a></li>
-											<li><a href="">Market Research</a></li>
-											<li><a href="">Presentations</a></li>
+											<li><a href="<?php echo site_url('main/businessx1');?>">Business Plans</a></li>
+											<li><a href="<?php echo site_url('main/businessx2');?>">Career Advices</a></li>
+											<li><a href="<?php echo site_url('main/businessx3');?>">Market Research</a></li>
+											<li><a href="<?php echo site_url('main/businessx4');?>">Presentations</a></li>
 										</ul>
 									</div>
 								</div>
@@ -281,6 +286,7 @@
 				</div>
 				
 				<br><div class="col-sm-9 padding-right"></br>
+
 					<div class="product-details"><!--product-details-->
 						<div class="col-sm-5">
 							<div class="view-product">
@@ -319,27 +325,43 @@
 							</div>
 
 						</div>
+						
+						
 						<div class="col-sm-7">
+							
 							<div class="product-information"><!--/product-information-->
+
 								<img src="<?php echo base_url();?>assets/anot/images/product-details/new.jpg" class="newarrival" alt="" />
-								<h2>Krups KT600 Coffee Maker</h2>
-								<p>Product ID: 1089772</p>
+								<h2><?php echo $products->item_name?></h2>
+								<!--p>Product ID: 1089772</p-->
 								<!--img src="images/product-details/rating.png" alt="" />-->
 								<span>
-									<span>RM59.90</span>
-									<label>Quantity:</label>
-									<input type="text" value="3" />
+									<span>RM<?php echo $products->item_price?></span>
+									
+									<h2>(<?php echo $products->dinar_price?>)</h2>
+
+									
+									<!--Mcm mana nak masuk database ni?-->
+									<div class="form-group" >
+										<label>Quantity:</label>
+                                    <input type="text"  name= "itemqty" class="form-control" >
+                                    </div>
+									
+									
 									<button type="button" class="btn btn-fefault cart">
 										<i class="fa fa-shopping-cart"></i>
 										Add to cart
 									</button>
 								</span>
-								<p><b>Availability:</b> In Stock</p>
-								<p><b>Condition:</b> New</p>
-								<p><b>Brand:</b> Krups</p>
+								<p><b>Availability:</b><?php echo $products->item_availability?></p>
+								<p><b>Condition:</b><?php echo $products->item_condition?></p>
+								<p><b>Brand:</b><?php echo $products->item_brand?></p>
 								<a href=""><img src="<?php echo base_url();?>assets/anot/images/product-details/share.png" class="share img-responsive"  alt="" /></a>
 							</div><!--/product-information-->
+							
 						</div>
+						
+						
 					</div><!--/product-details-->
 					
 					<!--div class="category-tab shop-details-tab"><!--category-tab-->
@@ -778,7 +800,7 @@
 		<div class="footer-bottom">
 			<div class="container">
 				<div class="row">
-					<p class="pull-left">Pisang Sdn Bhd, All rights reserved.</p>
+					<p style="text-align:center;">Pisang Sdn Bhd, All rights reserved.</p>
 					<!--p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">Themeum</a></span></p>-->
 				</div>
 			</div>
