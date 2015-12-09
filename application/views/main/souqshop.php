@@ -308,8 +308,31 @@
 											<h2>RM <?php echo $data->item_price?></h2>
 											<p><?php echo $data->item_name?></p>
 											<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.$table); ?>">View</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
+											<?php
+                        
+					                        // Create form and send values in 'shopping/add' function.
+					                        echo form_open('main/add');
+					                        echo form_hidden('id', $data->item_id);
+					                        echo form_hidden('name', $data->item_name);
+					                        echo form_hidden('price', $data->item_price);
+					                       
+				                        
+				                        ?> 
+				                    	<div id='add_button'>
+				                        <?php
+				                        $btn = array(
+				                            'class' => 'fg-button teal',
+				                            'value' => 'Add to Cart',
+				                            'name' => 'action'
+				                        );
+				                        
+				                        // Submit Button.
+				                        echo form_submit($btn);
+				                        echo form_close();
+				                        ?>
 										</div>
+										</div> 
 									</div>
 								</div>
 								<div class="choose">

@@ -359,19 +359,29 @@
 	 	//function untuk cart & checkout page
 	 	function add()
         {
+        	/*echo $_POST["id"];
+        	echo $_POST["name"];
+        	echo $_POST["price"];*/
+
 	        // Set array for send data.
 			$insert_data = array(
-			'item_id' => $this->input->post('item_id'),
-			'item_name' => $this->input->post('item_name'),
-			'item_price' => $this->input->post('item_price'),
+			'id' => $_POST["id"],
+			'name' => $_POST["name"],
+			'price' => $_POST["price"],
 			'qty' => 1
 		);
+			//rint_r($insert_data);
 
 		// This function add items into cart.
-		   $this->cart->insert($insert_data);
+		  // 
+			$this->cart->insert($insert_data);
+		   $cart = $this->cart->contents();
+		    echo '<pre>';
+		    print_r($cart);
+		    echo '</pre>';
 
 		// This will show insert data in cart.
-		   redirect('main/page/miza');
+		   /*redirect('main/page/miza');*/
 		}
 
 		function remove($rowid) 
