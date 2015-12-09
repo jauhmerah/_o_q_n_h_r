@@ -28,7 +28,31 @@
         <link rel="stylesheet" href="<?php echo base_url();?>assets/css/owl.transitions.css">
         <link rel="stylesheet" href="<?php echo base_url();?>assets/style.css">
         <link rel="stylesheet" href="<?php echo base_url();?>assets/responsive.css">
+<<<<<<< HEAD
         <script src="<?php echo base_url();?>assets/js/vendor/modernizr-2.6.2.min.js"></script>
+=======
+         <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+            <script type="text/javascript">
+
+  function checkForm(form)
+  {
+   
+    if(form.itemname.value == "") {
+      alert(" Please enter items that you are looking for");
+      form.itemname.focus();
+      return false;
+    }
+    if(form.sub_cat.value == "Select Your Category") {
+      alert(" Please choose your category");
+      form.sub_cat.focus();
+      return false;
+    }
+
+   }
+    
+</script>
+	
+>>>>>>> origin/miza
     </head>
     <body>
 
@@ -91,7 +115,12 @@
                 </li-->
                 <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/profile');?>">Profile</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="<?php echo site_url('main/page/main_2');?>">Home</a></li>
+<<<<<<< HEAD
                 <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/souqshop');?>">Shops</a></li>
+=======
+                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/productlist');?>">Shops</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/profile');?>">Profile</a></li>
+>>>>>>> origin/miza
                 <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="<?php echo site_url('member/page/dashboard');?>">Dashboard</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="<?php echo site_url('main/page/cart');?>">Cart</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="<?php echo site_url('main');?>">Logout</a></li>
@@ -103,10 +132,30 @@
          <div class="slider-area">
             <div class="slider">
                 <div id="bg-slider" class="owl-carousel owl-theme">
+<<<<<<< HEAD
                  
                   <div class="item"><img src="<?php echo base_url()?>assets/img/slider-image-5.jpg" alt="Mirror Edge"></div>
                   <div class="item"><img src="<?php echo base_url()?>assets/img/slider-image-8.jpg" alt="The Last of us"></div>
                   <div class="item"><img src="<?php echo base_url()?>assets/img/slider-image-10.jpg" alt="GTA V"></div>
+=======
+                  
+                  <div class="item"><img  src="<?php echo base_url();?>assets/img/slider-image-5.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >"I will not sell defective goods. I feel satisfied with my little profit because I know Allah will bless me."
+                   <p><h3 style="font-style:gisha;text-align:center;">(Abdul Rahman bin Auf)</h3></p> </div></div>
+				   
+				  <div class="item"><img  src="<?php echo base_url();?>assets/img/slider-image-10.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Buy and Sell with Souq Anshar!
+                   <p><h3 style="font-style:gisha;text-align:center;">Your First Dinar and Dirham Marketplace.</h3></p> </div></div>
+
+                   <div class="item"><img  src="<?php echo base_url();?>assets/img/slider-image-8.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Syariah Compliant Marketplace
+                   <p><h3 style="font-style:gisha;text-align:center;">Use muamalah system that meets the syariah law.</h3></p> </div></div>
+                   
+                    
+                  <!--div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-10.jpg" alt="The Last of us"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:40px; font-weight:800; text-align:center; " class = "col-md-8 col-md-offset-2" >Buy & Sell with Souq Anshar!
+                   <p><h4 style="font-style:gisha;text-align:center; font-size:29px; font-weight:600px;">Your First Dinar and Dirham Marketplace</h4> </p> </div></div>
+				   
+				   
+                  <div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-9.jpg" alt="GTA V"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:40px; font-weight:800; text-align:center; " class = "col-md-8 col-md-offset-2" > Shop Anytime and Anywhere with Souq Anshar!
+                   <!--p><h3 style="font-style:gisha;text-align:center;">Your First Dinarhgfghfghg Marketplace</h3></p> </div></div>-->
+>>>>>>> origin/miza
                  
                 </div>
             </div>
@@ -114,6 +163,7 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
                         <h2>Buy & Sell with Souq Anshar!</h2>
+<<<<<<< HEAD
                         <p>Your First Dinar Dirham Marketplace that Use Muamalah System that Meets the Syariah Laws</p>
                        
 
@@ -121,6 +171,13 @@
                             <form action= "<?php echo site_url('main/search');?>" method= "post" class=" form-inline">
                                 <div class="form-group">
                                     <input type="text" class="form-control" placeholder="What are you looking for?">
+=======
+                        <p>Your First Dinar Marketplace</p>-->
+                        <div class="search-form wow pulse" data-wow-delay="0.8s" style="width:700px; margin:0 auto;" >
+                            <form action= "<?php echo site_url('main/search');?>" method= "post" class=" form-inline" onsubmit="return checkForm(this)">
+                                <div class="form-group" >
+                                    <input type="text" name= "itemname" class="form-control" placeholder="What are you looking for?" style="width:310px;">
+>>>>>>> origin/miza
                                 </div>
                                 <div class="form-group">
                                     <select name="sub_cat" id="" class="form-control">

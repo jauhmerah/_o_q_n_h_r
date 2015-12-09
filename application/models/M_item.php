@@ -105,7 +105,9 @@ class M_item extends CI_Model {
           return $result;
         } else
         {
+
             return false;
+<<<<<<< HEAD
         }
         
           
@@ -124,6 +126,76 @@ class M_item extends CI_Model {
 
 
    
+=======
+        }         
+    } 
+
+     
+
+    //keluarkan semua item page souqshop2
+      function get_allz1()
+     {
+        $this->db->select("*");
+        $this->db->from('cat_fashion');       
+        $results = $this->db->get()->result();
+        return $results;          
+     }  
+
+      function get_allz2()
+     {
+        $this->db->select("*");
+        $this->db->from('cat_electronics');        
+        $results = $this->db->get()->result();
+        return $results;          
+     }  
+
+     function get_allz3()
+     {
+        $this->db->select("*");
+        $this->db->from('cat_travel');        
+        $results = $this->db->get()->result();
+        return $results;          
+     } 
+
+     function get_allz4()
+     {
+        $this->db->select("*");
+        $this->db->from('cat_automotive');        
+        $results = $this->db->get()->result();
+        return $results;          
+     } 
+
+     function get_allz5()
+     {
+        $this->db->select("*");
+        $this->db->from('cat_business');        
+        $results = $this->db->get()->result();
+        return $results;          
+     }//tutup keluarkan semua item page souqshop2
+
+     //function utk cart & checkout page
+     // Insert buyer details in "sa_buyer" table in database.
+     public function insert_customer($data)
+     {
+        $this->db->insert('customers', $data);
+        $id = $this->db->insert_id();
+        return (isset($id)) ? $id : FALSE;      
+     }
+
+     // Insert order date with buyer id in "sa_order" table in database.
+     public function insert_order($data)
+     {
+        $this->db->insert('orders', $data);
+        $id = $this->db->insert_id();
+        return (isset($id)) ? $id : FALSE;
+     }
+
+     // Insert ordered product detail in "sa_cart" table in database.
+     public function insert_order_detail($data)
+     {
+        $this->db->insert('order_detail', $data);
+     }//tutup function utk cart & checkout page
+>>>>>>> origin/miza
 }
 
 ?>

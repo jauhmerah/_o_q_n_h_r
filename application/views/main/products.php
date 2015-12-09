@@ -31,18 +31,44 @@ foreach($products as $data){?>
 								<div class="single-products">
 									<div class="productinfo text-center">
 										
-										<h2><b>Availability:</b><?php echo $data->item_price?></h2>
+										
 										<p><?php echo $data->item_name?></p>
 										<p><?php echo $data->item_availability?></p>
 
 										
 									</div>
 									
+									<div class="product-overlay">
+										<div class="overlay-content" style="background:#ffa300">
+											
+											
+											<?php
+
+											// Create form and send values in 'main/add' function.
+											echo form_open('main/add'); ?>
+											<p><?php echo $data->item_name?></p>
+										    <p><?php echo $data->item_availability?></p>
+											?> </div>
+											<div id='add_button'>
+											<?php
+											$btn = array(
+											'class' => 'fg-button teal',
+											'value' => 'Add to Cart',
+											'name' => 'action'
+											);
+
+											// Submit Button.
+											echo form_submit($btn);
+											echo form_close();
+											?>
+											</div>
+										</div>					
 								</div>
 								
 							</div>
 						</div>	
 	<?php }?>
+
 </body>
 <!--<?php
 
