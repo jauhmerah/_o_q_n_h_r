@@ -25,6 +25,27 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+            <script type="text/javascript">
+
+  function checkForm(form)
+  {
+   
+    if(form.itemname.value == "")
+     {
+      alert(" Please enter items that you are looking for");
+      form.itemname.focus();
+      return false;
+     }
+    if(form.sub_cat.value == "Select Your Category")
+     {
+      alert(" Please choose your category");
+      form.sub_cat.focus();
+      return false;
+     }
+
+  }   
+</script>
 </head><!--/head-->
 
 <body>
@@ -64,6 +85,35 @@
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
+
+        <div class="header-bottom"><!--header-bottom-->
+			<div class="container" >
+				<div class="row">
+					<div class="col-sm-12">                       
+                            <form action= "<?php echo site_url('main/search');?>" method= "post" class=" form-inline"  onsubmit="return checkForm(this)" style="margin-left:50px; margin-top:30px;" >
+                                <div class="form-group " >
+                                    <input id="itemname" type="text" name= "itemname" class="form-control" placeholder="What are you looking for?" style="width:200px; margin-top:"100px;"">
+                                    <select name="sub_cat" id="sub_cat" class="form-control" style="width:200px;">
+                                        <option value= "Select Your Category">Select Your Category</option>
+                                        <!--<option selected>All</option>-->                                      									                                   
+                                        <option value = "5">Business</option>
+                                        <option value = "3">Travel</option>
+                                        <option value = "4">Automotive</option>
+                                        <option value = "1">Fashion</option>
+                                        <option value = "2">Electronics</option>
+                                        
+                                    </select>
+                                </div>
+                                <input id="buttonCheck" type="submit" name= "action"class="btn" value="Search" style="width:100px; margin:0 auto; background-color:#ffa300;">
+                                </div>
+                            </form>
+                       
+					</div>
+				</div>
+			</div>
+		</div>
+<br>
+
 
 
 

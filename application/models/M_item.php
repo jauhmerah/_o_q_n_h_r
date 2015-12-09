@@ -106,9 +106,11 @@ class M_item extends CI_Model {
         } else
         {
 
-            redirect('main/page');
+            return false;
         }         
     } 
+
+     
 
     //keluarkan semua item page souqshop2
       function get_allz1()
