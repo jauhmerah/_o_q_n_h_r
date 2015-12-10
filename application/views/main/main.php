@@ -28,10 +28,8 @@
         <link rel="stylesheet" href="<?php echo base_url();?>assets/css/owl.transitions.css">
         <link rel="stylesheet" href="<?php echo base_url();?>assets/style.css">
         <link rel="stylesheet" href="<?php echo base_url();?>assets/responsive.css">
-<<<<<<< HEAD
         <script src="<?php echo base_url();?>assets/js/vendor/modernizr-2.6.2.min.js"></script>
-=======
-         <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
             <script type="text/javascript">
 
   function checkForm(form)
@@ -51,8 +49,6 @@
    }
     
 </script>
-
->>>>>>> origin/miza
     </head>
     <body>
 
@@ -101,33 +97,34 @@
               <a class="navbar-brand" style="margin-top:-12px;" href="#"><img src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="190px" height="65px" margin-bottom:"25px"></a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-<<<<<<< HEAD
               <div class="button navbar-right">
                    <a href="<?php echo site_url('main/page/signin');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Sign In</button></a>
                  <a href="<?php echo site_url('main/page/signup');?>"><button class="navbar-btn nav-button " data-wow-delay="0.6s">Sign Up</button></a>
               </div>
-             <!-- <ul class="main-nav nav navbar-nav navbar-right">
-                <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="#">Home</a></li>
-=======
-              <div class="button navbar-right" >
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!--div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="button navbar-right" style="margin-right:-50px;">
+                <!--a href="<?php echo site_url('main/page/cart');?>"><img src="<?php echo base_url();?>assets/img/cart1.png" title="Cart" width="35px" height="35px"--></a>&nbsp;
+                 <!--a href="<?php echo site_url('main/page/cart');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Cart</button></a>
                  <a href="<?php echo site_url('main/page/signin');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Sign In</button></a>
                  <a href="<?php echo site_url('main/page/signup');?>"><button class="navbar-btn nav-button " data-wow-delay="0.6s">Sign Up</button></a>
-              </div>  
-                <!--ul class="main-nav nav navbar-nav navbar-right">
-                <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="#">Profile</a></li>
->>>>>>> origin/miza
-                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="#">Job Seekers</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="#">Employeers</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="#">About us</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="#">Blog</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.5s"><a href="#">Contact</a></li>
-              </ul>-->
+                 <!--a href="<?php echo site_url('main/page/cart');?>"><button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Cart</button></a-->
+              <!--ul class="main-nav nav navbar-nav navbar-right" style="margin-top:-15px;">
+                <!--li>
+                    <?php echo "<BR>Welcome, <b id='welcome'><i>" . $username . "</i></b><BR><BR>"; ?>    
+                </li-->
+                <!--li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/main_2');?>">Home</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0s"><a  href="<?php echo site_url('main/page/profile');?>">Profile</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/productlist');?>">Shops</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="<?php echo site_url('member/page/dashboard');?>">Dashboard</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="<?php echo site_url('main/page/cart');?>">Cart</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="<?php echo site_url('main');?>">Logout</a></li>
+              </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
-<<<<<<< HEAD
 
          <div class="slider-area">
             <div class="slider">
@@ -136,60 +133,27 @@
                   <div class="item"><img src="<?php echo base_url()?>assets/img/slider-image-5.jpg" alt="Mirror Edge"></div>
                   <div class="item"><img src="<?php echo base_url()?>assets/img/slider-image-8.jpg" alt="The Last of us"></div>
                   <div class="item"><img src="<?php echo base_url()?>assets/img/slider-image-10.jpg" alt="GTA V"></div>
-                 
                 </div>
             </div>
-=======
-    
-         
-        
-           
-      <div class="slider-area">
-            <div class="slider">
-                <div id="bg-slider" class="owl-carousel owl-theme">                  
-                  <div class="item"><img  src="<?php echo base_url();?>assets/img/slider-image-5.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >"I will not sell defective goods. I feel satisfied with my little profit because I know Allah will bless me."
-                   <p><h3 style="font-style:gisha;text-align:center;">(Abdul Rahman bin Auf)</h3></p> </div></div>                  
-                  <div class="item"><img  src="<?php echo base_url();?>assets/img/slider-image-10.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Buy and Sell with Souq Anshar!
-                   <p><h3 style="font-style:gisha;text-align:center;">Your First Dinar and Dirham Marketplace.</h3></p> </div></div>
-                  <div class="item"><img  src="<?php echo base_url();?>assets/img/slider-image-8.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Syariah Compliant Marketplace
-                   <p><h3 style="font-style:gisha;text-align:center;">Use muamalah system that meets the syariah law.</h3></p> </div></div>
-                </div>
-            </div>      
->>>>>>> origin/miza
             <div class="container slider-content">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
-<<<<<<< HEAD
                         <h2>Buy & Sell with Souq Anshar!</h2>
                         <p>Your First Dinar Dirham Marketplace that Use Muamalah System that Meets the Syariah Laws</p>
                        
 
-                        <div class="search-form wow pulse" data-wow-delay="0.8s">
-                            <form action= "<?php echo site_url('main/search');?>" method= "post" class=" form-inline">
+                          <div class="search-form wow pulse" data-wow-delay="0.8s">
+                            <form action= "<?php echo site_url('main/search');?>" method= "post" class=" form-inline "onsubmit="return checkForm(this)">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="What are you looking for?">
+                                    <input id="itemname" type="text" name= "itemname" class="form-control" placeholder="What are you looking for?">
                                 </div>
                                 <div class="form-group">
-                                    <select name="sub_cat" id="" class="form-control">
+                                    <select name="sub_cat" id="sub_cat" class="form-control">
                                       
                                         <option selected>Select Your Category</option>
                                         <!--<option selected>All</option>-->                                      
                                
 
-=======
-                        <!--<h2>Buy & Sell with Souq Anshar!</h2>
-                        <p>Your First Dinar Marketplace</p>-->
-                        <div class="search-form wow pulse" data-wow-delay="0.8s" style="width:700px; margin:0 auto;" >                          
-                            <form action= "<?php echo site_url('main/search');?>" method= "post" class=" form-inline"  onsubmit="return checkForm(this)">
-                                <div class="form-group" >
-                                    <input id="itemname" type="text" name= "itemname" class="form-control" placeholder="What are you looking for?" style="width:310px;"  >
-                                </div>
-                               
-                                 <div class="form-group">
-                                    <select name="sub_cat" id="sub_cat" class="form-control" >
-                                        <option value= "Select Your Category">Select Your Category</option>
-                                        <!--<option selected>All</option>-->                                      									                                   
->>>>>>> origin/miza
                                         <option value = "5">Business</option>
                                         <option value = "3">Travel</option>
                                         <option value = "4">Automotive</option>
@@ -197,10 +161,6 @@
                                         <option value = "2">Electronics</option>
                                     </select>
                                 </div>
-<<<<<<< HEAD
-=======
-                                <input id="buttonCheck" type="submit" name= "action"class="btn" value="Search" style="width:100px; margin:0 auto;">
->>>>>>> origin/miza
                                 
                                 <input type="submit" class="btn" value="Search">
 

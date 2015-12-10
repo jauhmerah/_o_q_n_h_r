@@ -25,6 +25,28 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+            <script type="text/javascript">
+
+  function checkForm(form)
+  {
+   
+    if(form.itemname.value == "")
+     {
+      alert(" Please enter items that you are looking for");
+      form.itemname.focus();
+      return false;
+     }
+    if(form.sub_cat.value == "Select Your Category")
+     {
+      alert(" Please choose your category");
+      form.sub_cat.focus();
+      return false;
+     }
+
+  }   
+</script>
+
 </head><!--/head-->
 
 <body>
@@ -38,13 +60,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" style= "margin-top:-5px;" href="<?php echo site_url('huhu/haha'); ?>"><img src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="230px" height="79px"></a>
+              <a class="navbar-brand" style= "margin-top:-2px; margin-left:-23px;" href="<?php echo site_url('main/page/main_2'); ?>"><img src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="190px" height="65px" margin-bottom="25px"></a>
             </div>
 
 			
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <div class="button navbar-right" >
+              <div class="button navbar-right" style= "margin-right:9px;">
                  <!--a href="<?php echo site_url('main/page/signin');?>"><button class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s">Sign In</button></a>
                  <a href="<?php echo site_url('main/page/signup');?>"><button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Sign Up</button></a>-->
               <ul class="main-nav nav navbar-nav navbar-right">
@@ -52,7 +74,7 @@
 
                 <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="<?php echo site_url('main/page/main_2');?>">Home</a></li>
 
-                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/souqshop');?>">Shops</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/productlist');?>">Shops</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/profile');?>">Profile</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="<?php echo site_url('member/page/dashboard');?>">Dashboard</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="<?php echo site_url('main/page/cart');?>">Cart</a></li>
@@ -61,6 +83,34 @@
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
+
+        <div class="header-bottom"><!--header-bottom-->
+			<div class="container" >
+				<div class="row">
+					<div class="col-sm-12" style="margin-left:-8px;">                       
+                            <form action= "<?php echo site_url('main/search');?>" method= "post" class=" form-inline"  onsubmit="return checkForm(this)" style="margin-left:50px; margin-top:30px;" >
+                                <div class="form-group " >
+                                    <input id="itemname" type="text" name= "itemname" class="form-control" placeholder="What are you looking for?" style="width:200px; margin-top:"100px;"">
+                                    <select name="sub_cat" id="sub_cat" class="form-control" style="width:200px;">
+                                        <option value= "Select Your Category">Select Your Category</option>
+                                        <!--<option selected>All</option>-->                                      									                                   
+                                        <option value = "5">Business</option>
+                                        <option value = "3">Travel</option>
+                                        <option value = "4">Automotive</option>
+                                        <option value = "1">Fashion</option>
+                                        <option value = "2">Electronics</option>
+                                        
+                                    </select>
+                                </div>
+                                <input id="buttonCheck" type="submit" name= "action"class="btn" value="Search" style="width:100px; margin:0 auto; background-color:#ffa300;">
+                                </div>
+                            </form>
+                       
+					</div>
+				</div>
+			</div>
+		</div>
+
 
 
 
@@ -248,7 +298,7 @@
 			<div class="row">
 				<div class="col-sm-3">
 					<div class="left-sidebar">
-					<br>	<h2>Category</h2> </br>
+					<br><br>	<h2>Category</h2> </br>
 						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
 							<div class="panel panel-default">
 								<div class="panel-heading">
@@ -415,7 +465,7 @@
 
 				<div class="col-sm-9 padding-right" ;">
 					<div class="features_items">
-					<br>	<h2 class="title text-center">All Items</h2></br>
+					<br><br>	<h2 class="title text-center">All Items</h2></br>
 					<?php
 					if(sizeof($products)==0)
 					{
