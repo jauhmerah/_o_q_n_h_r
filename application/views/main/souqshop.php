@@ -319,11 +319,12 @@
 					                       
 				                        
 				                        ?> 
-				                    	<div id='add_button'>
+				                    	<div id='add_button' style="background-color:#ffa300;">
 				                        <?php
 				                        $btn = array(
-				                            'class' => 'fg-button teal',
+				                            'class' => 'btn btn-default cart',
 				                            'value' => 'Add to Cart',
+				                            'style' => 'background-color:#ffa300',
 				                            'name' => 'action'
 				                        );
 				                        
@@ -335,12 +336,7 @@
 										</div> 
 									</div>
 								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
-								</div>
+								
 							</div>
 						</div>
 						

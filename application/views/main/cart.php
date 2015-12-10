@@ -22,6 +22,18 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo base_url();?>assets/miza-cart/images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo base_url();?>assets/miza-cart/images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="<?php echo base_url();?>assets/miza-cart/images/ico/apple-touch-icon-57-precomposed.png">
+    <script type="text/javascript">
+	// To conform clear all data in cart.
+	function clear_cart() {
+	var result = confirm('Are you sure want to clear all bookings?');
+
+	if (result) {
+	window.location = "<?php echo base_url(); ?>index.php/main/remove/all";
+	} else {
+	return false; // cancel button
+	}
+	}
+	</script>
 </head><!--/head-->
 
 <body>
@@ -142,92 +154,91 @@
 				<table class="table table-condensed">
 					<thead>
 						<tr class="cart_menu">
-							<td class="image">Item</td>
-							<td class="description"></td>
-							<td class="price" style="padding-left:40px;">Price</td>
-							<td class="quantity" style="padding-left:30px;">Quantity</td>
+							<td class="itemID">Item Id</td>
+							<td class="itemName">Item Name</td>
+							<td class="price" style="padding-left:20px;">Price</td>
+							<td class="quantity" style="padding-left:3px;">Quantity</td>
 							<td class="total"style="padding-left:20px;">Total</td>
 							<td></td>
 						</tr>
 					</thead>
-					<tbody>
-						<tr>
-							<td class="cart_product">
-								<a href=""><img src="<?php echo base_url();?>assets/miza-cart/images/cart/Men2.jpg" alt=""></a>
-							</td>
-							<td class="cart_description" style="padding-left:60px;">
-								<h4><a  href="">Plain T-shirt</a></h4>
-								<!--p>Web ID: 1089772</p>-->
-							</td>
-							<td class="cart_price" style="padding-left:40px;">
-								<p>RM59</p>
-							</td>
-							<td class="cart_quantity" style="padding-left:30px;">
-								<div class="cart_quantity_button">
-									<a class="cart_quantity_up" href=""> + </a>
-									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
-									<a class="cart_quantity_down" href=""> - </a>
-								</div>
-							</td>
-							<td class="cart_total" style="padding-left:20px;">
-								<p class="cart_total_price">RM59</p>
-							</td>
-							<td class="cart_delete" style="padding-right:-5px;">
-								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
-							</td>
-						</tr>
+					<?php
+					// All values of cart store in "$cart".
+					if ($cart = $this->cart->contents()): ?>
+					
+					<!--<td>Serial</td>
+					<td>Name</td>
+					<td>Price</td>
+					<td>Qty</td>
+					<td>Amount</td>
+					<td>Cancel Product</td>-->
+					
+					<?php
+					// Create form and send all values in "shopping/update_cart" function.
+					echo form_open('main/update_cart');
+					$grand_total = 0;
+					$i = 1;
 
-						<tr>
-							<td class="cart_product">
-								<a href=""><img src="<?php echo base_url();?>assets/miza-cart/images/cart/Men5.jpg" alt=""></a>
-							</td>
-							<td class="cart_description" style="padding-left:60px;">
-								<h4><a href="">Plain T-shirt</a></h4>
-								<!--p>Web ID: 1089772</p>-->
-							</td>
-							<td class="cart_price" style="padding-left:40px;">
-								<p>RM59</p>
-							</td>
-							<td class="cart_quantity" style="padding-left:30px;">
-								<div class="cart_quantity_button">
-									<a class="cart_quantity_up" href=""> + </a>
-									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
-									<a class="cart_quantity_down" href=""> - </a>
-								</div>
-							</td>
-							<td class="cart_total"style="padding-left:20px;">
-								<p class="cart_total_price">RM59</p>
-							</td>
-							<td class="cart_delete">
-								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<td class="cart_product">
-								<a href=""><img src="<?php echo base_url();?>assets/miza-cart/images/cart/Men2.jpg" alt=""></a>
-							</td>
-							<td class="cart_description" style="padding-left:60px;">
-								<h4><a href="">Plain T-shirt</a></h4>
-								<!--p>Web ID: 1089772</p>-->
-							</td>
-							<td class="cart_price" style="padding-left:40px;">
-								<p>RM59</p>
-							</td>
-							<td class="cart_quantity" style="padding-left:30px;">
-								<div class="cart_quantity_button">
-									<a class="cart_quantity_up" href=""> + </a>
-									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
-									<a class="cart_quantity_down" href=""> - </a>
-								</div>
-							</td>
-							<td class="cart_total" style="padding-left:20px;">
-								<p class="cart_total_price">RM59</p>
-							</td>
-							<td class="cart_delete">
-								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
-							</td>
-						</tr>
-					</tbody>
+					foreach ($cart as $item):
+					// echo form_hidden('cart[' . $item['id'] . '][id]', $item['id']);
+					// Will produce the following output.
+					// <input type="hidden" name="cart[1][id]" value="1" />
+
+					echo form_hidden('cart[' . $item['id'] . '][id]', $item['id']);
+					echo form_hidden('cart[' . $item['id'] . '][rowid]', $item['rowid']);
+					echo form_hidden('cart[' . $item['id'] . '][name]', $item['name']);
+					echo form_hidden('cart[' . $item['id'] . '][price]', $item['price']);
+					echo form_hidden('cart[' . $item['id'] . '][qty]', $item['qty']);
+					?>
+					<tr>
+					<td>
+					<?php echo $i++; ?>
+					</td>
+					<td>
+					<?php echo $item['name']; ?>
+					</td>
+					<td>
+					RM <?php echo number_format($item['price'], 2); ?>
+					</td>
+					<td>
+					<?php echo form_input('cart[' . $item['id'] . '][qty]', $item['qty'], 'maxlength="3" size="1" style="text-align: right"'); ?>
+					</td>
+					<?php $grand_total = $grand_total + $item['subtotal']; ?>
+					<td>
+					RM <?php echo number_format($item['subtotal'], 2) ?>
+					</td>
+					<td>
+
+					<?php
+					// cancle image.
+					$path = "<img src='http://localhost/codeigniter_cart/images/cart_cross.jpg' width='25px' height='20px'>";
+					echo anchor('main/remove/' . $item['rowid'], $path); ?>
+					</td>
+					<?php endforeach; ?>
+					</tr>
+					<tr>
+					<td><b>Order Total: RM<?php
+
+					//Grand Total.
+					echo number_format($grand_total, 2); ?></b></td>
+
+					<?php // "clear cart" button call javascript confirmation message ?>
+					<td colspan="5" align="right"><input  class ='btn btn-default' type="button" value="Clear Cart" style="background-color:#ffa300;" onclick="clear_cart()">
+
+					<?php //submit button. ?>
+					<input class ='btn btn-default'  type="submit" value="Update Cart" style="background-color:#ffa300;">
+					<?php echo form_close(); ?>
+
+					<!-- "Place order button" on click send "billing" controller -->
+					<input class ='btn btn-default' type="button" value="Checkout"  style="background-color:#ffa300"onclick="window.location = 'checkout'">
+					<a class="btn btn-default"   style="background-color:#ffa300" href="<?php echo site_url('main/productlist');?>">Continue Shopping</a></td>
+					</tr>
+					<?php endif; ?>
+					</table>
+					</div>
+
+
+
 				</table>
 			</div>
 		</div>
@@ -242,16 +253,9 @@
 			<div class="row">
 				
 				<div class="col-sm-6">
-					<div class="total_area" >
-						<ul>
-							<li>Cart Sub Total <span>RM59</span></li>
-							<li>Eco Tax <span>RM2</span></li>
-							<li>Shipping Cost <span>Free</span></li>
-							<li>Total <span>RM61</span></li>
-						</ul>
-							<a class="btn btn-default update" href="">Update</a>
-							<a class="btn btn-default check_out" href="<?php echo site_url('main/page/checkout');?>">Check Out</a>
-					</div>
+					
+						 <img style="width:300px;height:300px;"src="<?php echo base_url();?>assets/miza-cart/images/home/earthlink-online-shopping-cart.jpg" alt="" />
+					
 				</div>
 			</div>
 		</div>

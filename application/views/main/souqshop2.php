@@ -490,16 +490,34 @@
 											<h2>RM <?php echo $data->item_price?></h2>
 											<p><?php echo $data->item_name?></p>
 											<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.'cat_fashion'); ?>">View</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
+											<?php
+                        
+					                        // Create form and send values in 'shopping/add' function.
+					                        echo form_open('main/add');
+					                        echo form_hidden('id', $data->item_id);
+					                        echo form_hidden('name', $data->item_name);
+					                        echo form_hidden('price', $data->item_price);
+					                       
+				                        
+					                        ?> 
+					                    	<div id='add_button' style="background-color:#ffa300;">
+					                        <?php
+					                        $btn = array(
+					                            'class' => 'btn btn-default cart',
+					                            'value' => 'Add to Cart',
+					                            'style' => 'background-color:#ffa300',
+					                            'name' => 'action'
+					                        );
+					                        
+					                        // Submit Button.
+					                        echo form_submit($btn);
+					                        echo form_close();
+					                        ?>
 										</div>
 									</div>
 								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
-								</div>
+							</div>	
 							</div>
 						</div>						
 						<?php }?>
@@ -521,15 +539,33 @@
 											<h2>RM <?php echo $data->item_price?></h2>
 											<p><?php echo $data->item_name?></p>
 											<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.'cat_electronics'); ?>">View</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
+											<?php
+                        
+					                        // Create form and send values in 'shopping/add' function.
+					                        echo form_open('main/add');
+					                        echo form_hidden('id', $data->item_id);
+					                        echo form_hidden('name', $data->item_name);
+					                        echo form_hidden('price', $data->item_price);
+					                       
+				                        
+					                        ?> 
+					                    	<div id='add_button' style="background-color:#ffa300;">
+					                        <?php
+					                        $btn = array(
+					                            'class' => 'btn btn-default cart',
+					                            'value' => 'Add to Cart',
+					                            'style' => 'background-color:#ffa300',
+					                            'name' => 'action'
+					                        );
+					                        
+					                        // Submit Button.
+					                        echo form_submit($btn);
+					                        echo form_close();
+					                        ?>
 										</div>
 									</div>
 								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
 								</div>
 							</div>
 						</div>						
@@ -552,15 +588,33 @@
 											<h2>RM <?php echo $data->item_price?></h2>
 											<p><?php echo $data->item_name?></p>
 											<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.'cat_travel'); ?>">View</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
+											<?php
+                        
+					                        // Create form and send values in 'shopping/add' function.
+					                        echo form_open('main/add');
+					                        echo form_hidden('id', $data->item_id);
+					                        echo form_hidden('name', $data->item_name);
+					                        echo form_hidden('price', $data->item_price);
+					                       
+				                        
+					                        ?> 
+					                    	<div id='add_button' style="background-color:#ffa300;">
+					                        <?php
+					                        $btn = array(
+					                            'class' => 'btn btn-default cart',
+					                            'value' => 'Add to Cart',
+					                            'style' => 'background-color:#ffa300',
+					                            'name' => 'action'
+					                        );
+					                        
+					                        // Submit Button.
+					                        echo form_submit($btn);
+					                        echo form_close();
+					                        ?>
 										</div>
 									</div>
 								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
 								</div>
 							</div>
 						</div>						
@@ -583,15 +637,33 @@
 											<h2>RM <?php echo $data->item_price?></h2>
 											<p><?php echo $data->item_name?></p>
 											<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.'cat_automotive'); ?>">View</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
+											<?php
+                        
+					                        // Create form and send values in 'shopping/add' function.
+					                        echo form_open('main/add');
+					                        echo form_hidden('id', $data->item_id);
+					                        echo form_hidden('name', $data->item_name);
+					                        echo form_hidden('price', $data->item_price);
+					                       
+				                        
+					                        ?> 
+					                    	<div id='add_button' style="background-color:#ffa300;">
+					                        <?php
+					                        $btn = array(
+					                            'class' => 'btn btn-default cart',
+					                            'value' => 'Add to Cart',
+					                            'style' => 'background-color:#ffa300',
+					                            'name' => 'action'
+					                        );
+					                        
+					                        // Submit Button.
+					                        echo form_submit($btn);
+					                        echo form_close();
+					                        ?>
 										</div>
 									</div>
 								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
 								</div>
 							</div>
 						</div>						
@@ -614,15 +686,33 @@
 											<h2>RM <?php echo $data->item_price?></h2>
 											<p><?php echo $data->item_name?></p>
 											<!--<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.'cat_business'); ?>">View</p>-->
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
+											<?php
+                        
+					                        // Create form and send values in 'shopping/add' function.
+					                        echo form_open('main/add');
+					                        echo form_hidden('id', $data->item_id);
+					                        echo form_hidden('name', $data->item_name);
+					                        echo form_hidden('price', $data->item_price);
+					                       
+				                        
+					                        ?> 
+					                    	<div id='add_button' style="background-color:#ffa300;">
+					                        <?php
+					                        $btn = array(
+					                            'class' => 'btn btn-default cart',
+					                            'value' => 'Add to Cart',
+					                            'style' => 'background-color:#ffa300',
+					                            'name' => 'action'
+					                        );
+					                        
+					                        // Submit Button.
+					                        echo form_submit($btn);
+					                        echo form_close();
+					                        ?>
 										</div>
 									</div>
 								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
 								</div>
 							</div>
 						</div>						

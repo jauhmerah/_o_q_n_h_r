@@ -376,12 +376,12 @@
 		  // 
 			$this->cart->insert($insert_data);
 		   $cart = $this->cart->contents();
-		    echo '<pre>';
+		    /*echo '<pre>';
 		    print_r($cart);
-		    echo '</pre>';
+		    echo '</pre>';*/
 
 		// This will show insert data in cart.
-		   /*redirect('main/page/miza');*/
+		   redirect('main/page/cart');
 		}
 
 		function remove($rowid) 
@@ -403,7 +403,7 @@
 		}
 
 			// This will show cancel data in cart.
-			redirect('main/page/mizatry');
+			redirect('main/page/cart');
 		}
 
 		function update_cart()
@@ -427,7 +427,7 @@
 
 		    $this->cart->update($data);
 		}
-		    redirect('main/page/mizatry');
+		    redirect('main/page/cart');
 		}
 
 		function checkout()
