@@ -6,7 +6,14 @@
                     <br>
                     <br>
                     <li>
+<<<<<<< HEAD
                          <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="<?php echo site_url('main/page/main_2');?>"><i class="fa fa-dashboard"></i>Home</a></li>
+=======
+                        <a href="<?php echo site_url('member/page/'); ?>"><i class="fa fa-desktop"></i> Upload Product</a>
+                    </li>
+					<li>
+                        <a href="<?php echo site_url('member/page/changepassword'); ?>"><i class="fa fa-bar-chart-o"></i> Change Password</a>
+>>>>>>> origin/mai_huhu
                     </li>
                     <li>
                         <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/souqshop');?>"><i class="fa fa-dashboard"></i>Shops</a></li>

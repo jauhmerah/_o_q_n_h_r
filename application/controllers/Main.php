@@ -1,21 +1,36 @@
 <?php 
 	if (!defined('BASEPATH')) exit('No direct script access allowed');
-	
+
 	class Main extends CI_Controller {
 	
 		var $parent_page = "main";
 
 	    function __construct() {
 	        parent::__construct();
+	        //Load Library and model.
 	        $this->load->model('m_user');
 	        $this->load->helper('url');
 	        $this->load->library('session');
+<<<<<<< HEAD
+	        $this->load->library('form_validation');
+
+	        // Load database
+   	         $this->load->model('login_database');
+=======
+	       $this->load->model('m_cart');
+			$this->load->model('m_item');
+			 // Load the cart library to use it.
+   			 $this->load->library('cart');
+   			 
+>>>>>>> origin/miza
 
 	    }
 	
 	    function index() {
 	        $this->_display();
-
+<<<<<<< HEAD
+=======
+	         
 
 	        /*$session = $this->session->userdata('isLogin');  
 	        if($session == FALSE)  
@@ -26,6 +41,7 @@
 	    	}*/
 
 
+>>>>>>> origin/miza
 
 	       /*$verificationCode = random_string('alnum', 20);  
                   
@@ -54,6 +70,7 @@
 	    {
 	    	
 	    	//$this->load->view('header');
+
 	    	$this->load->view($this->parent_page.'/'.$page , $data);//$this->parent_page.'/'.$page
 	    	//$this->load->view('footer');
 	    }
@@ -65,9 +82,22 @@
 	    	switch ($process)
 	    	{
 	    		case '18':
-	    			$this->load->model('m_item');
-	    			$data['arr'] = $this->m_item->get();  
-	    			break;
+
+                        $data = $this->_checkSession();
+      
+		                if($data != false)
+		                { 
+
+			    			$this->load->model('m_item');
+			    			$data['arr'] = $this->m_item->get();  
+
+                        }
+						else
+						{
+							$this->_redirectPage();   
+						}
+
+	    		break;
 
 
 	    		case 'x1':
@@ -81,6 +111,7 @@
 	    			/*print_r($temp);*/
 	    			break;
 
+<<<<<<< HEAD
 	    		case 'z1':
 	    			$arr = $this->input->get();	    			
 	    			$this->load->model('m_item');
@@ -115,6 +146,9 @@
 	    			break;
 
 				case 'z4':
+=======
+	    		case 'x1':
+>>>>>>> origin/miza
 	    			$arr = $this->input->get();	    			
 	    			$this->load->model('m_item');
 	    			$arr1 = array(
@@ -125,6 +159,7 @@
 	    			/*print_r($temp);*/
 	    			break;
 
+<<<<<<< HEAD
 	    		case 'z5':
 	    			$arr = $this->input->get();	    			
 	    			$this->load->model('m_item');
@@ -137,6 +172,8 @@
 	    			break;
 
 
+=======
+>>>>>>> origin/miza
 	    	    case '4':
 	    	    //sign up process
 	    	    	$arr =  $this->input->post();
@@ -153,6 +190,8 @@
 	    	    case '5':
 	    	    	$data['error'] = true;
 	    	    	break;
+<<<<<<< HEAD
+=======
 
 		    	case '6':
 		    		$post = $this->input->post();
@@ -176,8 +215,6 @@
 	    			</script>";  
 		    		break;
 
-
-
 	    	    case '4':
 	    	    //cart process
 	    	    	$arr =  $this->input->post();
@@ -191,7 +228,7 @@
 	    	    	$this->m_user->insert($temp);
 	    	    	break;
 
-
+>>>>>>> origin/miza
 	    	    case 'x2':
 	    			$arr = $this->input->get();	    			
 	    			$this->load->model('m_user');
@@ -202,14 +239,30 @@
 	    			//$data['anot'] = $temp;
 	    			print_r($temp);
 	    			break;
-	    	    
-
-
 	    	}
 	    	$this->_display($page,$data);
 	    }
 
-	    //cari nisbah perkataan yang sama
+	    public function _checkSession($menu = false)
+		 {
+			 if($this->session->userdata('logged_in'))     
+			 { 
+				$data = $this->session->userdata('logged_in');
+				return $data;
+			 }else
+			 {
+				 if($menu)
+				 {
+					return false; 
+				 }else
+				 {
+				 	return $this->_redirect('main/page/main_2');
+				 }
+			 }
+				 
+		 }
+
+
 	    public function pecahankata($first = null , $second = null)
 	    {
 	    	if ($this->input->post()) {
@@ -329,17 +382,35 @@
 			$process = $this->input->post('sub_cat');
 			$search = $this->input->post("itemname");
 
-
+				
+					    
 			/*$data['arr'] = $this->m_item->get_search($temp,"cat_shoes");
 			$this->load->view('main/testoutput', $data)*/
 			/**
-				kat sini kena dynamic
 			*/
-			
+<<<<<<< HEAD
 
+			$data = null;
+	        switch ($process) 
+	        {
+	    		case '1':
+	    			//nk load semua data dlm db	    		    
+	    		    $table = 'cat_fashion';
+	    		    break;
+	    		case '2':
+	    			//nk load semua data dlm db
+	    		    $table = 'cat_electronics';
+	    		    break;
+	    		case '3':
+	    			//nk load semua data dlm db
+	    		    $table = 'cat_travel';
+	    		    break;
+	        }
 
 			/*$data['arr'] = $this->m_item->get_search($temp,"cat_shoes");
 			$this->load->view('main/testoutput', $data)*/
+=======
+>>>>>>> origin/miza
 			
 			$data = null;
 	        switch ($process) 
@@ -364,49 +435,172 @@
 	    			//nk load semua data dlm db
 	    		    $table = 'cat_business';
 	    		    break;	
-	    		
+
 	    	}
-
-	    	$data ['products']=$this->m_item->get_search($search,$table);
-	    	$data['table'] = $table;
-			$this->load->view('main/souqshop', $data);
-	    			
-		}
-
-		/*public function add()
-		{
-			$data = array(
-				'item_id' =>'3',
-				'item_name' => 'Torchlight',
-				
-				'item_price' => 16.9,
-				
-				);
-
-			$this->cart->insert($data);
-			echo "add() called";
-
-	    	$data['products'] = $this->m_item->get_search($search,$table);
-	    	$data['table'] = $table;
-	    	$this->load->view('main/souqshop', $data); 			
-
+	    		$data ['products']=$this->m_item->get_search($search,$table);
+		    	$data['table'] = $table;		    		
+				$this->load->view('main/souqshop', $data); 	  			
 		}
 		//tutup search function
 
-		//cart process
-		public function show()
-		{
-			$cart = $this->cart->contents();
+		
 
-			echo "<pre>";
-			print_r($cart);
-			 echo "</pre>";
-		}//tutup cart process
+		//keluarkan semua item
+		 function lala()
+	 	{
+	        $this->load->model('Products_model');
+	       
+	        
+	        /*$data['products2'] = $this->Products_model->get_all3();*/
+	        /*$data['table1'] = $table1;*/
+	        /*$data['table2'] = $table2;*/
+	        $data['products'] = $this->Products_model->get_all2();
+	       	/*echo "<pre>";
+			print_r($data['products']);*/
+			/*print_r($data['products2']);*/
+			
+	    			
+	    	
+	    	
+	       
 
+	        if ($this->input->get('item_id') != '')
+			{
+			$this->cart->insert($data['products'][$this->input->get('item_id')]);
+			
+			}
 
+			
+		
+
+		 $this->load->view('main/miza',$data);
+	 	}//tutup keluarkan semua item
+
+	 	//keluarkan semua item page souqshop2
+		 function productlist()
+	 	{
+	        $this->load->model('m_item');	       
+	        $data['products1'] = $this->m_item->get_allz1();
+	        $data['products2'] = $this->m_item->get_allz2();
+	        $data['products3'] = $this->m_item->get_allz3();
+	        $data['products4'] = $this->m_item->get_allz4();
+	        /*$data['products5'] = $this->m_item->get_allz5();*/
+	        $this->load->view('main/souqshop2',$data);
+	 	}//tutup keluarkan semua item page souqshop2
+
+	 	//function untuk cart & checkout page
+	 	function add()
+        {
+	        // Set array for send data.
+			$insert_data = array(
+			'item_id' => $this->input->post('item_id'),
+			'item_name' => $this->input->post('item_name'),
+			'item_price' => $this->input->post('item_price'),
+			'qty' => 1
+		);
+
+		// This function add items into cart.
+		   $this->cart->insert($insert_data);
+
+		// This will show insert data in cart.
+		   redirect('main/page/miza');
 		}
 
-	
+		function remove($rowid) 
+		{
+			// Check rowid value.
+			if ($rowid==="all")
+		{
+			// Destroy data which store in session.
+			$this->cart->destroy();
+		}else
+		{
+			// Destroy selected rowid in session.
+			$data = array(
+			'rowid' => $rowid,
+			'qty' => 0
+		);
+			// Update cart data, after cancel.
+			$this->cart->update($data);
+		}
+
+			// This will show cancel data in cart.
+			redirect('main/page/mizatry');
+		}
+
+		function update_cart()
+		{
+
+			// Recieve post values,calcute them and update
+			$cart_info = $_POST['cart'] ;
+			foreach( $cart_info as $id => $cart)
+		{
+			$rowid = $cart['rowid'];
+			$price = $cart['item_price'];
+			$amount = $price * $cart['qty'];
+			$qty = $cart['qty'];
+
+			$data = array(
+			'rowid' => $rowid,
+			'item_price' => $price,
+			'amount' => $amount,
+			'qty' => $qty
+			);
+
+		    $this->cart->update($data);
+		}
+		    redirect('main/page/mizatry');
+		}
+
+		function checkout()
+		{
+			// Load "checkout".
+			$this->load->view('checkout');
+		}
+
+		public function save_order()
+		{
+			// This will store all values which inserted from user.
+			$customer = array(
+			'by_firstname' => $this->input->post('first_name'),
+			'by_lastname' => $this->input->post('last_name'),
+			'by_address1' => $this->input->post('by_address1'),
+			'by_address2' => $this->input->post('by_address2'),
+			'by_city' => $this->input->post('by_city'),
+			'by_postalcode' => $this->input->post('by_postalcode'),
+			'by_country' => $this->input->post('by_country'),
+			'by_state' => $this->input->post('by_state'),
+			'by_phone' => $this->input->post('by_phone'),
+			'by_email' => $this->input->post('by_email'),
+			);
+			// And store user information in database.
+			$cust_id = $this->m_item->insert_customer($customer);
+
+			$order = array(
+			'date' => date('Y-m-d'),
+			'buyer_id' => $cust_id
+			);
+
+			$ord_id = $this->m_item->insert_order($order);
+
+			if ($cart = $this->cart->contents()):
+			foreach ($cart as $item):
+			$order_detail = array(
+			'cr_orderID' => $ord_id,
+			'cr_itemID' => $item['cr_itemID'],
+			'cr_price' => $item['cr_price'],
+			'cr_quantity' => $item['qty']
+			);
+
+			// Insert product imformation with order detail, store in cart also store in database.
+
+			$cust_id = $this->m_item->insert_order_detail($order_detail);
+			endforeach;
+			endif;
+
+			// After storing all imformation in database load "billing_success".
+			$this->load->view('billing_success');
+		}
 
 	    /*public function upload(){
 	   	$config['upload_path'] = "./images/";
@@ -427,18 +621,24 @@
 	   	}
 	   }*/
 
+		/*public function logout()
+		{
+			$this->session->sess_destroy();
+			redirect('main');
+		}*/
 
-
-
-		//keluarkan semua item
-		 function lala()
+		function lala2()
 	 	{
-
 	        $this->load->model('Products_model');
-	       
-	        $data['products'] = $this->Products_model->get_all();
-	       echo "<pre>";
+	        $data['products'] = $this->Products_model->get_all2();
+	       	echo "<pre>";
 			print_r($data['products']);
+<<<<<<< HEAD
+	        /*$this->load->view('products',$data);
+	  }*/
+
+}
+	        
 	        /*$this->load->view('main/products',$data);*/
 	 	}//tutup keluarkan semua item
 
@@ -476,6 +676,18 @@
 //ini semua function utk fashion category
 	 	function fashionx1()
 	 	{
+=======
+	    }
+
+	    function trying()
+	{
+	
+    $data['products'] = $this->m_cart->get_semua(); // Retrieve an array with all products
+   	/*echo "<pre>";
+    print_r($data['products']); // Print out the array to see if it works (Remove this line when done testing)*/
+     $data['content'] = 'testcart1/products';// Select our view file that will display our products
+    $this->load->view('testcart', $data); // Display the page with the above defined content
+>>>>>>> origin/miza
 
 	        $this->load->model('M_fashion');
 	       
@@ -485,6 +697,7 @@
 	       $this->load->view('main/souqshop1',$data);
 	 	}//tutup keluarkan semua item
 
+<<<<<<< HEAD
 		function fashionx2()
 	 	{
 
@@ -742,9 +955,24 @@
 	      /*echo "<pre>";
 			print_r($data['products']);*/
 	       $this->load->view('main/souqshop6',$data);
-	 	}//tutup keluarkan semua item
+	 	}//tutup keluarkan semua item	        
+=======
+	function add_cart_item(){
+     
+    if($this->m_cart->validate_add_cart_item() == TRUE){
+         
+        // Check if user has javascript enabled
+        if($this->input->post('ajax') != '1'){
+            redirect('cart'); // If javascript is not enabled, reload the page with new data
+        }else{
+            echo 'true'; // If javascript is enabled, return true, so the cart gets updated
+        }
+    }
+     
+}
+	    
 
-
-
-	}	        
+	}
+	        
+>>>>>>> origin/miza
 ?>

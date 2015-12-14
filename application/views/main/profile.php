@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><html lang="en" class="no-js"> <![endif]-->
 <html lang="en">
@@ -89,19 +89,24 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" style= "margin-top:0px;" href="<?php echo site_url('huhu/haha'); ?>"><img style="margin-left:-109px; margin-top:-17px; width:340px; height:79px;" src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="230px" height="79px"></a>
+              <a class="navbar-brand" style= "margin-top:0px;" href="<?php echo site_url('huhu/haha'); ?>"><img style="margin-left:-108px; margin-top:-14px; width:298px; height:65px;" src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="190px" height="65px"></a>
             </div>
       
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <div class="button navbar-right" style="margin-right:-120px;">
+              <div class="button navbar-right" style="margin-right:-146px;">
                  <!--a href="<?php echo site_url('main/page/signin');?>"><button class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s">Sign In</button></a>
                  <a href="<?php echo site_url('main/page/signup');?>"><button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Sign Up</button></a>-->
               <ul class="main-nav nav navbar-nav navbar-right" style="margin-top:-15px;">
                 <br>
-                <li class="wow fadeInDown" data-wow-delay="0s"><a href="<?php echo site_url('main/page/main_2');?>">Home</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/souqshop');?>">Shops</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/profile');?>">Profile</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0s"><a href="<?php echo site_url('main/page/main_2');?>">Home</a></li>
+<<<<<<< HEAD
+                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/souqshop');?>">Shops</a></li>
+=======
+                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/productlist');?>">Shops</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/profile');?>">Profile</a></li>
+>>>>>>> origin/miza
                 <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="<?php echo site_url('member/page/dashboard');?>">Dashboard</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="<?php echo site_url('main/page/cart');?>">Cart</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="<?php echo site_url('main');?>">Logout</a></li>
@@ -349,13 +354,13 @@
 <!-- timeline profile picture -->
   <div id="timelineContainer">
   <div id="timelineProfilePic">
-  <img class="img-circle" src="<?php echo base_url();?>assets/hanis/images/arash.jpg" class="bgImage" style="margin-top:0px;">
+  <img class="img-circle" src="<?php echo base_url();?>assets/hanis/images/avatar.png" class="bgImage" style="margin-top:0px;">
   <form id="bgimageform" method="post" enctype="multipart/form-data" action="image_upload_ajax_bg.php">
   <div class="uploadFile timelineUploadBG"></div>
   </form>
   </div>
   <!-- timeline title -->
-    <div id="timelineTitle">Arash Rashidi</div>
+    <div id="timelineTitle">Maizeaitulnasira</div>
 </div>
   
 
@@ -370,7 +375,7 @@
 
         <!-- Start Recent Projects Carousel -->
   
-        <div class="recent-projects" style="padding-left:120px; text-align:center;">
+        <div class="recent-projects" style="padding-left:60px; text-align:center;">
           <br><h4 class="title"><span>My Products</span></h4></br>
           <div class="projects-carousel touch-carousel">
 
@@ -484,16 +489,17 @@
  
         </div>
     </div>
+
         <!-- End Recent Projects Carousel -->
 
-       
+        
               <!-- Classic Heading -->
-              <br><br><h4 class="classic-title" style="padding-left:120px; text-align:center;"><span>Our Clients</span></h4></br></br>
+              <br><br><h4 class="classic-title" style="padding-left:60px; text-align:center;"><span>Our Clients</span></h4></br></br>
 
-              <div class="clients-carousel custom-carousel touch-carousel" data-appeared-items="4">
+              <div class="clients-carousel custom-carousel touch-carousel" data-appeared-items="4" >
 
                 <!-- Client 1 -->
-                <div class="client-item item">
+                <div class="client-item item" >
                   <a href="#"><img src="<?php echo base_url();?>assets/hanis/images/anot.png" alt="" /></a>
                 </div>
 
@@ -596,18 +602,18 @@
         <!-- .row -->
 
         <!-- Start Copyright -->
-        <div class="copyright-section">
+        <div class="copyright-section" >
           <!--div class="row">-->
             <div class="col-md-5">
-              <p>Pisang Sdn Bhd. All Rights Reserved <a href="#"></a> </p>
+              <p >Pisang Sdn Bhd. All Rights Reserved <a href="#"></a> </p>
             </div>
-            <!--div class="col-md-6">
+            <div class="col-md-6">
               <ul class="footer-nav">
                 <li><a href="#">Sitemap</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Contact</a></li>
               </ul>
-            </div>-->
+            </div>
           </div>
         </div>
         <!-- End Copyright -->
