@@ -94,7 +94,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" style="margin-top:-12px;" href="#"><img src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="190px" height="65px" margin-bottom:"25px"></a>
+              <a class="navbar-brand" style="margin-top:-15px;" href="#"><img src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="190px" height="65px" margin-bottom:"25px"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -107,7 +107,7 @@
                  <!--a href="<?php echo site_url('main/page/cart');?>"><button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Cart</button></a-->
              <ul class="main-nav nav navbar-nav navbar-right" style="margin-top:-15px">
                 <li class="wow fadeInDown" data-wow-delay="0s"><a href="<?php echo site_url('main/page/main_2');?>">Home</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/souqshop');?>">Shops</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/productlist');?>">Shops</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/profile');?>">Profile</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="<?php echo site_url('member/page/dashboard');?>">Dashboard</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="<?php echo site_url('main/page/cart');?>">Cart</a></li>

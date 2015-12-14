@@ -9,7 +9,7 @@
                          <li class="wow fadeInDown" data-wow-delay="0s"><a href="<?php echo site_url('main/page/main_2');?>"><i class="fa fa-home"></i>Home</a></li>
                     </li>
                     <li>
-                        <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/souqshop');?>"><i class="fa fa-dashboard"></i>Shops</a></li>
+                        <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/productlist');?>"><i class="fa fa-dashboard"></i>Shops</a></li>
                     </li>
                      
                     <li>
