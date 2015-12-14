@@ -11,27 +11,18 @@
 	        $this->load->model('m_user');
 	        $this->load->helper('url');
 	        $this->load->library('session');
-<<<<<<< HEAD
 	        $this->load->library('form_validation');
 
 	        // Load database
-   	         $this->load->model('login_database');
-=======
-	       $this->load->model('m_cart');
+   	        $this->load->model('login_database');
+	        $this->load->model('m_cart');
 			$this->load->model('m_item');
 			 // Load the cart library to use it.
-   			 $this->load->library('cart');
-   			 
->>>>>>> origin/miza
-
+   			$this->load->library('cart');
 	    }
 	
 	    function index() {
 	        $this->_display();
-<<<<<<< HEAD
-=======
-	         
-
 	        /*$session = $this->session->userdata('isLogin');  
 	        if($session == FALSE)  
 	        {  
@@ -39,9 +30,6 @@
 	    	}else{ 
 	    		redirect('main');  
 	    	}*/
-
-
->>>>>>> origin/miza
 
 	       /*$verificationCode = random_string('alnum', 20);  
                   
@@ -110,8 +98,6 @@
 	    			$data['products'] = $temp;
 	    			/*print_r($temp);*/
 	    			break;
-
-<<<<<<< HEAD
 	    		case 'z1':
 	    			$arr = $this->input->get();	    			
 	    			$this->load->model('m_item');
@@ -146,9 +132,7 @@
 	    			break;
 
 				case 'z4':
-=======
 	    		case 'x1':
->>>>>>> origin/miza
 	    			$arr = $this->input->get();	    			
 	    			$this->load->model('m_item');
 	    			$arr1 = array(
@@ -158,8 +142,6 @@
 	    			$data['products'] = $temp;
 	    			/*print_r($temp);*/
 	    			break;
-
-<<<<<<< HEAD
 	    		case 'z5':
 	    			$arr = $this->input->get();	    			
 	    			$this->load->model('m_item');
@@ -170,10 +152,6 @@
 	    			$data['products'] = $temp;
 	    			/*print_r($temp);*/
 	    			break;
-
-
-=======
->>>>>>> origin/miza
 	    	    case '4':
 	    	    //sign up process
 	    	    	$arr =  $this->input->post();
@@ -190,9 +168,6 @@
 	    	    case '5':
 	    	    	$data['error'] = true;
 	    	    	break;
-<<<<<<< HEAD
-=======
-
 		    	case '6':
 		    		$post = $this->input->post();
 		    		$temp = array(
@@ -227,8 +202,6 @@
 	    	    	$this->load->model('m_user');
 	    	    	$this->m_user->insert($temp);
 	    	    	break;
-
->>>>>>> origin/miza
 	    	    case 'x2':
 	    			$arr = $this->input->get();	    			
 	    			$this->load->model('m_user');
@@ -388,7 +361,6 @@
 			$this->load->view('main/testoutput', $data)*/
 			/**
 			*/
-<<<<<<< HEAD
 
 			$data = null;
 	        switch ($process) 
@@ -409,9 +381,6 @@
 
 			/*$data['arr'] = $this->m_item->get_search($temp,"cat_shoes");
 			$this->load->view('main/testoutput', $data)*/
-=======
->>>>>>> origin/miza
-			
 			$data = null;
 	        switch ($process) 
 	        {
@@ -633,12 +602,8 @@
 	        $data['products'] = $this->Products_model->get_all2();
 	       	echo "<pre>";
 			print_r($data['products']);
-<<<<<<< HEAD
 	        /*$this->load->view('products',$data);
-	  }*/
-
-}
-	        
+	  }*/       
 	        /*$this->load->view('main/products',$data);*/
 	 	}//tutup keluarkan semua item
 
@@ -662,6 +627,25 @@
 	   	}
 	   }*/
 
+
+	    function trying()
+		{
+	
+	    $data['products'] = $this->m_cart->get_semua(); // Retrieve an array with all products
+	   	/*echo "<pre>";
+	    print_r($data['products']); // Print out the array to see if it works (Remove this line when done testing)*/
+	     $data['content'] = 'testcart1/products';// Select our view file that will display our products
+	    $this->load->view('testcart', $data); // Display the page with the above defined content
+
+	    $this->load->model('M_fashion');
+	       
+	    $data['products'] = $this->M_fashion->get_fashionx1();
+	      /*echo "<pre>";
+			print_r($data['products']);*/
+	    $this->load->view('main/souqshop1',$data);
+	 	}//tutup keluarkan semua item
+
+
 	   function shoplist()
 	 	{
 
@@ -676,28 +660,15 @@
 //ini semua function utk fashion category
 	 	function fashionx1()
 	 	{
-=======
-	    }
 
-	    function trying()
-	{
-	
-    $data['products'] = $this->m_cart->get_semua(); // Retrieve an array with all products
-   	/*echo "<pre>";
-    print_r($data['products']); // Print out the array to see if it works (Remove this line when done testing)*/
-     $data['content'] = 'testcart1/products';// Select our view file that will display our products
-    $this->load->view('testcart', $data); // Display the page with the above defined content
->>>>>>> origin/miza
-
-	        $this->load->model('M_fashion');
+	 		$this->load->model('M_fashion');
 	       
 	        $data['products'] = $this->M_fashion->get_fashionx1();
-	      /*echo "<pre>";
+	      	/*echo "<pre>";
 			print_r($data['products']);*/
-	       $this->load->view('main/souqshop1',$data);
-	 	}//tutup keluarkan semua item
+	        $this->load->view('main/souqshop1',$data);
+	    }
 
-<<<<<<< HEAD
 		function fashionx2()
 	 	{
 
@@ -956,7 +927,6 @@
 			print_r($data['products']);*/
 	       $this->load->view('main/souqshop6',$data);
 	 	}//tutup keluarkan semua item	        
-=======
 	function add_cart_item(){
      
     if($this->m_cart->validate_add_cart_item() == TRUE){
@@ -970,9 +940,5 @@
     }
      
 }
-	    
-
-	}
-	        
->>>>>>> origin/miza
+}
 ?>

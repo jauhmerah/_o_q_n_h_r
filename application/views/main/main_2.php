@@ -28,10 +28,8 @@
         <link rel="stylesheet" href="<?php echo base_url();?>assets/css/owl.transitions.css">
         <link rel="stylesheet" href="<?php echo base_url();?>assets/style.css">
         <link rel="stylesheet" href="<?php echo base_url();?>assets/responsive.css">
-<<<<<<< HEAD
         <script src="<?php echo base_url();?>assets/js/vendor/modernizr-2.6.2.min.js"></script>
-=======
-         <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
             <script type="text/javascript">
 
   function checkForm(form)
@@ -51,8 +49,6 @@
    }
     
 </script>
-	
->>>>>>> origin/miza
     </head>
     <body>
 
@@ -98,7 +94,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" style="margin-top:-12px;" href="#"><img src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="190px" height="65px" margin-bottom:"25px"></a>
+              <a class="navbar-brand" style="margin-top:-15px;" href="#"><img src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="190px" height="65px" margin-bottom:"25px"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -109,18 +105,10 @@
                  <a href="<?php echo site_url('main/page/signin');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Sign In</button></a>
                  <a href="<?php echo site_url('main/page/signup');?>"><button class="navbar-btn nav-button " data-wow-delay="0.6s">Sign Up</button></a>
                  <!--a href="<?php echo site_url('main/page/cart');?>"><button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Cart</button></a-->
-              <ul class="main-nav nav navbar-nav navbar-right" style="margin-top:-15px;">
-                <!--li>
-                    <?php echo "<BR>Welcome, <b id='welcome'><i>" . $username . "</i></b><BR><BR>"; ?>    
-                </li-->
-                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/profile');?>">Profile</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="<?php echo site_url('main/page/main_2');?>">Home</a></li>
-<<<<<<< HEAD
-                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/souqshop');?>">Shops</a></li>
-=======
+             <ul class="main-nav nav navbar-nav navbar-right" style="margin-top:-15px">
+                <li class="wow fadeInDown" data-wow-delay="0s"><a href="<?php echo site_url('main/page/main_2');?>">Home</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/productlist');?>">Shops</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/profile');?>">Profile</a></li>
->>>>>>> origin/miza
                 <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="<?php echo site_url('member/page/dashboard');?>">Dashboard</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="<?php echo site_url('main/page/cart');?>">Cart</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="<?php echo site_url('main');?>">Logout</a></li>
@@ -132,55 +120,26 @@
          <div class="slider-area">
             <div class="slider">
                 <div id="bg-slider" class="owl-carousel owl-theme">
-<<<<<<< HEAD
                  
                   <div class="item"><img src="<?php echo base_url()?>assets/img/slider-image-5.jpg" alt="Mirror Edge"></div>
                   <div class="item"><img src="<?php echo base_url()?>assets/img/slider-image-8.jpg" alt="The Last of us"></div>
                   <div class="item"><img src="<?php echo base_url()?>assets/img/slider-image-10.jpg" alt="GTA V"></div>
-=======
-                  
-                  <div class="item"><img  src="<?php echo base_url();?>assets/img/slider-image-5.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >"I will not sell defective goods. I feel satisfied with my little profit because I know Allah will bless me."
-                   <p><h3 style="font-style:gisha;text-align:center;">(Abdul Rahman bin Auf)</h3></p> </div></div>
-				   
-				  <div class="item"><img  src="<?php echo base_url();?>assets/img/slider-image-10.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Buy and Sell with Souq Anshar!
-                   <p><h3 style="font-style:gisha;text-align:center;">Your First Dinar and Dirham Marketplace.</h3></p> </div></div>
-
-                   <div class="item"><img  src="<?php echo base_url();?>assets/img/slider-image-8.jpg" alt="Mirror Edge"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:25px; font-weight:600; text-align:center;" class = "col-md-8 col-md-offset-2" >Syariah Compliant Marketplace
-                   <p><h3 style="font-style:gisha;text-align:center;">Use muamalah system that meets the syariah law.</h3></p> </div></div>
-                   
-                    
-                  <!--div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-10.jpg" alt="The Last of us"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:40px; font-weight:800; text-align:center; " class = "col-md-8 col-md-offset-2" >Buy & Sell with Souq Anshar!
-                   <p><h4 style="font-style:gisha;text-align:center; font-size:29px; font-weight:600px;">Your First Dinar and Dirham Marketplace</h4> </p> </div></div>
-				   
-				   
-                  <div class="item"><img src="<?php echo base_url();?>assets/img/slider-image-9.jpg" alt="GTA V"><div style="margin-top:-480px; color:#fff; font-style:gisha; font-size:40px; font-weight:800; text-align:center; " class = "col-md-8 col-md-offset-2" > Shop Anytime and Anywhere with Souq Anshar!
-                   <!--p><h3 style="font-style:gisha;text-align:center;">Your First Dinarhgfghfghg Marketplace</h3></p> </div></div>-->
->>>>>>> origin/miza
-                 
                 </div>
             </div>
             <div class="container slider-content">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
                         <h2>Buy & Sell with Souq Anshar!</h2>
-<<<<<<< HEAD
                         <p>Your First Dinar Dirham Marketplace that Use Muamalah System that Meets the Syariah Laws</p>
                        
 
-                        <div class="search-form wow pulse" data-wow-delay="0.8s">
-                            <form action= "<?php echo site_url('main/search');?>" method= "post" class=" form-inline">
+                          <div class="search-form wow pulse" data-wow-delay="0.8s">
+                            <form action= "<?php echo site_url('main/search');?>" method= "post" class=" form-inline "onsubmit="return checkForm(this)">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="What are you looking for?">
-=======
-                        <p>Your First Dinar Marketplace</p>-->
-                        <div class="search-form wow pulse" data-wow-delay="0.8s" style="width:700px; margin:0 auto;" >
-                            <form action= "<?php echo site_url('main/search');?>" method= "post" class=" form-inline" onsubmit="return checkForm(this)">
-                                <div class="form-group" >
-                                    <input type="text" name= "itemname" class="form-control" placeholder="What are you looking for?" style="width:310px;">
->>>>>>> origin/miza
+                                    <input id="itemname" type="text" name= "itemname" class="form-control" placeholder="What are you looking for?">
                                 </div>
                                 <div class="form-group">
-                                    <select name="sub_cat" id="" class="form-control">
+                                    <select name="sub_cat" id="sub_cat" class="form-control">
                                       
                                         <option selected>Select Your Category</option>
                                         <!--<option selected>All</option>-->                                      

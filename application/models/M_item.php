@@ -107,7 +107,7 @@ class M_item extends CI_Model {
         {
 
             return false;
-<<<<<<< HEAD
+
         }
         
           
@@ -126,9 +126,9 @@ class M_item extends CI_Model {
 
 
    
-=======
-        }         
-    } 
+
+                
+     
 
      
 
@@ -195,7 +195,7 @@ class M_item extends CI_Model {
      {
         $this->db->insert('order_detail', $data);
      }//tutup function utk cart & checkout page
->>>>>>> origin/miza
+
 }
 
 ?>

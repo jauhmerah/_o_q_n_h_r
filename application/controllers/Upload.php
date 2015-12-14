@@ -1,5 +1,5 @@
 <?php
-<<<<<<< HEAD
+
 class Upload extends CI_Controller {
 function __construct()
 {
@@ -58,7 +58,7 @@ $this->load->library('image_lib', $config);
 $this->image_lib->resize();
 }
 }
-=======
+
 
 class Upload extends CI_Controller {
 
@@ -98,4 +98,4 @@ class Upload extends CI_Controller {
 	}
 }
 ?>
->>>>>>> origin/anis_pro_process
+
