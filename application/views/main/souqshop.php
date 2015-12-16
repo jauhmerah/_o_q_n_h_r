@@ -26,26 +26,23 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
-            <script type="text/javascript">
-
-  function checkForm(form)
-  {
-   
+    <script type="text/javascript">
+    function checkForm(form)
+    {
     if(form.itemname.value == "")
-     {
+    {
       alert(" Please enter items that you are looking for");
       form.itemname.focus();
       return false;
-     }
+    }
     if(form.sub_cat.value == "Select Your Category")
-     {
+    {
       alert(" Please choose your category");
       form.sub_cat.focus();
       return false;
-     }
-
-  }   
-</script>
+    }
+  	}   
+    </script>
 
 </head><!--/head-->
 
@@ -61,19 +58,19 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" style= "margin-top:-2px; margin-left:-15px;" href="<?php echo site_url('main/page/main_2'); ?>"><img src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="190px" height="65px" margin-bottom:"25px"></a>
+              <a class="navbar-brand" style= "margin-top:-2px;" href="<?php echo site_url('huhu/haha'); ?>"><img src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="190px" height="65px" margin-bottom:"25px"></a>
             </div>
 
 			
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <div class="button navbar-right" style= "margin-right:0px;" >
+              <div class="button navbar-right" >
                  <!--a href="<?php echo site_url('main/page/signin');?>"><button class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s">Sign In</button></a>
                  <a href="<?php echo site_url('main/page/signup');?>"><button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Sign Up</button></a>-->
               <ul class="main-nav nav navbar-nav navbar-right">
               	<br>
-              	<li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/main_2');?>">Home</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0s"><a href="<?php echo site_url('main/productlist');?>">Shops</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="<?php echo site_url('main/page/main_2');?>">Home</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/productlist');?>">Shops</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/profile');?>">Profile</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="<?php echo site_url('member/page/dashboard');?>">Dashboard</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="<?php echo site_url('main/page/cart');?>">Cart</a></li>
@@ -89,7 +86,7 @@
 		<div class="header-bottom"><!--header-bottom-->
 			<div class="container" >
 				<div class="row">
-					<div class="col-sm-12" style="margin-left:0px;">                       
+					<div class="col-sm-12">                       
                             <form action= "<?php echo site_url('main/search');?>" method= "post" class=" form-inline"  onsubmit="return checkForm(this)" style="margin-left:50px; margin-top:30px;" >
                                 <div class="form-group " >
                                     <input id="itemname" type="text" name= "itemname" class="form-control" placeholder="What are you looking for?" style="width:200px; margin-top:"100px;"">
@@ -106,8 +103,7 @@
                                 </div>
                                 <input id="buttonCheck" type="submit" name= "action"class="btn" value="Search" style="width:100px; margin:0 auto; background-color:#ffa300;">
                                 </div>
-                            </form>
-                       
+                            </form>                      
 					</div>
 				</div>
 			</div>
@@ -120,7 +116,7 @@
 			<div class="row">
 				<div class="col-sm-3">
 					<div class="left-sidebar">
-					<br>	<h2>Category</h2> </br>
+						<h2>Category</h2> 
 						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
 							<div class="panel panel-default">
 								<div class="panel-heading">
@@ -250,42 +246,14 @@
 								</div>-->
 							</div>
 							<br></br>
-						</div><!--/category-product-->
-					
-						<!--<div class="brands_products">--><!--brands_products-->
-							<!--<h2>Brands</h2>
-							<div class="brands-name">
-								<ul class="nav nav-pills nav-stacked">
-									<li><a href=""> <span class="pull-right">(50)</span>Acne</a></li>
-									<li><a href=""> <span class="pull-right">(56)</span>Grüne Erde</a></li>
-									<li><a href=""> <span class="pull-right">(27)</span>Albiro</a></li>
-									<li><a href=""> <span class="pull-right">(32)</span>Ronhill</a></li>
-									<li><a href=""> <span class="pull-right">(5)</span>Oddmolly</a></li>
-									<li><a href=""> <span class="pull-right">(9)</span>Boudestijn</a></li>
-									<li><a href=""> <span class="pull-right">(4)</span>Rösch creative culture</a></li>
-								</ul>
-							</div>
-						</div>--><!--/brands_products-->
-						
-						<!--div class="price-range"><!--price-range-->
-							<!--h2>Price Range</h2>
-							<div class="well">
-								 <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="600" data-slider-step="5" data-slider-value="[250,450]" id="sl2" ><br />
-								 <b>$ 0</b> <b class="pull-right">$ 600</b>
-							</div>
-						</div><!--/price-range-->
-						
-						<!--div class="shipping text-center"><!--shipping-->
-							<!--img src="images/home/shipping.jpg" alt="" />
-						</div><!--/shipping-->
-						
+						</div><!--/category-product-->						
 					</div>
 				</div>
 				
 
 				<div class="col-sm-9 padding-right">
 					<div class="features_items">
-					<br>	<h2 class="title text-center">All Items</h2> </br>
+						<h2 class="title text-center">All Items</h2>
 					<?php
 					if(sizeof($products)==0)
 					{
@@ -297,27 +265,48 @@
 								<div class="single-products">
 									<div class="productinfo text-center">
 										<img src="<?php echo base_url();?>assets/anot/images/souq/gincu1.jpg" alt="" />
-										<h2><?php echo $data->dinar_price?></h2>
-										<h2>(MYR <?php echo $data->item_price?>)</h2>
-										<p><?php echo $data->item_name?></p>								
+										<h2><?php echo $data->dinar_price?> Dinar</h2>
+										<h2><?php echo $data->dirham_price?> Dirham</h2>
+										<h2>(MYR <?php echo $data->item_price?>)</h2>										
+										<p><?php echo $data->item_name?></p>
 										<!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
 									</div>
 									<div class="product-overlay">
-										<div class="overlay-content" style="background:#ffa300">			
-										<h2><?php echo $data->dinar_price?></h2>
-										<h2>(MYR <?php echo $data->item_price?>)</h2>
+										<div class="overlay-content" style="background:#ffa300">											
+											<h2><?php echo $data->dinar_price?> Dinar</h2>
+											<h2><?php echo $data->dirham_price?> Dirham</h2>
+											<h2>(MYR <?php echo $data->item_price?>)</h2>	
 											<p><?php echo $data->item_name?></p>
-											<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.$table); ?>">View</p> 
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.$table); ?>">View</p>									
+											<!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
+											<?php
+                        
+					                        // Create form and send values in 'shopping/add' function.
+					                        echo form_open('main/add');
+					                        echo form_hidden('id', $data->item_id);
+					                        echo form_hidden('name', $data->item_name);
+					                        echo form_hidden('price', $data->item_price);
+					                        echo form_hidden('dinar_price', $data->dinar_price);
+					                        echo form_hidden('dirham_price', $data->dirham_price);						                       				                        
+				                        ?> 
+				                    	<div id='add_button'>
+				                        <?php
+				                        $btn = array(
+				                            'class' => 'btn btn-default add-to-cart',
+				                            'value' => 'Add to Cart',
+				                            'style' => 'background-color:#ffffff',
+				                            'name' => 'action'
+				                        );
+				                        
+				                        // Submit Button.
+				                        echo form_submit($btn);
+				                        echo form_close();
+				                        ?>
 										</div>
+										</div> 
 									</div>
 								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
-								</div>
+								
 							</div>
 						</div>
 						

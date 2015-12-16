@@ -121,9 +121,9 @@
             <div class="slider">
                 <div id="bg-slider" class="owl-carousel owl-theme">
                  
-                  <div class="item"><img src="<?php echo base_url()?>assets/img/slider-image-5.jpg" alt="Mirror Edge"></div>
-                  <div class="item"><img src="<?php echo base_url()?>assets/img/slider-image-8.jpg" alt="The Last of us"></div>
-                  <div class="item"><img src="<?php echo base_url()?>assets/img/slider-image-10.jpg" alt="GTA V"></div>
+                  <div class="item"><img src="<?php echo base_url()?>assets/img/mar.jpg" alt="Mirror Edge"></div>
+                  <div class="item"><img src="<?php echo base_url()?>assets/img/slider-image-6.jpg" alt="The Last of us"></div>
+                  <div class="item"><img src="<?php echo base_url()?>assets/img/slider-image-5.jpg" alt="GTA V"></div>
                 </div>
             </div>
             <div class="container slider-content">

@@ -112,8 +112,9 @@ class M_item extends CI_Model {
         
           
     } 
-        function get_shop()
-     {
+
+    function get_shop()
+    {
         $this->db->select('*');
         $this->db->from('cat_fashion');
         $this->db->where('sub_id=9');
@@ -122,56 +123,49 @@ class M_item extends CI_Model {
         $results = $this->db->get()->result();
         return $results;
            
-     }   
-
-
-   
-
-                
-     
-
+    }   
      
 
     //keluarkan semua item page souqshop2
-      function get_allz1()
-     {
+    function get_allz1()
+    {
         $this->db->select("*");
         $this->db->from('cat_fashion');       
         $results = $this->db->get()->result();
         return $results;          
-     }  
+    }  
 
-      function get_allz2()
-     {
+    function get_allz2()
+    {
         $this->db->select("*");
         $this->db->from('cat_electronics');        
         $results = $this->db->get()->result();
         return $results;          
-     }  
+    }  
 
-     function get_allz3()
-     {
+    function get_allz3()
+    {
         $this->db->select("*");
         $this->db->from('cat_travel');        
         $results = $this->db->get()->result();
         return $results;          
-     } 
+    } 
 
-     function get_allz4()
-     {
+    function get_allz4()
+    {
         $this->db->select("*");
         $this->db->from('cat_automotive');        
         $results = $this->db->get()->result();
         return $results;          
-     } 
+    } 
 
-     function get_allz5()
-     {
+    function get_allz5()
+    {
         $this->db->select("*");
         $this->db->from('cat_business');        
         $results = $this->db->get()->result();
         return $results;          
-     }//tutup keluarkan semua item page souqshop2
+    }//tutup keluarkan semua item page souqshop2
 
      //function utk cart & checkout page
      // Insert buyer details in "sa_buyer" table in database.
@@ -182,6 +176,7 @@ class M_item extends CI_Model {
         return (isset($id)) ? $id : FALSE;      
      }
 
+     //function untuk cart page and checkout
      // Insert order date with buyer id in "sa_order" table in database.
      public function insert_order($data)
      {
