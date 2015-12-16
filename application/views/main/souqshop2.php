@@ -503,6 +503,7 @@
 					                        echo form_hidden('name', $data->item_name);
 					                        echo form_hidden('price', $data->item_price);
 					                       	echo form_hidden('dinar_price', $data->dinar_price);
+					                       	echo form_hidden('dirham_price', $data->dirham_price);
 				                        
 					                        ?> 
 					                    	<div id='add_button'>
