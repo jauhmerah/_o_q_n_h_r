@@ -31,49 +31,44 @@
 
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-default">
-          <div style="background:#000; height:100px;">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header" >
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" style= "margin-top:0px;" href="<?php echo site_url('huhu/haha'); ?>"><img style="margin-left:90px; margin-top:-10px; width:190px; height:65px;" src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="190px" height="65px" margin-bottom="25px"></a>
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" style="margin-top:-32px;" href="<?php echo site_url('main/page/main_2');?>"><img src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="190px" height="65px" margin-bottom:"25px"></a>
             </div>
-      
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <div class="button navbar-right" style= "margin-right:145px;" >
-                 <!--a href="<?php echo site_url('main/page/signin');?>"><button class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s">Sign In</button></a>
-                 <a href="<?php echo site_url('main/page/signup');?>"><button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Sign Up</button></a>-->
-              <ul class="main-nav nav navbar-nav navbar-right">
-                <br>
-                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/main_2');?>">Home</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0s"><a href="<?php echo site_url('main/productlist');?>">Shops</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/profile');?>">Profile</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="<?php echo site_url('member/page/dashboard');?>">Dashboard</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="<?php echo site_url('main/page/cart');?>">Cart</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="<?php echo site_url('main');?>">Logout</a></li>
-                
-              </ul>
-              
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
+                <ul class="nav navbar-nav navbar-right" style= "margin-right:40px; margin-top:-5px">
+                    <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/main_2');?>">Home</a></li>
+                    <li class="wow fadeInDown" data-wow-delay="0s"><a href="<?php echo site_url('main/productlist');?>">Shops</a></li>
+                    <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/profile');?>">Profile</a></li>
+                    <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="<?php echo site_url('member/page/dashboard');?>">Dashboard</a></li>
+                    <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="<?php echo site_url('main/page/cart');?>">Cart</a></li>
+                    <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="<?php echo site_url('main');?>">Logout</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
     <!-- Header -->
     <header>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="<?php echo base_url();?>assets/nas/img/profile.png" alt="">
+                    <img class="img-responsive" src="<?php echo base_url();?>assets/nas/img/profile.png" alt="" width="255px" height="255px">
                     <div class="intro-text">
-                        <span class="name">Start Bootstrap</span>
-                        <hr class="star-light">
+                        <span class="name">Maizeaitul Nasira</span>
+                        <!--hr class="star-light"-->
                         <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
                     </div>
                 </div>
@@ -82,81 +77,104 @@
     </header>
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio">
+        <section id="portfolio">
         <div class="container">
-            <div class="row">
+            <div class="row" style="margin-top:-100px">
                 <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
+                    <h2>My Product</h2>
                     <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                <div class="col-sm-4">
+                            <div class="product-image-wrapper">
+                                <div class="single-products">
+                                    <div class="productinfo text-center">
+                                        <img style="margin-top:50px" src="<?php echo base_url();?>assets/nas/img/portfolio/applemac.jpg" alt="" height="255px" width="255px"><br>
+                                        <br></br>
+                                        <h2>Macbook Pro</h2>
+                                        <h2>3 Dirham</h2>
+                                        <h2>RM 40</h2>
+                                        <h5>View</h5>
+                                    </div>
                             </div>
                         </div>
-                        <img src="<?php echo base_url();?>assets/nas/img/portfolio/cabin.png" class="img-responsive" alt="">
-                    </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                <div class="col-sm-4">
+                            <div class="product-image-wrapper">
+                                <div class="single-products">
+                                    <div class="productinfo text-center">
+                                        <img style="margin-top:50px" src="<?php echo base_url();?>assets/nas/img/portfolio/bag.jpg" alt="" height="255px" width="255px"><br>
+                                        <br></br>
+                                        <h2>Luggage Bag</h2>
+                                        <h2>1 Dinar</h2>
+                                        <h2>RM 800</h2>
+                                        <h5>View</h5>
+                                    </div>
                             </div>
                         </div>
-                        <img src="<?php echo base_url();?>assets/nas/img/portfolio/cake.png" class="img-responsive" alt="">
-                    </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                <div class="col-sm-4">
+                            <div class="product-image-wrapper">
+                                <div class="single-products">
+                                    <div class="productinfo text-center">
+                                        <img style="margin-top:50px" src="<?php echo base_url();?>assets/nas/img/portfolio/coffee maker2.jpg" alt="" height="255px" width="255px"><br>
+                                        <br></br>
+                                        <h2>Coffee Maker</h2>
+                                        <h2>2 Dinar</h2>
+                                        <h2>RM 1600</h2>
+                                        <h5>View</h5>
+                                    </div>
                             </div>
                         </div>
-                        <img src="<?php echo base_url();?>assets/nas/img/portfolio/circus.png" class="img-responsive" alt="">
-                    </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                <div class="col-sm-4">
+                            <div class="product-image-wrapper">
+                                <div class="single-products">
+                                    <div class="productinfo text-center">
+                                        <img style="margin-top:50px" src="<?php echo base_url();?>assets/nas/img/portfolio/dress.jpg" alt="" height="255px" width="255px"><br>
+                                        <br></br>
+                                        <h2>Dress</h2>
+                                        <h2>3 Dirham</h2>
+                                        <h2>RM 45</h2>
+                                        <h5>View</h5>
+                                    </div>
                             </div>
                         </div>
-                        <img src="<?php echo base_url();?>assets/nas/img/portfolio/game.png" class="img-responsive" alt="">
-                    </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                <div class="col-sm-4">
+                            <div class="product-image-wrapper">
+                                <div class="single-products">
+                                    <div class="productinfo text-center">
+                                        <img style="margin-top:50px" src="<?php echo base_url();?>assets/nas/img/portfolio/gincu1.jpg" alt="" height="255px" width="255px"><br>
+                                        <br></br>
+                                        <h2>Simplysiti Lipstick</h2>
+                                        <h2>2 Dirham</h2>
+                                        <h2>RM 30</h2>
+                                        <h5>View</h5> 
+                                    </div>
                             </div>
                         </div>
-                        <img src="<?php echo base_url();?>assets/nas/img/portfolio/safe.png" class="img-responsive" alt="">
-                    </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                <div class="col-sm-4">
+                            <div class="product-image-wrapper">
+                                <div class="single-products">
+                                    <div class="productinfo text-center">
+                                        <img style="margin-top:50px" src="<?php echo base_url();?>assets/nas/img/portfolio/coffee.jpg" alt="" height="255px" width="255px"><br>
+                                        <br></br>
+                                        <h2>Coffee Maker</h2>
+                                        <h2>2 Dinar</h2>
+                                        <h2>RM 1500</h2>
+                                        <h5>View</h5>
+                                    </div>
                             </div>
                         </div>
-                        <img src="<?php echo base_url();?>assets/nas/img/portfolio/submarine.png" class="img-responsive" alt="">
-                    </a>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- About Section -->
-    <section class="success" id="about">
+    <!--section class="success" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -178,10 +196,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section-->
 
     <!-- Contact Section -->
-    <section id="contact">
+    <!--section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -190,10 +208,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
+                <div class="col-lg-8 col-lg-offset-2"-->
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <!--form name="sentMessage" id="contactForm" novalidate>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Name</label>
@@ -233,13 +251,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section-->
 
     <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
+    <footer class="text-center" style="background:#000; height:30px;">
+        <!--div class="footer-above"-->
+            <!--div class="container"-->
+                <!--div class="row">
                     <div class="footer-col col-md-4">
                         <h3>Location</h3>
                         <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
@@ -270,27 +288,27 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div-->
         <div class="footer-below">
-            <div class="container">
+            <!--div class="container"-->
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Your Website 2014
+                        Copyright &copy; Souqanshar.com 2015
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </footer-->
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll visible-xs visible-sm">
+    <!--div class="scroll-top page-scroll visible-xs visible-sm">
         <a class="btn btn-primary" href="#page-top">
             <i class="fa fa-chevron-up"></i>
         </a>
-    </div>
+    </div-->
 
     <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <!--div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -511,7 +529,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div-->
 
     <!-- jQuery -->
     <script src="<?php echo base_url();?>assets/nas/js/jquery.js"></script>
