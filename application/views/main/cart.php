@@ -207,7 +207,7 @@
 					<?php echo $item['name']; ?>
 					</td>
 					<td>
-					MYR <?php echo number_format($item['price'], 2); ?>
+					RM <?php echo number_format($item['price'], 2); ?>
 					</td>
 					<td>
 					<?php echo (int) ($item['dinar_price']);?> Dinar
@@ -289,7 +289,7 @@
 				
 				<div class="col-sm-6">
 					
-						 <img style="width:300px;height:300px;"src="<?php echo base_url();?>assets/miza-cart/images/home/earthlink-online-shopping-cart.jpg" alt="" />
+						 <img style="width:300px;height:300px;"src="<?php echo base_url();?>assets/miza-cart/images/earthlink-online-shopping-cart.jpg" alt="" />
 					
 				</div>
 			</div>
