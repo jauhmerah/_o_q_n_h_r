@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-		<title>Login registration forms Flat Widget Template :: w3layouts</title>
+		<title>Secure Checkout</title>
 		<meta charset="utf-8">
 		<link href="<?php echo base_url();?>assets/checklog/css/style.css" rel='stylesheet' type='text/css' />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,7 +46,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<a href="#" class="icon into"> </a>
 						<div class="clear"> </div>
 					</li> -->
-					<h1> Returning Customer</h1>
+
+					<h1 style="font-weight:600; color:#ffa300;"> Returning Customer</h1>
 					<br>
 					<label> You can proceed to checkout page. </label>
 					<br>
@@ -54,9 +55,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="clear"> </div>
 				</ul>
 				<ul class="right-form">
-					<h1>New Customer</h1>
+					<h1 style="font-weight:600; color:#ffa300;">New Customer</h1>
 					<br>
-					<label style="font-size:13px;"> Please create Souqanshar.com account to proceed your checkout.</label>
+					<label style="font-size:13px; font-color:#4C4A4A; font-weight:600;"> Please create Souqanshar.com account to proceed your checkout.</label>
 					<div>
 						<!--li><input type="text"  placeholder="Username" required/></li>
 						<li> <input type="password"  placeholder="Password" required/></li>

@@ -42,7 +42,7 @@ body{
 	padding:1.3em;
 }
 .header h1 {
-	color:#272727;
+	color:#ffa300;
 	font-weight:700;
 	font-size:22px;
 }
@@ -183,7 +183,7 @@ form{
   cursor: pointer;
 }
  input[type=submit]:hover {
- background:#2E2D2D;
+ background:#ffa300;
  color:#fff;
 
 }
@@ -227,7 +227,6 @@ form{
 	float:left;
 	vertical-align: super;
 	margin-left:10px;
-	color:#4C4A4A;
 	margin-top:2px;
 	font-weight: 600;
 }
