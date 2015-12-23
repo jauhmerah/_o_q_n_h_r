@@ -3,26 +3,26 @@
              <div class="row">
                       <div class="col-md-12">
                         <h1 class="page-header">
-                            Profile Update <small>*Update Your Profile Here*</small>
+                            Update Profile<small>*Update Your Profile Here*</small>
                         </h1>
                     </div>
                 </div> 
                  <!-- /. ROW  -->
 
-                <?php echo form_open_multipart('main/upload/do_upload');?>
+                <!--?php echo form_open_multipart('main/upload/do_upload');?>
                     <input type="file" name="userfile"/><br><br>
                     <input type="submit" name="submit" value="upload image">
                 </form>
 
           
 
-              <form role="form" action = "<?= site_url('member/page/profileupdate_db/5');?>" method = 'post'>
+              <form role="form" action = "<?= site_url('member/page/profileupdate_db/5');?>" method = 'post'-->
               <div class="row">
                 <div class="col-lg-12">
-                    <div class="panel panel-default">
+                    <!--div class="panel panel-default">
                         <div class="panel-heading">
                             Section: Basic Info
-                        </div>
+                        </div-->
                         <!--<div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-6">
@@ -109,7 +109,7 @@
                                         <br>
 
                                          <div class="col-sm-4">  <br> 
-                                           <input type="submit" class="btn btn-warning" style="background-color:#2DAADF" value="UPDATE"></input>
+                                           <input type="submit" class="btn btn-warning" style="background-color:#2DAADF; margin-top:-35px;" value="UPDATE"></input>
                                         </div>
                                         
                                       
@@ -120,7 +120,7 @@
                     </div>
                 </div>
                  <!-- /. PAGE INNER  -->
-             <footer><p>Pisang Sdn Bhd. All right reserved. <!--Template by: <a href="#"></a></p></footer>
+             <!--footer><p style="text-align:center;">Copyright &copy; Souqanshar.com 2015</p--> <!--Template by: <a href="#"></a></p></footer-->
         </div>
         <!-- /. PAGE WRAPPER  -->
 

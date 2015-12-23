@@ -70,7 +70,7 @@
               <div class="button navbar-right" style= "margin-right:0px;" >
                  <!--a href="<?php echo site_url('main/page/signin');?>"><button class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s">Sign In</button></a>
                  <a href="<?php echo site_url('main/page/signup');?>"><button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Sign Up</button></a>-->
-              <ul class="main-nav nav navbar-nav navbar-right">
+              <ul class="main-nav nav navbar-nav navbar-right" style= "margin-right:25px;">
               	<br>
               	<li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/main_2');?>">Home</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0s"><a href="<?php echo site_url('main/productlist');?>">Shops</a></li>
@@ -297,15 +297,15 @@
 								<div class="single-products">
 									<div class="productinfo text-center">
 										<img src="<?php echo base_url();?>assets/anot/images/souq/gincu1.jpg" alt="" />
-										<h2>RM <?php echo $data->item_price?></h2>
-										<h5>(<?php echo $data->dinar_price?>)</h5>
+										<h2><?php echo $data->dinar_price?></h2>
+										<h2>(MYR <?php echo $data->item_price?>)</h2>
 										<p><?php echo $data->item_name?></p>								
 										<!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content" style="background:#ffa300">			
-											<h2>RM <?php echo $data->item_price?></h2>
-											<h5>(<?php echo $data->dinar_price?>)</h5>
+										<h2><?php echo $data->dinar_price?></h2>
+										<h2>(MYR <?php echo $data->item_price?>)</h2>
 											<p><?php echo $data->item_name?></p>
 											<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.$table); ?>">View</p> 
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -338,10 +338,11 @@
 	
 	
 		
-		<div class="footer-bottom" style= "position:fixed; bottom:0px ; width:100%;">
-			<div class="container">
+		<div class="footer-bottom" style= "bottom:0px ; width:100%;">
+			<div class="container" style="background:#000; height:60px;">
 				<div class="row">
-					<p style="text-align:center;">Pisang Sdn Bhd, All rights reserved.</p>
+					<br>
+					<p style="text-align:center;">Copyright &copy; Souqanshar.com 2015</p>
 					
 				</div>
 			</div>

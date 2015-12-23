@@ -3,7 +3,7 @@
 			 <div class="row">
 			 	      <div class="col-md-12">
                         <h1 class="page-header">
-                            Change Profile Image
+                            Change Profile Picture
                         </h1>
                     </div>
                 </div> 
@@ -34,7 +34,7 @@
                     </div>
                 </div>
                  <!-- /. PAGE INNER  -->
-             <footer><p>Pisang Sdn Bhd. All right reserved. <!--Template by: <a href="#"></a></p></footer>
+             <!--footer><p>Pisang Sdn Bhd. All right reserved. <!--Template by: <a href="#"></a></p></footer-->
         </div>
         <!-- /. PAGE WRAPPER  -->
 

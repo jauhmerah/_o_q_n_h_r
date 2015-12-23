@@ -124,7 +124,7 @@
                     </div>
                 </div>
                  <!-- /. PAGE INNER  -->
-             <footer><p>Pisang Sdn Bhd. All right reserved. <!--Template by: <a href="#"></a></p></footer>
+             <!--footer><p>Pisang Sdn Bhd. All right reserved. <!--Template by: <a href="#"></a></p></footer-->
         </div>
         <!-- /. PAGE WRAPPER  -->
 

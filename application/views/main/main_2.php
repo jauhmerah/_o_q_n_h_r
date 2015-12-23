@@ -194,8 +194,8 @@
                 </div>
             </div>
 
-       <div class="footer-area">
-            <div class="container">
+      <div class="footer-area">
+            <div class="container" style="background:#000; height:50px;">
                 <!--div class="row footer">-->
                     <!--div class="col-md-4">
                     </div>
@@ -207,7 +207,8 @@
                     <!--div class="col-md-4">
                         <div class="single-footer">-->
                 <div class="row footer-copy">
-                    <p style="text-align:center;">Pisang Sdn Bhd, All rights reserved.</p>
+                    <br>
+                    <p style="text-align:center;">Copyright &copy; Souqanshar.com 2015</p>
                 </div>
             </div>
         </div>

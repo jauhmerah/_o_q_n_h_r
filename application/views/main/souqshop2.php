@@ -60,7 +60,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" style= "margin-top:-5px;" href="<?php echo site_url('main/page/main_2'); ?>"><img src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="190px" height="65px" margin-bottom="25px"></a>
+              <a class="navbar-brand" style= "margin-top:-2px;" href="<?php echo site_url('main/page/main_2'); ?>"><img src="<?php echo base_url();?>assets/img/logo1.png" alt="" width="190px" height="65px"></a>
             </div>
 
 			
@@ -69,7 +69,7 @@
               <div class="button navbar-right" >
                  <!--a href="<?php echo site_url('main/page/signin');?>"><button class="navbar-btn nav-button wow bounceInRight login" data-wow-delay="0.8s">Sign In</button></a>
                  <a href="<?php echo site_url('main/page/signup');?>"><button class="navbar-btn nav-button wow fadeInRight" data-wow-delay="0.6s">Sign Up</button></a>-->
-              <ul class="main-nav nav navbar-nav navbar-right">
+              <ul class="main-nav nav navbar-nav navbar-right" style= "margin-right:25px;">
               	<br>
 
                 
@@ -411,7 +411,7 @@
 								</div>
 							</div>
 							
-								<!--div class="panel panel-default">
+								<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
 										<a data-toggle="collapse" data-parent="#accordian" href="#services">
@@ -429,7 +429,7 @@
 										</ul>
 									</div>
 								</div>
-							</div-->
+							</div>
 							<br></br>
 						</div><!--/category-product-->
 					
@@ -480,26 +480,49 @@
 								<div class="single-products">
 									<div class="productinfo text-center">
 										<img src="<?php echo base_url();?>assets/anot/images/souq/gincu1.jpg" alt="" />
-										<h2>RM <?php echo $data->item_price?></h2>
+										<h2><?php echo $data->dinar_price?> Dinar</h2>
+										<h2><?php echo $data->dirham_price?> Dirham</h2>
+										<h2>(MYR <?php echo $data->item_price?>)</h2>
 										<p><?php echo $data->item_name?></p>
 										<!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content" style="background:#ffa300">
 
+											<h2><?php echo $data->dinar_price?> Dinar</h2>
+										    <h2><?php echo $data->dirham_price?> Dirham</h2>
 											<h2>RM <?php echo $data->item_price?></h2>
 											<p><?php echo $data->item_name?></p>
 											<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.'cat_fashion'); ?>">View</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
+											<?php
+                        
+					                        // Create form and send values in 'shopping/add' function.
+					                        echo form_open('main/add');
+					                        echo form_hidden('id', $data->item_id);
+					                        echo form_hidden('name', $data->item_name);
+					                        echo form_hidden('price', $data->item_price);
+					                       	echo form_hidden('dinar_price', $data->dinar_price);
+					                       	echo form_hidden('dirham_price', $data->dirham_price);
+				                        
+					                        ?> 
+					                    	<div id='add_button'>
+					                        <?php
+					                        $btn = array(
+					                            'class' => 'btn btn-default add-to-cart',
+					                            'value' => 'Add to Cart',
+					                            'style' => 'background-color:#fff',
+					                            'name' => 'action'
+					                        );
+					                        
+					                        // Submit Button.
+					                        echo form_submit($btn);
+					                        echo form_close();
+					                        ?>
 										</div>
 									</div>
 								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
-								</div>
+							</div>	
 							</div>
 						</div>						
 						<?php }?>
@@ -511,6 +534,8 @@
 								<div class="single-products">
 									<div class="productinfo text-center">
 										<img src="<?php echo base_url();?>assets/anot/images/souq/gincu1.jpg" alt="" />
+										<h2><?php echo $data->dinar_price?> Dinar</h2>
+										<h2><?php echo $data->dirham_price?> Dirham</h2>
 										<h2>RM <?php echo $data->item_price?></h2>
 										<p><?php echo $data->item_name?></p>
 										<!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
@@ -518,18 +543,40 @@
 									<div class="product-overlay">
 										<div class="overlay-content" style="background:#ffa300">
 
+											<h2><?php echo $data->dinar_price?> Dinar</h2>
+										    <h2><?php echo $data->dirham_price?> Dirham</h2>
 											<h2>RM <?php echo $data->item_price?></h2>
 											<p><?php echo $data->item_name?></p>
 											<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.'cat_electronics'); ?>">View</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
+											<?php
+                        
+					                        // Create form and send values in 'shopping/add' function.
+					                        echo form_open('main/add');
+					                        echo form_hidden('id', $data->item_id);
+					                        echo form_hidden('name', $data->item_name);
+					                        echo form_hidden('price', $data->item_price);
+					                        echo form_hidden('dinar_price', $data->dinar_price);
+					                        echo form_hidden('dirham_price', $data->dirham_price);
+					                       
+				                        
+					                        ?> 
+					                    	<div id='add_button'>
+					                        <?php
+					                        $btn = array(
+					                            'class' => 'btn btn-default add-to-cart',
+					                            'value' => 'Add to Cart',
+					                            'style' => 'background-color:#fff',
+					                            'name' => 'action'
+					                        );
+					                        
+					                        // Submit Button.
+					                        echo form_submit($btn);
+					                        echo form_close();
+					                        ?>
 										</div>
 									</div>
 								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
 								</div>
 							</div>
 						</div>						
@@ -542,25 +589,48 @@
 								<div class="single-products">
 									<div class="productinfo text-center">
 										<img src="<?php echo base_url();?>assets/anot/images/souq/gincu1.jpg" alt="" />
+										<h2><?php echo $data->dinar_price?> Dinar</h2>
+										<h2><?php echo $data->dirham_price?> Dirham</h2>
 										<h2>RM <?php echo $data->item_price?></h2>
 										<p><?php echo $data->item_name?></p>
 										<!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content" style="background:#ffa300">
-
+											<h2><?php echo $data->dinar_price?> Dinar</h2>
+										    <h2><?php echo $data->dirham_price?> Dirham</h2>
 											<h2>RM <?php echo $data->item_price?></h2>
 											<p><?php echo $data->item_name?></p>
 											<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.'cat_travel'); ?>">View</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
+											<?php
+                        
+					                        // Create form and send values in 'shopping/add' function.
+					                        echo form_open('main/add');
+					                        echo form_hidden('id', $data->item_id);
+					                        echo form_hidden('name', $data->item_name);
+					                        echo form_hidden('price', $data->item_price);
+					                        echo form_hidden('dinar_price', $data->dinar_price);
+					                        echo form_hidden('dirham_price', $data->dirham_price);
+					                       
+				                        
+					                        ?> 
+					                    	<div id='add_button' >
+					                        <?php
+					                        $btn = array(
+					                            'class' => 'btn btn-default add-to-cart',
+					                            'value' => 'Add to Cart',
+					                            'style' => 'background-color:#fff',
+					                            'name' => 'action'
+					                        );
+					                        
+					                        // Submit Button.
+					                        echo form_submit($btn);
+					                        echo form_close();
+					                        ?>
 										</div>
 									</div>
 								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
 								</div>
 							</div>
 						</div>						
@@ -573,25 +643,49 @@
 								<div class="single-products">
 									<div class="productinfo text-center">
 										<img src="<?php echo base_url();?>assets/anot/images/souq/gincu1.jpg" alt="" />
-										<h2>RM <?php echo $data->item_price?></h2>
+										<h2><?php echo $data->dinar_price?> Dinar</h2>
+										<h2><?php echo $data->dirham_price?> Dirham</h2>
+										<h2>(MYR <?php echo $data->item_price?>)</h2>							
 										<p><?php echo $data->item_name?></p>
 										<!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content" style="background:#ffa300">
 
-											<h2>RM <?php echo $data->item_price?></h2>
-											<p><?php echo $data->item_name?></p>
+										<h2><?php echo $data->dinar_price?> Dinar</h2>
+										<h2><?php echo $data->dirham_price?> Dirham</h2>
+										<h2>(MYR <?php echo $data->item_price?>)</h2>							
+										<p><?php echo $data->item_name?></p>
 											<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.'cat_automotive'); ?>">View</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
+											<?php
+                        
+					                        // Create form and send values in 'shopping/add' function.
+					                        echo form_open('main/add');
+					                        echo form_hidden('id', $data->item_id);
+					                        echo form_hidden('name', $data->item_name);
+					                        echo form_hidden('price', $data->item_price);
+					                        echo form_hidden('dinar_price', $data->dinar_price);
+					                        echo form_hidden('dirham_price', $data->dirham_price);
+					                       
+				                        
+					                        ?> 
+					                    	<div id='add_button' >
+					                        <?php
+					                        $btn = array(
+					                            'class' => 'btn btn-default add-to-cart',
+					                            'value' => 'Add to Cart',
+					                            'style' => 'background-color:#fff',
+					                            'name' => 'action'
+					                        );
+					                        
+					                        // Submit Button.
+					                        echo form_submit($btn);
+					                        echo form_close();
+					                        ?>
 										</div>
 									</div>
 								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
 								</div>
 							</div>
 						</div>						
@@ -614,15 +708,35 @@
 											<h2>RM <?php echo $data->item_price?></h2>
 											<p><?php echo $data->item_name?></p>
 											<!--<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.'cat_business'); ?>">View</p>-->
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
+											<?php
+                        
+					                        // Create form and send values in 'shopping/add' function.
+					                        echo form_open('main/add');
+					                        echo form_hidden('id', $data->item_id);
+					                        echo form_hidden('name', $data->item_name);
+					                        echo form_hidden('price', $data->item_price);
+					                        echo form_hidden('dinar_price', $data->dinar_price);
+					                        echo form_hidden('dirham_price', $data->dirham_price);
+					                       
+				                        
+					                        ?> 
+					                    	<div id='add_button'>
+					                        <?php
+					                        $btn = array(
+					                            'class' => 'btn btn-default add-to-cart',
+					                            'value' => 'Add to Cart',
+					                            'style' => 'background-color:#fff',
+					                            'name' => 'action'
+					                        );
+					                        
+					                        // Submit Button.
+					                        echo form_submit($btn);
+					                        echo form_close();
+					                        ?>
 										</div>
 									</div>
 								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
 								</div>
 							</div>
 						</div>						
@@ -643,10 +757,11 @@
 	
 	
 		
-		<div class="footer-bottom" style= "position:fixed; bottom:0px ; width:100%;">
-			<div class="container">
+		<div class="footer-bottom" style= "bottom:0px ; width:100%;">
+			<div class="container" style="background:#000; height:60px;">
 				<div class="row">
-					<p style="text-align:center;">Pisang Sdn Bhd, All rights reserved.</p>
+					<br>
+					<p style="text-align:center;">Copyright &copy; Souqanshar.com 2015</p>
 					
 				</div>
 			</div>

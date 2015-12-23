@@ -37,8 +37,9 @@
                         </li>
 
                         <li>
-                            <a href="<?php echo site_url('member/page/imageprofile'); ?>"><i class="fa fa-bar-chart-o"></i> Change Profile Image</a>
+                            <a href="<?php echo site_url('member/page/imageprofile'); ?>"><i class="fa fa-bar-chart-o"></i> Change Profile Picture</a>
                         </li>
+
                             <!--li>
                                 <a href="#">Second Level Link<span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
@@ -57,6 +58,7 @@
                             </li>
                         </ul>-->
                     </li>
+                    </ul>
                     <li>
                         <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="<?php echo site_url('main');?>"><i class="fa fa-desktop"></i> Logout</a></li>
                     </li>

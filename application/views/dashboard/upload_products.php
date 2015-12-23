@@ -2,7 +2,7 @@
 	<div id="page-inner" >
 	 	 <div class="row">
 	 	 	<h1 class="page-header">
-                 NEW ITEM <small> <br> Upload a clear picture of your items. Please refer the photo guides for more information.</small>
+                 Upload Product <small> <br> Upload a clear picture of your items. Please refer the photo guides for more information.</small>
             </h1>
          </div>
     </div> 
@@ -106,7 +106,7 @@
                                 <div id="timelineProfilePic">
                                     <div class="row">
                                 		<div class="col-sm-6"><br></br>
-                                			<img class="img-rounded" src="<?php echo base_url();?>assets/hanis/images/arash.jpg" class="bgImage" style="margin-top:0px; margin-left:45px;width:150px;"></img>
+                                			<img class="img-rounded" src="<?php echo base_url();?>assets/img/upload.png" class="bgImage" style="margin-top:0px; margin-left:45px;width:150px;"></img>
                                 		<div class="form-group">
                                 	 		<label>Upload Your Product</label>
 			                                	 <?php echo form_open_multipart('upload/do_upload');?>

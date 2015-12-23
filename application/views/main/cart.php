@@ -404,10 +404,12 @@
 			</div>
 		</div>-->
 		
-		<div class="footer-bottom">
-			<div class="container">
+		<div class="footer-bottom" style= "bottom:0px ; width:100%;">
+			<div class="container" style="background:#000; height:60px;">
 				<div class="row">
-					<p style="text-align:center;">Pisang Sdn Bhd, All rights reserved.</p>
+					<br>
+					<p style="text-align:center;">Copyright &copy; Souqanshar.com 2015</p>
+					
 				</div>
 			</div>
 		</div>
