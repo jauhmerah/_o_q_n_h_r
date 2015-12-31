@@ -78,7 +78,7 @@
               <ul class="main-nav nav navbar-nav navbar-right">
               	<br>
               	<li class="wow fadeInDown" data-wow-delay="0s"><a href="<?php echo site_url('main/page/main_2');?>">Home</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/souqshop');?>">Shops</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/productlist');?>">Shops</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/profile');?>">Profile</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="<?php echo site_url('member/page/dashboard');?>">Dashboard</a></li>
                 <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="<?php echo site_url('main/page/cart');?>">Cart</a></li>
@@ -797,11 +797,12 @@
 			</div>
 		</div>-->
 		
-		<div class="footer-bottom">
-			<div class="container">
+			<div class="footer-bottom" style= "bottom:0px ; width:100%;">
+			<div class="container" style="background:#000; height:60px;">
 				<div class="row">
-					<p style="text-align:center;">Pisang Sdn Bhd, All rights reserved.</p>
-					<!--p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">Themeum</a></span></p>-->
+					<br>
+					<p style="text-align:center;">Copyright &copy; Souqanshar.com 2015</p>
+					
 				</div>
 			</div>
 		</div>
