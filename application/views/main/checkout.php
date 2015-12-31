@@ -339,93 +339,91 @@
 				<table class="table table-condensed">
 					<thead>
 						<tr class="cart_menu">
-							<td class="image">Item</td>
-							<td class="description"></td>
-							<td class="price" style="padding-left:40px;">Price</td>
-							<td class="quantity" style="padding-left:30px;">Quantity</td>
-							<td class="total" style="padding-left:20px;">Total</td>
+							<td class="itemID">Item Id</td>
+							<td class="itemName">Item Name</td>
+							<td class="price" style="padding-left:-20px;"> MYR Price</td>
+							<td class="price" style="padding-left:-5px;">Dinar Price</td>
+							<td class="price" style="padding-left:-5px;">Dirham Price</td>
+							<td class="quantity" style="padding-left:3px;">Quantity</td>
+							<td class="total"style="padding-left:-20px;">Total MYR</td>
+							<td class="total"style="padding-left:-20px;">Total Dinar</td>
+							<td class="total"style="padding-left:-20px;">Total Dirham</td>
 							<td></td>
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
-							<td class="cart_product">
-								<a href=""><img src="<?php echo base_url();?>assets/miza-cart/images/cart/Men4.jpg" alt=""></a>
-							</td>
-							<td class="cart_description" style="padding-left:60px;">
-								<h4><a href="">Plain T-shirt</a></h4>
-								<!--p>Web ID: 1089772</p>-->
-							</td>
-							<td class="cart_price" style="padding-left:40px;">
-								<p>RM59</p>
-							</td>
-							<td class="cart_quantity" style="padding-left:30px;">
-								<div class="cart_quantity_button">
-									<a class="cart_quantity_up" href=""> + </a>
-									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
-									<a class="cart_quantity_down" href=""> - </a>
-								</div>
-							</td>
-							<td class="cart_total" style="padding-left:20px;">
-								<p class="cart_total_price">RM59</p>
-							</td>
-							<td class="cart_delete">
-								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
-							</td>
-						</tr>
 
-						<tr>
-							<td class="cart_product">
-								<a href=""><img src="<?php echo base_url()?>assets/miza-cart/images/cart/Men5.jpg" alt=""></a>
-							</td>
-							<td class="cart_description" style="padding-left:60px;">
-								<h4><a href="">Plain T-shirt</a></h4>
-								<!--p>Web ID: 1089772</p>-->
-							</td>
-							<td class="cart_price" style="padding-left:40px;">
-								<p>RM59</p>
-							</td>
-							<td class="cart_quantity" style="padding-left:30px;">
-								<div class="cart_quantity_button">
-									<a class="cart_quantity_up" href=""> + </a>
-									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
-									<a class="cart_quantity_down" href=""> - </a>
-								</div>
-							</td>
-							<td class="cart_total" style="padding-left:20px;">
-								<p class="cart_total_price">RM59</p>
-							</td>
-							<td class="cart_delete">
-								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<td class="cart_product">
-								<a href=""><img src="<?php echo base_url()?>assets/miza-cart/images/cart/Men2.jpg" alt=""></a>
-							</td>
-							<td class="cart_description" style="padding-left:60px;">
-								<h4><a href="">Plain T-shirt</a></h4>
-								<!--p>Web ID: 1089772</p>-->
-							</td>
-							<td class="cart_price" style="padding-left:40px;">
-								<p>RM59</p>
-							</td>
-							<td class="cart_quantity" style="padding-left:30px;">
-								<div class="cart_quantity_button">
-									<a class="cart_quantity_up" href=""> + </a>
-									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
-									<a class="cart_quantity_down" href=""> - </a>
-								</div>
-							</td>
-							<td class="cart_total" style="padding-left:20px;">
-								<p class="cart_total_price">RM59</p>
-							</td>
-							<td class="cart_delete">
-								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="4">&nbsp;</td>
+						<?php
+					// All values of cart store in "$cart".
+					if ($cart = $this->cart->contents()): ?>
+					
+					<!--<td>Serial</td>
+					<td>Name</td>
+					<td>Price</td>
+					<td>Qty</td>
+					<td>Amount</td>
+					<td>Cancel Product</td>-->
+					
+					<?php
+					
+					// Create form and send all values in "shopping/update_cart" function.
+					
+					$grand_total = 0;
+					$dinar_total = 0;
+					$dirham_total = 0;
+					$i = 1;
+
+					foreach ($cart as $item):
+					// echo form_hidden('cart[' . $item['id'] . '][id]', $item['id']);
+					// Will produce the following output.
+					// <input type="hidden" name="cart[1][id]" value="1" />
+
+					echo form_hidden('cart[' . $item['id'] . '][id]', $item['id']);
+					echo form_hidden('cart[' . $item['id'] . '][rowid]', $item['rowid']);
+					echo form_hidden('cart[' . $item['id'] . '][name]', $item['name']);
+					echo form_hidden('cart[' . $item['id'] . '][price]', $item['price']);
+					echo form_hidden('cart[' . $item['id'] . '][dinar_price]', $item['dinar_price']);
+					echo form_hidden('cart[' . $item['id'] . '][dirham_price]', $item['dirham_price']);
+					echo form_hidden('cart[' . $item['id'] . '][qty]', $item['qty']);
+					?>
+					<tr>
+					<td>
+					<?php echo $i++; ?>
+					</td>
+					<td>
+					<?php echo $item['name']; ?>
+					</td>
+					<td>
+					MYR <?php echo number_format($item['price'], 2); ?>
+					</td>
+					<td>
+					<?php echo (int) ($item['dinar_price']);?> Dinar
+					</td>
+					<td>
+					<?php echo (int) ($item['dirham_price']);?> Dirham
+					</td>
+					<td>
+					<?php echo (int) ($item['qty']);?> 
+					</td>
+					<?php $grand_total = $grand_total + $item['subtotal']; ?>
+					<td>
+					RM <?php echo number_format($item['subtotal'], 2) ?>
+					</td>
+					<?php $dinar_total = $dinar_total + (($item['qty'])* ($item['dinar_price'])); ?>
+					<td>					
+					<?php echo (int) (($item['qty'])* ($item['dinar_price']));?> Dinar
+					</td>
+					<?php $dirham_total = $dirham_total + (($item['qty'])* ($item['dirham_price'])); ?>
+					<td>					
+					<?php echo (int) (($item['qty'])* ($item['dirham_price']));?> Dirham
+					</td>
+					<td>
+					<?php endforeach; ?>
+					<?php endif; ?>
+						
+
+						<!--<tr>-->
+							<!--<td colspan="4">&nbsp;</td>
 							<td colspan="2">
 								<table class="table table-condensed total-result">
 									<tr>
@@ -443,10 +441,10 @@
 									<tr>
 										<td>Total</td>
 										<td><span>RM61</span></td>
-									</tr>
+									</tr>-->
 								</table>
 							</td>
-						</tr>
+						<!--</tr>-->
 					</tbody>
 				</table>
 			</div>
@@ -454,8 +452,8 @@
 				<h4>Payment Gateway</p>
 					<img style= "width:110px; height:50px;" src= "<?php echo base_url();?>assets/miza-cart/images/home/dinarpal.png">
 					<br><a class="btn btn-primary" href="">Submit & Go</a>
-					<a class="btn btn-primary" href="<?php echo site_url('main/page/checkout');?>">Cancel</a>
-					<!--span>
+					<a class="btn btn-primary" href="<?php echo site_url('main/page/cart');?>">Cancel</a>
+					<!--<span>
 						<label><input type="checkbox"> Dinarpal</label>
 					</span>
 					<span>
@@ -464,8 +462,10 @@
 					<span>
 						<label><input type="checkbox"> Paypal</label>
 					</span>-->
-				</div>
-		</div>
+			</div>
+
+			
+
 	</section> <!--/#cart_items-->
 
 	

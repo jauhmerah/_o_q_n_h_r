@@ -426,7 +426,7 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="<?php echo base_url();?>assets/anot/images/souq/argan-oil.jpg" alt="" />
+										<img src="<?php echo base_url();?>assets/anot/images/souq/coffee maker1.jpg" alt="" />
 										<h2><?php echo $data->dinar_price?> Dinar</h2>
 										<h2><?php echo $data->dirham_price?> Dirham</h2>
 										<h2>(MYR <?php echo $data->item_price?>)</h2>

@@ -419,18 +419,10 @@
 			'qty' => 1
 
 		);
-			//print_r($insert_data);
-
-			// This function add items into cart.
-		 
+			
 		   $this->cart->insert($insert_data);
 		   $cart = $this->cart->contents();
-		    /*echo '<pre>';
-		    print_r($cart);
-		    echo '</pre>';
-		    echo "<br>";
-		     echo "<br>";*/
-		    //print_r($insert_data);
+		    
 		    
 
 

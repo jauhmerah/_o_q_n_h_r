@@ -331,32 +331,51 @@
 							
 							<div class="product-information"><!--/product-information-->
 
-								<img src="<?php echo base_url();?>assets/anot/images/product-details/new.jpg" class="newarrival" alt="" />
+								<!--img src="<?php echo base_url();?>assets/anot/images/product-details/new.jpg" class="newarrival" alt="" />-->
 								<h2><?php echo $products->item_name?></h2>
 								<!--p>Product ID: 1089772</p-->
 								<!--img src="images/product-details/rating.png" alt="" />-->
-								<span>
-									<span>RM<?php echo $products->item_price?></span>
-									
-									<h2>(<?php echo $products->dinar_price?>)</h2>
+								
+									<h2 style="color:#ffa300"><?php echo $products->dinar_price?> Dinar</h2>
+									<h2 style="color:#ffa300"><?php echo $products->dirham_price?> Dirham</h2>
+									<h2 style="color:#ffa300">(MYR<?php echo $products->item_price?>)</h2>							
 
+									<br>		
 									
-									<!--Mcm mana nak masuk database ni?-->
-									<div class="form-group" >
-										<label>Quantity:</label>
-                                    <input type="text"  name= "itemqty" class="form-control" >
-                                    </div>
+                                    <?php                       
+					                        // Create form and send values in 'shopping/add' function.
+					                        echo form_open('main/add');
+					                        echo form_hidden('id', $products->item_id);
+					                        echo form_hidden('name', $products->item_name);
+					                        echo form_hidden('price', $products->item_price);
+					                        echo form_hidden('dinar_price', $products->dinar_price);
+					                        echo form_hidden('dinar_price', $products->dirham_price);
+					                       				                       				                        
+				                        ?> 
+				                    	<div id='add_button'>
+				                        <?php
+				                        $btn = array(
+				                            'class' => 'btn btn-default cart',
+				                            'value' => 'Add to Cart',
+				                            'style' => 'background-color:#ffa300',
+				                            'name' => 'action'
+				                        );
+				                        
+				                        // Submit Button.
+				                        echo form_submit($btn);
+				                        echo form_close();
+				                        ?>
 									
 									
-									<button type="button" class="btn btn-fefault cart">
+									<!--<button type="button" class="btn btn-fefault cart">
 										<i class="fa fa-shopping-cart"></i>
 										Add to cart
-									</button>
-								</span>
+									</button>-->
+								
 								<p><b>Availability:</b><?php echo $products->item_availability?></p>
 								<p><b>Condition:</b><?php echo $products->item_condition?></p>
 								<p><b>Brand:</b><?php echo $products->item_brand?></p>
-								<a href=""><img src="<?php echo base_url();?>assets/anot/images/product-details/share.png" class="share img-responsive"  alt="" /></a>
+								<!--a href=""><img src="<?php echo base_url();?>assets/anot/images/product-details/share.png" class="share img-responsive"  alt="" /></a>-->
 							</div><!--/product-information-->
 							
 						</div>
