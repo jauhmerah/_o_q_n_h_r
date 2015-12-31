@@ -2,7 +2,7 @@
 
 if(!defined('BASEPATH')) exit('Hacking Attempt : Get Out of the system ..!');  
 
-class Login extends CI_Controller  
+class Login extends MY_Controller  
 {  
 
 public function __construct()  
@@ -21,8 +21,10 @@ public function index()
 	if($session == FALSE)  
 		{  
 			redirect('login/login_form');  
-		}else  
-		{  redirect('home');  
+		}
+		else  
+		{  
+			redirect('home');  
 		}  
 }  
 
@@ -31,11 +33,12 @@ public function login_form()
 	$this->form_validation->set_rules('us_name', 'Username', 'required|trim|xss_clean');  
 	$this->form_validation->set_rules('us_password', 'Password', 'required|md5|xss_clean');  
 	$this->form_validation->set_error_delimiters('<span class="error">', '</span>');  
+	
 	if($this->form_validation->run()==FALSE)  
-
 	{  
 		$this->load->view('form_login');  
-	}else  
+	}
+	else  
 	{  
 		$username = $this->input->post('us_name');  
 		$password = $this->input->post('us_password');  
@@ -45,22 +48,28 @@ public function login_form()
 			$this->session->set_userdata('isLogin', TRUE);  
 			$this->session->set_userdata('us_name',$username);
 			redirect('home');  
-		}else  
+		}
+		else  
 		{  
-?>  
+        
+        ?>  
 
 		<script>  
 			alert('Failed Login: Check your username and password!');  
 			history.go(-1);  
 		</script>  
-	<?php  
-	}  
+
+	    <?php  
+
+	    }  
+    }  
 }  
-}  
+
 public function logout()  
 {  
 	$this->session->sess_destroy();  
 	redirect('login/main');  
-}  
-}  
+
+} 
+
 ?>

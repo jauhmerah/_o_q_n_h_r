@@ -25,10 +25,24 @@
                     			</div>
                     			<div class="form-group">
                                     <div class="col-md-8">
-                                            <label>Item Price</label><br>
-                                            <input class="form-control" name="price" placeholder="Please enter your item price.">
+                                            <label> Dinar Price</label><br>
+                                            <input class="form-control" name="dinarprice" placeholder="Please enter your item's price in dinar.">
                                             <!--input type="text" name="email" placeholder="Please enter your email address." class="form-email form-control" id="email">-->
                                     </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-8">
+                                            <label> Dirham Price</label><br>
+                                            <input class="form-control" name="dirhamprice" placeholder="Please enter your item's price in dirham.">
+                                            <!--input type="text" name="email" placeholder="Please enter your email address." class="form-email form-control" id="email">-->
+                                    </div>
+                                    <div class="form-group">
+                                    <div class="col-md-8">
+                                            <label> MYR Price</label><br>
+                                            <input class="form-control" name="myrprice" placeholder="Please enter your item's price in MYR.">
+                                            <!--input type="text" name="email" placeholder="Please enter your email address." class="form-email form-control" id="email">-->
+                                    </div>
+                                </div>
                                 </div>
                                 <div class="form-group"><br><br><br>
                                    <!--<div class="row">-->

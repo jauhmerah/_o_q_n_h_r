@@ -34,7 +34,7 @@
                                       <div class="form-group">
                                           <div class="col-md-6">
                                             <label>Item Price</label>
-                                            <input class="form-control" name="price" placeholder="Please enter your item price.">
+                                            <input class="form-control" name="dinar_price" placeholder="Please enter your item price in dinar.">
                                             <!--input type="text" name="email" placeholder="Please enter your email address." class="form-email form-control" id="email">-->
                                         </div>
                                       </div>
