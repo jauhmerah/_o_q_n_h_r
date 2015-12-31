@@ -168,7 +168,7 @@
 	    	    case '5':
 	    	    	$data['error'] = true;
 	    	    	break;
-		    	case '6':
+		    	/*case '6':
 		    		$post = $this->input->post();
 		    		$temp = array(
 		    			"us_name" => $post['username'],
@@ -188,7 +188,7 @@
 	    			alert('Failed Login: Check your username and password!');  
 	    			history.go(-1);  
 	    			</script>";  
-		    		break;
+		    		break;*/
 
 	    	    case '4':
 	    	    //cart process

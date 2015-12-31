@@ -29,7 +29,7 @@
                            </li>
 
                          <li>
-                            <a href="<?php echo site_url('member/page/upload_products'); ?>"><i class="fa fa-desktop"></i> Upload Product</a>
+                            <a href="<?php echo site_url('member/page/imageprofile'); ?>"><i class="fa fa-bar-chart-o"></i> Change Profile Picture</a>
                          </li>
 
                         <li>
@@ -37,7 +37,7 @@
                         </li>
 
                         <li>
-                            <a href="<?php echo site_url('member/page/imageprofile'); ?>"><i class="fa fa-bar-chart-o"></i> Change Profile Picture</a>
+                            <a href="<?php echo site_url('member/page/upload_products'); ?>"><i class="fa fa-desktop"></i> Upload Product</a>
                         </li>
 
                             <!--li>
