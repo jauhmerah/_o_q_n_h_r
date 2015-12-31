@@ -476,25 +476,18 @@
 								<div class="single-products">
 									<div class="productinfo text-center">
 										<img src="<?php echo base_url();?>assets/anot/images/souq/coffee maker1.jpg" alt="" />
-<<<<<<< HEAD
-										<h2><?php echo $data->dinar_price?></h2>
-=======
 										<h2><?php echo $data->dinar_price?> Dinar</h2>
 										<h2><?php echo $data->dirham_price?> Dirham</h2>
->>>>>>> origin/anot
 										<h2>(MYR <?php echo $data->item_price?>)</h2>
 										<p><?php echo $data->item_name?></p>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content" style="background:#ffa300">
-<<<<<<< HEAD
-
 										<h2><?php echo $data->dinar_price?></h2>
 										<h2>(MYR <?php echo $data->item_price?>)</h2>>
 										<p><?php echo $data->item_name?></p>
 											<a href="<?php echo site_url('main/page/productdetails/z5?item='.$data->item_id.'&cat='.'cat_business'); ?>">View</p> 
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-=======
  											<h2><?php echo $data->dinar_price?> Dinar</h2>
 											<h2><?php echo $data->dirham_price?> Dirham</h2>
 											<h2>(MYR <?php echo $data->item_price?>)</h2>	

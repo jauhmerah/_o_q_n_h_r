@@ -12,24 +12,12 @@
 	        $this->load->model('m_user');
 	        $this->load->helper('url');
 	        $this->load->library('session');
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/anot
 	        $this->load->library('form_validation');
 
 	        // Load database
    	        $this->load->model('login_database');
-<<<<<<< HEAD
 	        $this->load->model('m_cart');
 			$this->load->model('m_item');
-			 // Load the cart library to use it.
-=======
-
-	        $this->load->model('m_cart');
-			$this->load->model('m_item');
-			// Load the cart library to use it.
->>>>>>> origin/anot
    			$this->load->library('cart');
 	    }
 	
@@ -45,11 +33,8 @@
 	    		redirect('main');  
 	    	}*/
 
-<<<<<<< HEAD
 	       /*$verificationCode = random_string('alnum', 20);  
-=======
-		  /*$verificationCode = random_string('alnum', 20);  
->>>>>>> origin/anot
+
                   
             $email_msg = "Dear User,  
             <p
@@ -112,10 +97,7 @@
 	    			$data['products'] = $temp;
 	    			/*print_r($temp);*/
 	    			break;
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/anot
 	    		case 'z1':
 	    			$arr = $this->input->get();	    			
 	    			$this->load->model('m_item');
@@ -149,7 +131,6 @@
 	    			/*print_r($temp);*/
 	    			break;
 
-<<<<<<< HEAD
 				case 'z4':
 	    		case 'x1':
 	    			$arr = $this->input->get();	    			
@@ -161,8 +142,7 @@
 	    			$data['products'] = $temp;
 	    			/*print_r($temp);*/
 	    			break;
-=======
->>>>>>> origin/anot
+
 	    		case 'z5':
 	    			$arr = $this->input->get();	    			
 	    			$this->load->model('m_item');
@@ -173,10 +153,6 @@
 	    			$data['products'] = $temp;
 	    			/*print_r($temp);*/
 	    			break;
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/anot
 	    	    case '4':
 	    	    //sign up process
 	    	    	$arr =  $this->input->post();
@@ -193,13 +169,8 @@
 	    	    case '5':
 	    	    	$data['error'] = true;
 	    	    	break;
-<<<<<<< HEAD
-		    	/*case '6':
-=======
-
 		    	case '6':
->>>>>>> origin/anot
-		    		$post = $this->input->post();
+		    	/*	$post = $this->input->post();
 		    		$temp = array(
 		    			"us_name" => $post['username'],
 		    			"us_password" => $post['password']
@@ -232,10 +203,6 @@
 	    	    	$this->load->model('m_user');
 	    	    	$this->m_user->insert($temp);
 	    	    	break;
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/anot
 	    	    case 'x2':
 	    			$arr = $this->input->get();	    			
 	    			$this->load->model('m_user');
@@ -377,7 +344,6 @@
 		{
 			$this->load->model('m_item');
 			$process = $this->input->post('sub_cat');
-<<<<<<< HEAD
 			$search = $this->input->post("itemname");
 
 				
@@ -406,9 +372,8 @@
 
 			/*$data['arr'] = $this->m_item->get_search($temp,"cat_shoes");
 			$this->load->view('main/testoutput', $data)*/
-=======
+
 			$search = $this->input->post("itemname");		    
->>>>>>> origin/anot
 			$data = null;
 	        switch ($process) 
 	        {
@@ -620,7 +585,7 @@
 	        $data['products'] = $this->Products_model->get_all2();
 	       	echo "<pre>";
 			print_r($data['products']);
-<<<<<<< HEAD
+
 	        /*$this->load->view('products',$data);
 	  }*/       
 	        /*$this->load->view('main/products',$data);*/
@@ -665,10 +630,6 @@
 	 	}//tutup keluarkan semua item
 
 
-=======
-	 	}//tutup keluarkan semua item
-
->>>>>>> origin/anot
 	   function shoplist()
 	 	{
 	        $this->load->model('M_item');
@@ -681,7 +642,6 @@
 //ini semua function utk fashion category
 	 	function fashionx1()
 	 	{
-<<<<<<< HEAD
 
 	 		$this->load->model('M_fashion');
 	       
@@ -690,12 +650,6 @@
 			print_r($data['products']);*/
 	        $this->load->view('main/souqshop1',$data);
 	    }
-=======
-	       $this->load->model('M_fashion');
-	       $data['products'] = $this->M_fashion->get_fashionx1();
-	       $this->load->view('main/souqshop1',$data);
-	 	}
->>>>>>> origin/anot
 
 		function fashionx2()
 	 	{
@@ -858,11 +812,11 @@
 	       $this->load->model('M_business');	       
 	       $data['products'] = $this->M_business->get_businessx4();	      
 	       $this->load->view('main/souqshop6',$data);
-<<<<<<< HEAD
 	 	}//tutup keluarkan semua item	        
-	function add_cart_item(){
+	
+		function add_cart_item(){
      
-    if($this->m_cart->validate_add_cart_item() == TRUE){
+    	if($this->m_cart->validate_add_cart_item() == TRUE){
          
         // Check if user has javascript enabled
         if($this->input->post('ajax') != '1'){
@@ -874,8 +828,8 @@
      
 }
 }
-=======
-	 	} 
+
+ 
 
 	 	/*public function upload(){
 	   	$config['upload_path'] = "./images/";
@@ -894,7 +848,5 @@
 	   		//$this->load->view('success',$data);
 	   		$this->_display('successupload', $data);
 	   	}
-	   }*/      
-}	        
->>>>>>> origin/anot
+	   }*/      	        
 ?>

@@ -9,11 +9,7 @@
                 </div> 
                  <!-- /. ROW  -->
 
-<<<<<<< HEAD
-                <!--?php echo form_open_multipart('main/upload/do_upload');?>
-=======
                 <!--<?php echo form_open_multipart('main/upload/do_upload');?>
->>>>>>> origin/anot
                     <input type="file" name="userfile"/><br><br>
                     <input type="submit" name="submit" value="upload image">
                 </form>-->

@@ -107,10 +107,6 @@ class M_item extends CI_Model {
         {
 
             return false;
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/anot
         }
         
           
@@ -126,14 +122,8 @@ class M_item extends CI_Model {
         $results = $this->db->get()->result();
         return $results;
            
-<<<<<<< HEAD
-     }            
-
-=======
     }   
->>>>>>> origin/anot
      
-
     //keluarkan semua item page souqshop2
     function get_allz1()
     {
@@ -198,10 +188,6 @@ class M_item extends CI_Model {
      {
         $this->db->insert('order_detail', $data);
      }//tutup function utk cart & checkout page
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/anot
 }
 
 ?>

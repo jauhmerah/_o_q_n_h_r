@@ -463,11 +463,7 @@
 
 				<div class="col-sm-9 padding-right" ;>
 					<div class="features_items">
-<<<<<<< HEAD
-					<br><br>	<h2 class="title text-center">All Items</h2></br>
-=======
 					<br>	<h2 class="title text-center">Travel Items</h2></br>
->>>>>>> origin/anot
 					<?php
 
 					if(sizeof($products)==0)
@@ -480,27 +476,17 @@
 								<div class="single-products">
 									<div class="productinfo text-center">
 										<img src="<?php echo base_url();?>assets/anot/images/souq/argan-oil.jpg" alt="" />
-<<<<<<< HEAD
-										<h2><?php echo $data->dinar_price?></h2>
-=======
 										<h2><?php echo $data->dinar_price?> Dinar</h2>
 										<h2><?php echo $data->dirham_price?> Dirham</h2>
->>>>>>> origin/anot
 										<h2>(MYR <?php echo $data->item_price?>)</h2>
 										<p><?php echo $data->item_name?></p>
 										
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content" style="background:#ffa300">
-
-<<<<<<< HEAD
-											<h2><?php echo $data->dinar_price?></h2>
-										<h2>(MYR <?php echo $data->item_price?>)</h2>
-=======
 											<h2><?php echo $data->dinar_price?> Dinar</h2>
 											<h2><?php echo $data->dirham_price?> Dirham</h2>
 											<h2>(MYR <?php echo $data->item_price?>)</h2>	
->>>>>>> origin/anot
 											<p><?php echo $data->item_name?></p>
 											<a href="<?php echo site_url('main/page/productdetails/x1?item='.$data->item_id.'&cat='.$table); ?>">View</p>									
 											<!--<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
