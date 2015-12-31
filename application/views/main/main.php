@@ -99,8 +99,18 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <div class="button navbar-right">
+                <?php //print_r($this->session->all_userdata()); die();
+                 if ($this->session->userdata('logged_in') == true) { ?>
+                <a href="<?php echo site_url('main/page/main');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Home</button></a>
+                <a href="<?php echo site_url('main/productlist');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Shops</button></a>
+                <a href="<?php echo site_url('main/page/profile');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Profile</button></a>
+                <a href="<?php echo site_url('main/page/dashboard');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Dashboard</button></a>
+                <a href="<?php echo site_url('main/page/cart');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Cart</button></a>
+                <a href="<?php echo site_url('main/logout');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Logout</button></a>
+                <?php } else { ?>
                    <a href="<?php echo site_url('main/page/signin');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Sign In</button></a>
                  <a href="<?php echo site_url('main/page/signup');?>"><button class="navbar-btn nav-button " data-wow-delay="0.6s">Sign Up</button></a>
+                 <?php } ?> 
               </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->

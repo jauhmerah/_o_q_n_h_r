@@ -65,11 +65,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="<?php echo base_url();?>assets/nas/img/profile.png" alt="" width="255px" height="255px">
+                    <?php 
+                    $pro = $profile[0];
+                    //print_r($profile); die();
+                    $image = (isset($pro->pr_image)) ? ("upload/".$pro->pr_image) : ("assets/nas/img/profile.png");
+                    ?>
+                    <img class="img-responsive" src="<?php echo base_url().$image;?>" alt="" width="255px" height="255px">
                     <div class="intro-text">
-                        <span class="name">Maizeaitul Nasira</span>
+                        <span class="name"><?=$pro->us_name; ?></span>
                         <!--hr class="star-light"-->
-                        <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
+                        <span class="email"><?=$pro->us_email; ?></span>
                     </div>
                 </div>
             </div>

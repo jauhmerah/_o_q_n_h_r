@@ -27,6 +27,23 @@ class M_profile extends CI_Model {
             $this->load->database();
     }
 
+    public function getProfile($username="") {
+        $this->db->select('*');
+        $this->db->from('sa_user su');
+        $this->db->join('sa_profile sp', 'su.us_id = sp.us_id', 'left');
+        $this->db->where('su.us_name', $username);
+        $r = $this->db->get();
+        if ($r->result()) {
+            $d = array();
+            foreach ($r->result() as $row) {
+                $d[] = $row;
+            }
+            return $d;
+        } else {
+            return null;
+        }
+    }
+
     public function get($where = NULL) {
         
         $this->db->select('*');

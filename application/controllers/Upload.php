@@ -11,43 +11,51 @@ class Upload extends CI_Controller {
 
 		function index()
 		{
-		$this->load->view('upload_form', array('error' => ' ' ));
+			$this->load->view('dashboard/upload_form', array('error' => ' ' ));
 		}
 
 		function do_upload()
 		{
-		if($this->input->post('upload'))
+			if($this->input->post('form1'))
 			{
-				$config['upload_path'] = './uploads/';
+				$config['upload_path'] = './upload/';
 				$config['allowed_types'] = 'gif|jpg|png';
 				$config['max_size']    = '1024';
 				$config['max_width']  = '1024';
 				$config['max_height']  = '768';
 				$this->load->library('upload', $config);
-			if ( ! $this->upload->do_upload())
-			{
-				$error = array('error' => $this->upload->display_errors());
-				$this->load->view('upload_form', $error);
+				$error = '';
+				$data = '';
+				if ( ! $this->upload->do_upload('userfile'))
+				{
+					$error = array('error' => $this->upload->display_errors());
+					echo "<pre>"; print_r($error); echo "</pre>"; die();
+				}
+				else
+				{
+					$data=$this->upload->data();
+					//print_r($data); die();
+					//$this->thumb($data);
+					$file=array(
+						'img_name'=>$data['raw_name'],
+						'thumb_name'=>$data['raw_name'].'_thumb',
+						'ext'=>$data['file_ext'],
+						'upload_date'=>time(),
+						'file_name'=>$data['file_name']
+					);
+					$this->session->set_userdata('file_name', $data['file_name']);
+					$this->load->model('upload_model');
+					$username = $this->session->userdata('username');
+					$this->upload_model->add_image($username, $file);
+					$data = array('upload_data' => $data);
+					//$this->load->view('upload_success', $data);
+				}
+				redirect(site_url('main/page/profile'));
 			}
 			else
 			{
-			$data=$this->upload->data();
-			$this->thumb($data);
-			$file=array(
-			'img_name'=>$data['raw_name'],
-			'thumb_name'=>$data['raw_name'].'_thumb',
-			'ext'=>$data['file_ext'],
-			'upload_date'=>time()
-			);
-			$this->upload_model->add_image($file);
-			$data = array('upload_data' => $this->upload->data());
-			$this->load->view('upload_success', $data);
+				echo "<script>alert('ERROR!');history.back(-1);</script>";
 			}
-		}
-		else
-		{
-			redirect(site_url('upload'));
-		}
 		}
 
 		function thumb($data)

@@ -56,6 +56,12 @@
             // Insert user record  */   
 	    } 
 
+	    function logout()
+	    {
+	    	$this->session->sess_destroy();
+	    	redirect(site_url('Main/page/main'));
+	    }
+
 	    function _display($page = 'main', $data = '' )
 	    {
 	    	
@@ -67,6 +73,15 @@
 	    function page($page = 'main' , $process = '-1')
 	    {
 	        $data = null;
+
+	        switch ($page)
+	        {
+	        	case 'profile':
+	        		$username = $this->session->userdata('username');
+	        		$this->load->model('m_profile');
+	        		$data['profile'] = $this->m_profile->getProfile($username);
+	        		break;
+	        }
 
 	    	switch ($process)
 	    	{

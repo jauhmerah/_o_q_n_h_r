@@ -91,15 +91,16 @@ class User_Authentication Extends CI_Controller
 				{
 			       	$sess_array = array
 					 	(
-			          		'username' => $this->input->post('username')
+			          		'username' => $this->input->post('username'),
+			          		'logged_in' => true
 			         	);
 			    
 			      	// Add user data in session
 
-			        $this->session->set_userdata('logged_in', $sess_array);
+			        $this->session->set_userdata($sess_array);
 			        $result = $this->login_database->read_user_information($sess_array);
 
-			        redirect('User_Authentication/session');
+			        redirect('Main/page');
 			       
 		            }
 		            

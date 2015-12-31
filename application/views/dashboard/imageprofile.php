@@ -14,9 +14,10 @@
                             Upload Your Picture
                         </div>
  
-                    <?php echo form_open_multipart('upload/do_upload');?>
+                    <?php echo form_open_multipart('upload/do_upload'); ?>
                      
                     <input type="file" name="userfile" size="50" />
+                    <input type="hidden" name="form1" value="uploadda" />
                      
                     <br>
                      
