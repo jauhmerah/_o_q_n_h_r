@@ -101,15 +101,17 @@
               <div class="button navbar-right">
                 <?php //print_r($this->session->all_userdata()); die();
                  if ($this->session->userdata('logged_in') == true) { ?>
-                <a href="<?php echo site_url('main/page/main');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Home</button></a>
-                <a href="<?php echo site_url('main/productlist');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Shops</button></a>
-                <a href="<?php echo site_url('main/page/profile');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Profile</button></a>
-                <a href="<?php echo site_url('main/page/dashboard');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Dashboard</button></a>
-                <a href="<?php echo site_url('main/page/cart');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Cart</button></a>
-                <a href="<?php echo site_url('main/logout');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Logout</button></a>
+                <a href="<?php echo site_url('main/page/main');?>"><img src="<?php echo base_url();?>assets/img/home.png" alt="" width="25px" height="25px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="<?php echo site_url('main/productlist');?>"><img src="<?php echo base_url();?>assets/img/shop.png" alt="" width="23px" height="23px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="<?php echo site_url('main/page/profile');?>"><img src="<?php echo base_url();?>assets/img/profile.png" alt="" width="25px" height="25px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="<?php echo site_url('member/page/dashboard');?>"><img src="<?php echo base_url();?>assets/img/dashboard.png" alt="" width="25px" height="25px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="<?php echo site_url('main/page/cart');?>"><img src="<?php echo base_url();?>assets/img/cart1.png" alt="" width="25px" height="25px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="<?php echo site_url('main/logout');?>"><img src="<?php echo base_url();?>assets/img/logout.png" alt="" width="25px" height="25px"></a>
                 <?php } else { ?>
-                   <a href="<?php echo site_url('main/page/signin');?>"><button class="navbar-btn nav-button" data-wow-delay="0.8s">Sign In</button></a>
-                 <a href="<?php echo site_url('main/page/signup');?>"><button class="navbar-btn nav-button " data-wow-delay="0.6s">Sign Up</button></a>
+                  <a href="<?php echo site_url('main/page/main');?>"><img src="<?php echo base_url();?>assets/img/home.png" alt="" width="25px" height="25px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="<?php echo site_url('main/productlist');?>"><img src="<?php echo base_url();?>assets/img/shop.png" alt="" width="23px" height="23px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="<?php echo site_url('main/page/cart');?>"><img src="<?php echo base_url();?>assets/img/cart1.png" alt="" width="25px" height="25px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                 <a href="<?php echo site_url('main/page/signin');?>"><img src="<?php echo base_url();?>assets/img/start.png" alt="" width="120px" height="50px"></a>
                  <?php } ?> 
               </div>
 

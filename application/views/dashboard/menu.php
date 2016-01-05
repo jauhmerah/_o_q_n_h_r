@@ -6,19 +6,22 @@
                     <br>
                     <br>
                         <li>
-                         <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="<?php echo site_url('main/page/main_2');?>"><i class="fa fa-dashboard"></i>Home</a></li>
+                         <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="<?php echo site_url('main/page/main_2');?>"><i class="fa fa-home"></i>Home</a></li>
                         </li>
 
                        <li>
-                        <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/productlist');?>"><i class="fa fa-dashboard"></i>Shops</a></li>
+                        <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/productlist');?>"><i class="fa fa-shopping-cart"></i>Shops</a></li>
                        </li>
                      
                       <li>
-                        <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/profile');?>"><i class="fa fa-dashboard"></i>Profile</a></li>
+                        <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('main/page/profile');?>"><i class="fa fa-user"></i>Profile</a></li>
+                      </li>
+                      <li>
+                        <li class="wow fadeInDown" data-wow-delay="0.1s"><a href="<?php echo site_url('member/page/dashboard');?>"><i class="fa fa-dashboard"></i>Dashboard</a></li>
                       </li> 
 
                       <li>
-                        <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="<?php echo site_url('main/page/cart');?>"><i class="fa fa-dashboard"></i>Cart</a></li>
+                        <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="<?php echo site_url('main/page/cart');?>"><i class="fa fa-shopping-cart"></i>Cart</a></li>
                      </li>
                    
                      <li>
@@ -29,15 +32,15 @@
                            </li>
 
                          <li>
-                            <a href="<?php echo site_url('member/page/imageprofile'); ?>"><i class="fa fa-bar-chart-o"></i> Change Profile Picture</a>
+                            <a href="<?php echo site_url('member/page/imageprofile'); ?>"><i class="fa fa-user"></i> Change Profile Picture</a>
                      </li>
 
                          <li>
-                            <a href="<?php echo site_url('member/page/upload_products'); ?>"><i class="fa fa-desktop"></i> Upload Product</a>
+                            <a href="<?php echo site_url('member/page/upload_products'); ?>"><i class="fa fa-user"></i> Upload Product</a>
                          </li>
 
                         <li>
-                            <a href="<?php echo site_url('member/page/changepassword'); ?>"><i class="fa fa-bar-chart-o"></i> Change Password</a>
+                            <a href="<?php echo site_url('member/page/changepassword'); ?>"><i class="fa fa-user"></i> Change Password</a>
                         </li>
 
                             <!--li>
@@ -59,7 +62,7 @@
                         </ul>-->
                     </ul>
                     <li>
-                        <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="<?php echo site_url('main');?>"><i class="fa fa-desktop"></i> Logout</a></li>
+                        <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="<?php echo site_url('main/logout');?>"><i class="fa fa-sign-out"></i> Logout</a></li>
                     </li>
                 </ul>
 
