@@ -6,7 +6,7 @@
                     <br>
                     <br>
                         <li>
-                         <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="<?php echo site_url('main/page/main_2');?>"><i class="fa fa-home"></i>Home</a></li>
+                         <li class="wow fadeInDown" data-wow-delay="0s"><a class="active" href="<?php echo site_url('main');?>"><i class="fa fa-home"></i>Home</a></li>
                         </li>
 
                        <li>

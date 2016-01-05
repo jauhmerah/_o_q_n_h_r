@@ -16,59 +16,16 @@
 
           
 
-              <form role="form" action = "<?= site_url('member/page/profileupdate_db/5');?>" method = 'post'-->
+              <form role="form" action = "<?= site_url('member/page/profileupdate_db/5');?>" method = 'post'>
+               
+              
               <div class="row">
-                <div class="col-lg-12">
-                    <!--div class="panel panel-default">
-                        <div class="panel-heading">
-                            Section: Basic Info
-                        </div-->
-                        <!--<div class="panel-body">
-                            <div class="row">
-                                <div class="col-lg-6">
+                <div class="col-lg-12">                                          
+                                        </div>
 
-
-                                <!--<div id="timelineProfilePic">
-                                 <img class="img-circle" src="<?php echo base_url();?>assets/hanis/images/arash.jpg" class="bgImage" style="margin-top:0px; margin-left:45px;width:150px;">
-
-                                <!--<div id="timelineProfilePic">
-
-                                    <p>
-                                     <div class="form-group">
-                                            <label>Upload Your Profile Picture</label>
-                                            
-                                            <!--<?php
-                                                if (isset($error)) {
-                                                     echo $error;
-                                                 }                                                 
-                                            ?>-->
-                                            <!--<?php echo $error;?>
-                                                <?php echo form_open_multipart('member/upload');?>
-                                                <input type="file" name="userfile"/><br><br>
-                                                <input type="submit" name="submit" value="upload image">
-
+                                      
+                                        </div>
                                         
-                                           
-
-                                            <!--<form action = "<?= site_url('main/upload');?>" method = 'post'>
-                                            <input type="file" name="userfile"/><br>
-                                            <input type="submit" name="submit" value="Upload image">
-
-                                        </form>-->
-                                        </div>
-
-                                        </form>
-                                        </div>
-                                       <!-- Upload input-->
-                                       <!-- <div class="control-group">
-                                            <label class="control-label">Upload<span style="color: red;">*</span></label>
-                                            <div class="controls">
-                                                <input name="userfile" name="userfile" type="file"
-                                                class="input-xlarge">
-                                                <p class="help-block"></p>
-                                            </div>
-                                        </div> -->
-
                                        <div class="form-group">
                                             <label>Username</label>
                                             <input type="text" name="username" placeholder="Please enter your username." class="form-username form-control" id="username">
@@ -78,11 +35,6 @@
                                             <label>Email Address</label>
                                             <input type="text" name="email" placeholder="Please enter your email address." class="form-email form-control" id="email">
                                         </div>
-
-                                        <!--<div class="form-group">
-                                            <label>Password</label>
-                                            <input type="password" name="password" placeholder="Please enter your password." class="form-password form-control" id="password">
-                                        </div>-->
 
                                         <div class="form-group">
                                             <label>Address</label>
@@ -94,7 +46,7 @@
                                             <input type="text" name="phone" placeholder="Please enter your phone number." class="form-phone form-control" id="phone">
                                         </div>
 
-                                         <div class="form-group">
+                                         <!--<div class="form-group">
                                             <label>Gender</label>
                                             <div class="radio">
                                                 <label>
@@ -103,22 +55,16 @@
                                                 <br>
                                                  <input type="radio" name="gender" id="gender_m" value="Female" checked="">Female   
                                                 </label>
-
-                                        </div>
+                                            </div>
+                                         </div>-->
                                         <br>
                                         <br>
 
                                          <div class="col-sm-4">  <br> 
-                                           <input type="submit" class="btn btn-warning" style="background-color:#2DAADF; margin-top:-35px;" value="UPDATE"></input>
-                                        </div>
-                                        
-                                      
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                           <input type="submit" id="submit" name="dsubmit" value="Update" class="btn btn-warning" style="background-color:#2DAADF; margin-top:-35px;" value="UPDATE"></input>
+                                        </div>                                                            
+                                         </div>
+                </form>
                  <!-- /. PAGE INNER  -->
              <!--footer><p style="text-align:center;">Copyright &copy; Souqanshar.com 2015</p--> <!--Template by: <a href="#"></a></p></footer-->
         </div>

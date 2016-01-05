@@ -19,6 +19,7 @@
 	        $this->load->model('m_cart');
 			$this->load->model('m_item');
    			$this->load->library('cart');
+   			$this->load->model('m_profile');
 	    }
 	
 	    function index()
@@ -251,6 +252,11 @@
 				 
 		 }
 
+		
+
+
+
+		
 
 	    public function pecahankata($first = null , $second = null)
 	    {

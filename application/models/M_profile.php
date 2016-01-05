@@ -122,6 +122,8 @@ class M_profile extends CI_Model {
         return $result;
     }*/
 
+
+       
       
 }
 ?>
