@@ -65,6 +65,7 @@
                   <a href="<?php echo site_url('main/page/main');?>"><img src="<?php echo base_url();?>assets/img/home.png" alt="" width="25px" height="25px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="<?php echo site_url('main/productlist');?>"><img src="<?php echo base_url();?>assets/img/shop.png" alt="" width="23px" height="23px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="<?php echo site_url('main/page/cart');?>"><img src="<?php echo base_url();?>assets/img/cart1.png" alt="" width="25px" height="25px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                 <a href="<?php echo site_url('main/page/signin');?>"><img src="<?php echo base_url();?>assets/img/login.png" alt="" width="40px" height="40px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
                  <a href="<?php echo site_url('main/page/signup');?>"><img src="<?php echo base_url();?>assets/img/start.png" alt="" width="120px" height="50px"></a>
                  <?php } ?> 
               </div><!-- /.navbar-collapse -->

@@ -87,11 +87,12 @@
         <div class="container">
             <div class="row" style="margin-top:-100px">
                 <div class="col-lg-12 text-center">
-                    <h2>My Product</h2>
+                    <h2>My Product</h2><br><br>
                     <hr class="star-primary">
+                    <h2>You haven't uploaded any product</h2>
                 </div>
             </div>
-            <div class="row">
+            <!--div class="row">
                 <div class="col-sm-4">
                             <div class="product-image-wrapper">
                                 <div class="single-products">
@@ -177,7 +178,7 @@
                         </div>
                 </div>
             </div>
-        </div>
+        </div-->
     </section>
     <!-- About Section -->
     <!--section class="success" id="about">
